@@ -1,0 +1,339 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ==========================================================================
+   OFFICIAL TENNIS SURFACE SEASONS COLOR THEME SYSTEM
+   ========================================================================== */
+
+:root,
+[data-surface-season="grass"] {
+  /* GRASS COURT SEASON (Wimbledon Lawn Deep Racing Pine & Champagne Gold) */
+  --theme-bg-base: #060b08;
+  --theme-bg-surface: #0a130e;
+  --theme-bg-card: #0f1c15;
+  --theme-bg-card-alt: #13241b;
+  --theme-bg-card-hover: #182e22;
+  --theme-bg-elevated: #1a3326;
+  --theme-bg-modal: #08100b;
+  --theme-border: rgba(255, 255, 255, 0.08);
+  --theme-border-highlight: rgba(229, 195, 120, 0.28);
+  --theme-border-alt: rgba(255, 255, 255, 0.05);
+  --theme-border-subtle: rgba(255, 255, 255, 0.04);
+  
+  --theme-accent-primary: #e5c378; /* Champagne Gold */
+  --theme-accent-hover: #f3d799;
+  --theme-accent-glow: rgba(229, 195, 120, 0.15);
+  --theme-accent-secondary: #274c35;
+  --theme-accent-tertiary: #582386; /* Royal Purple */
+  --theme-accent-tag: #e5c378;
+
+  --theme-pill-bg: rgba(229, 195, 120, 0.08);
+  --theme-pill-text: #f5ebd7;
+  --theme-pill-border: rgba(229, 195, 120, 0.22);
+
+  --theme-selection-bg: #e5c378;
+  --theme-selection-text: #060b08;
+  --theme-court-pattern-glow: rgba(229, 195, 120, 0.04);
+  --theme-floodlight-1: rgba(39, 76, 53, 0.12);
+  --theme-floodlight-2: rgba(88, 35, 134, 0.08);
+
+  --theme-scrollbar-track: rgba(10, 19, 14, 0.9);
+  --theme-scrollbar-thumb: rgba(255, 255, 255, 0.16);
+  --theme-scrollbar-hover: rgba(229, 195, 120, 0.5);
+}
+
+[data-surface-season="clay"] {
+  /* CLAY COURT SEASON (Roland Garros Warm Ochre & Terracotta) */
+  --theme-bg-base: #0c0908;
+  --theme-bg-surface: #140f0c;
+  --theme-bg-card: #1c1511;
+  --theme-bg-card-alt: #241a15;
+  --theme-bg-card-hover: #2e221b;
+  --theme-bg-elevated: #382921;
+  --theme-bg-modal: #100c0a;
+  --theme-border: rgba(255, 255, 255, 0.08);
+  --theme-border-highlight: rgba(229, 195, 120, 0.28);
+  --theme-border-alt: rgba(255, 255, 255, 0.05);
+  --theme-border-subtle: rgba(255, 255, 255, 0.04);
+
+  --theme-accent-primary: #e5c378;
+  --theme-accent-hover: #f3d799;
+  --theme-accent-glow: rgba(229, 195, 120, 0.15);
+  --theme-accent-secondary: #c2410c;
+  --theme-accent-tertiary: #b45309;
+  --theme-accent-tag: #fed7aa;
+
+  --theme-pill-bg: rgba(194, 65, 12, 0.1);
+  --theme-pill-text: #fed7aa;
+  --theme-pill-border: rgba(194, 65, 12, 0.25);
+
+  --theme-selection-bg: #e5c378;
+  --theme-selection-text: #0c0908;
+  --theme-court-pattern-glow: rgba(194, 65, 12, 0.05);
+  --theme-floodlight-1: rgba(194, 65, 12, 0.1);
+  --theme-floodlight-2: rgba(229, 195, 120, 0.08);
+
+  --theme-scrollbar-track: rgba(20, 15, 12, 0.9);
+  --theme-scrollbar-thumb: rgba(255, 255, 255, 0.16);
+  --theme-scrollbar-hover: rgba(229, 195, 120, 0.5);
+}
+
+[data-surface-season="hard"] {
+  /* HARD COURT SEASON (Midnight Laykold Deep Navy & Platinum Gold) */
+  --theme-bg-base: #07090e;
+  --theme-bg-surface: #0b0e17;
+  --theme-bg-card: #101522;
+  --theme-bg-card-alt: #151c2d;
+  --theme-bg-card-hover: #1b2339;
+  --theme-bg-elevated: #202b45;
+  --theme-bg-modal: #090c13;
+  --theme-border: rgba(255, 255, 255, 0.08);
+  --theme-border-highlight: rgba(229, 195, 120, 0.28);
+  --theme-border-alt: rgba(255, 255, 255, 0.05);
+  --theme-border-subtle: rgba(255, 255, 255, 0.04);
+
+  --theme-accent-primary: #e5c378;
+  --theme-accent-hover: #f3d799;
+  --theme-accent-glow: rgba(229, 195, 120, 0.15);
+  --theme-accent-secondary: #0369a1;
+  --theme-accent-tertiary: #38bdf8;
+  --theme-accent-tag: #e5c378;
+
+  --theme-pill-bg: rgba(255, 255, 255, 0.05);
+  --theme-pill-text: #f1f5f9;
+  --theme-pill-border: rgba(255, 255, 255, 0.12);
+
+  --theme-selection-bg: #e5c378;
+  --theme-selection-text: #07090e;
+  --theme-court-pattern-glow: rgba(3, 105, 161, 0.05);
+  --theme-floodlight-1: rgba(3, 105, 161, 0.1);
+  --theme-floodlight-2: rgba(229, 195, 120, 0.08);
+
+  --theme-scrollbar-track: rgba(11, 14, 23, 0.9);
+  --theme-scrollbar-thumb: rgba(255, 255, 255, 0.16);
+  --theme-scrollbar-hover: rgba(229, 195, 120, 0.5);
+}
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: var(--theme-bg-base);
+    color: #f8fafc;
+    transition: background-color 0.4s ease, color 0.4s ease;
+  }
+}
+
+::selection {
+  background-color: var(--theme-selection-bg);
+  color: var(--theme-selection-text);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes subtleGold {
+  0%, 100% {
+    opacity: 0.85;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-subtleGold {
+  animation: subtleGold 4s infinite ease-in-out;
+}
+
+/* Dynamic Tennis Court Subtle Line Watermark */
+.court-pattern {
+  background-image: 
+    radial-gradient(ellipse at 50% 0%, var(--theme-court-pattern-glow) 0%, transparent 60%),
+    linear-gradient(var(--theme-border-alt) 1px, transparent 1px),
+    linear-gradient(90deg, var(--theme-border-alt) 1px, transparent 1px);
+  background-size: 100% 100%, 48px 48px, 48px 48px;
+}
+
+/* Custom subtle scrollbar that transitions with surface season */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: var(--theme-scrollbar-track);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--theme-scrollbar-thumb);
+  border-radius: 9999px;
+  transition: background 0.2s ease;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: var(--theme-scrollbar-hover);
+}
+
+/* ==========================================================================
+   LUXURY AGENCY SYSTEM TOKENS & DOUBLE-BEZEL ARCHITECTURE
+   Rolex / Wimbledon / Grand Slam Luxury Archive & Live Terminal
+   ========================================================================== */
+
+:root {
+  --luxury-gold: #e5c158;
+  --luxury-champagne: #f7f1e3;
+  --luxury-brass: #c99a3e;
+  --luxury-hairline: rgba(255, 255, 255, 0.08);
+  --luxury-hairline-highlight: rgba(255, 255, 255, 0.16);
+  --ease-luxury: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-fluid: cubic-bezier(0.32, 0.72, 0, 1);
+}
+
+.font-display {
+  font-family: 'Syne', sans-serif;
+}
+
+.font-tech {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Fluid Motion Utilities */
+.ease-luxury {
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.ease-fluid {
+  transition-timing-function: cubic-bezier(0.32, 0.72, 0, 1);
+}
+
+/* Double-Bezel Architecture (Doppelrand) */
+.double-bezel-outer {
+  position: relative;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.02);
+  padding: 0.375rem;
+  box-shadow: 0 24px 48px -12px rgba(0, 0, 0, 0.65), 0 0 0 1px rgba(255, 255, 255, 0.03);
+}
+
+.double-bezel-inner {
+  border-radius: calc(2rem - 0.375rem);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: var(--theme-bg-surface);
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.08);
+}
+
+.double-bezel-card-outer {
+  position: relative;
+  border-radius: 1.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.025);
+  padding: 0.375rem;
+  box-shadow: 0 16px 36px -8px rgba(0, 0, 0, 0.55);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.double-bezel-card-outer:hover {
+  border-color: rgba(255, 255, 255, 0.16);
+  box-shadow: 0 24px 48px -8px rgba(0, 0, 0, 0.75), 0 0 24px -4px var(--theme-accent-glow);
+  transform: translateY(-2px);
+}
+
+.double-bezel-card-inner {
+  border-radius: calc(1.75rem - 0.375rem);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: var(--theme-bg-card);
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.06);
+}
+
+/* Floating Dock & Sleek Glass Treatments */
+.luxury-glass-dock {
+  background: rgba(8, 11, 14, 0.88);
+  backdrop-filter: blur(28px);
+  -webkit-backdrop-filter: blur(28px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.8), inset 0 1px 0 0 rgba(255, 255, 255, 0.1);
+}
+
+.luxury-glass-panel {
+  background: rgba(12, 16, 20, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  box-shadow: 0 12px 32px -6px rgba(0, 0, 0, 0.6), inset 0 1px 0 0 rgba(255, 255, 255, 0.06);
+}
+
+/* Button-in-Button Architecture */
+.btn-nested-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.375rem 0.75rem 0.375rem 0.5rem;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-nested-action:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+.btn-nested-circle {
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.3s ease;
+}
+
+.btn-nested-action:hover .btn-nested-circle {
+  transform: scale(1.08);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Rolex / Grand Slam Editorial Accents */
+.gold-text-sheen {
+  background: linear-gradient(135deg, #fff7d6 0%, #e5c158 50%, #b88a28 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hairline-divider {
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.1) 20%, rgba(255, 255, 255, 0.1) 80%, transparent 100%);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
+
+
