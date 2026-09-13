@@ -96,9 +96,8 @@ export const IosAppWidgetModal: React.FC<IosAppWidgetModalProps> = ({ isOpen, on
     setTimeout(() => setCopied(false), 2000);
   };
 
-  const currentHost = window.location.hostname;
-  const isLocalhost = currentHost === 'localhost' || currentHost === '127.0.0.1';
-  const networkUrl = isLocalhost ? `http://192.168.1.117:5175/` : window.location.href;
+  const publicLiveUrl = 'https://flashyjohn123.github.io/tennisdatabase/';
+  const localUrl = 'http://192.168.1.117:5175/';
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md">
@@ -178,10 +177,13 @@ export const IosAppWidgetModal: React.FC<IosAppWidgetModalProps> = ({ isOpen, on
                 <div className="space-y-1">
                   <h4 className="text-white font-medium text-xs">Open in Safari on iPhone or iPad</h4>
                   <p className="text-white/50 text-xs">
-                    Connect your device to your local Wi-Fi network and browse to:
+                    Works worldwide (Starbucks, cellular, anywhere) with HTTPS:
                   </p>
-                  <div className="mt-1.5 inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-black/60 border border-white/[0.1] font-mono text-xs text-theme-accent select-all">
-                    {networkUrl}
+                  <div className="mt-1.5 inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-black/60 border border-theme-accent/30 font-mono text-xs text-theme-accent select-all">
+                    {publicLiveUrl}
+                  </div>
+                  <div className="text-[10px] text-white/40 font-mono pt-1">
+                    Local Wi-Fi link: <span className="text-white/60 select-all">{localUrl}</span>
                   </div>
                 </div>
               </div>
