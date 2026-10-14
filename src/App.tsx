@@ -4,9 +4,15 @@ import { INITIAL_PLAYERS } from './data/playersData';
 import { INITIAL_TOURNAMENTS } from './data/tournamentsData';
 import { INITIAL_MATCHES } from './data/matchesData';
 import { CommandRail, CommandBar } from './components/Navbar';
-import { LiveFeedTicker } from './components/LiveFeedTicker';
 import { OverviewView } from './components/OverviewView';
 import { PlayerDetailModal } from './components/PlayerDetailModal';
+import { AddPlayerModal } from './components/AddPlayerModal';
+import { AddMatchModal } from './components/AddMatchModal';
+import { DataBackupModal } from './components/DataBackupModal';
+import { GlobalSearchPalette } from './components/GlobalSearchPalette';
+import { AuthModal } from './components/AuthModal';
+import { AuthProvider } from './context/AuthContext';
+import { ErrorBoundary } from './components/ErrorBoundary';
 import { useAtpLiveRankings } from './services/atpLiveRankingsService';
 import { playerService } from './services/playerService';
 import {
@@ -54,20 +60,46 @@ export const App: React.FC = () => {
     isLiveSource,
   } = useAtpLiveRankings();
 
-  // State for Players, Matches, and Tournaments with LocalStorage Persistence (v9 2026 season)
+  // State for Players, Matches, and Tournaments with LocalStorage Persistence (v15 Official ATP & WTA Live Sync)
+  const STORAGE_KEY_PLAYERS = 'tennisdb_players_v15';
+  const STORAGE_KEY_MATCHES = 'tennisdb_matches_v13';
+
   const [players, setPlayers] = useState<Player[]>(() => {
-    const saved = localStorage.getItem('tennisdb_players_v9');
+    // Clear obsolete legacy caches so updated 2026 records take full precedence
+    try {
+      localStorage.removeItem('tennisdb_players_v14');
+      localStorage.removeItem('tennisdb_players_v13');
+      localStorage.removeItem('tennisdb_players_v12');
+      localStorage.removeItem('tennisdb_players_v11');
+      localStorage.removeItem('tennisdb_players_v10_2026usopen');
+      localStorage.removeItem('tennisdb_players_v10');
+      localStorage.removeItem('tennisdb_players_v9');
+      localStorage.removeItem('tennisdb_players_v7');
+      localStorage.removeItem('tennisdb_atp_live_rankings_v2');
+      localStorage.removeItem('tennisdb_matches_v12');
+      localStorage.removeItem('tennisdb_matches_v11');
+      localStorage.removeItem('tennisdb_matches_v10_2026usopen');
+      localStorage.removeItem('tennisdb_matches_v7');
+    } catch {}
+
+    const saved = localStorage.getItem(STORAGE_KEY_PLAYERS);
     if (saved) {
       try {
         const parsed: Player[] = JSON.parse(saved);
-        // Ensure official avatar URLs and injury histories from INITIAL_PLAYERS are always applied
-        const initialMap = new Map(INITIAL_PLAYERS.map(p => [p.id, p.avatarUrl]));
-        const initialInjuryMap = new Map(INITIAL_PLAYERS.map(p => [p.id, p.injuryHistory]));
-        return parsed.map(p => ({
-          ...p,
-          avatarUrl: initialMap.get(p.id) || p.avatarUrl,
-          injuryHistory: initialInjuryMap.get(p.id) || p.injuryHistory,
-        }));
+        const initialMap = new Map(INITIAL_PLAYERS.map(p => [p.id, p]));
+        
+        // Always enforce authoritative stats, titles, win-loss, and slams from INITIAL_PLAYERS
+        const mergedOfficial = INITIAL_PLAYERS.map(official => {
+          const custom = parsed.find(p => p.id === official.id);
+          return custom ? { ...custom, ...official } : official;
+        });
+
+        // Retain any user-created custom players that aren't in INITIAL_PLAYERS
+        const customPlayers = Array.isArray(parsed) 
+          ? parsed.filter(p => p && p.id && !initialMap.has(p.id)) 
+          : [];
+
+        return [...mergedOfficial, ...customPlayers];
       } catch (e) {
         console.error('Error loading players from localStorage', e);
       }
@@ -76,7 +108,7 @@ export const App: React.FC = () => {
   });
 
   const [matches, setMatches] = useState<Match[]>(() => {
-    const saved = localStorage.getItem('tennisdb_matches_v9');
+    const saved = localStorage.getItem(STORAGE_KEY_MATCHES);
     if (saved) {
       try {
         const parsed: Match[] = JSON.parse(saved);
@@ -97,7 +129,7 @@ export const App: React.FC = () => {
   // Save to LocalStorage when players/matches update
   useEffect(() => {
     try {
-      localStorage.setItem('tennisdb_players_v9', JSON.stringify(players));
+      localStorage.setItem(STORAGE_KEY_PLAYERS, JSON.stringify(players));
     } catch (e) {
       console.error('Failed to save players to localStorage', e);
     }
@@ -105,7 +137,7 @@ export const App: React.FC = () => {
 
   useEffect(() => {
     try {
-      localStorage.setItem('tennisdb_matches_v9', JSON.stringify(matches));
+      localStorage.setItem(STORAGE_KEY_MATCHES, JSON.stringify(matches));
     } catch (e) {
       console.error('Failed to save matches to localStorage', e);
     }
@@ -113,35 +145,82 @@ export const App: React.FC = () => {
 
   const tournaments = INITIAL_TOURNAMENTS;
 
+  // Supported Navigation Tabs
+  const VALID_TABS = ['overview', 'live', 'rankings', 'tournaments', 'players', 'h2h', 'matches'];
+
+  // Parse initial tab from URL hash
+  const getInitialTab = (): string => {
+    const hash = window.location.hash.replace(/^#\/?/, '').toLowerCase();
+    if (VALID_TABS.includes(hash)) return hash;
+    if (hash.startsWith('player/')) return 'players';
+    return 'overview';
+  };
+
   // Navigation & Filter State
-  const [activeTab, setActiveTab] = useState<string>('overview');
+  const [activeTab, setActiveTabState] = useState<string>(getInitialTab);
   const [selectedTour, setSelectedTour] = useState<Tour | 'ALL'>('ALL');
   const [searchQuery, setSearchQuery] = useState<string>('');
 
+  // Update hash when tab changes
+  const setActiveTab = (tab: string) => {
+    setActiveTabState(tab);
+    if (!window.location.hash.startsWith('#player/')) {
+      window.location.hash = `#${tab}`;
+    }
+  };
+
   // Modal States
   const [selectedPlayerForDetail, setSelectedPlayerForDetail] = useState<Player | null>(null);
+  const [isAddPlayerOpen, setIsAddPlayerOpen] = useState<boolean>(false);
+  const [isAddMatchOpen, setIsAddMatchOpen] = useState<boolean>(false);
+  const [isBackupOpen, setIsBackupOpen] = useState<boolean>(false);
+  const [isSearchPaletteOpen, setIsSearchPaletteOpen] = useState<boolean>(false);
+  const [isAuthModalOpen, setIsAuthModalOpen] = useState<boolean>(false);
+
+  // Hash listener for browser back/forward and deep linking
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash.replace(/^#\/?/, '');
+      if (hash.startsWith('player/')) {
+        const playerId = hash.replace('player/', '').trim();
+        const found = playerService.getPlayerById(playerId) || players.find((p) => p.id === playerId);
+        if (found) {
+          setSelectedPlayerForDetail(found);
+        }
+      } else if (VALID_TABS.includes(hash.toLowerCase())) {
+        setActiveTabState(hash.toLowerCase());
+      }
+    };
+
+    window.addEventListener('hashchange', handleHashChange);
+    // Initial parse on mount
+    handleHashChange();
+
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, [players]);
+
+  const handleAddPlayer = (newPlayer: Player) => {
+    setPlayers((prev) => [newPlayer, ...prev]);
+  };
+
+  const handleAddMatch = (newMatch: Match) => {
+    setMatches((prev) => [newMatch, ...prev]);
+  };
 
   // H2H Initial Selection State
   const [h2hPlayer1, setH2hPlayer1] = useState<Player | null>(null);
   const [h2hPlayer2, setH2hPlayer2] = useState<Player | null>(null);
 
-  // Sync with LocalStorage
-  useEffect(() => {
-    localStorage.setItem('tennisdb_players_v7', JSON.stringify(players));
-  }, [players]);
-
-  useEffect(() => {
-    localStorage.setItem('tennisdb_matches_v7', JSON.stringify(matches));
-  }, [matches]);
-
   // Player Selection Handler (hydrates full profile if rank summary or ID is passed)
   const handleSelectPlayer = (playerOrSummary: Player | PlayerRankSummary | AtpLiveRankEntry) => {
+    let targetPlayer: Player;
     if ('bio' in playerOrSummary && 'playStyle' in playerOrSummary) {
-      setSelectedPlayerForDetail(playerOrSummary as Player);
+      targetPlayer = playerOrSummary as Player;
     } else {
-      const hydrated = playerService.hydratePlayer(playerOrSummary as PlayerRankSummary);
-      setSelectedPlayerForDetail(hydrated);
+      targetPlayer = playerService.hydratePlayer(playerOrSummary as PlayerRankSummary);
     }
+    setSelectedPlayerForDetail(targetPlayer);
+    window.location.hash = `#player/${targetPlayer.id}`;
   };
 
   const handleComparePlayer = (player: Player) => {
@@ -208,6 +287,8 @@ export const App: React.FC = () => {
         <CommandBar
           searchQuery={searchQuery}
           setSearchQuery={setSearchQuery}
+          onOpenSearchPalette={() => setIsSearchPaletteOpen(true)}
+          onOpenAuthModal={() => setIsAuthModalOpen(true)}
           isSyncingLive={isSyncingLive}
           lastSyncedLive={lastSyncedLive}
           onSyncLive={syncLiveRankings}
@@ -220,84 +301,85 @@ export const App: React.FC = () => {
           onSelectSeasonPreference={handleSeasonPreferenceChange}
         />
 
-        {/* 24/7 Live Feed Breaking Ticker */}
-        <LiveFeedTicker
-          onOpenLiveNewsroom={() => setActiveTab('live')}
-          onSelectPlayer={handleSelectPlayer}
-        />
-
         {/* Main View Area with Suspense for Code-Split Routes */}
         <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <Suspense
-            fallback={
-              <div className="py-24 flex flex-col items-center justify-center text-center space-y-4">
-                <div className="w-8 h-8 rounded-full border-2 border-white/10 border-t-amber-200/90 animate-spin" />
-                <span className="font-mono text-xs text-white/40 uppercase tracking-widest">
-                  Loading Circuit Telemetry...
-                </span>
-              </div>
-            }
-          >
-            {activeTab === 'overview' && (
-              <OverviewView
-                players={players}
-                tournaments={tournaments}
-                matches={matches}
-                currentSeason={activeSeason}
-                onSelectPlayer={handleSelectPlayer}
-                onComparePlayer={handleComparePlayer}
-                onNavigateTab={(tab) => setActiveTab(tab)}
-              />
-            )}
+          <ErrorBoundary fallbackTitle="Terminal View Anomaly">
+            <Suspense
+              fallback={
+                <div className="py-24 flex flex-col items-center justify-center text-center space-y-4">
+                  <div className="w-8 h-8 rounded-full border-2 border-white/10 border-t-amber-200/90 animate-spin" />
+                  <span className="font-mono text-xs text-white/40 uppercase tracking-widest">
+                    Loading Circuit Telemetry...
+                  </span>
+                </div>
+              }
+            >
+              {activeTab === 'overview' && (
+                <OverviewView
+                  players={players}
+                  tournaments={tournaments}
+                  matches={matches}
+                  currentSeason={activeSeason}
+                  selectedTour={selectedTour}
+                  onSelectPlayer={handleSelectPlayer}
+                  onComparePlayer={handleComparePlayer}
+                  onNavigateTab={(tab) => setActiveTab(tab)}
+                />
+              )}
 
-            {activeTab === 'live' && (
-              <LiveNewsroomView onSelectPlayer={handleSelectPlayer} />
-            )}
+              {activeTab === 'live' && (
+                <LiveNewsroomView onSelectPlayer={handleSelectPlayer} />
+              )}
 
-            {activeTab === 'rankings' && (
-              <RankingsView
-                players={players}
-                onSelectPlayer={handleSelectPlayer}
-                atpLiveRankings={atpLiveRankings}
-                isSyncing={isSyncingLive}
-                lastSynced={lastSyncedLive}
-                onSyncLiveRankings={syncLiveRankings}
-                isLiveSource={isLiveSource}
-              />
-            )}
+              {activeTab === 'rankings' && (
+                <RankingsView
+                  players={players}
+                  selectedTour={selectedTour}
+                  onSelectPlayer={handleSelectPlayer}
+                  atpLiveRankings={atpLiveRankings}
+                  isSyncing={isSyncingLive}
+                  lastSynced={lastSyncedLive}
+                  onSyncLiveRankings={syncLiveRankings}
+                  isLiveSource={isLiveSource}
+                />
+              )}
 
-            {activeTab === 'tournaments' && (
-              <TournamentsView currentSeason={activeSeason} onSelectPlayer={handleSelectPlayer} />
-            )}
+              {activeTab === 'tournaments' && (
+                <TournamentsView currentSeason={activeSeason} onSelectPlayer={handleSelectPlayer} />
+              )}
 
-            {activeTab === 'players' && (
-              <PlayersView
-                players={players}
-                selectedTour={selectedTour}
-                searchQuery={searchQuery}
-                onSelectPlayer={handleSelectPlayer}
-                onComparePlayer={handleComparePlayer}
-              />
-            )}
+              {activeTab === 'players' && (
+                <PlayersView
+                  players={players}
+                  selectedTour={selectedTour}
+                  onSelectTour={setSelectedTour}
+                  searchQuery={searchQuery}
+                  onSelectPlayer={handleSelectPlayer}
+                  onComparePlayer={handleComparePlayer}
+                  onOpenAddPlayer={() => setIsAddPlayerOpen(true)}
+                />
+              )}
 
-            {activeTab === 'h2h' && (
-              <HeadToHeadView
-                players={players}
-                matches={matches}
-                initialPlayer1={h2hPlayer1}
-                initialPlayer2={h2hPlayer2}
-                onSelectPlayer={handleSelectPlayer}
-              />
-            )}
+              {activeTab === 'h2h' && (
+                <HeadToHeadView
+                  players={players}
+                  matches={matches}
+                  initialPlayer1={h2hPlayer1}
+                  initialPlayer2={h2hPlayer2}
+                  onSelectPlayer={handleSelectPlayer}
+                />
+              )}
 
-            {activeTab === 'matches' && (
-              <MatchesView
-                matches={matches}
-                players={players}
-                onSelectPlayer={handleSelectPlayer}
-              />
-            )}
-          </Suspense>
+              {activeTab === 'matches' && (
+                <MatchesView
+                  matches={matches}
+                  players={players}
+                  onSelectPlayer={handleSelectPlayer}
+                  onOpenAddMatch={() => setIsAddMatchOpen(true)}
+                />
+              )}
+            </Suspense>
+          </ErrorBoundary>
         </main>
 
       {/* Tennis Stadium Footer with Seasonal Theme Indicator */}
@@ -338,6 +420,8 @@ export const App: React.FC = () => {
             <div className="flex items-center gap-4">
               <button
                 onClick={() => {
+                  localStorage.removeItem(STORAGE_KEY_PLAYERS);
+                  localStorage.removeItem(STORAGE_KEY_MATCHES);
                   localStorage.removeItem('tennisdb_matches_v9');
                   localStorage.removeItem('tennisdb_players_v9');
                   localStorage.removeItem('tennisdb_players_v8');
@@ -368,6 +452,15 @@ export const App: React.FC = () => {
               >
                 Reset to Default Roster & Matches
               </button>
+              <span className="text-white/20">•</span>
+              <button
+                type="button"
+                onClick={() => setIsBackupOpen(true)}
+                className="hover:text-theme-accent transition underline text-[11px] text-white/60 hover:text-white"
+                title="Export or Import Database JSON Backup"
+              >
+                Sync & Backup Data (JSON)
+              </button>
             </div>
           </div>
         </div>
@@ -377,14 +470,63 @@ export const App: React.FC = () => {
       {/* Modals */}
       <PlayerDetailModal
         player={selectedPlayerForDetail}
-        onClose={() => setSelectedPlayerForDetail(null)}
+        onClose={() => {
+          setSelectedPlayerForDetail(null);
+          if (window.location.hash.startsWith('#player/')) {
+            window.location.hash = `#${activeTab}`;
+          }
+        }}
         onCompare={(p) => {
           setSelectedPlayerForDetail(null);
           handleComparePlayer(p);
         }}
       />
+
+      <AddPlayerModal
+        isOpen={isAddPlayerOpen}
+        onClose={() => setIsAddPlayerOpen(false)}
+        onAddPlayer={handleAddPlayer}
+      />
+
+      <AddMatchModal
+        isOpen={isAddMatchOpen}
+        onClose={() => setIsAddMatchOpen(false)}
+        players={players}
+        onAddMatch={handleAddMatch}
+      />
+
+      <DataBackupModal
+        isOpen={isBackupOpen}
+        onClose={() => setIsBackupOpen(false)}
+        players={players}
+        matches={matches}
+        onRestoreData={({ players: restoredPlayers, matches: restoredMatches }) => {
+          if (restoredPlayers) setPlayers(restoredPlayers);
+          if (restoredMatches) setMatches(restoredMatches);
+        }}
+      />
+
+      <GlobalSearchPalette
+        isOpen={isSearchPaletteOpen}
+        onClose={() => setIsSearchPaletteOpen(false)}
+        players={players}
+        tournaments={tournaments}
+        onSelectPlayer={handleSelectPlayer}
+        onNavigateTab={(tab) => setActiveTab(tab)}
+      />
+
+      <AuthModal
+        isOpen={isAuthModalOpen}
+        onClose={() => setIsAuthModalOpen(false)}
+      />
     </div>
   );
 };
 
-export default App;
+export const AppWithProviders: React.FC = () => (
+  <AuthProvider>
+    <App />
+  </AuthProvider>
+);
+
+export default AppWithProviders;

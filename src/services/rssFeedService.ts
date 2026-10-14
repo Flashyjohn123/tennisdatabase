@@ -16,31 +16,30 @@ export const KNOWN_RSS_SOURCES: RssFeedConfig[] = [
     categoryDefault: 'breaking',
   },
   {
-    id: 'bbc-tennis',
-    name: 'BBC Sport Tennis',
-    url: 'https://feeds.bbci.co.uk/sport/tennis/rss.xml',
+    id: 'atp-tour',
+    name: 'ATP Tour News',
+    url: 'https://www.atptour.com/en/media/rss/news',
     categoryDefault: 'breaking',
   },
   {
-    id: 'tennis-com',
-    name: 'Tennis.com',
-    url: 'https://www.tennis.com/rss/news/',
-    categoryDefault: 'tournament_update',
-  },
-  {
-    id: 'google-tennis',
-    name: 'Google News (Tennis Circuit)',
-    url: 'https://news.google.com/rss/search?q=tennis+(ATP+OR+WTA+OR+"Grand+Slam")+when:3d&hl=en-US&gl=US&ceid=US:en',
+    id: 'wta-tennis',
+    name: 'WTA Tennis News',
+    url: 'https://www.wtatennis.com/rss-news.xml',
     categoryDefault: 'breaking',
   },
 ];
 
 const DEV_PROXIES: Record<string, string> = {
-  'tennis-com': '/api/proxy/tennis-com',
-  'bbc-tennis': '/api/proxy/bbc-tennis',
   'espn-tennis': '/api/proxy/espn-tennis',
-  'google-tennis': '/api/proxy/google-tennis',
+  'atp-tour': '/api/proxy/atp-tour',
+  'wta-tennis': '/api/proxy/wta-tennis',
 };
+
+export function isAuthorizedSource(source: string): boolean {
+  if (!source) return false;
+  const s = source.toUpperCase();
+  return s.includes('ESPN') || s.includes('ATP') || s.includes('WTA');
+}
 
 const CORS_PROXIES = [
   (url: string) => `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`,
@@ -174,7 +173,7 @@ export function parseRssXml(xmlString: string, sourceName: string): LiveFeedItem
         const pubDate = pubDateEl?.textContent ? new Date(pubDateEl.textContent).toISOString() : new Date().toISOString();
         const id = guidEl?.textContent || `${sourceName}-${Date.now()}-${index}`;
 
-        if (title) {
+        if (title && isAuthorizedSource(sourceName)) {
           const category = detectFeedCategory(title, summary);
           const severity = detectFeedSeverity(title, summary, category);
 
@@ -213,7 +212,7 @@ export function parseRssXml(xmlString: string, sourceName: string): LiveFeedItem
     const link = cleanHtml(linkMatch ? linkMatch[1] : '');
     const pubDate = dateMatch ? new Date(dateMatch[1]).toISOString() : new Date().toISOString();
 
-    if (title) {
+    if (title && isAuthorizedSource(sourceName)) {
       const category = detectFeedCategory(title, summary);
       const severity = detectFeedSeverity(title, summary, category);
 

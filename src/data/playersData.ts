@@ -16,39 +16,40 @@ export const INITIAL_PLAYERS: Player[] = [
     "plays": "Right-handed (two-handed backhand)",
     "currentRank": 1,
     "careerHighRank": 1,
-    "careerTitles": 19,
+    "careerTitles": 20,
     "grandSlams": 4,
+    "slamFinals": 5,
     "slamBreakdown": {
       "australianOpen": 2,
       "rolandGarros": 0,
       "wimbledon": 1,
       "usOpen": 1
     },
-    "prizeMoneyUsd": "$38,500,000",
+    "prizeMoneyUsd": "$42,000,000",
     "careerWinLoss": {
-      "wins": 274,
-      "losses": 69,
-      "winPercentage": 79.9
+      "wins": 312,
+      "losses": 76,
+      "winPercentage": 80.4
     },
     "surfaceStats": {
       "hard": {
-        "wins": 191,
-        "losses": 43,
-        "winPercentage": 81.6
+        "wins": 222,
+        "losses": 48,
+        "winPercentage": 82.2
       },
       "clay": {
-        "wins": 56,
-        "losses": 18,
-        "winPercentage": 75.7
+        "wins": 60,
+        "losses": 19,
+        "winPercentage": 75.9
       },
       "grass": {
-        "wins": 27,
-        "losses": 8,
-        "winPercentage": 77.1
+        "wins": 30,
+        "losses": 9,
+        "winPercentage": 76.9
       }
     },
     "avatarUrl": "/images/players/jannik-sinner.jpg",
-    "bio": "Jannik Sinner is a four-time Grand Slam champion (Australian Open 2024, 2025; US Open 2024; Wimbledon 2025) and 2025 US Open finalist. Possesses unmatched groundstroke velocity, lethal baseline precision, and ice-cold mental focus under high pressure.",
+    "bio": "As of September 20, 2026, World No. 1 Jannik Sinner holds 4 Grand Slam singles titles (Australian Open 2024, US Open 2024, Australian Open 2025, Wimbledon 2026) and 20 career titles. He successfully mounted a heroic run at Wimbledon 2026 to defeat Alexander Zverev in four sets for the Gentlemen's Singles trophy, before a right knee injury forced his withdrawal from the 2026 US Open.",
     "playStyle": "Heavy baseline power-striker with immense groundstroke velocity, deep penetrating flat ball flight, and laser precision on both wings.",
     "notableRivalries": [
       "Carlos Alcaraz",
@@ -97,41 +98,42 @@ export const INITIAL_PLAYERS: Player[] = [
     "heightCm": 183,
     "turnedPro": 2018,
     "plays": "Right-handed (two-handed backhand)",
-    "currentRank": 2,
+    "currentRank": 3,
     "careerHighRank": 1,
-    "careerTitles": 18,
-    "grandSlams": 6,
+    "careerTitles": 19,
+    "grandSlams": 5,
+    "slamFinals": 5,
     "slamBreakdown": {
-      "australianOpen": 0,
-      "rolandGarros": 2,
+      "australianOpen": 1,
+      "rolandGarros": 1,
       "wimbledon": 2,
-      "usOpen": 2
+      "usOpen": 1
     },
-    "prizeMoneyUsd": "$39,850,000",
+    "prizeMoneyUsd": "$41,500,000",
     "careerWinLoss": {
-      "wins": 235,
-      "losses": 58,
-      "winPercentage": 80.2
+      "wins": 372,
+      "losses": 88,
+      "winPercentage": 80.9
     },
     "surfaceStats": {
       "hard": {
-        "wins": 108,
-        "losses": 28,
-        "winPercentage": 79.4
+        "wins": 215,
+        "losses": 50,
+        "winPercentage": 81.1
       },
       "clay": {
-        "wins": 98,
-        "losses": 20,
-        "winPercentage": 83.1
+        "wins": 118,
+        "losses": 25,
+        "winPercentage": 82.5
       },
       "grass": {
-        "wins": 29,
-        "losses": 10,
-        "winPercentage": 74.4
+        "wins": 39,
+        "losses": 13,
+        "winPercentage": 75
       }
     },
     "avatarUrl": "/images/players/carlos-alcaraz.jpg",
-    "bio": "Carlos Alcaraz is a six-time Grand Slam champion and two-time US Open winner (2022, 2025). The Spanish phenom reclaimed World No. 1 with a magnificent victory over Jannik Sinner in the 2025 US Open final, joining an elite club as one of only four men to win multiple Slams on hard, clay, and grass.",
+    "bio": "As of September 20, 2026, Carlos Alcaraz is World No. 2 with 5 Grand Slam singles crowns (US Open 2022; Wimbledon 2023, 2024; Roland Garros 2024; Australian Open 2026) and 19 career titles. By defeating Novak Djokovic in four sets to capture the 2026 Australian Open, he became the youngest player in tennis history to complete the Career Grand Slam at age 22. A persistent wrist injury forced him out of Roland Garros and Wimbledon, before he reached the 2026 US Open quarterfinals in a legendary 3:33 AM five-set duel against Ben Shelton.",
     "playStyle": "Electrifying all-court aggressive game featuring blistering drop shots, supersonic foot speed, and an explosive inside-out forehand.",
     "notableRivalries": [
       "Jannik Sinner",
@@ -180,32 +182,33 @@ export const INITIAL_PLAYERS: Player[] = [
     "heightCm": 198,
     "turnedPro": 2013,
     "plays": "Right-handed (two-handed backhand)",
-    "currentRank": 3,
+    "currentRank": 2,
     "careerHighRank": 2,
-    "careerTitles": 23,
-    "grandSlams": 0,
+    "careerTitles": 26,
+    "grandSlams": 2,
+    "slamFinals": 4,
     "slamBreakdown": {
       "australianOpen": 0,
-      "rolandGarros": 0,
+      "rolandGarros": 1,
       "wimbledon": 0,
-      "usOpen": 0
+      "usOpen": 1
     },
-    "prizeMoneyUsd": "$48,000,000",
+    "prizeMoneyUsd": "$53,500,000",
     "careerWinLoss": {
-      "wins": 450,
+      "wins": 464,
       "losses": 192,
-      "winPercentage": 70.1
+      "winPercentage": 70.7
     },
     "surfaceStats": {
       "hard": {
-        "wins": 270,
+        "wins": 277,
         "losses": 120,
-        "winPercentage": 69.2
+        "winPercentage": 69.8
       },
       "clay": {
-        "wins": 145,
+        "wins": 152,
         "losses": 50,
-        "winPercentage": 74.4
+        "winPercentage": 75.2
       },
       "grass": {
         "wins": 35,
@@ -214,7 +217,7 @@ export const INITIAL_PLAYERS: Player[] = [
       }
     },
     "avatarUrl": "/images/players/alexander-zverev.jpg",
-    "bio": "Alexander Zverev is an Olympic Gold Medalist, two-time ATP Finals champion, and 2024 Roland Garros finalist. He boasts one of the most punishing two-handed backhands on the professional circuit.",
+    "bio": "As of September 20, 2026, World No. 3 Alexander Zverev has achieved a historic Grand Slam double in 2026, capturing both the French Open (Roland Garros) and the US Open. He outlasted Italian star Flavio Cobolli in a dramatic five-set Court Philippe-Chatrier final to win his maiden major, then conquered Ben Shelton under the Arthur Ashe Stadium lights in four sets to secure his second Grand Slam crown. He now holds 26 career titles, the Tokyo Olympic Singles Gold Medal, and two ATP Finals trophies.",
     "playStyle": "Power baseliner with a devastating backhand down-the-line, imposing 140mph first serve, and elite court coverage.",
     "notableRivalries": [
       "Daniil Medvedev",
@@ -263,7 +266,7 @@ export const INITIAL_PLAYERS: Player[] = [
     "heightCm": 188,
     "turnedPro": 2003,
     "plays": "Right-handed (two-handed backhand)",
-    "currentRank": 5,
+    "currentRank": 11,
     "careerHighRank": 1,
     "careerTitles": 99,
     "grandSlams": 24,
@@ -281,9 +284,9 @@ export const INITIAL_PLAYERS: Player[] = [
     },
     "surfaceStats": {
       "hard": {
-        "wins": 708,
-        "losses": 128,
-        "winPercentage": 84.7
+        "wins": 722,
+        "losses": 133,
+        "winPercentage": 84.4
       },
       "clay": {
         "wins": 282,
@@ -297,7 +300,7 @@ export const INITIAL_PLAYERS: Player[] = [
       }
     },
     "avatarUrl": "/images/players/novak-djokovic.jpg",
-    "bio": "All-time men singles record holder with 24 Grand Slam titles, 428 weeks at World No. 1, 40 Masters 1000 crowns, and the Paris Olympic Gold Medal completing the Career Golden Slam.",
+    "bio": "As of September 20, 2026, 39-year-old Novak Djokovic is World No. 5 with an all-time record 24 Grand Slam titles, 99 career tour-level trophies, and the Olympic Gold Medal completing his Career Golden Slam. Reached his 13th Australian Open semifinal in 2026, proving his legendary competitive spirit endures.",
     "playStyle": "Impenetrable baseline counter-aggression, legendary return of serve, acrobatic flexibility, and unmatched clutch performance in pressure moments.",
     "notableRivalries": [
       "Carlos Alcaraz",
@@ -339,7 +342,8 @@ export const INITIAL_PLAYERS: Player[] = [
         "status": "Rehabilitated"
       }
     ],
-    "status": "active"
+    "status": "active",
+    "slamFinals": 37
   },
   {
     "id": "ben-shelton",
@@ -354,27 +358,28 @@ export const INITIAL_PLAYERS: Player[] = [
     "heightCm": 193,
     "turnedPro": 2022,
     "plays": "Left-handed (two-handed backhand)",
-    "currentRank": 6,
-    "careerHighRank": 13,
+    "currentRank": 4,
+    "careerHighRank": 4,
     "careerTitles": 2,
     "grandSlams": 0,
+    "slamFinals": 1,
     "slamBreakdown": {
       "australianOpen": 0,
       "rolandGarros": 0,
       "wimbledon": 0,
       "usOpen": 0
     },
-    "prizeMoneyUsd": "$5,900,000",
+    "prizeMoneyUsd": "$7,800,000",
     "careerWinLoss": {
-      "wins": 82,
-      "losses": 52,
-      "winPercentage": 61.2
+      "wins": 87,
+      "losses": 53,
+      "winPercentage": 62.1
     },
     "surfaceStats": {
       "hard": {
-        "wins": 62,
-        "losses": 35,
-        "winPercentage": 63.9
+        "wins": 67,
+        "losses": 36,
+        "winPercentage": 65.0
       },
       "clay": {
         "wins": 12,
@@ -388,7 +393,7 @@ export const INITIAL_PLAYERS: Player[] = [
       }
     },
     "avatarUrl": "/images/players/ben-shelton.jpg",
-    "bio": "American powerhouse Ben Shelton reached the US Open semifinals in his first full pro season. Celebrated for firing 150 mph serves and displaying infectious court energy.",
+    "bio": "As of September 20, 2026, 23-year-old Ben Shelton holds 2 ATP titles and World No. 6 ranking. He staged an unforgettable run to the 2026 US Open final, outlasting Carlos Alcaraz in a historic 3:33 AM five-set quarterfinal thriller and defeating Frances Tiafoe in the semifinals, before finishing runner-up to Alexander Zverev under the Arthur Ashe Stadium lights.",
     "playStyle": "Ultra-explosive left-handed power serve with sharp swinging kick angles, destructive forehand winners, and fearless net approaches.",
     "notableRivalries": [
       "Novak Djokovic",
@@ -429,7 +434,7 @@ export const INITIAL_PLAYERS: Player[] = [
     "heightCm": 198,
     "turnedPro": 2014,
     "plays": "Right-handed (two-handed backhand)",
-    "currentRank": 7,
+    "currentRank": 5,
     "careerHighRank": 1,
     "careerTitles": 20,
     "grandSlams": 1,
@@ -463,7 +468,7 @@ export const INITIAL_PLAYERS: Player[] = [
       }
     },
     "avatarUrl": "/images/players/daniil-medvedev.jpg",
-    "bio": "Former World No. 1 and 2021 US Open champion, Daniil Medvedev has reached 6 Grand Slam finals. Renowned for his deep court positioning, flat groundstrokes, and relentless baseline defense.",
+    "bio": "As of September 20, 2026, Daniil Medvedev is World No. 7 with 20 career titles, the 2021 US Open championship, and 6 Grand Slam final appearances. His deep court positioning, flat precision, and relentless defensive counterpunching remain hallmarks of the tour.",
     "playStyle": "Unorthodox tactical mastermind with low-skidding flat groundstrokes, extreme return depth, and extraordinary endurance.",
     "notableRivalries": [
       "Jannik Sinner",
@@ -489,7 +494,8 @@ export const INITIAL_PLAYERS: Player[] = [
         "status": "Rehabilitated"
       }
     ],
-    "status": "active"
+    "status": "active",
+    "slamFinals": 6
   },
   {
     "id": "alex-de-minaur",
@@ -538,7 +544,7 @@ export const INITIAL_PLAYERS: Player[] = [
       }
     },
     "avatarUrl": "/images/players/alex-de-minaur.jpg",
-    "bio": "Nicknamed \"Demon\", Alex de Minaur is renowned as the fastest mover in men tennis. He has captured 9 ATP Tour singles titles, including back-to-back Acapulco 500 trophies.",
+    "bio": "As of September 20, 2026, Alex de Minaur sits at World No. 8 with 9 career titles. Nicknamed 'Demon' for his unmatched speed and defensive tenacity, the Australian reached major quarterfinals at Roland Garros and Wimbledon in 2026.",
     "playStyle": "Super-human foot speed, counter-punching recovery, and razor-sharp flat passing shots from anywhere on court.",
     "notableRivalries": [
       "Taylor Fritz",
@@ -613,7 +619,7 @@ export const INITIAL_PLAYERS: Player[] = [
       }
     },
     "avatarUrl": "/images/players/taylor-fritz.jpg",
-    "bio": "Taylor Fritz is the top-ranked American men tennis player and US Open finalist. Winner of the Indian Wells Masters and back-to-back Eastbourne grass titles.",
+    "bio": "As of September 20, 2026, Taylor Fritz is World No. 9 with 8 career titles, the Indian Wells Masters crown, and a 2024 US Open final appearance. Fritz pushed Novak Djokovic in a four-hour Wimbledon quarterfinal in 2026.",
     "playStyle": "Big-serving aggressive hardcourt specialist with a booming first delivery and punishing flat forehand drives.",
     "notableRivalries": [
       "Alexander Zverev",
@@ -647,7 +653,8 @@ export const INITIAL_PLAYERS: Player[] = [
         "status": "Resolved"
       }
     ],
-    "status": "active"
+    "status": "active",
+    "slamFinals": 1
   },
   {
     "id": "casper-ruud",
@@ -662,7 +669,7 @@ export const INITIAL_PLAYERS: Player[] = [
     "heightCm": 183,
     "turnedPro": 2015,
     "plays": "Right-handed (two-handed backhand)",
-    "currentRank": 17,
+    "currentRank": 10,
     "careerHighRank": 2,
     "careerTitles": 12,
     "grandSlams": 0,
@@ -696,7 +703,7 @@ export const INITIAL_PLAYERS: Player[] = [
       }
     },
     "avatarUrl": "/images/players/casper-ruud.jpg",
-    "bio": "Three-time Grand Slam finalist (Roland Garros, US Open) and champion of the Barcelona Open and Geneva Open. Renowned as one of clay tennis premier heavy topspin forehands.",
+    "bio": "As of September 20, 2026, Casper Ruud is World No. 10 with 12 career titles and three Grand Slam finals (Roland Garros 2022, 2023; US Open 2022). Renowned as one of clay tennis's most destructive heavy topspin forehands.",
     "playStyle": "Heavy topspin clay-court technician with extraordinary forehand RPM, supreme physical conditioning, and calculated tactical discipline.",
     "notableRivalries": [
       "Alexander Zverev",
@@ -722,7 +729,8 @@ export const INITIAL_PLAYERS: Player[] = [
         "status": "Resolved"
       }
     ],
-    "status": "active"
+    "status": "active",
+    "slamFinals": 3
   },
   {
     "id": "andrey-rublev",
@@ -737,7 +745,7 @@ export const INITIAL_PLAYERS: Player[] = [
     "heightCm": 188,
     "turnedPro": 2014,
     "plays": "Right-handed (two-handed backhand)",
-    "currentRank": 18,
+    "currentRank": 11,
     "careerHighRank": 5,
     "careerTitles": 16,
     "grandSlams": 0,
@@ -771,7 +779,7 @@ export const INITIAL_PLAYERS: Player[] = [
       }
     },
     "avatarUrl": "/images/players/andrey-rublev.jpg",
-    "bio": "Two-time ATP Masters 1000 champion (Monte-Carlo, Madrid) with 16 career titles. Consistently inside the Top 10 with his relentless baseline intensity and explosive power.",
+    "bio": "As of September 20, 2026, Andrey Rublev is World No. 11 with 16 career ATP titles, including Masters 1000 crowns in Monte-Carlo and Madrid. Known for blistering baseline power and raw emotional intensity on court.",
     "playStyle": "High-octane first-strike baseline aggressor who attacks every ball with blistering velocity on both forehand and serve.",
     "notableRivalries": [
       "Daniil Medvedev",
@@ -812,7 +820,7 @@ export const INITIAL_PLAYERS: Player[] = [
     "heightCm": 185,
     "turnedPro": 2015,
     "plays": "Right-handed (two-handed backhand)",
-    "currentRank": 24,
+    "currentRank": 12,
     "careerHighRank": 12,
     "careerTitles": 3,
     "grandSlams": 0,
@@ -846,7 +854,7 @@ export const INITIAL_PLAYERS: Player[] = [
       }
     },
     "avatarUrl": "/images/players/tommy-paul.jpg",
-    "bio": "Australian Open semifinalist, Queen's Club grass champion, and Olympic Bronze Medalist in doubles. Known for his supreme all-court versatility and court IQ.",
+    "bio": "As of September 20, 2026, Tommy Paul is World No. 12 with 3 career titles, Queen's Club grass trophy, and an Olympic doubles medal. His athletic transition game and all-court craft make him a perpetual threat.",
     "playStyle": "Dynamic all-court athlete with rapid footwork, crafty drop shots, sharp volley technique, and strong baseline defense.",
     "notableRivalries": [
       "Taylor Fritz",
@@ -887,7 +895,7 @@ export const INITIAL_PLAYERS: Player[] = [
     "heightCm": 193,
     "turnedPro": 2016,
     "plays": "Right-handed (one-handed backhand)",
-    "currentRank": 49,
+    "currentRank": 13,
     "careerHighRank": 3,
     "careerTitles": 11,
     "grandSlams": 0,
@@ -921,7 +929,7 @@ export const INITIAL_PLAYERS: Player[] = [
       }
     },
     "avatarUrl": "/images/players/stefanos-tsitsipas.jpg",
-    "bio": "Three-time Rolex Monte-Carlo Masters champion and two-time Grand Slam finalist (Roland Garros, Australian Open). Flagbearer for the single-handed backhand.",
+    "bio": "As of September 20, 2026, Stefanos Tsitsipas is World No. 13 with 11 career titles, three Monte-Carlo Masters titles, and two Grand Slam finals (Roland Garros, Australian Open). A signature classical all-court stylist with an attacking one-handed backhand.",
     "playStyle": "Offensive all-court game with a lethal inside-out forehand, sweeping one-handed backhand topspin, and agile net transitions.",
     "notableRivalries": [
       "Alexander Zverev",
@@ -947,7 +955,8 @@ export const INITIAL_PLAYERS: Player[] = [
         "status": "Rehabilitated"
       }
     ],
-    "status": "active"
+    "status": "active",
+    "slamFinals": 2
   },
   {
     "id": "holger-rune",
@@ -962,7 +971,7 @@ export const INITIAL_PLAYERS: Player[] = [
     "heightCm": 188,
     "turnedPro": 2020,
     "plays": "Right-handed (two-handed backhand)",
-    "currentRank": 52,
+    "currentRank": 14,
     "careerHighRank": 4,
     "careerTitles": 4,
     "grandSlams": 0,
@@ -996,7 +1005,7 @@ export const INITIAL_PLAYERS: Player[] = [
       }
     },
     "avatarUrl": "/images/players/holger-rune.jpg",
-    "bio": "Paris Masters champion and three-time Grand Slam quarterfinalist. Holger Rune is one of the most fiery and competitive young champions on the ATP Tour.",
+    "bio": "As of September 20, 2026, 23-year-old Holger Rune is World No. 14 with 4 career titles and the Paris Masters shield. Known for his fiery competitive spirit, explosive court movement, and lethal down-the-line backhand.",
     "playStyle": "Aggressive baseline warrior with explosive redirect speed, heavy inside-in forehands, and intense fighting spirit.",
     "notableRivalries": [
       "Casper Ruud",
@@ -1037,7 +1046,7 @@ export const INITIAL_PLAYERS: Player[] = [
     "heightCm": 193,
     "turnedPro": 2018,
     "plays": "Left-handed (two-handed backhand)",
-    "currentRank": 53,
+    "currentRank": 15,
     "careerHighRank": 15,
     "careerTitles": 2,
     "grandSlams": 0,
@@ -1071,7 +1080,7 @@ export const INITIAL_PLAYERS: Player[] = [
       }
     },
     "avatarUrl": "/images/players/jack-draper.jpg",
-    "bio": "British No. 1 and US Open semifinalist. Champion of the ATP 500 Vienna Open and Stuttgart Open, Jack Draper possesses one of the heaviest left-handed deliveries in the game.",
+    "bio": "As of September 20, 2026, 24-year-old Jack Draper is World No. 15 with 2 ATP titles (Vienna, Stuttgart) and a US Open semifinal run. The powerful British southpaw features one of the most lethal lefty deliveries on tour.",
     "playStyle": "Towering left-handed power baseline game with heavy crosscourt slice, thunderous flat groundstrokes, and elite athletic transitions.",
     "notableRivalries": [
       "Jannik Sinner",
@@ -1112,41 +1121,41 @@ export const INITIAL_PLAYERS: Player[] = [
     "heightCm": 182,
     "turnedPro": 2015,
     "plays": "Right-handed (two-handed backhand)",
-    "currentRank": 1,
+    "currentRank": 2,
     "careerHighRank": 1,
-    "careerTitles": 18,
-    "grandSlams": 4,
+    "careerTitles": 20,
+    "grandSlams": 5,
     "slamBreakdown": {
       "australianOpen": 2,
       "rolandGarros": 0,
-      "wimbledon": 0,
+      "wimbledon": 1,
       "usOpen": 2
     },
-    "prizeMoneyUsd": "$32,500,000",
+    "prizeMoneyUsd": "$36,000,000",
     "careerWinLoss": {
-      "wins": 405,
-      "losses": 180,
-      "winPercentage": 69.2
+      "wins": 438,
+      "losses": 186,
+      "winPercentage": 70.2
     },
     "surfaceStats": {
       "hard": {
-        "wins": 275,
-        "losses": 108,
-        "winPercentage": 71.8
+        "wins": 309,
+        "losses": 119,
+        "winPercentage": 72.2
       },
       "clay": {
-        "wins": 82,
-        "losses": 45,
-        "winPercentage": 64.6
+        "wins": 86,
+        "losses": 47,
+        "winPercentage": 64.7
       },
       "grass": {
-        "wins": 36,
-        "losses": 19,
-        "winPercentage": 65.5
+        "wins": 43,
+        "losses": 20,
+        "winPercentage": 68.3
       }
     },
     "avatarUrl": "/images/players/aryna-sabalenka.jpg",
-    "bio": "Aryna Sabalenka is the WTA World No. 1, four-time Grand Slam champion, and back-to-back US Open champion (2024, 2025). Renowned for her devastating baseline firepower and competitive grit, she became the first woman to successfully defend the US Open singles crown since 2014.",
+    "bio": "As of September 20, 2026, Aryna Sabalenka is WTA World No. 1 with 5 Grand Slam titles (Australian Open 2023, 2024; Wimbledon 2026; US Open 2024, 2026), 20 career titles, and the 2026 Sunshine Double. Her thunderous baseline firepower was on full display capturing both Wimbledon and the US Open in 2026.",
     "playStyle": "Ultra-aggressive power hitter with one of the most powerful forehands and serves on the women tour.",
     "notableRivalries": [
       "Iga Swiatek",
@@ -1173,7 +1182,8 @@ export const INITIAL_PLAYERS: Player[] = [
         "status": "Resolved"
       }
     ],
-    "status": "active"
+    "status": "active",
+    "slamFinals": 7
   },
   {
     "id": "elena-rybakina",
@@ -1188,8 +1198,8 @@ export const INITIAL_PLAYERS: Player[] = [
     "heightCm": 184,
     "turnedPro": 2016,
     "plays": "Right-handed (two-handed backhand)",
-    "currentRank": 2,
-    "careerHighRank": 3,
+    "currentRank": 1,
+    "careerHighRank": 1,
     "careerTitles": 8,
     "grandSlams": 1,
     "slamBreakdown": {
@@ -1206,9 +1216,9 @@ export const INITIAL_PLAYERS: Player[] = [
     },
     "surfaceStats": {
       "hard": {
-        "wins": 195,
-        "losses": 92,
-        "winPercentage": 67.9
+        "wins": 209,
+        "losses": 98,
+        "winPercentage": 68.1
       },
       "clay": {
         "wins": 78,
@@ -1222,7 +1232,7 @@ export const INITIAL_PLAYERS: Player[] = [
       }
     },
     "avatarUrl": "/images/players/elena-rybakina.jpg",
-    "bio": "Wimbledon Ladies Singles champion and former World No. 3. Possesses one of the most clinical, reliable, and lethal serves in modern women tennis.",
+    "bio": "As of September 20, 2026, Elena Rybakina is World No. 4 with 8 career titles, the 2022 Wimbledon crown, and 2 Grand Slam finals. Her clinical, laser-accurate first delivery leads the WTA in aces and unreturned serve rate.",
     "playStyle": "Tall, composed power player with effortless ball striking and devastating ace-serving delivery.",
     "notableRivalries": [
       "Aryna Sabalenka",
@@ -1247,7 +1257,8 @@ export const INITIAL_PLAYERS: Player[] = [
         "status": "Resolved"
       }
     ],
-    "status": "active"
+    "status": "active",
+    "slamFinals": 2
   },
   {
     "id": "jessica-pegula",
@@ -1296,7 +1307,7 @@ export const INITIAL_PLAYERS: Player[] = [
       }
     },
     "avatarUrl": "/images/players/jessica-pegula.jpg",
-    "bio": "US Open singles finalist and two-time National Bank Open (Canadian Open) champion. Jessica Pegula is one of the most consistent and resilient competitors on the WTA Tour.",
+    "bio": "As of September 20, 2026, Jessica Pegula is World No. 5 with 6 career titles, two Canadian Open trophies, and the 2024 US Open final. A consummate competitor renowned for flat ball striking, sharp angles, and consistency.",
     "playStyle": "Clean, flat baseline ball striker taking balls early on the rise with textbook shot depth and pinpoint return placement.",
     "notableRivalries": [
       "Aryna Sabalenka",
@@ -1322,7 +1333,8 @@ export const INITIAL_PLAYERS: Player[] = [
         "status": "Rehabilitated"
       }
     ],
-    "status": "active"
+    "status": "active",
+    "slamFinals": 1
   },
   {
     "id": "coco-gauff",
@@ -1347,31 +1359,31 @@ export const INITIAL_PLAYERS: Player[] = [
       "wimbledon": 0,
       "usOpen": 1
     },
-    "prizeMoneyUsd": "$21,400,000",
+    "prizeMoneyUsd": "$22,800,000",
     "careerWinLoss": {
-      "wins": 228,
-      "losses": 98,
-      "winPercentage": 69.9
+      "wins": 242,
+      "losses": 102,
+      "winPercentage": 70.3
     },
     "surfaceStats": {
       "hard": {
-        "wins": 142,
-        "losses": 58,
-        "winPercentage": 71
+        "wins": 156,
+        "losses": 62,
+        "winPercentage": 71.6
       },
       "clay": {
-        "wins": 56,
-        "losses": 24,
-        "winPercentage": 70
+        "wins": 60,
+        "losses": 26,
+        "winPercentage": 69.8
       },
       "grass": {
-        "wins": 22,
-        "losses": 12,
-        "winPercentage": 64.7
+        "wins": 26,
+        "losses": 14,
+        "winPercentage": 65
       }
     },
     "avatarUrl": "/images/players/coco-gauff.jpg",
-    "bio": "US Open champion and WTA Finals champion, Coco Gauff is one of the most electrifying young icons in world sport. Known for her blazing court mobility and poise.",
+    "bio": "As of September 20, 2026, 22-year-old Coco Gauff is World No. 3 with 9 career titles, the 2023 US Open title, and 3 Grand Slam finals. She captured the 2026 Madrid Open and battled into the 2026 US Open final against Aryna Sabalenka.",
     "playStyle": "World-class athletic defender with superhuman recovery range, lightning first serve, and sharp backhand drives down the line.",
     "notableRivalries": [
       "Iga Swiatek",
@@ -1397,7 +1409,8 @@ export const INITIAL_PLAYERS: Player[] = [
         "status": "Resolved"
       }
     ],
-    "status": "active"
+    "status": "active",
+    "slamFinals": 3
   },
   {
     "id": "mirra-andreeva",
@@ -1413,7 +1426,7 @@ export const INITIAL_PLAYERS: Player[] = [
     "turnedPro": 2022,
     "plays": "Right-handed (two-handed backhand)",
     "currentRank": 5,
-    "careerHighRank": 16,
+    "careerHighRank": 5,
     "careerTitles": 1,
     "grandSlams": 0,
     "slamBreakdown": {
@@ -1446,7 +1459,7 @@ export const INITIAL_PLAYERS: Player[] = [
       }
     },
     "avatarUrl": "/images/players/mirra-andreeva.jpg",
-    "bio": "Young sensation who reached the Roland Garros semifinals after defeating Aryna Sabalenka. Won the Iasi Open and Silver Medal in Olympic doubles.",
+    "bio": "As of September 20, 2026, 19-year-old Mirra Andreeva is World No. 11 with 1 WTA title, an Olympic doubles silver medal, and a Roland Garros semifinal. Possesses extraordinary tennis IQ, court anticipation, and touch.",
     "playStyle": "Prodigious court vision, effortless direction change on both wings, sharp anticipation, and mature baseline poise.",
     "notableRivalries": [
       "Aryna Sabalenka",
@@ -1487,41 +1500,41 @@ export const INITIAL_PLAYERS: Player[] = [
     "heightCm": 176,
     "turnedPro": 2016,
     "plays": "Right-handed (two-handed backhand)",
-    "currentRank": 8,
+    "currentRank": 9,
     "careerHighRank": 1,
-    "careerTitles": 22,
-    "grandSlams": 5,
+    "careerTitles": 24,
+    "grandSlams": 6,
     "slamBreakdown": {
       "australianOpen": 0,
-      "rolandGarros": 4,
+      "rolandGarros": 5,
       "wimbledon": 0,
       "usOpen": 1
     },
-    "prizeMoneyUsd": "$33,500,000",
+    "prizeMoneyUsd": "$37,200,000",
     "careerWinLoss": {
-      "wins": 345,
-      "losses": 74,
-      "winPercentage": 82.3
+      "wins": 376,
+      "losses": 79,
+      "winPercentage": 82.6
     },
     "surfaceStats": {
       "hard": {
-        "wins": 178,
-        "losses": 46,
+        "wins": 198,
+        "losses": 51,
         "winPercentage": 79.5
       },
       "clay": {
-        "wins": 135,
-        "losses": 18,
-        "winPercentage": 88.2
+        "wins": 155,
+        "losses": 19,
+        "winPercentage": 89.1
       },
       "grass": {
-        "wins": 18,
-        "losses": 8,
-        "winPercentage": 69.2
+        "wins": 23,
+        "losses": 9,
+        "winPercentage": 71.9
       }
     },
     "avatarUrl": "/images/players/iga-swiatek.jpg",
-    "bio": "Iga Świątek has dominated women tennis with 4 Roland Garros crowns in 5 years, 5 Grand Slam titles overall, and over 120 weeks at World No. 1. Holds a modern 37-match winning streak.",
+    "bio": "As of September 20, 2026, Iga Świątek is World No. 2 with 6 Grand Slam singles titles (Roland Garros 2020, 2022, 2023, 2024, 2026; US Open 2022) and 24 career titles. Dominant on European clay, her heavy topspin forehand averages over 3,250 RPM.",
     "playStyle": "High-intensity baseline game with exceptional clay sliding, violent topspin forehand angles, and suffocating court position.",
     "notableRivalries": [
       "Aryna Sabalenka",
@@ -1555,7 +1568,8 @@ export const INITIAL_PLAYERS: Player[] = [
         "status": "Rehabilitated"
       }
     ],
-    "status": "active"
+    "status": "active",
+    "slamFinals": 6
   },
   {
     "id": "amanda-anisimova",
@@ -1570,7 +1584,7 @@ export const INITIAL_PLAYERS: Player[] = [
     "heightCm": 180,
     "turnedPro": 2016,
     "plays": "Right-handed (two-handed backhand)",
-    "currentRank": 10,
+    "currentRank": 11,
     "careerHighRank": 8,
     "careerTitles": 2,
     "grandSlams": 0,
@@ -1604,7 +1618,7 @@ export const INITIAL_PLAYERS: Player[] = [
       }
     },
     "avatarUrl": "/images/players/amanda-anisimova.jpg",
-    "bio": "Amanda Anisimova is an American Grand Slam finalist and WTA Top 10 star. She made an exhilarating run to the 2025 US Open final on Arthur Ashe Stadium, pushing Aryna Sabalenka in a fierce two-set championship duel.",
+    "bio": "As of September 20, 2026, Amanda Anisimova is World No. 12 with 2 career titles and a Grand Slam final at the 2025 US Open. Known for her clean, explosive groundstrokes from both wings, she completed an inspiring surge into the world elite.",
     "playStyle": "Ultra-clean, early-take baseline ball striker with extraordinary timing, flat groundstroke penetration on both wings, and aggressive return positioning.",
     "notableRivalries": [
       "Aryna Sabalenka",
@@ -1630,7 +1644,8 @@ export const INITIAL_PLAYERS: Player[] = [
         "status": "Rehabilitated"
       }
     ],
-    "status": "active"
+    "status": "active",
+    "slamFinals": 1
   },
   {
     "id": "jasmine-paolini",
@@ -1645,7 +1660,7 @@ export const INITIAL_PLAYERS: Player[] = [
     "heightCm": 163,
     "turnedPro": 2011,
     "plays": "Right-handed (two-handed backhand)",
-    "currentRank": 21,
+    "currentRank": 20,
     "careerHighRank": 4,
     "careerTitles": 2,
     "grandSlams": 0,
@@ -1679,7 +1694,7 @@ export const INITIAL_PLAYERS: Player[] = [
       }
     },
     "avatarUrl": "/images/players/jasmine-paolini.jpg",
-    "bio": "Reached both the Roland Garros and Wimbledon singles finals, won the WTA 1000 Dubai Duty Free Tennis Championships, and captured Olympic Gold in women doubles.",
+    "bio": "As of September 20, 2026, 30-year-old Jasmine Paolini is World No. 6 with 2 WTA titles, the Dubai 1000 trophy, two Grand Slam finals (Roland Garros 2024, Wimbledon 2024), and Olympic Gold in doubles.",
     "playStyle": "Relentless offensive baseline tempo with rapid footwork, explosive forehand whip, and exceptional net agility.",
     "notableRivalries": [
       "Iga Swiatek",
@@ -1705,7 +1720,8 @@ export const INITIAL_PLAYERS: Player[] = [
         "status": "Resolved"
       }
     ],
-    "status": "active"
+    "status": "active",
+    "slamFinals": 2
   },
   {
     "id": "emma-navarro",
@@ -1720,7 +1736,7 @@ export const INITIAL_PLAYERS: Player[] = [
     "heightCm": 170,
     "turnedPro": 2022,
     "plays": "Right-handed (two-handed backhand)",
-    "currentRank": 27,
+    "currentRank": 24,
     "careerHighRank": 8,
     "careerTitles": 1,
     "grandSlams": 0,
@@ -1754,7 +1770,7 @@ export const INITIAL_PLAYERS: Player[] = [
       }
     },
     "avatarUrl": "/images/players/emma-navarro.jpg",
-    "bio": "US Open semifinalist and Hobart champion. Emma Navarro completed a meteoric rise from NCAA college tennis to the WTA Top 10 with wins over Coco Gauff and Aryna Sabalenka.",
+    "bio": "As of September 20, 2026, Emma Navarro is World No. 8 with 1 WTA title and back-to-back Grand Slam semifinal appearances. Known for tactical clarity, precise counter-punching, and remarkable court coverage.",
     "playStyle": "Masterful court craftsman with calm temperament, crisp counter-punching depth, deceptive slice changes, and pinpoint accuracy.",
     "notableRivalries": [
       "Coco Gauff",
@@ -1795,7 +1811,7 @@ export const INITIAL_PLAYERS: Player[] = [
     "heightCm": 178,
     "turnedPro": 2014,
     "plays": "Right-handed (two-handed backhand)",
-    "currentRank": 29,
+    "currentRank": 43,
     "careerHighRank": 2,
     "careerTitles": 8,
     "grandSlams": 2,
@@ -1815,7 +1831,7 @@ export const INITIAL_PLAYERS: Player[] = [
       "hard": {
         "wins": 135,
         "losses": 70,
-        "winPercentage": 65.8
+        "winPercentage": 65.9
       },
       "clay": {
         "wins": 75,
@@ -1829,7 +1845,7 @@ export const INITIAL_PLAYERS: Player[] = [
       }
     },
     "avatarUrl": "/images/players/barbora-krejcikova.jpg",
-    "bio": "Two-time Grand Slam singles champion (Roland Garros 2021, Wimbledon 2024) and former World No. 2. Renowned for supreme tactical versatility, elegant slice transitions, and doubles mastery.",
+    "bio": "As of September 20, 2026, Barbora Krejcikova is World No. 10 with 8 career titles, two Grand Slam singles crowns (Roland Garros 2021, Wimbledon 2024), and a Career Golden Slam in doubles. Renowned for supreme tactical artistry.",
     "playStyle": "All-court tactical maestro with exceptional touch, crafty changes of pace, fluid net approaches, and punishing precision backhands.",
     "notableRivalries": [
       "Iga Swiatek",
@@ -1847,7 +1863,8 @@ export const INITIAL_PLAYERS: Player[] = [
         "status": "Resolved"
       }
     ],
-    "status": "active"
+    "status": "active",
+    "slamFinals": 2
   },
   {
     "id": "zheng-qinwen",
@@ -1862,7 +1879,7 @@ export const INITIAL_PLAYERS: Player[] = [
     "heightCm": 178,
     "turnedPro": 2018,
     "plays": "Right-handed (two-handed backhand)",
-    "currentRank": 51,
+    "currentRank": 54,
     "careerHighRank": 5,
     "careerTitles": 4,
     "grandSlams": 0,
@@ -1896,7 +1913,7 @@ export const INITIAL_PLAYERS: Player[] = [
       }
     },
     "avatarUrl": "/images/players/zheng-qinwen.jpg",
-    "bio": "Paris Olympic Singles Gold Medalist and Australian Open finalist. \"Queenwen\" is celebrated for possessing the highest ace count on the WTA Tour and blistering groundstroke power.",
+    "bio": "As of September 20, 2026, Zheng Qinwen is World No. 7 with 4 career titles, the Paris Olympic Gold Medal, and the 2024 Australian Open final. Celebrated for elite serving metrics and heavy groundstroke depth.",
     "playStyle": "Power baseline game built around a massive first serve, heavy topspin forehand strikes, and aggressive return positioning.",
     "notableRivalries": [
       "Aryna Sabalenka",
@@ -1922,7 +1939,8 @@ export const INITIAL_PLAYERS: Player[] = [
         "status": "Resolved"
       }
     ],
-    "status": "active"
+    "status": "active",
+    "slamFinals": 1
   },
   {
     "id": "danielle-collins",
@@ -1937,7 +1955,7 @@ export const INITIAL_PLAYERS: Player[] = [
     "heightCm": 178,
     "turnedPro": 2016,
     "plays": "Right-handed (two-handed backhand)",
-    "currentRank": 52,
+    "currentRank": 9,
     "careerHighRank": 7,
     "careerTitles": 4,
     "grandSlams": 0,
@@ -1971,7 +1989,7 @@ export const INITIAL_PLAYERS: Player[] = [
       }
     },
     "avatarUrl": "/images/players/danielle-collins.jpg",
-    "bio": "Miami Open WTA 1000 champion, Charleston Open champion, and Australian Open finalist. \"Danimal\" is celebrated for her ferocious competitor spirit and lightning backhand drive.",
+    "bio": "As of September 20, 2026, Danielle Collins is World No. 9 with 4 career titles, the 2024 Miami Open 1000 crown, and the 2022 Australian Open final. 'Danimal' plays with explosive aggression and fearless shotmaking.",
     "playStyle": "Fearless first-strike power baseline hitter who attacks second serves and hammers punishing two-handed backhands down the line.",
     "notableRivalries": [
       "Iga Swiatek",
@@ -1997,7 +2015,8 @@ export const INITIAL_PLAYERS: Player[] = [
         "status": "Rehabilitated"
       }
     ],
-    "status": "active"
+    "status": "active",
+    "slamFinals": 1
   },
   {
     "id": "paula-badosa",
@@ -2012,7 +2031,7 @@ export const INITIAL_PLAYERS: Player[] = [
     "heightCm": 180,
     "turnedPro": 2015,
     "plays": "Right-handed (two-handed backhand)",
-    "currentRank": 54,
+    "currentRank": 59,
     "careerHighRank": 2,
     "careerTitles": 4,
     "grandSlams": 0,
@@ -2046,7 +2065,7 @@ export const INITIAL_PLAYERS: Player[] = [
       }
     },
     "avatarUrl": "/images/players/paula-badosa.jpg",
-    "bio": "Former World No. 2, Indian Wells 1000 champion, and Washington DC champion. Paula Badosa staged an inspiring comeback into the world elite following back injury recovery.",
+    "bio": "As of September 20, 2026, Paula Badosa is World No. 13 with 4 career titles and the Indian Wells 1000 shield. The Spaniard engineered a heroic resurgence into the WTA Top 15 following her spine rehabilitation.",
     "playStyle": "Power baseline game with strong kick-serve placement, heavy forehand groundstrokes, and aggressive baseline court position.",
     "notableRivalries": [
       "Aryna Sabalenka",

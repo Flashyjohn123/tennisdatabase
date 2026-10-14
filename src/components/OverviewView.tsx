@@ -1,27 +1,36 @@
-import React from 'react';
-import { Player, Tournament, Match } from '../types/tennis';
+import React, { useState, useEffect, useMemo } from 'react';
+import { Player, Tournament, Match, Tour } from '../types/tennis';
 import { SeasonKey, SEASONS_DATA } from '../services/seasonThemeService';
 import { useLiveFeed } from '../services/liveFeedEngine';
+import { favoritesService } from '../services/favoritesService';
 import { 
   Trophy, 
   ArrowRight, 
   User, 
   Swords, 
-  ArrowUpRight,
-  Activity,
-  Layers,
-  Radio,
-  Clock,
-  ExternalLink,
-  Target
+  ArrowUpRight, 
+  Activity, 
+  Layers, 
+  Radio, 
+  Clock, 
+  ExternalLink, 
+  Target,
+  Star,
+  ChevronLeft,
+  ChevronRight,
+  RefreshCw,
+  Zap
 } from 'lucide-react';
 import { PlayerCard } from './PlayerCard';
+import { MiniStatGauge, SurfaceGaugePie } from './charts/PieChart';
+import { useLiveScoreboard } from '../services/liveScoreboardService';
 
 interface OverviewViewProps {
   players: Player[];
   tournaments: Tournament[];
   matches: Match[];
   currentSeason?: SeasonKey;
+  selectedTour?: Tour | 'ALL';
   onSelectPlayer: (player: Player) => void;
   onComparePlayer: (player: Player) => void;
   onNavigateTab: (tab: string) => void;
@@ -74,19 +83,60 @@ export const OverviewView: React.FC<OverviewViewProps> = ({
   tournaments,
   matches,
   currentSeason = 'hard',
+  selectedTour = 'ALL',
   onSelectPlayer,
   onComparePlayer,
   onNavigateTab,
 }) => {
   const { allItems } = useLiveFeed();
+  const [favoriteIds, setFavoriteIds] = useState<string[]>(() => favoritesService.getFavorites());
+
+  useEffect(() => {
+    setFavoriteIds(favoritesService.getFavorites());
+    return favoritesService.subscribe((favs) => {
+      setFavoriteIds(favs);
+    });
+  }, []);
+
+  const favoritePlayers = useMemo(() => {
+    return favoriteIds
+      .map((id) => players.find((p) => p.id === id))
+      .filter((p): p is Player => Boolean(p));
+  }, [players, favoriteIds]);
+
   const atpPlayers = players.filter((p) => p.tour === 'ATP');
   const wtaPlayers = players.filter((p) => p.tour === 'WTA');
+
+  const displayedPlayers = useMemo(() => {
+    if (selectedTour === 'ALL') return players.slice(0, 6);
+    return players.filter((p) => p.tour === selectedTour).slice(0, 6);
+  }, [players, selectedTour]);
 
   const atpNo1 = atpPlayers.find((p) => p.currentRank === 1) || atpPlayers[0];
   const wtaNo1 = wtaPlayers.find((p) => p.currentRank === 1) || wtaPlayers[0];
 
   const totalSlamsTracked = players.reduce((acc, p) => acc + p.grandSlams, 0);
   const featuredMatch = matches[0];
+
+  // ESPN Live Tournament Scoreboard
+  const { matches: espnMatches, isLoading: isScoreboardLoading, refresh: refreshScoreboard } = useLiveScoreboard();
+  const [scoreboardTab, setScoreboardTab] = useState<'live' | 'championship'>('live');
+  const [activeScoreIndex, setActiveScoreIndex] = useState<number>(0);
+
+  const filteredEspnMatches = useMemo(() => {
+    let pool = espnMatches;
+    if (selectedTour !== 'ALL') {
+      pool = pool.filter(m => m.tour === selectedTour);
+    }
+    const live = pool.filter(m => m.isLive);
+    const recent = pool.filter(m => m.state === 'post');
+    return [...live, ...recent];
+  }, [espnMatches, selectedTour]);
+
+  const currentLiveMatch = filteredEspnMatches.length > 0
+    ? filteredEspnMatches[activeScoreIndex % filteredEspnMatches.length]
+    : null;
+
   const activeSeasonData = SEASONS_DATA[currentSeason];
   const safeDateRange = activeSeasonData.dateRangeText.replace(/[\u2013\u2014]/g, '-');
 
@@ -206,8 +256,173 @@ export const OverviewView: React.FC<OverviewViewProps> = ({
         </div>
       </div>
 
-      {/* SECTION 2: Marquee Matchup & Center Court Apex Scoreboard */}
-      {featuredMatch && (
+      {/* SECTION: Tracked Athletes / Watchlist */}
+      {favoritePlayers.length > 0 && (
+        <div className="double-bezel-card-outer">
+          <div className="double-bezel-card-inner p-5 sm:p-6 relative overflow-hidden bg-gradient-to-b from-[#0f141d] via-[#0b0f16] to-[#080b0f]">
+            <div className="absolute inset-x-0 top-0 h-[1px] bg-gradient-to-r from-transparent via-amber-400/30 to-transparent pointer-events-none" />
+            
+            {/* Ambient amber telemetry glow */}
+            <div className="absolute -top-16 -right-16 w-60 h-60 rounded-full bg-amber-500/10 blur-3xl pointer-events-none" />
+
+            {/* Header */}
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-4 mb-4 border-b border-white/[0.06] relative z-10">
+              <div className="flex items-center gap-2.5">
+                <div className="w-8 h-8 rounded-lg bg-amber-400/10 border border-amber-400/25 flex items-center justify-center text-amber-400 shadow-[0_0_12px_rgba(251,191,36,0.15)]">
+                  <Star className="w-4 h-4 fill-amber-400 text-amber-400" />
+                </div>
+                <div>
+                  <div className="flex items-center gap-2">
+                    <h2 className="font-display font-semibold text-lg sm:text-xl text-white tracking-tight">
+                      Tracked Athletes / Watchlist
+                    </h2>
+                    <span className="font-mono text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-full bg-amber-400/15 text-amber-300 border border-amber-400/30">
+                      {favoritePlayers.length} {favoritePlayers.length === 1 ? 'Player' : 'Players'}
+                    </span>
+                  </div>
+                  <p className="font-mono text-[10px] text-white/40 uppercase tracking-widest mt-0.5">
+                    Personalized Telemetry & Grand Slam Dossiers
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-2">
+                <button
+                  type="button"
+                  onClick={() => onNavigateTab('players')}
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/[0.03] hover:bg-white/[0.07] text-white/70 hover:text-white text-xs font-mono border border-white/[0.08] hover:border-white/20 transition-all group"
+                >
+                  <span>Filter Watchlist in Database</span>
+                  <ArrowRight className="w-3 h-3 text-white/40 group-hover:text-white transition-colors" />
+                </button>
+              </div>
+            </div>
+
+            {/* Athletes Cards: Horizontal scroller on small screens, compact responsive grid on tablet/desktop */}
+            <div className="flex sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3.5 overflow-x-auto sm:overflow-visible pb-2 sm:pb-0 custom-scrollbar -mx-1 px-1 relative z-10">
+              {favoritePlayers.map((player) => {
+                const countryCode = getCountryCode(player.country);
+                const initials = getPlayerInitials(player.name);
+
+                return (
+                  <div
+                    key={player.id}
+                    className="min-w-[240px] sm:min-w-0 bg-[#0c1017]/90 hover:bg-[#101520] border border-white/[0.07] hover:border-amber-400/30 rounded-xl p-3.5 flex flex-col justify-between transition-all duration-200 group shadow-md"
+                  >
+                    <div>
+                      {/* Top Row: Avatar, Country, Tour & Rank */}
+                      <div className="flex items-center justify-between mb-3">
+                        <div className="flex items-center gap-2.5">
+                          <div className="relative w-9 h-9 rounded-lg overflow-hidden border border-white/[0.1] bg-black/60 shrink-0 shadow">
+                            {player.avatarUrl ? (
+                              <img
+                                src={player.avatarUrl}
+                                alt={player.name}
+                                className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
+                                loading="lazy"
+                              />
+                            ) : (
+                              <div className="w-full h-full flex items-center justify-center font-mono text-[11px] text-amber-300 font-semibold">
+                                {initials}
+                              </div>
+                            )}
+                          </div>
+
+                          <div>
+                            <div className="flex items-center gap-1.5">
+                              <span className="font-mono text-xs font-semibold text-white/90">
+                                {countryCode}
+                              </span>
+                              {player.flag && (
+                                <span className="text-xs">{player.flag}</span>
+                              )}
+                              <span className="w-1 h-1 rounded-full bg-white/20" />
+                              <span className="font-mono text-[9px] uppercase px-1.5 py-0.2 rounded bg-white/[0.04] text-white/50 border border-white/[0.06]">
+                                {player.tour}
+                              </span>
+                            </div>
+                            <span className="font-mono text-[9px] text-white/35 block">
+                              Age {player.age}
+                            </span>
+                          </div>
+                        </div>
+
+                        {player.currentRank > 0 && (
+                          <div className="px-2 py-0.5 rounded-full bg-amber-400/10 border border-amber-400/25">
+                            <span className="font-mono text-[11px] font-semibold text-amber-300">
+                              #{player.currentRank}
+                            </span>
+                          </div>
+                        )}
+                      </div>
+
+                      {/* Name */}
+                      <h3
+                        onClick={() => onSelectPlayer(player)}
+                        className="font-display font-semibold text-sm sm:text-base text-white group-hover:text-amber-300 transition-colors cursor-pointer tracking-tight truncate"
+                      >
+                        {player.name}
+                      </h3>
+
+                      <p className="text-[11px] text-white/40 truncate mt-0.5 font-normal">
+                        {player.plays}
+                      </p>
+
+                      {/* Micro Stats */}
+                      <div className="grid grid-cols-2 gap-2 mt-3 pt-2.5 border-y border-white/[0.05] text-center">
+                        <div>
+                          <div className="font-mono text-xs font-semibold text-white tabular-nums">
+                            {player.grandSlams}
+                          </div>
+                          <div className="font-mono text-[8px] uppercase tracking-wider text-white/35">
+                            Slams
+                          </div>
+                        </div>
+                        <div>
+                          <div className="font-mono text-xs font-semibold text-amber-300 tabular-nums">
+                            {player.careerWinLoss.winPercentage}%
+                          </div>
+                          <div className="font-mono text-[8px] uppercase tracking-wider text-white/35">
+                            Win Rate
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Quick Link Action Button & Star Toggle */}
+                    <div className="pt-3 mt-3 border-t border-white/[0.05] flex items-center justify-between gap-2">
+                      <button
+                        type="button"
+                        onClick={() => onSelectPlayer(player)}
+                        className="flex-1 flex items-center justify-between pl-3 pr-2 py-1.5 rounded-lg bg-white/[0.03] hover:bg-white/[0.08] text-white text-[11px] font-medium border border-white/[0.06] hover:border-white/15 transition-all group/btn"
+                      >
+                        <span>Open Dossier</span>
+                        <ArrowUpRight className="w-3 h-3 text-white/60 group-hover/btn:text-white" />
+                      </button>
+
+                      <button
+                        type="button"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          favoritesService.toggleFavorite(player.id);
+                        }}
+                        className="w-7 h-7 rounded-lg flex items-center justify-center bg-amber-400/10 hover:bg-amber-400/20 text-amber-300 border border-amber-400/30 transition-all shrink-0"
+                        title="Remove from watchlist"
+                        aria-label={`Remove ${player.name} from watchlist`}
+                      >
+                        <Star className="w-3 h-3 fill-amber-400 text-amber-400" />
+                      </button>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* SECTION 2: Center Court Scoreboard (Dual Mode: Live Circuit & Championship Marquee) */}
+      {(currentLiveMatch || featuredMatch) && (
         <div className="rounded-2xl bg-[#090b10] border border-white/[0.08] p-5 sm:p-7 relative overflow-hidden shadow-xl">
           {/* Dramatic Grand Slam Stadium Action Background */}
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -221,100 +436,296 @@ export const OverviewView: React.FC<OverviewViewProps> = ({
 
           <div className="absolute inset-x-0 top-0 h-[1px] bg-gradient-to-r from-transparent via-theme-accent/20 to-transparent pointer-events-none" />
 
-          {/* Match Context Header */}
-          <div className="flex items-center justify-between pb-3 mb-4 border-b border-white/[0.06] relative z-10">
-            <div className="flex items-center gap-2">
-              <span className="w-1.5 h-1.5 rounded-full bg-rose-400" />
-              <span className="font-mono text-xs uppercase font-semibold tracking-widest text-white/80">
-                Center Court Marquee Matchup
-              </span>
+          {/* Mode Switcher & Context Header */}
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-3 mb-4 border-b border-white/[0.06] relative z-10 gap-3">
+            <div className="flex items-center gap-3">
+              {filteredEspnMatches.length > 0 && (
+                <div className="flex items-center p-0.5 rounded-lg bg-white/[0.03] border border-white/[0.08]">
+                  <button
+                    type="button"
+                    onClick={() => setScoreboardTab('live')}
+                    className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-md text-[11px] font-mono font-medium transition-all ${
+                      scoreboardTab === 'live'
+                        ? 'bg-theme-accent/15 text-theme-accent border border-theme-accent/30 shadow-[0_0_12px_rgba(251,191,36,0.15)]'
+                        : 'text-white/40 hover:text-white/80'
+                    }`}
+                  >
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                    <span>Live Circuit ({filteredEspnMatches.length})</span>
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setScoreboardTab('championship')}
+                    className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-md text-[11px] font-mono font-medium transition-all ${
+                      scoreboardTab === 'championship'
+                        ? 'bg-theme-accent/15 text-theme-accent border border-theme-accent/30 shadow-[0_0_12px_rgba(251,191,36,0.15)]'
+                        : 'text-white/40 hover:text-white/80'
+                    }`}
+                  >
+                    <Trophy className="w-3 h-3 text-amber-400" />
+                    <span>Grand Slam Final</span>
+                  </button>
+                </div>
+              )}
+
+              {filteredEspnMatches.length === 0 && (
+                <div className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-rose-400" />
+                  <span className="font-mono text-xs uppercase font-semibold tracking-widest text-white/80">
+                    Center Court Marquee Matchup
+                  </span>
+                </div>
+              )}
             </div>
 
+            {/* Context Controls */}
             <div className="flex items-center gap-2 text-[10px] font-mono">
-              <span className="px-2 py-0.5 rounded bg-white/[0.03] border border-white/[0.08] text-white/70">
-                {featuredMatch.surface} Court
-              </span>
-              <span className="text-white/40 hidden sm:inline">{featuredMatch.tournamentName}</span>
+              {scoreboardTab === 'live' && currentLiveMatch && (
+                <>
+                  <button
+                    type="button"
+                    onClick={refreshScoreboard}
+                    disabled={isScoreboardLoading}
+                    title="Refresh Live Scores"
+                    className="p-1 rounded bg-white/[0.03] hover:bg-white/[0.08] text-white/50 hover:text-white transition border border-white/[0.08]"
+                  >
+                    <RefreshCw className={`w-3 h-3 ${isScoreboardLoading ? 'animate-spin text-theme-accent' : ''}`} />
+                  </button>
+
+                  <div className="flex items-center gap-1 bg-white/[0.03] px-2 py-0.5 rounded border border-white/[0.08]">
+                    <button
+                      type="button"
+                      onClick={() => setActiveScoreIndex(prev => (prev > 0 ? prev - 1 : filteredEspnMatches.length - 1))}
+                      className="text-white/50 hover:text-white"
+                    >
+                      <ChevronLeft className="w-3 h-3" />
+                    </button>
+                    <span className="text-white/70 px-1">
+                      {activeScoreIndex + 1} / {filteredEspnMatches.length}
+                    </span>
+                    <button
+                      type="button"
+                      onClick={() => setActiveScoreIndex(prev => (prev + 1) % filteredEspnMatches.length)}
+                      className="text-white/50 hover:text-white"
+                    >
+                      <ChevronRight className="w-3 h-3" />
+                    </button>
+                  </div>
+
+                  <span className="px-2 py-0.5 rounded bg-white/[0.03] border border-white/[0.08] text-white/70">
+                    {currentLiveMatch.tour} • {currentLiveMatch.surface} Court
+                  </span>
+                </>
+              )}
+
+              {scoreboardTab === 'championship' && featuredMatch && (
+                <>
+                  <span className="px-2 py-0.5 rounded bg-white/[0.03] border border-white/[0.08] text-white/70">
+                    {featuredMatch.surface} Court
+                  </span>
+                  <span className="text-white/40 hidden sm:inline">{featuredMatch.tournamentName}</span>
+                </>
+              )}
             </div>
           </div>
 
           {/* Scoreboard Presentation Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center relative z-10">
-            
-            {/* Scorecard Display */}
-            <div className="lg:col-span-8 bg-black/60 rounded-xl p-4 sm:p-5 border border-white/[0.08] backdrop-blur-sm">
-              <div className="space-y-4">
-                
-                {/* Competitor 1 */}
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-3">
-                    <span className="font-display font-semibold text-lg sm:text-xl text-white tracking-tight">
-                      {featuredMatch.player1Name}
-                    </span>
-                    {featuredMatch.winnerId === featuredMatch.player1Id && (
-                      <span className="font-mono text-[9px] uppercase tracking-widest text-theme-accent px-1.5 py-0.2 rounded border border-theme-accent/25">
-                        Winner
+          {scoreboardTab === 'live' && currentLiveMatch ? (
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center relative z-10">
+              
+              {/* Scorecard Display */}
+              <div className="lg:col-span-8 bg-black/60 rounded-xl p-4 sm:p-5 border border-white/[0.08] backdrop-blur-sm">
+                <div className="space-y-4">
+                  
+                  {/* Competitor 1 */}
+                  <div className="flex items-center justify-between gap-4">
+                    <div className="flex items-center gap-3 min-w-0">
+                      <span className="font-display font-semibold text-lg sm:text-xl text-white tracking-tight truncate">
+                        {currentLiveMatch.player1.name}
                       </span>
+                      {currentLiveMatch.player1.winner && (
+                        <span className="font-mono text-[9px] uppercase tracking-widest text-emerald-400 bg-emerald-500/10 px-1.5 py-0.5 rounded border border-emerald-500/25 shrink-0">
+                          Winner
+                        </span>
+                      )}
+                    </div>
+                    {/* Set Scores */}
+                    <div className="flex items-center gap-1.5 shrink-0">
+                      {currentLiveMatch.player1.sets.map((setVal, idx) => {
+                        const oppSet = currentLiveMatch.player2.sets[idx] ?? 0;
+                        const isWon = setVal > oppSet;
+                        return (
+                          <span
+                            key={idx}
+                            className={`w-7 h-7 sm:w-8 sm:h-8 flex items-center justify-center font-mono font-bold text-xs sm:text-sm rounded-lg border tabular-nums ${
+                              isWon
+                                ? 'bg-theme-accent/15 text-theme-accent border-theme-accent/40 shadow-[0_0_8px_rgba(251,191,36,0.2)]'
+                                : 'bg-white/[0.03] text-white/70 border-white/[0.08]'
+                            }`}
+                          >
+                            {setVal}
+                          </span>
+                        );
+                      })}
+                    </div>
+                  </div>
+
+                  {/* Competitor 2 */}
+                  <div className="flex items-center justify-between gap-4 border-t border-white/[0.05] pt-3">
+                    <div className="flex items-center gap-3 min-w-0">
+                      <span className="font-display font-semibold text-lg sm:text-xl text-white/90 tracking-tight truncate">
+                        {currentLiveMatch.player2.name}
+                      </span>
+                      {currentLiveMatch.player2.winner && (
+                        <span className="font-mono text-[9px] uppercase tracking-widest text-emerald-400 bg-emerald-500/10 px-1.5 py-0.5 rounded border border-emerald-500/25 shrink-0">
+                          Winner
+                        </span>
+                      )}
+                    </div>
+                    {/* Set Scores */}
+                    <div className="flex items-center gap-1.5 shrink-0">
+                      {currentLiveMatch.player2.sets.map((setVal, idx) => {
+                        const oppSet = currentLiveMatch.player1.sets[idx] ?? 0;
+                        const isWon = setVal > oppSet;
+                        return (
+                          <span
+                            key={idx}
+                            className={`w-7 h-7 sm:w-8 sm:h-8 flex items-center justify-center font-mono font-bold text-xs sm:text-sm rounded-lg border tabular-nums ${
+                              isWon
+                                ? 'bg-theme-accent/15 text-theme-accent border-theme-accent/40 shadow-[0_0_8px_rgba(251,191,36,0.2)]'
+                                : 'bg-white/[0.03] text-white/70 border-white/[0.08]'
+                            }`}
+                          >
+                            {setVal}
+                          </span>
+                        );
+                      })}
+                    </div>
+                  </div>
+
+                </div>
+
+                {/* Score Meta Bar */}
+                <div className="mt-4 pt-3 border-t border-white/[0.06] flex flex-wrap items-center justify-between gap-2">
+                  <div className="flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
+                    <span className="font-mono text-[10px] uppercase tracking-wider text-white/60">
+                      {currentLiveMatch.tournamentName} • {currentLiveMatch.round}
+                    </span>
+                  </div>
+                  <span className="font-mono tabular-nums font-bold text-xs sm:text-sm text-theme-accent tracking-widest">
+                    {currentLiveMatch.status}
+                  </span>
+                </div>
+              </div>
+
+              {/* Tournament Telemetry Column */}
+              <div className="lg:col-span-4 flex flex-col justify-between h-full space-y-4">
+                <div>
+                  <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-white/[0.03] border border-white/[0.08] text-[10px] font-mono text-white/60 mb-2">
+                    <Zap className="w-3 h-3 text-amber-400" />
+                    <span>ESPN Live Feed Stream</span>
+                  </div>
+                  <p className="text-xs text-white/80 leading-relaxed font-sans">
+                    Live match updates from {currentLiveMatch.tournamentName}. Real-time set progression and match scoring.
+                  </p>
+                </div>
+
+                <div className="space-y-2">
+                  <button
+                    type="button"
+                    onClick={() => onNavigateTab('tournaments')}
+                    className="inline-flex items-center justify-between w-full pl-4 pr-2.5 py-2 rounded-xl bg-white/[0.04] hover:bg-white/[0.08] text-white text-xs font-medium border border-white/[0.08] hover:border-white/20 transition-all group backdrop-blur-sm"
+                  >
+                    <span>View Tournament Schedule & Draws</span>
+                    <div className="w-6 h-6 rounded-full bg-white/10 group-hover:bg-theme-accent group-hover:text-black flex items-center justify-center transition-all">
+                      <ArrowUpRight className="w-3 h-3" />
+                    </div>
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => onNavigateTab('matches')}
+                    className="inline-flex items-center justify-between w-full pl-4 pr-2.5 py-2 rounded-xl bg-white/[0.02] hover:bg-white/[0.06] text-white/70 hover:text-white text-xs font-mono border border-white/[0.05] transition-all"
+                  >
+                    <span>Championship Log</span>
+                    <ArrowRight className="w-3 h-3 text-white/40" />
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          ) : (
+            /* Grand Slam Finals Fallback Card */
+            featuredMatch && (
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center relative z-10">
+                <div className="lg:col-span-8 bg-black/60 rounded-xl p-4 sm:p-5 border border-white/[0.08] backdrop-blur-sm">
+                  <div className="space-y-4">
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-3">
+                        <span className="font-display font-semibold text-lg sm:text-xl text-white tracking-tight">
+                          {featuredMatch.player1Name}
+                        </span>
+                        {featuredMatch.winnerId === featuredMatch.player1Id && (
+                          <span className="font-mono text-[9px] uppercase tracking-widest text-theme-accent px-1.5 py-0.2 rounded border border-theme-accent/25">
+                            Winner
+                          </span>
+                        )}
+                      </div>
+                      <span className="font-mono text-xs text-white/40">Competitor 1</span>
+                    </div>
+
+                    <div className="flex items-center justify-between border-t border-white/[0.05] pt-3">
+                      <div className="flex items-center gap-3">
+                        <span className="font-display font-semibold text-lg sm:text-xl text-white/80 tracking-tight">
+                          {featuredMatch.player2Name}
+                        </span>
+                        {featuredMatch.winnerId === featuredMatch.player2Id && (
+                          <span className="font-mono text-[9px] uppercase tracking-widest text-theme-accent px-1.5 py-0.2 rounded border border-theme-accent/25">
+                            Winner
+                          </span>
+                        )}
+                      </div>
+                      <span className="font-mono text-xs text-white/40">Competitor 2</span>
+                    </div>
+                  </div>
+
+                  <div className="mt-4 pt-3 border-t border-white/[0.06] flex flex-wrap items-center justify-between gap-2">
+                    <span className="font-mono text-[10px] uppercase tracking-wider text-white/40">
+                      {featuredMatch.round} • Final Sets
+                    </span>
+                    <span className="font-mono tabular-nums font-bold text-base sm:text-lg text-theme-accent tracking-widest">
+                      {featuredMatch.score}
+                    </span>
+                  </div>
+                </div>
+
+                <div className="lg:col-span-4 flex flex-col justify-between h-full space-y-4">
+                  <div>
+                    {featuredMatch.headline && (
+                      <p className="text-xs text-white/80 italic mb-2 leading-relaxed font-serif">
+                        "{featuredMatch.headline}"
+                      </p>
+                    )}
+                    {featuredMatch.highlights && (
+                      <p className="text-[11px] text-white/45 leading-relaxed font-sans">
+                        {featuredMatch.highlights}
+                      </p>
                     )}
                   </div>
-                  <span className="font-mono text-xs text-white/40">Competitor 1</span>
+
+                  <button
+                    onClick={() => onNavigateTab('matches')}
+                    className="inline-flex items-center justify-between w-full pl-4 pr-2.5 py-2 rounded-xl bg-white/[0.04] hover:bg-white/[0.08] text-white text-xs font-medium border border-white/[0.08] hover:border-white/20 transition-all group backdrop-blur-sm"
+                  >
+                    <span>Championship Match Telemetry</span>
+                    <div className="w-6 h-6 rounded-full bg-white/10 group-hover:bg-theme-accent group-hover:text-black flex items-center justify-center transition-all">
+                      <ArrowUpRight className="w-3 h-3" />
+                    </div>
+                  </button>
                 </div>
-
-                {/* Competitor 2 */}
-                <div className="flex items-center justify-between border-t border-white/[0.05] pt-3">
-                  <div className="flex items-center gap-3">
-                    <span className="font-display font-semibold text-lg sm:text-xl text-white/80 tracking-tight">
-                      {featuredMatch.player2Name}
-                    </span>
-                    {featuredMatch.winnerId === featuredMatch.player2Id && (
-                      <span className="font-mono text-[9px] uppercase tracking-widest text-theme-accent px-1.5 py-0.2 rounded border border-theme-accent/25">
-                        Winner
-                      </span>
-                    )}
-                  </div>
-                  <span className="font-mono text-xs text-white/40">Competitor 2</span>
-                </div>
-
               </div>
-
-              {/* Final Score Bar */}
-              <div className="mt-4 pt-3 border-t border-white/[0.06] flex flex-wrap items-center justify-between gap-2">
-                <span className="font-mono text-[10px] uppercase tracking-wider text-white/40">
-                  {featuredMatch.round} • Final Sets
-                </span>
-                <span className="font-mono tabular-nums font-bold text-base sm:text-lg text-theme-accent tracking-widest">
-                  {featuredMatch.score}
-                </span>
-              </div>
-            </div>
-
-            {/* Match Editorial & Telemetry Trigger */}
-            <div className="lg:col-span-4 flex flex-col justify-between h-full space-y-4">
-              <div>
-                {featuredMatch.headline && (
-                  <p className="text-xs text-white/80 italic mb-2 leading-relaxed font-serif">
-                    "{featuredMatch.headline}"
-                  </p>
-                )}
-                {featuredMatch.highlights && (
-                  <p className="text-[11px] text-white/45 leading-relaxed font-sans">
-                    {featuredMatch.highlights}
-                  </p>
-                )}
-              </div>
-
-              <button
-                onClick={() => onNavigateTab('matches')}
-                className="inline-flex items-center justify-between w-full pl-4 pr-2.5 py-2 rounded-xl bg-white/[0.04] hover:bg-white/[0.08] text-white text-xs font-medium border border-white/[0.08] hover:border-white/20 transition-all group backdrop-blur-sm"
-              >
-                <span>Championship Match Telemetry</span>
-                <div className="w-6 h-6 rounded-full bg-white/10 group-hover:bg-theme-accent group-hover:text-black flex items-center justify-center transition-all">
-                  <ArrowUpRight className="w-3 h-3" />
-                </div>
-              </button>
-            </div>
-
-          </div>
+            )
+          )}
         </div>
       )}
 
@@ -342,10 +753,10 @@ export const OverviewView: React.FC<OverviewViewProps> = ({
             </button>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div className={`grid gap-4 ${selectedTour === 'ALL' ? 'grid-cols-1 sm:grid-cols-2' : 'grid-cols-1'}`}>
             
             {/* ATP World No. 1 Card */}
-            {atpNo1 && (
+            {(selectedTour === 'ALL' || selectedTour === 'ATP') && atpNo1 && (
               <div className="rounded-xl bg-[#0a0c11] border border-white/[0.08] p-5 flex flex-col justify-between hover:border-white/20 transition-all relative overflow-hidden group">
                 {/* Background Player Vignette */}
                 {atpNo1.avatarUrl && (
@@ -392,37 +803,57 @@ export const OverviewView: React.FC<OverviewViewProps> = ({
                     Age {atpNo1.age} • {atpNo1.plays}
                   </p>
 
-                  {/* Tabular Honors */}
-                  <div className="grid grid-cols-3 gap-2 py-3 border-y border-white/[0.06] text-center my-3">
+                  {/* Tabular Honors with Mini Donut Win Rate Gauge */}
+                  <div className="grid grid-cols-3 gap-2 py-2.5 border-y border-white/[0.06] text-center my-3 items-center">
                     <div>
                       <div className="font-mono tabular-nums text-base font-semibold text-white">{atpNo1.grandSlams}</div>
-                      <div className="font-mono text-[8px] text-white/35 uppercase tracking-wider">Slams</div>
+                      <div className="font-mono text-[8px] text-white/35 uppercase tracking-wider mt-0.5">Slams</div>
                     </div>
                     <div className="border-x border-white/[0.06]">
                       <div className="font-mono tabular-nums text-base font-semibold text-white">{atpNo1.careerTitles}</div>
-                      <div className="font-mono text-[8px] text-white/35 uppercase tracking-wider">Titles</div>
+                      <div className="font-mono text-[8px] text-white/35 uppercase tracking-wider mt-0.5">Titles</div>
                     </div>
-                    <div>
-                      <div className="font-mono tabular-nums text-base font-semibold text-theme-accent">{atpNo1.careerWinLoss.winPercentage}%</div>
-                      <div className="font-mono text-[8px] text-white/35 uppercase tracking-wider">Win Rate</div>
+                    <div className="flex flex-col items-center justify-center">
+                      <MiniStatGauge
+                        percentage={atpNo1.careerWinLoss.winPercentage}
+                        size={36}
+                        strokeWidth={3.6}
+                        strokeColor="#e5c378"
+                      />
+                      <div className="font-mono text-[8px] text-white/35 uppercase tracking-wider mt-0.5">Win Rate</div>
                     </div>
                   </div>
 
-                  {/* Surface Telemetry */}
-                  <div className="flex items-center justify-between text-[10px] font-mono text-white/50 px-1 mb-4">
-                    <div>
-                      <span className="text-white/30 block uppercase text-[8px]">Hard</span>
-                      <span className="text-white/80 tabular-nums">{atpNo1.surfaceStats.hard.winPercentage}%</span>
+                  {/* Surface Telemetry Circular Gauges */}
+                  <div className="flex items-center justify-around text-[10px] font-mono text-white/50 px-2 py-2 mb-4 rounded-xl bg-white/[0.015] border border-white/[0.04]">
+                    <div className="flex flex-col items-center">
+                      <SurfaceGaugePie
+                        surface="Hard"
+                        winPercentage={atpNo1.surfaceStats.hard.winPercentage}
+                        size={36}
+                        strokeWidth={3.6}
+                      />
+                      <span className="text-sky-400/70 text-[8px] uppercase tracking-wider mt-1 font-semibold">Hard</span>
                     </div>
-                    <span className="text-white/15">•</span>
-                    <div>
-                      <span className="text-white/30 block uppercase text-[8px]">Clay</span>
-                      <span className="text-white/80 tabular-nums">{atpNo1.surfaceStats.clay.winPercentage}%</span>
+                    <span className="text-white/10">|</span>
+                    <div className="flex flex-col items-center">
+                      <SurfaceGaugePie
+                        surface="Clay"
+                        winPercentage={atpNo1.surfaceStats.clay.winPercentage}
+                        size={36}
+                        strokeWidth={3.6}
+                      />
+                      <span className="text-orange-400/70 text-[8px] uppercase tracking-wider mt-1 font-semibold">Clay</span>
                     </div>
-                    <span className="text-white/15">•</span>
-                    <div>
-                      <span className="text-white/30 block uppercase text-[8px]">Grass</span>
-                      <span className="text-white/80 tabular-nums">{atpNo1.surfaceStats.grass.winPercentage}%</span>
+                    <span className="text-white/10">|</span>
+                    <div className="flex flex-col items-center">
+                      <SurfaceGaugePie
+                        surface="Grass"
+                        winPercentage={atpNo1.surfaceStats.grass.winPercentage}
+                        size={36}
+                        strokeWidth={3.6}
+                      />
+                      <span className="text-emerald-400/70 text-[8px] uppercase tracking-wider mt-1 font-semibold">Grass</span>
                     </div>
                   </div>
                 </div>
@@ -446,7 +877,7 @@ export const OverviewView: React.FC<OverviewViewProps> = ({
             )}
 
             {/* WTA World No. 1 Card */}
-            {wtaNo1 && (
+            {(selectedTour === 'ALL' || selectedTour === 'WTA') && wtaNo1 && (
               <div className="rounded-xl bg-[#0a0c11] border border-white/[0.08] p-5 flex flex-col justify-between hover:border-white/20 transition-all relative overflow-hidden group">
                 {/* Background Player Vignette */}
                 {wtaNo1.avatarUrl && (
@@ -493,37 +924,57 @@ export const OverviewView: React.FC<OverviewViewProps> = ({
                     Age {wtaNo1.age} • {wtaNo1.plays}
                   </p>
 
-                  {/* Tabular Honors */}
-                  <div className="grid grid-cols-3 gap-2 py-3 border-y border-white/[0.06] text-center my-3">
+                  {/* Tabular Honors with Mini Donut Win Rate Gauge */}
+                  <div className="grid grid-cols-3 gap-2 py-2.5 border-y border-white/[0.06] text-center my-3 items-center">
                     <div>
                       <div className="font-mono tabular-nums text-base font-semibold text-white">{wtaNo1.grandSlams}</div>
-                      <div className="font-mono text-[8px] text-white/35 uppercase tracking-wider">Slams</div>
+                      <div className="font-mono text-[8px] text-white/35 uppercase tracking-wider mt-0.5">Slams</div>
                     </div>
                     <div className="border-x border-white/[0.06]">
                       <div className="font-mono tabular-nums text-base font-semibold text-white">{wtaNo1.careerTitles}</div>
-                      <div className="font-mono text-[8px] text-white/35 uppercase tracking-wider">Titles</div>
+                      <div className="font-mono text-[8px] text-white/35 uppercase tracking-wider mt-0.5">Titles</div>
                     </div>
-                    <div>
-                      <div className="font-mono tabular-nums text-base font-semibold text-theme-accent">{wtaNo1.careerWinLoss.winPercentage}%</div>
-                      <div className="font-mono text-[8px] text-white/35 uppercase tracking-wider">Win Rate</div>
+                    <div className="flex flex-col items-center justify-center">
+                      <MiniStatGauge
+                        percentage={wtaNo1.careerWinLoss.winPercentage}
+                        size={36}
+                        strokeWidth={3.6}
+                        strokeColor="#e5c378"
+                      />
+                      <div className="font-mono text-[8px] text-white/35 uppercase tracking-wider mt-0.5">Win Rate</div>
                     </div>
                   </div>
 
-                  {/* Surface Telemetry */}
-                  <div className="flex items-center justify-between text-[10px] font-mono text-white/50 px-1 mb-4">
-                    <div>
-                      <span className="text-white/30 block uppercase text-[8px]">Hard</span>
-                      <span className="text-white/80 tabular-nums">{wtaNo1.surfaceStats.hard.winPercentage}%</span>
+                  {/* Surface Telemetry Circular Gauges */}
+                  <div className="flex items-center justify-around text-[10px] font-mono text-white/50 px-2 py-2 mb-4 rounded-xl bg-white/[0.015] border border-white/[0.04]">
+                    <div className="flex flex-col items-center">
+                      <SurfaceGaugePie
+                        surface="Hard"
+                        winPercentage={wtaNo1.surfaceStats.hard.winPercentage}
+                        size={36}
+                        strokeWidth={3.6}
+                      />
+                      <span className="text-sky-400/70 text-[8px] uppercase tracking-wider mt-1 font-semibold">Hard</span>
                     </div>
-                    <span className="text-white/15">•</span>
-                    <div>
-                      <span className="text-white/30 block uppercase text-[8px]">Clay</span>
-                      <span className="text-white/80 tabular-nums">{wtaNo1.surfaceStats.clay.winPercentage}%</span>
+                    <span className="text-white/10">|</span>
+                    <div className="flex flex-col items-center">
+                      <SurfaceGaugePie
+                        surface="Clay"
+                        winPercentage={wtaNo1.surfaceStats.clay.winPercentage}
+                        size={36}
+                        strokeWidth={3.6}
+                      />
+                      <span className="text-orange-400/70 text-[8px] uppercase tracking-wider mt-1 font-semibold">Clay</span>
                     </div>
-                    <span className="text-white/15">•</span>
-                    <div>
-                      <span className="text-white/30 block uppercase text-[8px]">Grass</span>
-                      <span className="text-white/80 tabular-nums">{wtaNo1.surfaceStats.grass.winPercentage}%</span>
+                    <span className="text-white/10">|</span>
+                    <div className="flex flex-col items-center">
+                      <SurfaceGaugePie
+                        surface="Grass"
+                        winPercentage={wtaNo1.surfaceStats.grass.winPercentage}
+                        size={36}
+                        strokeWidth={3.6}
+                      />
+                      <span className="text-emerald-400/70 text-[8px] uppercase tracking-wider mt-1 font-semibold">Grass</span>
                     </div>
                   </div>
                 </div>
@@ -615,7 +1066,11 @@ export const OverviewView: React.FC<OverviewViewProps> = ({
                 Top Seeds Command Matrix
               </h2>
               <p className="font-mono text-[10px] uppercase tracking-widest text-white/40 mt-0.5">
-                Official ATP & WTA Competitors
+                {selectedTour === 'ALL'
+                  ? 'Official ATP & WTA Competitors'
+                  : selectedTour === 'ATP'
+                  ? "Official ATP Men's Competitors"
+                  : "Official WTA Women's Competitors"}
               </p>
             </div>
           </div>
@@ -624,7 +1079,11 @@ export const OverviewView: React.FC<OverviewViewProps> = ({
             onClick={() => onNavigateTab('players')}
             className="inline-flex items-center gap-2 pl-3.5 pr-2 py-1.5 rounded-full bg-white/[0.03] hover:bg-white/[0.07] text-white text-xs font-medium border border-white/[0.08] hover:border-white/20 transition-all duration-200 group"
           >
-            <span>Complete Archive ({players.length})</span>
+            <span>
+              {selectedTour === 'ALL'
+                ? `Complete Archive (${players.length})`
+                : `${selectedTour} Stars (${displayedPlayers.length})`}
+            </span>
             <div className="w-5 h-5 rounded-full bg-white/10 group-hover:bg-theme-accent group-hover:text-black flex items-center justify-center transition-all">
               <ArrowRight className="w-3 h-3" />
             </div>
@@ -633,7 +1092,7 @@ export const OverviewView: React.FC<OverviewViewProps> = ({
 
         {/* High-Density Player Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {players.slice(0, 6).map((player) => (
+          {displayedPlayers.map((player) => (
             <PlayerCard
               key={player.id}
               player={player}

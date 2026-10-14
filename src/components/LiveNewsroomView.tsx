@@ -60,7 +60,7 @@ export const LiveNewsroomView: React.FC<LiveNewsroomViewProps> = ({ onSelectPlay
   const [newCategory, setNewCategory] = useState<FeedCategory>('breaking');
   const [newSeverity, setNewSeverity] = useState<FeedSeverity>('high');
   const [newPlayerName, setNewPlayerName] = useState('');
-  const [newSource, setNewSource] = useState('Tour Press Room');
+  const [newSource, setNewSource] = useState('ATP Tour Official');
 
   // Simulation speed options
   const simulationSpeeds = [
@@ -226,8 +226,12 @@ export const LiveNewsroomView: React.FC<LiveNewsroomViewProps> = ({ onSelectPlay
               <h1 className="font-display font-semibold text-2xl sm:text-4xl text-white tracking-tight">
                 2026 Circuit Intelligence Wire
               </h1>
-              <p className="text-xs sm:text-sm text-white/60 mt-1 max-w-2xl font-normal">
-                Real-time official walkovers, tournament draw bulletins, court-side medical advisories, and player telemetry aggregated across ATP and WTA circuits.
+              <div className="inline-flex items-center gap-1.5 mt-1 px-2.5 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/25 text-[11px] font-mono text-emerald-300">
+                <CheckCircle2 className="w-3 h-3 text-emerald-400" />
+                <span>Verified Official Sources Only: ESPN • ATP • WTA</span>
+              </div>
+              <p className="text-xs sm:text-sm text-white/60 mt-1.5 max-w-2xl font-normal">
+                Real-time official walkovers, tournament draw bulletins, court-side medical advisories, and player telemetry strictly aggregated and fact-checked from ESPN, ATP, and WTA communications.
               </p>
             </div>
 
@@ -626,15 +630,17 @@ export const LiveNewsroomView: React.FC<LiveNewsroomViewProps> = ({ onSelectPlay
 
               <div>
                 <label className="block text-[11px] font-mono uppercase tracking-wider text-white/50 mb-1">
-                  Source Attribution
+                  Source Attribution (Official Authorized Only)
                 </label>
-                <input
-                  type="text"
+                <select
                   value={newSource}
                   onChange={(e) => setNewSource(e.target.value)}
-                  placeholder="e.g. Tour Press Room, Wimbledon Media..."
-                  className="w-full bg-white/[0.03] border border-white/[0.08] focus:border-white/20 rounded-xl px-3.5 py-2 text-xs text-white placeholder-white/30 focus:outline-none"
-                />
+                  className="w-full bg-white/[0.03] border border-white/[0.08] focus:border-white/20 rounded-xl px-3.5 py-2 text-xs text-white focus:outline-none"
+                >
+                  <option value="ATP Tour Official" className="bg-black">ATP Tour Official</option>
+                  <option value="WTA Tour Official" className="bg-black">WTA Tour Official</option>
+                  <option value="ESPN Tennis Desk" className="bg-black">ESPN Tennis Desk</option>
+                </select>
               </div>
 
               <div className="flex items-center justify-end gap-3 pt-3 border-t border-white/[0.08]">

@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Player } from '../types/tennis';
-import { Swords, ArrowUpRight } from 'lucide-react';
+import { Swords, ArrowUpRight, Star } from 'lucide-react';
+import { MiniStatGauge } from './charts/PieChart';
+import { favoritesService } from '../services/favoritesService';
 
 interface PlayerCardProps {
   player: Player;
@@ -60,6 +62,19 @@ const getPlayerInitials = (name: string): string => {
 export const PlayerCard: React.FC<PlayerCardProps> = ({ player, onSelect, onCompare }) => {
   const countryCode = getCountryCode(player.country);
   const initials = getPlayerInitials(player.name);
+  const [isFav, setIsFav] = useState(() => favoritesService.isFavorite(player.id));
+
+  useEffect(() => {
+    setIsFav(favoritesService.isFavorite(player.id));
+    return favoritesService.subscribe(() => {
+      setIsFav(favoritesService.isFavorite(player.id));
+    });
+  }, [player.id]);
+
+  const handleToggleFavorite = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    favoritesService.toggleFavorite(player.id);
+  };
 
   return (
     <div className="double-bezel-card-outer group">
@@ -113,13 +128,33 @@ export const PlayerCard: React.FC<PlayerCardProps> = ({ player, onSelect, onComp
               </div>
             </div>
 
-            {player.currentRank > 0 && (
-              <div className="px-2.5 py-0.5 rounded-full bg-white/[0.04] border border-amber-200/20 shadow-sm">
-                <span className="font-mono text-xs text-theme-accent font-semibold tracking-wider">
-                  No. {player.currentRank}
-                </span>
-              </div>
-            )}
+            <div className="flex items-center gap-2">
+              <button
+                type="button"
+                onClick={handleToggleFavorite}
+                aria-label={isFav ? `Remove ${player.name} from watchlist` : `Add ${player.name} to watchlist`}
+                title={isFav ? "Remove from watchlist" : "Add to watchlist"}
+                className={`w-7 h-7 rounded-full flex items-center justify-center transition-all duration-200 border ${
+                  isFav
+                    ? 'bg-amber-400/15 border-amber-400/40 text-amber-300 shadow-[0_0_12px_rgba(251,191,36,0.25)] hover:bg-amber-400/25 hover:border-amber-400/60'
+                    : 'bg-white/[0.03] border-white/[0.08] text-white/30 hover:text-white/80 hover:bg-white/[0.08] hover:border-white/20'
+                }`}
+              >
+                <Star
+                  className={`w-3.5 h-3.5 transition-transform duration-200 ${
+                    isFav ? 'fill-amber-400 text-amber-400 scale-105' : 'text-current'
+                  }`}
+                />
+              </button>
+
+              {player.currentRank > 0 && (
+                <div className="px-2.5 py-0.5 rounded-full bg-white/[0.04] border border-amber-200/20 shadow-sm">
+                  <span className="font-mono text-xs text-theme-accent font-semibold tracking-wider">
+                    No. {player.currentRank}
+                  </span>
+                </div>
+              )}
+            </div>
           </div>
 
           {/* Player Name & Style */}
@@ -135,8 +170,8 @@ export const PlayerCard: React.FC<PlayerCardProps> = ({ player, onSelect, onComp
             </p>
           </div>
 
-          {/* Tabular Collector's Stats Strip */}
-          <div className="grid grid-cols-3 gap-2 py-3 border-y border-white/[0.06] my-4 text-center">
+          {/* Tabular Collector's Stats Strip with Mini SVG Donut Gauge */}
+          <div className="grid grid-cols-3 gap-2 py-2.5 border-y border-white/[0.06] my-4 text-center items-center">
             <div>
               <div className="font-mono tabular-nums text-base sm:text-lg font-semibold text-white">
                 {player.grandSlams}
@@ -155,31 +190,44 @@ export const PlayerCard: React.FC<PlayerCardProps> = ({ player, onSelect, onComp
               </div>
             </div>
 
-            <div>
-              <div className="font-mono tabular-nums text-base sm:text-lg font-semibold text-theme-accent">
-                {player.careerWinLoss.winPercentage}%
-              </div>
-              <div className="font-mono text-[9px] uppercase tracking-wider text-white/35 mt-0.5">
+            <div className="flex flex-col items-center justify-center">
+              <MiniStatGauge
+                percentage={player.careerWinLoss.winPercentage}
+                size={38}
+                strokeWidth={3.8}
+                strokeColor="#e5c378"
+                trackColor="rgba(255, 255, 255, 0.08)"
+              />
+              <div className="font-mono text-[8px] uppercase tracking-wider text-white/40 mt-1">
                 Win Rate
               </div>
             </div>
           </div>
 
-          {/* Clean Editorial Surface Telemetry (Zero Mobile-Game Progress Bars) */}
-          <div className="flex items-center justify-between text-[10px] font-mono text-white/50 px-1 py-1 mb-5">
-            <div>
-              <span className="text-white/30 block uppercase tracking-wider text-[9px]">Hard</span>
-              <span className="text-white/85 tabular-nums font-medium">{player.surfaceStats.hard.winPercentage}%</span>
+          {/* Clean Editorial Surface Telemetry with Micro Color Indicators */}
+          <div className="flex items-center justify-between text-[10px] font-mono text-white/50 px-2 py-1.5 mb-5 rounded-lg bg-white/[0.015] border border-white/[0.04]">
+            <div className="flex items-center gap-1.5">
+              <span className="w-1.5 h-1.5 rounded-full bg-sky-400 shrink-0" />
+              <div>
+                <span className="text-white/30 block uppercase tracking-wider text-[8px] leading-none">Hard</span>
+                <span className="text-white/85 tabular-nums font-medium text-[11px] leading-tight">{player.surfaceStats.hard.winPercentage}%</span>
+              </div>
             </div>
-            <span className="text-white/15">•</span>
-            <div>
-              <span className="text-white/30 block uppercase tracking-wider text-[9px]">Clay</span>
-              <span className="text-white/85 tabular-nums font-medium">{player.surfaceStats.clay.winPercentage}%</span>
+            <span className="text-white/10">•</span>
+            <div className="flex items-center gap-1.5">
+              <span className="w-1.5 h-1.5 rounded-full bg-orange-400 shrink-0" />
+              <div>
+                <span className="text-white/30 block uppercase tracking-wider text-[8px] leading-none">Clay</span>
+                <span className="text-white/85 tabular-nums font-medium text-[11px] leading-tight">{player.surfaceStats.clay.winPercentage}%</span>
+              </div>
             </div>
-            <span className="text-white/15">•</span>
-            <div>
-              <span className="text-white/30 block uppercase tracking-wider text-[9px]">Grass</span>
-              <span className="text-white/85 tabular-nums font-medium">{player.surfaceStats.grass.winPercentage}%</span>
+            <span className="text-white/10">•</span>
+            <div className="flex items-center gap-1.5">
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0" />
+              <div>
+                <span className="text-white/30 block uppercase tracking-wider text-[8px] leading-none">Grass</span>
+                <span className="text-white/85 tabular-nums font-medium text-[11px] leading-tight">{player.surfaceStats.grass.winPercentage}%</span>
+              </div>
             </div>
           </div>
         </div>

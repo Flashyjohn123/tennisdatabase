@@ -16,15 +16,16 @@ import {
   Compass,
   Menu,
   Activity,
-  Layers,
-  Smartphone
+  Smartphone,
+  User
 } from 'lucide-react';
+import { useAuth } from '../context/AuthContext';
 
 export interface CommandRailProps {
   activeTab: string;
   setActiveTab: (tab: string) => void;
-  selectedTour: Tour | 'ALL';
-  setSelectedTour: (tour: Tour | 'ALL') => void;
+  selectedTour?: Tour | 'ALL';
+  setSelectedTour?: (tour: Tour | 'ALL') => void;
   currentSeason: SeasonKey;
   seasonPreference: SeasonPreference;
   onSelectSeasonPreference: (pref: SeasonPreference) => void;
@@ -33,6 +34,8 @@ export interface CommandRailProps {
 export interface CommandBarProps {
   searchQuery: string;
   setSearchQuery: (q: string) => void;
+  onOpenSearchPalette?: () => void;
+  onOpenAuthModal?: () => void;
   isSyncingLive?: boolean;
   lastSyncedLive?: string | null;
   onSyncLive?: () => void;
@@ -68,7 +71,7 @@ export const NAV_ITEMS = [
 export const CommandRail: React.FC<CommandRailProps> = ({
   activeTab,
   setActiveTab,
-  selectedTour,
+  selectedTour = 'ALL',
   setSelectedTour,
   currentSeason,
   seasonPreference,
@@ -105,31 +108,29 @@ export const CommandRail: React.FC<CommandRailProps> = ({
           </div>
         </div>
 
-        {/* Quick Tour Filter in Rail */}
-        <div className="px-4 pt-4 pb-2">
-          <div className="text-[9px] font-mono uppercase tracking-widest text-white/35 px-1 mb-2 flex items-center justify-between">
-            <span>Circuit Scope</span>
-            <Layers className="w-2.5 h-2.5 text-white/30" />
+        {/* Tour Filter (ATP / WTA / ALL) */}
+        {setSelectedTour && (
+          <div className="px-4 pt-3 pb-1">
+            <div className="grid grid-cols-3 gap-1 p-0.5 rounded-lg bg-white/[0.02] border border-white/[0.06]">
+              {(['ALL', 'ATP', 'WTA'] as const).map((tour) => {
+                const isSelected = selectedTour === tour;
+                return (
+                  <button
+                    key={tour}
+                    onClick={() => setSelectedTour(tour)}
+                    className={`py-1 rounded text-[11px] font-mono font-medium tracking-wider transition-all ${
+                      isSelected
+                        ? 'bg-white/[0.1] text-white border border-white/20 shadow-sm'
+                        : 'text-white/40 hover:text-white/80 hover:bg-white/[0.02]'
+                    }`}
+                  >
+                    {tour}
+                  </button>
+                );
+              })}
+            </div>
           </div>
-          <div className="grid grid-cols-3 gap-1 p-0.5 rounded-lg bg-white/[0.02] border border-white/[0.06]">
-            {(['ALL', 'ATP', 'WTA'] as const).map((tour) => {
-              const isSelected = selectedTour === tour;
-              return (
-                <button
-                  key={tour}
-                  onClick={() => setSelectedTour(tour)}
-                  className={`py-1 rounded text-[11px] font-mono font-medium tracking-wider transition-all ${
-                    isSelected
-                      ? 'bg-white/[0.1] text-white border border-white/20 shadow-sm'
-                      : 'text-white/40 hover:text-white/80 hover:bg-white/[0.02]'
-                  }`}
-                >
-                  {tour}
-                </button>
-              );
-            })}
-          </div>
-        </div>
+        )}
 
         {/* Main Navigation Sections */}
         <div className="px-3 py-3 flex-1">
@@ -208,6 +209,8 @@ export const CommandRail: React.FC<CommandRailProps> = ({
 export const CommandBar: React.FC<CommandBarProps> = ({
   searchQuery,
   setSearchQuery,
+  onOpenSearchPalette,
+  onOpenAuthModal,
   isSyncingLive,
   lastSyncedLive,
   onSyncLive,
@@ -221,6 +224,7 @@ export const CommandBar: React.FC<CommandBarProps> = ({
 }) => {
   const [isMobileOpen, setIsMobileOpen] = useState(false);
   const [showIosModal, setShowIosModal] = useState(false);
+  const { user } = useAuth();
 
   return (
     <>
@@ -249,20 +253,27 @@ export const CommandBar: React.FC<CommandBarProps> = ({
 
         {/* Global Command Search Input */}
         <div className="flex-1 max-w-md hidden sm:block">
-          <div className="relative group">
+          <div 
+            onClick={onOpenSearchPalette}
+            className="relative group cursor-pointer"
+          >
             <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none">
-              <Search className="w-3.5 h-3.5 text-white/35 group-focus-within:text-theme-accent transition-colors" />
+              <Search className="w-3.5 h-3.5 text-white/35 group-hover:text-theme-accent transition-colors" />
             </div>
             <input
               type="text"
+              readOnly
               value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Search players, Grand Slams, tournaments..."
-              className="w-full bg-white/[0.03] hover:bg-white/[0.05] focus:bg-white/[0.06] border border-white/[0.08] focus:border-theme-accent/40 rounded-full pl-9 pr-9 py-1.5 text-xs text-white/90 placeholder-white/35 focus:outline-none focus:ring-1 focus:ring-theme-accent/30 transition-all font-sans"
+              onClick={onOpenSearchPalette}
+              placeholder="Search players, Grand Slams, tournaments... (Press / or Ctrl+K)"
+              className="w-full cursor-pointer bg-white/[0.03] hover:bg-white/[0.05] focus:bg-white/[0.06] border border-white/[0.08] hover:border-theme-accent/40 rounded-full pl-9 pr-9 py-1.5 text-xs text-white/90 placeholder-white/35 focus:outline-none transition-all font-sans"
             />
             {searchQuery ? (
               <button
-                onClick={() => setSearchQuery('')}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setSearchQuery('');
+                }}
                 className="absolute inset-y-0 right-0 pr-3 flex items-center text-white/40 hover:text-white transition-colors"
               >
                 <X className="w-3.5 h-3.5" />
@@ -277,15 +288,32 @@ export const CommandBar: React.FC<CommandBarProps> = ({
           </div>
         </div>
 
-        {/* Top Command Bar Actions: Telemetry Radar & Live Sync */}
+        {/* Top Command Bar Actions: Telemetry Radar & Live Sync & User Auth */}
         <div className="flex items-center gap-2 sm:gap-3">
-          {/* Live Circuit Radar Badge */}
-          <div className="hidden sm:flex items-center gap-2 px-3 py-1 rounded-full bg-white/[0.03] border border-white/[0.08] text-[10px] font-mono text-white/70">
-            <div className="w-1.5 h-1.5 rounded-full bg-theme-accent animate-pulse" />
-            <span className="font-semibold tracking-wider text-theme-accent">LIVE RADAR</span>
-            <span className="text-white/35">•</span>
-            <span className="text-white/60">24/7 Scraping</span>
-          </div>
+          {/* Mobile Search Button */}
+          <button
+            onClick={onOpenSearchPalette}
+            className="sm:hidden p-1.5 rounded-full bg-white/[0.03] hover:bg-white/[0.06] border border-white/[0.08] text-white/70"
+            title="Search database"
+          >
+            <Search className="w-4 h-4 text-white/70" />
+          </button>
+
+          {/* User Account Button */}
+          <button
+            onClick={onOpenAuthModal}
+            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-[11px] font-mono transition-all ${
+              user
+                ? 'bg-amber-400/10 border-amber-400/30 text-amber-300 hover:bg-amber-400/20'
+                : 'bg-white/[0.03] border-white/[0.08] text-white/70 hover:text-white hover:bg-white/[0.06]'
+            }`}
+            title={user ? `Signed in as ${user.email}` : 'Sign in or sync account'}
+          >
+            <User className={`w-3 h-3 ${user ? 'text-amber-400' : 'text-white/50'}`} />
+            <span className="hidden sm:inline text-[10px] font-medium tracking-wide">
+              {user ? user.email.split('@')[0] : 'Sign In'}
+            </span>
+          </button>
 
           {/* iOS App & Widget Modal Trigger */}
           <button
@@ -295,7 +323,7 @@ export const CommandBar: React.FC<CommandBarProps> = ({
           >
             <Smartphone className="w-3 h-3 text-sky-400" />
             <span className="hidden sm:inline text-[10px] font-medium tracking-wide">
-              iOS App / Widget
+              iOS App
             </span>
           </button>
 

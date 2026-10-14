@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Player } from '../types/tennis';
-import { Trophy, Award, TrendingUp, DollarSign, Calendar, MapPin, Ruler, X, Swords, Activity, ShieldCheck } from 'lucide-react';
+import { Trophy, Award, DollarSign, Calendar, MapPin, Ruler, X, Swords, Activity, ShieldCheck, Star } from 'lucide-react';
+import { DonutPieChart, SurfaceGaugePie, GrandSlamDonutChart } from './charts/PieChart';
+import { favoritesService } from '../services/favoritesService';
 
 interface PlayerDetailModalProps {
   player: Player | null;
@@ -55,6 +57,16 @@ export const PlayerDetailModal: React.FC<PlayerDetailModalProps> = ({
   onClose,
   onCompare,
 }) => {
+  const [isFav, setIsFav] = useState(() => (player ? favoritesService.isFavorite(player.id) : false));
+
+  useEffect(() => {
+    if (!player) return;
+    setIsFav(favoritesService.isFavorite(player.id));
+    return favoritesService.subscribe(() => {
+      setIsFav(favoritesService.isFavorite(player.id));
+    });
+  }, [player?.id]);
+
   if (!player) return null;
 
   const isATP = player.tour === 'ATP';
@@ -81,13 +93,32 @@ export const PlayerDetailModal: React.FC<PlayerDetailModalProps> = ({
 
           {/* Header Banner */}
           <div className="relative p-6 sm:p-8 border-b border-white/[0.06] z-10">
-            <button
-              onClick={onClose}
-              className="absolute top-5 right-5 w-8 h-8 rounded-full bg-white/[0.04] hover:bg-white/[0.08] text-white/50 hover:text-white flex items-center justify-center transition border border-white/[0.08]"
-              aria-label="Close dossier"
-            >
-              <X className="w-4 h-4" />
-            </button>
+            <div className="absolute top-5 right-5 flex items-center gap-2">
+              <button
+                type="button"
+                onClick={() => favoritesService.toggleFavorite(player.id)}
+                className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-mono transition-all border ${
+                  isFav
+                    ? 'bg-amber-400/15 border-amber-400/40 text-amber-300 shadow-[0_0_12px_rgba(251,191,36,0.25)] hover:bg-amber-400/25 hover:border-amber-400/60'
+                    : 'bg-white/[0.04] border-white/[0.08] text-white/60 hover:text-white hover:bg-white/[0.08] hover:border-white/20'
+                }`}
+                title={isFav ? "Remove from Watchlist" : "Add to Watchlist"}
+                aria-label={isFav ? "Remove from Watchlist" : "Add to Watchlist"}
+              >
+                <Star className={`w-3.5 h-3.5 ${isFav ? 'fill-amber-400 text-amber-400' : 'text-current'}`} />
+                <span className="font-semibold tracking-wider text-[11px] uppercase">
+                  {isFav ? 'Watchlisted' : 'Watchlist'}
+                </span>
+              </button>
+
+              <button
+                onClick={onClose}
+                className="w-8 h-8 rounded-full bg-white/[0.04] hover:bg-white/[0.08] text-white/50 hover:text-white flex items-center justify-center transition border border-white/[0.08]"
+                aria-label="Close dossier"
+              >
+                <X className="w-4 h-4" />
+              </button>
+            </div>
 
             <div className="flex flex-col sm:flex-row sm:items-center gap-5">
               {/* Real High-Resolution Athlete Portrait Photography */}
@@ -163,106 +194,193 @@ export const PlayerDetailModal: React.FC<PlayerDetailModalProps> = ({
                 <div className="text-[9px] uppercase font-mono tracking-wider text-white/40">Career Titles</div>
               </div>
 
-              <div className="bg-black/40 border border-white/[0.06] rounded-xl p-3.5 text-center">
-                <div className="flex items-center justify-center gap-1.5 text-theme-accent font-mono font-semibold text-xl mb-1">
-                  <TrendingUp className="w-4 h-4" />
-                  <span className="tabular-nums">{player.careerWinLoss.winPercentage}%</span>
+              <div className="bg-black/40 border border-white/[0.06] rounded-xl p-3.5 flex flex-col items-center justify-between text-center">
+                <div className="flex items-center justify-center my-0.5">
+                  <DonutPieChart
+                    wins={player.careerWinLoss.wins}
+                    losses={player.careerWinLoss.losses}
+                    winPercentage={player.careerWinLoss.winPercentage}
+                    size={48}
+                    strokeWidth={4.5}
+                    showCenterText={true}
+                    winColor="#e5c378"
+                  />
                 </div>
-                <div className="text-[9px] uppercase font-mono tracking-wider text-white/40">
-                  Win Rate ({player.careerWinLoss.wins}W - {player.careerWinLoss.losses}L)
+                <div className="mt-1">
+                  <div className="text-[9px] uppercase font-mono tracking-wider text-white/40">
+                    Career Win Rate
+                  </div>
+                  <div className="text-[10px] font-mono text-theme-accent/90 tabular-nums font-semibold mt-0.5">
+                    {player.careerWinLoss.wins}W - {player.careerWinLoss.losses}L
+                  </div>
                 </div>
               </div>
 
-              <div className="bg-black/40 border border-white/[0.06] rounded-xl p-3.5 text-center">
-                <div className="flex items-center justify-center gap-1 text-white/90 font-mono font-semibold text-base sm:text-lg mb-1">
+              <div className="bg-black/40 border border-white/[0.06] rounded-xl p-3.5 text-center flex flex-col justify-between">
+                <div className="flex items-center justify-center gap-1 text-white/90 font-mono font-semibold text-base sm:text-lg mb-1 mt-auto">
                   <DollarSign className="w-3.5 h-3.5 text-white/40" />
                   <span className="tabular-nums">{player.prizeMoneyUsd}</span>
                 </div>
-                <div className="text-[9px] uppercase font-mono tracking-wider text-white/40">Prize Purse</div>
+                <div className="text-[9px] uppercase font-mono tracking-wider text-white/40 mb-auto">Prize Purse</div>
               </div>
             </div>
 
             {/* Grand Slam Breakdown */}
             <div className="bg-black/40 border border-white/[0.06] rounded-xl p-5">
-              <h4 className="text-[11px] uppercase font-mono tracking-widest text-white/50 mb-4 flex items-center gap-2">
-                <Trophy className="w-3.5 h-3.5 text-theme-accent" />
-                Grand Slam Honors Breakdown
-              </h4>
+              <div className="flex items-center justify-between gap-2 mb-4 pb-2 border-b border-white/[0.06]">
+                <h4 className="text-[11px] uppercase font-mono tracking-widest text-white/50 flex items-center gap-2">
+                  <Trophy className="w-3.5 h-3.5 text-theme-accent" />
+                  Grand Slam Honors Breakdown
+                </h4>
+                <div className="flex items-center gap-2">
+                  {Boolean(player.slamFinals && player.slamFinals > 0) && (
+                    <span className="font-mono text-[10px] uppercase tracking-wider text-amber-300/90 px-2 py-0.5 rounded bg-amber-500/10 border border-amber-500/30">
+                      {player.slamFinals} Grand Slam Finals Reached
+                    </span>
+                  )}
+                  <span className="font-mono text-[10px] uppercase tracking-wider text-theme-accent/90 px-2 py-0.5 rounded bg-white/[0.03] border border-theme-accent/20">
+                    {player.grandSlams} {player.grandSlams === 1 ? 'Title' : 'Titles'}
+                  </span>
+                </div>
+              </div>
 
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-                <div className="bg-white/[0.02] rounded-xl p-3 border border-white/[0.05] text-center">
-                  <span className="font-mono text-[10px] font-bold text-white/60 mb-1 block">AO</span>
-                  <div className="text-xs font-medium text-white/80">Australian Open</div>
-                  <div className="text-xl font-mono tabular-nums font-semibold text-theme-accent mt-1">{player.slamBreakdown.australianOpen}</div>
+              <div className="flex flex-col sm:flex-row items-center gap-6">
+                {/* Visual SVG Donut Distribution Gauge */}
+                <div className="shrink-0 flex flex-col items-center justify-center p-3 rounded-xl bg-white/[0.015] border border-white/[0.04]">
+                  <GrandSlamDonutChart
+                    breakdown={player.slamBreakdown}
+                    totalSlams={player.grandSlams}
+                    size={112}
+                    strokeWidth={9}
+                  />
+                  <span className="text-[9px] font-mono uppercase tracking-widest text-white/40 mt-2">
+                    Title Distribution
+                  </span>
                 </div>
 
-                <div className="bg-white/[0.02] rounded-xl p-3 border border-white/[0.05] text-center">
-                  <span className="font-mono text-[10px] font-bold text-white/60 mb-1 block">RG</span>
-                  <div className="text-xs font-medium text-white/80">Roland Garros</div>
-                  <div className="text-xl font-mono tabular-nums font-semibold text-theme-accent mt-1">{player.slamBreakdown.rolandGarros}</div>
-                </div>
+                {/* Individual Slam Tiles */}
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 flex-1 w-full">
+                  <div className="bg-white/[0.02] rounded-xl p-3 border border-white/[0.05] text-center relative overflow-hidden group">
+                    <div className="absolute top-0 inset-x-0 h-0.5 bg-sky-400/60" />
+                    <span className="font-mono text-[10px] font-bold text-sky-300/80 mb-1 block">AO</span>
+                    <div className="text-xs font-medium text-white/80">Australian Open</div>
+                    <div className="text-xl font-mono tabular-nums font-semibold text-sky-400 mt-1">
+                      {player.slamBreakdown.australianOpen}
+                    </div>
+                  </div>
 
-                <div className="bg-white/[0.02] rounded-xl p-3 border border-white/[0.05] text-center">
-                  <span className="font-mono text-[10px] font-bold text-white/60 mb-1 block">WIM</span>
-                  <div className="text-xs font-medium text-white/80">Wimbledon</div>
-                  <div className="text-xl font-mono tabular-nums font-semibold text-theme-accent mt-1">{player.slamBreakdown.wimbledon}</div>
-                </div>
+                  <div className="bg-white/[0.02] rounded-xl p-3 border border-white/[0.05] text-center relative overflow-hidden group">
+                    <div className="absolute top-0 inset-x-0 h-0.5 bg-orange-500/60" />
+                    <span className="font-mono text-[10px] font-bold text-orange-300/80 mb-1 block">RG</span>
+                    <div className="text-xs font-medium text-white/80">Roland Garros</div>
+                    <div className="text-xl font-mono tabular-nums font-semibold text-orange-400 mt-1">
+                      {player.slamBreakdown.rolandGarros}
+                    </div>
+                  </div>
 
-                <div className="bg-white/[0.02] rounded-xl p-3 border border-white/[0.05] text-center">
-                  <span className="font-mono text-[10px] font-bold text-white/60 mb-1 block">USO</span>
-                  <div className="text-xs font-medium text-white/80">US Open</div>
-                  <div className="text-xl font-mono tabular-nums font-semibold text-theme-accent mt-1">{player.slamBreakdown.usOpen}</div>
+                  <div className="bg-white/[0.02] rounded-xl p-3 border border-white/[0.05] text-center relative overflow-hidden group">
+                    <div className="absolute top-0 inset-x-0 h-0.5 bg-emerald-500/60" />
+                    <span className="font-mono text-[10px] font-bold text-emerald-300/80 mb-1 block">WIM</span>
+                    <div className="text-xs font-medium text-white/80">Wimbledon</div>
+                    <div className="text-xl font-mono tabular-nums font-semibold text-emerald-400 mt-1">
+                      {player.slamBreakdown.wimbledon}
+                    </div>
+                  </div>
+
+                  <div className="bg-white/[0.02] rounded-xl p-3 border border-white/[0.05] text-center relative overflow-hidden group">
+                    <div className="absolute top-0 inset-x-0 h-0.5 bg-amber-400/60" />
+                    <span className="font-mono text-[10px] font-bold text-amber-300/80 mb-1 block">USO</span>
+                    <div className="text-xs font-medium text-white/80">US Open</div>
+                    <div className="text-xl font-mono tabular-nums font-semibold text-amber-400 mt-1">
+                      {player.slamBreakdown.usOpen}
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
 
-            {/* Surface Mastery Breakdown (Zero Arcade Gaming Bars) */}
+            {/* Surface Mastery Breakdown (Incorporating Authentic Court Donut Gauges) */}
             <div className="bg-black/40 border border-white/[0.06] rounded-xl p-5">
-              <h4 className="text-[11px] uppercase font-mono tracking-widest text-white/50 mb-4">
-                Surface Mastery Breakdown
-              </h4>
+              <div className="flex items-center justify-between mb-4 pb-2 border-b border-white/[0.06]">
+                <h4 className="text-[11px] uppercase font-mono tracking-widest text-white/50">
+                  Surface Mastery Breakdown
+                </h4>
+                <span className="text-[10px] font-mono text-white/40 uppercase tracking-wider">
+                  Telemetry Gauges
+                </span>
+              </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                 {/* Hard */}
-                <div className="bg-white/[0.02] rounded-xl p-4 border border-white/[0.05]">
-                  <div className="flex items-center justify-between mb-2">
-                    <span className="font-mono text-xs text-white/70">Hard Court</span>
-                    <span className="text-[11px] text-white/40 font-mono tabular-nums">
+                <div className="bg-white/[0.02] rounded-xl p-4 border border-white/[0.05] flex items-center gap-4">
+                  <SurfaceGaugePie
+                    surface="Hard"
+                    winPercentage={player.surfaceStats.hard.winPercentage}
+                    wins={player.surfaceStats.hard.wins}
+                    losses={player.surfaceStats.hard.losses}
+                    size={58}
+                    strokeWidth={5}
+                  />
+                  <div className="min-w-0 flex-1">
+                    <div className="flex items-center justify-between">
+                      <span className="font-mono text-xs font-semibold text-sky-400">Hard Court</span>
+                      <span className="text-[10px] font-mono text-sky-400/50 uppercase">Laykold</span>
+                    </div>
+                    <div className="text-xl font-mono tabular-nums font-semibold text-white/95 mt-0.5">
+                      {player.surfaceStats.hard.winPercentage}%
+                    </div>
+                    <div className="text-[10px] font-mono text-white/40 tabular-nums">
                       {player.surfaceStats.hard.wins}W - {player.surfaceStats.hard.losses}L
-                    </span>
+                    </div>
                   </div>
-                  <div className="text-2xl font-mono tabular-nums font-semibold text-theme-accent">
-                    {player.surfaceStats.hard.winPercentage}%
-                  </div>
-                  <span className="text-[10px] font-mono text-white/35 mt-1 block">Career Hard Win Rate</span>
                 </div>
 
                 {/* Clay */}
-                <div className="bg-white/[0.02] rounded-xl p-4 border border-white/[0.05]">
-                  <div className="flex items-center justify-between mb-2">
-                    <span className="font-mono text-xs text-white/70">Clay Court</span>
-                    <span className="text-[11px] text-white/40 font-mono tabular-nums">
+                <div className="bg-white/[0.02] rounded-xl p-4 border border-white/[0.05] flex items-center gap-4">
+                  <SurfaceGaugePie
+                    surface="Clay"
+                    winPercentage={player.surfaceStats.clay.winPercentage}
+                    wins={player.surfaceStats.clay.wins}
+                    losses={player.surfaceStats.clay.losses}
+                    size={58}
+                    strokeWidth={5}
+                  />
+                  <div className="min-w-0 flex-1">
+                    <div className="flex items-center justify-between">
+                      <span className="font-mono text-xs font-semibold text-orange-400">Clay Court</span>
+                      <span className="text-[10px] font-mono text-orange-400/50 uppercase">Terre</span>
+                    </div>
+                    <div className="text-xl font-mono tabular-nums font-semibold text-white/95 mt-0.5">
+                      {player.surfaceStats.clay.winPercentage}%
+                    </div>
+                    <div className="text-[10px] font-mono text-white/40 tabular-nums">
                       {player.surfaceStats.clay.wins}W - {player.surfaceStats.clay.losses}L
-                    </span>
+                    </div>
                   </div>
-                  <div className="text-2xl font-mono tabular-nums font-semibold text-theme-accent">
-                    {player.surfaceStats.clay.winPercentage}%
-                  </div>
-                  <span className="text-[10px] font-mono text-white/35 mt-1 block">Career Clay Win Rate</span>
                 </div>
 
                 {/* Grass */}
-                <div className="bg-white/[0.02] rounded-xl p-4 border border-white/[0.05]">
-                  <div className="flex items-center justify-between mb-2">
-                    <span className="font-mono text-xs text-white/70">Grass Court</span>
-                    <span className="text-[11px] text-white/40 font-mono tabular-nums">
+                <div className="bg-white/[0.02] rounded-xl p-4 border border-white/[0.05] flex items-center gap-4">
+                  <SurfaceGaugePie
+                    surface="Grass"
+                    winPercentage={player.surfaceStats.grass.winPercentage}
+                    wins={player.surfaceStats.grass.wins}
+                    losses={player.surfaceStats.grass.losses}
+                    size={58}
+                    strokeWidth={5}
+                  />
+                  <div className="min-w-0 flex-1">
+                    <div className="flex items-center justify-between">
+                      <span className="font-mono text-xs font-semibold text-emerald-400">Grass Court</span>
+                      <span className="text-[10px] font-mono text-emerald-400/50 uppercase">Lawn</span>
+                    </div>
+                    <div className="text-xl font-mono tabular-nums font-semibold text-white/95 mt-0.5">
+                      {player.surfaceStats.grass.winPercentage}%
+                    </div>
+                    <div className="text-[10px] font-mono text-white/40 tabular-nums">
                       {player.surfaceStats.grass.wins}W - {player.surfaceStats.grass.losses}L
-                    </span>
+                    </div>
                   </div>
-                  <div className="text-2xl font-mono tabular-nums font-semibold text-theme-accent">
-                    {player.surfaceStats.grass.winPercentage}%
-                  </div>
-                  <span className="text-[10px] font-mono text-white/35 mt-1 block">Career Grass Win Rate</span>
                 </div>
               </div>
             </div>
@@ -401,17 +519,33 @@ export const PlayerDetailModal: React.FC<PlayerDetailModalProps> = ({
           </div>
 
           {/* Footer Actions */}
-          <div className="p-4 sm:p-5 bg-black/60 border-t border-white/[0.06] flex items-center justify-between relative z-10">
-            <button
-              onClick={() => {
-                onClose();
-                onCompare(player);
-              }}
-              className="inline-flex items-center gap-2 bg-white/[0.04] hover:bg-white/[0.08] text-white text-xs font-mono font-medium px-4 py-2 rounded-xl border border-white/[0.08] transition"
-            >
-              <Swords className="w-3.5 h-3.5 text-theme-accent" />
-              <span>Compare in Head-to-Head</span>
-            </button>
+          <div className="p-4 sm:p-5 bg-black/60 border-t border-white/[0.06] flex flex-wrap items-center justify-between gap-3 relative z-10">
+            <div className="flex flex-wrap items-center gap-2">
+              <button
+                onClick={() => {
+                  onClose();
+                  onCompare(player);
+                }}
+                className="inline-flex items-center gap-2 bg-white/[0.04] hover:bg-white/[0.08] text-white text-xs font-mono font-medium px-4 py-2 rounded-xl border border-white/[0.08] transition"
+              >
+                <Swords className="w-3.5 h-3.5 text-theme-accent" />
+                <span>Compare in Head-to-Head</span>
+              </button>
+
+              <button
+                type="button"
+                onClick={() => favoritesService.toggleFavorite(player.id)}
+                className={`inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-mono transition-all border ${
+                  isFav
+                    ? 'bg-amber-400/15 border-amber-400/40 text-amber-300 shadow-[0_0_12px_rgba(251,191,36,0.25)]'
+                    : 'bg-white/[0.04] border-white/[0.08] text-white/70 hover:text-white hover:bg-white/[0.08]'
+                }`}
+                title={isFav ? "Remove from Watchlist" : "Add to Watchlist"}
+              >
+                <Star className={`w-3.5 h-3.5 ${isFav ? 'fill-amber-400 text-amber-400' : 'text-current'}`} />
+                <span>{isFav ? 'Starred in Watchlist' : 'Add to Watchlist'}</span>
+              </button>
+            </div>
 
             <button
               onClick={onClose}

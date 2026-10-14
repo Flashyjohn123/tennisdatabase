@@ -76,206 +76,214 @@ export const AddPlayerModal: React.FC<AddPlayerModalProps> = ({ isOpen, onClose,
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-court-950/85 backdrop-blur-md animate-fadeIn">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-black/80 backdrop-blur-md animate-fadeIn">
       <div 
-        className="relative w-full max-w-lg bg-court-900 border border-court-700 rounded-3xl shadow-2xl overflow-hidden max-h-[90vh] flex flex-col"
+        className="relative w-full max-w-lg double-bezel-card-outer max-h-[90vh] flex flex-col"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="p-6 border-b border-court-750 flex items-center justify-between bg-court-950/60">
-          <div className="flex items-center gap-2">
-            <UserPlus className="w-5 h-5 text-volt-500" />
-            <h3 className="text-xl font-black text-white tracking-tight">Add New Tennis Player</h3>
-          </div>
-          <button
-            onClick={onClose}
-            className="w-8 h-8 rounded-full bg-court-800 hover:bg-court-750 text-emerald-300 hover:text-white flex items-center justify-center transition border border-court-700"
-          >
-            <X className="w-4 h-4" />
-          </button>
-        </div>
+        <div className="double-bezel-card-inner flex flex-col overflow-hidden bg-gradient-to-b from-[#0e1219] via-[#0c1015] to-[#080a0d]">
+          {/* Top Sheen */}
+          <div className="absolute inset-x-0 top-0 h-[1px] bg-gradient-to-r from-transparent via-white/10 to-transparent pointer-events-none" />
 
-        <form onSubmit={handleSubmit} className="p-6 space-y-4 overflow-y-auto custom-scrollbar flex-1">
-          {/* Player Name */}
-          <div>
-            <label className="block text-xs font-black text-emerald-300 uppercase tracking-wider mb-1">Player Name *</label>
-            <input
-              type="text"
-              required
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              placeholder="e.g. Taylor Fritz, Qinwen Zheng..."
-              className="w-full bg-court-950/90 border border-court-700 rounded-xl px-4 py-2 text-sm text-white placeholder-emerald-500/40 focus:outline-none focus:ring-2 focus:ring-volt-500/60 focus:border-volt-500"
-            />
+          <div className="p-5 sm:p-6 border-b border-white/[0.08] flex items-center justify-between bg-black/40 relative z-10">
+            <div className="flex items-center gap-2.5">
+              <div className="w-8 h-8 rounded-lg bg-amber-400/10 border border-amber-400/25 flex items-center justify-center text-amber-300">
+                <UserPlus className="w-4 h-4" />
+              </div>
+              <h3 className="text-lg font-display font-semibold text-white tracking-tight">Add New Tennis Player</h3>
+            </div>
+            <button
+              onClick={onClose}
+              className="w-8 h-8 rounded-full bg-white/[0.04] hover:bg-white/[0.08] text-white/50 hover:text-white flex items-center justify-center transition border border-white/[0.08]"
+              aria-label="Close modal"
+            >
+              <X className="w-4 h-4" />
+            </button>
           </div>
 
-          {/* Tour & Flag */}
-          <div className="grid grid-cols-2 gap-4">
+          <form onSubmit={handleSubmit} className="p-5 sm:p-6 space-y-4 overflow-y-auto custom-scrollbar flex-1 relative z-10">
+            {/* Player Name */}
             <div>
-              <label className="block text-xs font-black text-emerald-300 uppercase tracking-wider mb-1">Tour *</label>
+              <label className="block text-[10px] font-mono uppercase tracking-wider text-white/50 mb-1">Player Name *</label>
+              <input
+                type="text"
+                required
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                placeholder="e.g. Taylor Fritz, Qinwen Zheng..."
+                className="w-full bg-white/[0.03] border border-white/[0.08] focus:border-amber-400/40 rounded-xl px-3.5 py-2 text-xs text-white placeholder-white/25 focus:outline-none transition font-sans"
+              />
+            </div>
+
+            {/* Tour & Flag */}
+            <div className="grid grid-cols-2 gap-3">
+              <div>
+                <label className="block text-[10px] font-mono uppercase tracking-wider text-white/50 mb-1">Tour *</label>
+                <select
+                  value={tour}
+                  onChange={(e) => setTour(e.target.value as Tour)}
+                  className="w-full bg-[#0c0f16] border border-white/[0.08] focus:border-amber-400/40 rounded-xl px-3 py-2 text-xs text-white focus:outline-none"
+                >
+                  <option value="ATP" className="bg-[#0c0f16]">ATP (Men)</option>
+                  <option value="WTA" className="bg-[#0c0f16]">WTA (Women)</option>
+                </select>
+              </div>
+
+              <div>
+                <label className="block text-[10px] font-mono uppercase tracking-wider text-white/50 mb-1">Flag Emoji</label>
+                <input
+                  type="text"
+                  value={flag}
+                  onChange={(e) => setFlag(e.target.value)}
+                  placeholder="e.g. 🇺🇸, 🇪🇸, 🇮🇹"
+                  className="w-full bg-white/[0.03] border border-white/[0.08] focus:border-amber-400/40 rounded-xl px-3.5 py-2 text-xs text-white placeholder-white/25 focus:outline-none transition font-sans"
+                />
+              </div>
+            </div>
+
+            {/* Country & Age */}
+            <div className="grid grid-cols-2 gap-3">
+              <div>
+                <label className="block text-[10px] font-mono uppercase tracking-wider text-white/50 mb-1">Country</label>
+                <input
+                  type="text"
+                  value={country}
+                  onChange={(e) => setCountry(e.target.value)}
+                  placeholder="e.g. United States"
+                  className="w-full bg-white/[0.03] border border-white/[0.08] focus:border-amber-400/40 rounded-xl px-3.5 py-2 text-xs text-white placeholder-white/25 focus:outline-none transition font-sans"
+                />
+              </div>
+
+              <div>
+                <label className="block text-[10px] font-mono uppercase tracking-wider text-white/50 mb-1">Age</label>
+                <input
+                  type="number"
+                  value={age}
+                  onChange={(e) => setAge(Number(e.target.value))}
+                  min={14}
+                  max={60}
+                  className="w-full bg-white/[0.03] border border-white/[0.08] focus:border-amber-400/40 rounded-xl px-3.5 py-2 text-xs text-white focus:outline-none transition font-mono"
+                />
+              </div>
+            </div>
+
+            {/* Playing Hand */}
+            <div>
+              <label className="block text-[10px] font-mono uppercase tracking-wider text-white/50 mb-1">Playing Style / Hand</label>
               <select
-                value={tour}
-                onChange={(e) => setTour(e.target.value as Tour)}
-                className="w-full bg-court-950/90 border border-court-700 rounded-xl px-3 py-2 text-sm text-white focus:outline-none focus:ring-2 focus:ring-volt-500/60 focus:border-volt-500"
+                value={plays}
+                onChange={(e) => setPlays(e.target.value as Hand)}
+                className="w-full bg-[#0c0f16] border border-white/[0.08] focus:border-amber-400/40 rounded-xl px-3 py-2 text-xs text-white focus:outline-none"
               >
-                <option value="ATP">ATP (Men)</option>
-                <option value="WTA">WTA (Women)</option>
+                <option value="Right-handed (two-handed backhand)" className="bg-[#0c0f16]">Right-handed (two-handed backhand)</option>
+                <option value="Right-handed (one-handed backhand)" className="bg-[#0c0f16]">Right-handed (one-handed backhand)</option>
+                <option value="Left-handed (two-handed backhand)" className="bg-[#0c0f16]">Left-handed (two-handed backhand)</option>
+                <option value="Left-handed (one-handed backhand)" className="bg-[#0c0f16]">Left-handed (one-handed backhand)</option>
               </select>
             </div>
 
+            {/* Rank & Career High */}
+            <div className="grid grid-cols-2 gap-3">
+              <div>
+                <label className="block text-[10px] font-mono uppercase tracking-wider text-white/50 mb-1">Current Rank</label>
+                <input
+                  type="number"
+                  value={currentRank}
+                  onChange={(e) => setCurrentRank(Number(e.target.value))}
+                  min={0}
+                  className="w-full bg-white/[0.03] border border-white/[0.08] focus:border-amber-400/40 rounded-xl px-3.5 py-2 text-xs text-white focus:outline-none transition font-mono"
+                />
+              </div>
+
+              <div>
+                <label className="block text-[10px] font-mono uppercase tracking-wider text-white/50 mb-1">Career High Rank</label>
+                <input
+                  type="number"
+                  value={careerHighRank}
+                  onChange={(e) => setCareerHighRank(Number(e.target.value))}
+                  min={1}
+                  className="w-full bg-white/[0.03] border border-white/[0.08] focus:border-amber-400/40 rounded-xl px-3.5 py-2 text-xs text-white focus:outline-none transition font-mono"
+                />
+              </div>
+            </div>
+
+            {/* Slams, Titles & Prize Money */}
+            <div className="grid grid-cols-3 gap-3">
+              <div>
+                <label className="block text-[10px] font-mono uppercase tracking-wider text-white/50 mb-1">Slams</label>
+                <input
+                  type="number"
+                  value={grandSlams}
+                  onChange={(e) => setGrandSlams(Number(e.target.value))}
+                  min={0}
+                  className="w-full bg-white/[0.03] border border-white/[0.08] focus:border-amber-400/40 rounded-xl px-3 py-2 text-xs text-white focus:outline-none transition font-mono"
+                />
+              </div>
+
+              <div>
+                <label className="block text-[10px] font-mono uppercase tracking-wider text-white/50 mb-1">Titles</label>
+                <input
+                  type="number"
+                  value={careerTitles}
+                  onChange={(e) => setCareerTitles(Number(e.target.value))}
+                  min={0}
+                  className="w-full bg-white/[0.03] border border-white/[0.08] focus:border-amber-400/40 rounded-xl px-3 py-2 text-xs text-white focus:outline-none transition font-mono"
+                />
+              </div>
+
+              <div>
+                <label className="block text-[10px] font-mono uppercase tracking-wider text-white/50 mb-1">Prize Money</label>
+                <input
+                  type="text"
+                  value={prizeMoney}
+                  onChange={(e) => setPrizeMoney(e.target.value)}
+                  placeholder="$5,000,000"
+                  className="w-full bg-white/[0.03] border border-white/[0.08] focus:border-amber-400/40 rounded-xl px-3 py-2 text-xs text-white focus:outline-none transition font-mono"
+                />
+              </div>
+            </div>
+
+            {/* Playstyle */}
             <div>
-              <label className="block text-xs font-black text-emerald-300 uppercase tracking-wider mb-1">Flag Emoji</label>
+              <label className="block text-[10px] font-mono uppercase tracking-wider text-white/50 mb-1">Playstyle Summary</label>
               <input
                 type="text"
-                value={flag}
-                onChange={(e) => setFlag(e.target.value)}
-                placeholder="e.g. 🇺🇸, 🇪🇸, 🇮🇹"
-                className="w-full bg-court-950/90 border border-court-700 rounded-xl px-4 py-2 text-sm text-white focus:outline-none focus:ring-2 focus:ring-volt-500/60 focus:border-volt-500"
+                value={playStyle}
+                onChange={(e) => setPlayStyle(e.target.value)}
+                placeholder="e.g. Big server with powerful forehand"
+                className="w-full bg-white/[0.03] border border-white/[0.08] focus:border-amber-400/40 rounded-xl px-3.5 py-2 text-xs text-white placeholder-white/25 focus:outline-none transition font-sans"
               />
             </div>
-          </div>
 
-          {/* Country & Age */}
-          <div className="grid grid-cols-2 gap-4">
+            {/* Bio */}
             <div>
-              <label className="block text-xs font-black text-emerald-300 uppercase tracking-wider mb-1">Country</label>
-              <input
-                type="text"
-                value={country}
-                onChange={(e) => setCountry(e.target.value)}
-                placeholder="e.g. United States"
-                className="w-full bg-court-950/90 border border-court-700 rounded-xl px-4 py-2 text-sm text-white placeholder-emerald-500/40 focus:outline-none focus:ring-2 focus:ring-volt-500/60 focus:border-volt-500"
+              <label className="block text-[10px] font-mono uppercase tracking-wider text-white/50 mb-1">Short Bio</label>
+              <textarea
+                value={bio}
+                onChange={(e) => setBio(e.target.value)}
+                rows={2}
+                placeholder="Career highlights or background notes..."
+                className="w-full bg-white/[0.03] border border-white/[0.08] focus:border-amber-400/40 rounded-xl px-3.5 py-2 text-xs text-white placeholder-white/25 focus:outline-none transition font-sans"
               />
             </div>
 
-            <div>
-              <label className="block text-xs font-black text-emerald-300 uppercase tracking-wider mb-1">Age</label>
-              <input
-                type="number"
-                value={age}
-                onChange={(e) => setAge(Number(e.target.value))}
-                min={14}
-                max={60}
-                className="w-full bg-court-950/90 border border-court-700 rounded-xl px-4 py-2 text-sm text-white focus:outline-none focus:ring-2 focus:ring-volt-500/60 focus:border-volt-500"
-              />
+            <div className="pt-2 flex justify-end gap-2.5">
+              <button
+                type="button"
+                onClick={onClose}
+                className="px-4 py-2 text-xs font-mono font-medium text-white/60 hover:text-white rounded-xl bg-white/[0.04] hover:bg-white/[0.08] transition border border-white/[0.08]"
+              >
+                Cancel
+              </button>
+              <button
+                type="submit"
+                className="px-5 py-2 text-xs font-mono font-semibold text-black rounded-xl bg-amber-300 hover:bg-amber-200 shadow-lg shadow-amber-400/10 transition"
+              >
+                Save Player Dossier
+              </button>
             </div>
-          </div>
-
-          {/* Playing Hand */}
-          <div>
-            <label className="block text-xs font-black text-emerald-300 uppercase tracking-wider mb-1">Playing Style / Hand</label>
-            <select
-              value={plays}
-              onChange={(e) => setPlays(e.target.value as Hand)}
-              className="w-full bg-court-950/90 border border-court-700 rounded-xl px-3 py-2 text-sm text-white focus:outline-none focus:ring-2 focus:ring-volt-500/60 focus:border-volt-500"
-            >
-              <option value="Right-handed (two-handed backhand)">Right-handed (two-handed backhand)</option>
-              <option value="Right-handed (one-handed backhand)">Right-handed (one-handed backhand)</option>
-              <option value="Left-handed (two-handed backhand)">Left-handed (two-handed backhand)</option>
-              <option value="Left-handed (one-handed backhand)">Left-handed (one-handed backhand)</option>
-            </select>
-          </div>
-
-          {/* Rank & Career High */}
-          <div className="grid grid-cols-2 gap-3">
-            <div>
-              <label className="block text-[11px] font-black text-emerald-300 uppercase tracking-wider mb-1">Current Rank</label>
-              <input
-                type="number"
-                value={currentRank}
-                onChange={(e) => setCurrentRank(Number(e.target.value))}
-                min={0}
-                className="w-full bg-court-950/90 border border-court-700 rounded-xl px-3 py-2 text-sm text-white focus:outline-none focus:ring-2 focus:ring-volt-500/60"
-              />
-            </div>
-
-            <div>
-              <label className="block text-[11px] font-black text-emerald-300 uppercase tracking-wider mb-1">Career High Rank</label>
-              <input
-                type="number"
-                value={careerHighRank}
-                onChange={(e) => setCareerHighRank(Number(e.target.value))}
-                min={1}
-                className="w-full bg-court-950/90 border border-court-700 rounded-xl px-3 py-2 text-sm text-white focus:outline-none focus:ring-2 focus:ring-volt-500/60"
-              />
-            </div>
-          </div>
-
-          {/* Slams, Titles & Prize Money */}
-          <div className="grid grid-cols-3 gap-3">
-            <div>
-              <label className="block text-[11px] font-black text-emerald-300 uppercase tracking-wider mb-1">Grand Slams</label>
-              <input
-                type="number"
-                value={grandSlams}
-                onChange={(e) => setGrandSlams(Number(e.target.value))}
-                min={0}
-                className="w-full bg-court-950/90 border border-court-700 rounded-xl px-3 py-2 text-sm text-white focus:outline-none focus:ring-2 focus:ring-volt-500/60"
-              />
-            </div>
-
-            <div>
-              <label className="block text-[11px] font-black text-emerald-300 uppercase tracking-wider mb-1">Career Titles</label>
-              <input
-                type="number"
-                value={careerTitles}
-                onChange={(e) => setCareerTitles(Number(e.target.value))}
-                min={0}
-                className="w-full bg-court-950/90 border border-court-700 rounded-xl px-3 py-2 text-sm text-white focus:outline-none focus:ring-2 focus:ring-volt-500/60"
-              />
-            </div>
-
-            <div>
-              <label className="block text-[11px] font-black text-emerald-300 uppercase tracking-wider mb-1">Prize Money</label>
-              <input
-                type="text"
-                value={prizeMoney}
-                onChange={(e) => setPrizeMoney(e.target.value)}
-                placeholder="$5,000,000"
-                className="w-full bg-court-950/90 border border-court-700 rounded-xl px-3 py-2 text-sm text-white focus:outline-none focus:ring-2 focus:ring-volt-500/60"
-              />
-            </div>
-          </div>
-
-          {/* Playstyle */}
-          <div>
-            <label className="block text-xs font-black text-emerald-300 uppercase tracking-wider mb-1">Playstyle Summary</label>
-            <input
-              type="text"
-              value={playStyle}
-              onChange={(e) => setPlayStyle(e.target.value)}
-              placeholder="e.g. Big server with powerful forehand"
-              className="w-full bg-court-950/90 border border-court-700 rounded-xl px-4 py-2 text-sm text-white placeholder-emerald-500/40 focus:outline-none focus:ring-2 focus:ring-volt-500/60 focus:border-volt-500"
-            />
-          </div>
-
-          {/* Bio */}
-          <div>
-            <label className="block text-xs font-black text-emerald-300 uppercase tracking-wider mb-1">Short Bio</label>
-            <textarea
-              value={bio}
-              onChange={(e) => setBio(e.target.value)}
-              rows={2}
-              placeholder="Career highlights or background notes..."
-              className="w-full bg-court-950/90 border border-court-700 rounded-xl px-4 py-2 text-sm text-white placeholder-emerald-500/40 focus:outline-none focus:ring-2 focus:ring-volt-500/60 focus:border-volt-500"
-            />
-          </div>
-
-          <div className="pt-2 flex justify-end gap-3">
-            <button
-              type="button"
-              onClick={onClose}
-              className="px-4 py-2 text-xs font-bold text-emerald-300/80 hover:text-white rounded-xl bg-court-800 hover:bg-court-750 transition border border-court-700"
-            >
-              Cancel
-            </button>
-            <button
-              type="submit"
-              className="px-6 py-2 text-xs font-black text-court-950 rounded-xl bg-gradient-to-r from-volt-500 to-grass-500 hover:from-volt-400 hover:to-grass-400 shadow-lg shadow-volt-500/20 transition border border-volt-300/40"
-            >
-              Save Player
-            </button>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </div>
   );

@@ -67,7 +67,7 @@ export const FULL_CALENDAR_DATA: TournamentScheduleItem[] = [
     drawSize: 128,
     defendingChampions: {
       singlesMen: 'Carlos Alcaraz',
-      singlesWomen: 'Barbora Krejcikova',
+      singlesWomen: 'Aryna Sabalenka',
     },
     city: 'London',
     country: 'United Kingdom',
@@ -233,7 +233,7 @@ export const FULL_CALENDAR_DATA: TournamentScheduleItem[] = [
     winnerPoints: 1000,
     drawSize: 96,
     defendingChampions: {
-      singlesMen: 'Andrey Rublev',
+      singlesMen: 'Alexander Zverev',
       singlesWomen: 'Iga Swiatek',
     },
     city: 'Madrid',
@@ -329,8 +329,8 @@ export const FULL_CALENDAR_DATA: TournamentScheduleItem[] = [
     winnerPoints: 1000,
     drawSize: 96,
     defendingChampions: {
-      singlesMen: 'Carlos Alcaraz',
-      singlesWomen: 'Coco Gauff',
+      singlesMen: 'Alexander Zverev',
+      singlesWomen: 'Aryna Sabalenka',
     },
     city: 'Beijing',
     country: 'China',

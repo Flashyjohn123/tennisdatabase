@@ -66,6 +66,7 @@ export interface Player {
   careerHighRank: number;
   careerTitles: number;
   grandSlams: number;
+  slamFinals?: number;
   slamBreakdown: {
     australianOpen: number;
     rolandGarros: number;
@@ -116,6 +117,9 @@ export interface PlayerRankSummary {
   livePoints?: number;
   officialPoints?: number;
   deltaPoints?: number;
+  pointsDelta?: number;
+  droppingPoints?: number;
+  nextBestPoints?: number;
   tournamentStatus?: string;
   liveRank?: number;
   isLiveScraped?: boolean;
@@ -282,7 +286,7 @@ export interface DrawCompetitor {
 
 export interface DrawMatchup {
   id: string;
-  round: 'Quarterfinal' | 'Semifinal' | 'Championship Final';
+  round: 'Quarterfinal' | 'Semifinal' | 'Final' | 'Championship Final';
   matchNumber: number;
   player1: DrawCompetitor;
   player2: DrawCompetitor;

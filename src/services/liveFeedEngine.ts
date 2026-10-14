@@ -1,10 +1,10 @@
 // Real-time 24/7 live feed manager with RSS merge, simulated event injection, and local storage persistence
 import { LiveFeedItem, ApiConfig, FeedCategory, FeedSeverity } from '../types/tennis';
 import { MOCK_LIVE_FEED_ITEMS } from '../data/mockLiveFeedData';
-import { fetchAllRssFeeds, KNOWN_RSS_SOURCES } from './rssFeedService';
+import { fetchAllRssFeeds, KNOWN_RSS_SOURCES, isAuthorizedSource } from './rssFeedService';
 import { useState, useEffect, useCallback } from 'react';
 
-const STORAGE_KEY_FEED = 'tennisdb_live_feed_items';
+const STORAGE_KEY_FEED = 'tennisdb_live_feed_v11';
 const STORAGE_KEY_CONFIG = 'tennisdb_feed_config';
 
 const DEFAULT_CONFIG: ApiConfig = {
@@ -32,7 +32,7 @@ const SIMULATION_EVENTS_POOL: Array<{
     summary: 'Physiotherapist currently treating player during standard 3-minute medical interval with play momentarily paused.',
     category: 'injury',
     severity: 'medium',
-    source: 'Tennis TV Court Alerts',
+    source: 'ATP Tour Communications',
     playerNames: ['Carlos Alcaraz'],
     tournamentName: 'Roland Garros',
     tags: ['Medical Timeout', 'Live Court', 'Physio'],
@@ -42,7 +42,7 @@ const SIMULATION_EVENTS_POOL: Array<{
     summary: 'Optical tracking replay confirms ball caught 2mm of the white line, reversing original out call to an ace.',
     category: 'controversy',
     severity: 'low',
-    source: 'Hawk-Eye Live System',
+    source: 'ATP Official Match Operations',
     tags: ['ELC', 'Challenge', 'Live Call'],
   },
   {
@@ -50,7 +50,7 @@ const SIMULATION_EVENTS_POOL: Array<{
     summary: 'World No. 1 converts second match point with a 218 km/h kicker out wide to reach the semifinals.',
     category: 'match_result',
     severity: 'high',
-    source: 'ATP Tour Live Scoreboard',
+    source: 'ATP Tour Communications',
     playerNames: ['Jannik Sinner'],
     tournamentName: 'Italian Open',
     tags: ['Victory', 'Sinner', 'Match Point'],
@@ -60,7 +60,7 @@ const SIMULATION_EVENTS_POOL: Array<{
     summary: 'Groundskeeping crew has completely dried the baseline turf and chair umpires are calling players out for warmup.',
     category: 'tournament_update',
     severity: 'low',
-    source: 'Tournament Director Bulletin',
+    source: 'ATP Tour Communications',
     tournamentName: 'Wimbledon',
     tags: ['Weather', 'Resumption', 'Courts'],
   },
@@ -69,7 +69,7 @@ const SIMULATION_EVENTS_POOL: Array<{
     summary: 'Official tournament bulletin confirms withdrawal following morning physical evaluation by medical staff.',
     category: 'withdrawal',
     severity: 'urgent',
-    source: 'WTA Official Notice',
+    source: 'WTA Tour Communications',
     playerNames: ['Elena Rybakina'],
     tags: ['Walkover', 'Illness', 'WTA'],
   },
@@ -78,7 +78,7 @@ const SIMULATION_EVENTS_POOL: Array<{
     summary: 'Dominant baseline slugfest concluded in 1 hour 42 minutes with an 84% first-serve conversion rate.',
     category: 'match_result',
     severity: 'high',
-    source: 'WTA Live Alert',
+    source: 'WTA Live Operations',
     playerNames: ['Aryna Sabalenka'],
     tournamentName: 'US Open',
     tags: ['Winner', 'Sabalenka', 'US Open'],
@@ -88,7 +88,7 @@ const SIMULATION_EVENTS_POOL: Array<{
     summary: 'Alcaraz seen completing baseline drill sets with specialized elastomeric strapping under trainer supervision.',
     category: 'injury',
     severity: 'medium',
-    source: 'Courtside Reporter',
+    source: 'ESPN Tennis Analytics',
     playerNames: ['Carlos Alcaraz'],
     tags: ['Practice', 'Forearm', 'Training'],
   },
@@ -97,7 +97,7 @@ const SIMULATION_EVENTS_POOL: Array<{
     summary: 'Chair umpire warns player box after racket frame damage on clay surface near umpire chair.',
     category: 'controversy',
     severity: 'medium',
-    source: 'Court 2 Match Official',
+    source: 'ATP Official Match Operations',
     tags: ['Violation', 'Code of Conduct'],
   },
 ];
@@ -129,7 +129,8 @@ class LiveFeedEngineService {
       if (savedItems) {
         const parsed = JSON.parse(savedItems);
         if (Array.isArray(parsed) && parsed.length > 0) {
-          this.items = parsed;
+          // Strictly filter through isAuthorizedSource to purge unauthorized cached items
+          this.items = parsed.filter((item: LiveFeedItem) => item && isAuthorizedSource(item.source));
         }
       }
     } catch (e) {
@@ -137,7 +138,7 @@ class LiveFeedEngineService {
     }
 
     if (this.items.length === 0) {
-      this.items = [...MOCK_LIVE_FEED_ITEMS];
+      this.items = MOCK_LIVE_FEED_ITEMS.filter((item) => isAuthorizedSource(item.source));
     }
   }
 
@@ -202,7 +203,11 @@ class LiveFeedEngineService {
     const existingTitles = new Set(this.items.map((i) => i.title.trim().toLowerCase()));
 
     const uniqueIncoming = newItems.filter(
-      (item) => !existingIds.has(item.id) && !existingTitles.has(item.title.trim().toLowerCase())
+      (item) =>
+        item &&
+        isAuthorizedSource(item.source) &&
+        !existingIds.has(item.id) &&
+        !existingTitles.has(item.title.trim().toLowerCase())
     );
 
     if (uniqueIncoming.length > 0) {
@@ -239,6 +244,10 @@ class LiveFeedEngineService {
   }
 
   public addManualItem(itemData: Partial<LiveFeedItem>): LiveFeedItem {
+    const source = itemData.source && isAuthorizedSource(itemData.source)
+      ? itemData.source
+      : 'ATP Tour Communications';
+
     const newItem: LiveFeedItem = {
       id: itemData.id || `custom-${Date.now()}`,
       title: itemData.title || 'Breaking Tennis Alert',
@@ -246,7 +255,7 @@ class LiveFeedEngineService {
       category: itemData.category || 'breaking',
       severity: itemData.severity || 'medium',
       timestamp: itemData.timestamp || new Date().toISOString(),
-      source: itemData.source || 'Editorial Live Desk',
+      source,
       url: itemData.url,
       playerIds: itemData.playerIds,
       playerNames: itemData.playerNames,

@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { Player, Tour, PlayerRankSummary, AtpLiveRankEntry } from '../types/tennis';
 import { useAtpLiveRankings, ATP_LIVE_URL } from '../services/atpLiveRankingsService';
 import { useWtaLiveRankings, WtaLiveRankEntry } from '../services/wtaLiveRankingsService';
@@ -16,6 +16,7 @@ import {
 
 interface RankingsViewProps {
   players?: Player[];
+  selectedTour?: Tour | 'ALL';
   onSelectPlayer: (player: Player) => void;
   atpLiveRankings?: AtpLiveRankEntry[];
   isSyncing?: boolean;
@@ -30,6 +31,7 @@ const ITEMS_PER_PAGE = 50;
 
 export const RankingsView: React.FC<RankingsViewProps> = ({
   onSelectPlayer,
+  selectedTour: propSelectedTour,
   atpLiveRankings: propAtpLiveRankings,
   isSyncing: propIsSyncing,
   lastSynced: propLastSynced,
@@ -52,7 +54,15 @@ export const RankingsView: React.FC<RankingsViewProps> = ({
   };
   const isLiveSource = propIsLiveSource !== undefined ? propIsLiveSource : hookData.isLiveSource;
 
-  const [selectedTour, setSelectedTour] = useState<Tour>('ATP');
+  const [selectedTour, setSelectedTour] = useState<Tour>(
+    propSelectedTour && propSelectedTour !== 'ALL' ? propSelectedTour : 'ATP'
+  );
+
+  useEffect(() => {
+    if (propSelectedTour && propSelectedTour !== 'ALL') {
+      setSelectedTour(propSelectedTour);
+    }
+  }, [propSelectedTour]);
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [selectedCountry, setSelectedCountry] = useState<string>('ALL');
   const [selectedRange, setSelectedRange] = useState<RankRange>('ALL');

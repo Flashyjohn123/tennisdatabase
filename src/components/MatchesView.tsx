@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { Match, Surface, Player } from '../types/tennis';
-import { ChevronDown, ChevronUp, Timer, Activity } from 'lucide-react';
+import { ChevronDown, ChevronUp, Timer, Activity, Plus } from 'lucide-react';
+import { MiniDualShareMeter } from './charts/PieChart';
 
 interface MatchesViewProps {
   matches: Match[];
   players: Player[];
   onSelectPlayer: (player: Player) => void;
+  onOpenAddMatch?: () => void;
 }
 
 const COUNTRY_ISO_MAP: Record<string, string> = {
@@ -48,6 +50,7 @@ export const MatchesView: React.FC<MatchesViewProps> = ({
   matches,
   players,
   onSelectPlayer,
+  onOpenAddMatch,
 }) => {
   const [selectedSurface, setSelectedSurface] = useState<Surface | 'ALL'>('ALL');
   const [expandedMatchId, setExpandedMatchId] = useState<string | null>(null);
@@ -86,7 +89,18 @@ export const MatchesView: React.FC<MatchesViewProps> = ({
               </p>
             </div>
 
-            <div className="flex items-center gap-3">
+            <div className="flex flex-wrap items-center gap-3">
+              {onOpenAddMatch && (
+                <button
+                  type="button"
+                  onClick={onOpenAddMatch}
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-amber-400/10 hover:bg-amber-400/20 text-amber-300 border border-amber-400/30 hover:border-amber-400/50 text-xs font-mono font-semibold transition-all shadow-[0_0_16px_rgba(251,191,36,0.1)] group shrink-0"
+                >
+                  <Plus className="w-3.5 h-3.5 text-amber-400 group-hover:scale-110 transition-transform" />
+                  <span>+ Record Match</span>
+                </button>
+              )}
+
               {/* Refined Oyster Surface Selector */}
               <div className="flex bg-white/[0.02] rounded-full p-1 border border-white/[0.06] text-xs font-mono">
                 {(['ALL', 'Hard', 'Clay', 'Grass'] as const).map((surf) => (
@@ -287,18 +301,64 @@ export const MatchesView: React.FC<MatchesViewProps> = ({
 
                       <div className="bg-black/40 rounded-xl p-4 border border-white/[0.06] space-y-2.5">
                         {/* Column Header */}
-                        <div className="flex justify-between text-xs font-mono text-white/70 border-b border-white/[0.06] pb-2">
-                          <span className="w-1/3 truncate text-white font-medium">{m.player1Name}</span>
-                          <span className="w-1/3 text-center uppercase tracking-widest text-white/35 text-[9px]">Match Category</span>
-                          <span className="w-1/3 text-right truncate text-white font-medium">{m.player2Name}</span>
+                        <div className="flex justify-between items-center text-xs font-mono text-white/70 border-b border-white/[0.06] pb-2">
+                          <span className="w-1/3 truncate text-[#e5c378] font-semibold flex items-center gap-1.5">
+                            <span className="w-2 h-2 rounded-full bg-[#e5c378]" />
+                            {m.player1Name}
+                          </span>
+                          <span className="w-1/3 text-center uppercase tracking-widest text-white/35 text-[9px]">
+                            Category Telemetry
+                          </span>
+                          <span className="w-1/3 text-right truncate text-sky-400 font-semibold flex items-center justify-end gap-1.5">
+                            {m.player2Name}
+                            <span className="w-2 h-2 rounded-full bg-sky-400" />
+                          </span>
                         </div>
 
-                        <StatBoxRow label="Aces" val1={m.stats.aces[0]} val2={m.stats.aces[1]} />
-                        <StatBoxRow label="Double Faults" val1={m.stats.doubleFaults[0]} val2={m.stats.doubleFaults[1]} />
-                        <StatBoxRow label="1st Serve %" val1={`${m.stats.firstServePercentage[0]}%`} val2={`${m.stats.firstServePercentage[1]}%`} />
-                        <StatBoxRow label="Break Points Won" val1={m.stats.breakPointsWon[0]} val2={m.stats.breakPointsWon[1]} />
-                        <StatBoxRow label="Unforced Errors" val1={m.stats.unforcedErrors[0]} val2={m.stats.unforcedErrors[1]} />
-                        <StatBoxRow label="Total Points Won" val1={m.stats.totalPointsWon[0]} val2={m.stats.totalPointsWon[1]} />
+                        <StatBoxRow
+                          label="Total Points Won"
+                          val1={m.stats.totalPointsWon[0]}
+                          val2={m.stats.totalPointsWon[1]}
+                          showShareMeter={true}
+                          meterVal1={m.stats.totalPointsWon[0]}
+                          meterVal2={m.stats.totalPointsWon[1]}
+                        />
+                        <StatBoxRow
+                          label="1st Serve %"
+                          val1={`${m.stats.firstServePercentage[0]}%`}
+                          val2={`${m.stats.firstServePercentage[1]}%`}
+                          showShareMeter={true}
+                          meterVal1={m.stats.firstServePercentage[0]}
+                          meterVal2={m.stats.firstServePercentage[1]}
+                        />
+                        <StatBoxRow
+                          label="Break Points Won"
+                          val1={m.stats.breakPointsWon[0]}
+                          val2={m.stats.breakPointsWon[1]}
+                          showShareMeter={true}
+                          meterVal1={parseInt(m.stats.breakPointsWon[0].split('/')[0]) || 0}
+                          meterVal2={parseInt(m.stats.breakPointsWon[1].split('/')[0]) || 0}
+                        />
+                        <StatBoxRow
+                          label="Aces"
+                          val1={m.stats.aces[0]}
+                          val2={m.stats.aces[1]}
+                          showShareMeter={true}
+                          meterVal1={m.stats.aces[0]}
+                          meterVal2={m.stats.aces[1]}
+                        />
+                        <StatBoxRow
+                          label="Double Faults"
+                          val1={m.stats.doubleFaults[0]}
+                          val2={m.stats.doubleFaults[1]}
+                          showShareMeter={false}
+                        />
+                        <StatBoxRow
+                          label="Unforced Errors"
+                          val1={m.stats.unforcedErrors[0]}
+                          val2={m.stats.unforcedErrors[1]}
+                          showShareMeter={false}
+                        />
                       </div>
                     </div>
                   )}
@@ -314,15 +374,37 @@ export const MatchesView: React.FC<MatchesViewProps> = ({
   );
 };
 
-const StatBoxRow: React.FC<{ label: string; val1: string | number; val2: string | number }> = ({
+const StatBoxRow: React.FC<{
+  label: string;
+  val1: string | number;
+  val2: string | number;
+  showShareMeter?: boolean;
+  meterVal1?: number;
+  meterVal2?: number;
+}> = ({
   label,
   val1,
   val2,
+  showShareMeter = false,
+  meterVal1 = 0,
+  meterVal2 = 0,
 }) => {
   return (
-    <div className="flex justify-between items-center text-xs font-mono py-1">
+    <div className="flex justify-between items-center text-xs font-mono py-1 hover:bg-white/[0.02] rounded px-1 transition">
       <span className="w-1/3 tabular-nums font-semibold text-white/90">{val1}</span>
-      <span className="w-1/3 text-center text-white/40 text-[10px] uppercase tracking-wider">{label}</span>
+      <div className="w-1/3 flex items-center justify-center gap-2">
+        <span className="text-white/40 text-[10px] uppercase tracking-wider">{label}</span>
+        {showShareMeter && (meterVal1 > 0 || meterVal2 > 0) && (
+          <MiniDualShareMeter
+            val1={meterVal1}
+            val2={meterVal2}
+            size={18}
+            strokeWidth={2.8}
+            color1="#e5c378"
+            color2="#38bdf8"
+          />
+        )}
+      </div>
       <span className="w-1/3 text-right tabular-nums font-semibold text-white/90">{val2}</span>
     </div>
   );

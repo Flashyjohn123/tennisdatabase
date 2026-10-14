@@ -65,177 +65,185 @@ export const AddMatchModal: React.FC<AddMatchModalProps> = ({
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-court-950/85 backdrop-blur-md animate-fadeIn">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-black/80 backdrop-blur-md animate-fadeIn">
       <div 
-        className="relative w-full max-w-lg bg-court-900 border border-court-700 rounded-3xl shadow-2xl overflow-hidden max-h-[90vh] flex flex-col"
+        className="relative w-full max-w-lg double-bezel-card-outer max-h-[90vh] flex flex-col"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="p-6 border-b border-court-750 flex items-center justify-between bg-court-950/60">
-          <div className="flex items-center gap-2">
-            <Trophy className="w-5 h-5 text-volt-500" />
-            <h3 className="text-xl font-black text-white tracking-tight">Record Tennis Match</h3>
-          </div>
-          <button
-            onClick={onClose}
-            className="w-8 h-8 rounded-full bg-court-800 hover:bg-court-750 text-emerald-300 hover:text-white flex items-center justify-center transition border border-court-700"
-          >
-            <X className="w-4 h-4" />
-          </button>
-        </div>
+        <div className="double-bezel-card-inner flex flex-col overflow-hidden bg-gradient-to-b from-[#0e1219] via-[#0c1015] to-[#080a0d]">
+          {/* Top Sheen */}
+          <div className="absolute inset-x-0 top-0 h-[1px] bg-gradient-to-r from-transparent via-white/10 to-transparent pointer-events-none" />
 
-        <form onSubmit={handleSubmit} className="p-6 space-y-4 overflow-y-auto custom-scrollbar flex-1">
-          {/* Tournament & Year */}
-          <div className="grid grid-cols-2 gap-4">
-            <div>
-              <label className="block text-xs font-black text-emerald-300 uppercase tracking-wider mb-1">Tournament *</label>
-              <input
-                type="text"
-                required
-                value={tournamentName}
-                onChange={(e) => setTournamentName(e.target.value)}
-                placeholder="e.g. Wimbledon 2026"
-                className="w-full bg-court-950/90 border border-court-700 rounded-xl px-4 py-2 text-sm text-white focus:outline-none focus:ring-2 focus:ring-volt-500/60 focus:border-volt-500"
-              />
+          <div className="p-5 sm:p-6 border-b border-white/[0.08] flex items-center justify-between bg-black/40 relative z-10">
+            <div className="flex items-center gap-2.5">
+              <div className="w-8 h-8 rounded-lg bg-amber-400/10 border border-amber-400/25 flex items-center justify-center text-amber-300">
+                <Trophy className="w-4 h-4" />
+              </div>
+              <h3 className="text-lg font-display font-semibold text-white tracking-tight">Record Tennis Match</h3>
             </div>
-
-            <div>
-              <label className="block text-xs font-black text-emerald-300 uppercase tracking-wider mb-1">Year</label>
-              <input
-                type="number"
-                value={year}
-                onChange={(e) => setYear(Number(e.target.value))}
-                className="w-full bg-court-950/90 border border-court-700 rounded-xl px-4 py-2 text-sm text-white focus:outline-none focus:ring-2 focus:ring-volt-500/60 focus:border-volt-500"
-              />
-            </div>
-          </div>
-
-          {/* Surface & Round */}
-          <div className="grid grid-cols-2 gap-4">
-            <div>
-              <label className="block text-xs font-black text-emerald-300 uppercase tracking-wider mb-1">Surface</label>
-              <select
-                value={surface}
-                onChange={(e) => setSurface(e.target.value as Surface)}
-                className="w-full bg-court-950/90 border border-court-700 rounded-xl px-3 py-2 text-sm text-white focus:outline-none focus:ring-2 focus:ring-volt-500/60 focus:border-volt-500"
-              >
-                <option value="Hard">Hard Court</option>
-                <option value="Clay">Clay Court</option>
-                <option value="Grass">Grass Court</option>
-              </select>
-            </div>
-
-            <div>
-              <label className="block text-xs font-black text-emerald-300 uppercase tracking-wider mb-1">Round</label>
-              <select
-                value={round}
-                onChange={(e) => setRound(e.target.value)}
-                className="w-full bg-court-950/90 border border-court-700 rounded-xl px-3 py-2 text-sm text-white focus:outline-none focus:ring-2 focus:ring-volt-500/60 focus:border-volt-500"
-              >
-                <option value="Final">Final</option>
-                <option value="Semifinal">Semifinal</option>
-                <option value="Quarterfinal">Quarterfinal</option>
-                <option value="Round of 16">Round of 16</option>
-                <option value="Round of 32">Round of 32</option>
-              </select>
-            </div>
-          </div>
-
-          {/* Players Selection */}
-          <div className="grid grid-cols-2 gap-4">
-            <div>
-              <label className="block text-xs font-black text-emerald-300 uppercase tracking-wider mb-1">Player 1 *</label>
-              <select
-                value={player1Id}
-                onChange={(e) => setPlayer1Id(e.target.value)}
-                className="w-full bg-court-950/90 border border-court-700 rounded-xl px-3 py-2 text-sm text-white focus:outline-none focus:ring-2 focus:ring-volt-500/60 focus:border-volt-500"
-              >
-                {players.map((p) => (
-                  <option key={p.id} value={p.id}>{p.flag} {p.name}</option>
-                ))}
-              </select>
-            </div>
-
-            <div>
-              <label className="block text-xs font-black text-emerald-300 uppercase tracking-wider mb-1">Player 2 *</label>
-              <select
-                value={player2Id}
-                onChange={(e) => setPlayer2Id(e.target.value)}
-                className="w-full bg-court-950/90 border border-court-700 rounded-xl px-3 py-2 text-sm text-white focus:outline-none focus:ring-2 focus:ring-volt-500/60 focus:border-volt-500"
-              >
-                {players.map((p) => (
-                  <option key={p.id} value={p.id}>{p.flag} {p.name}</option>
-                ))}
-              </select>
-            </div>
-          </div>
-
-          {/* Winner & Score */}
-          <div className="grid grid-cols-2 gap-4">
-            <div>
-              <label className="block text-xs font-black text-emerald-300 uppercase tracking-wider mb-1">Match Winner *</label>
-              <select
-                value={winnerId}
-                onChange={(e) => setWinnerId(e.target.value)}
-                className="w-full bg-court-950/90 border border-court-700 rounded-xl px-3 py-2 text-sm text-volt-400 font-bold focus:outline-none focus:ring-2 focus:ring-volt-500/60 focus:border-volt-500"
-              >
-                <option value={player1Id}>Player 1 ({players.find(p => p.id === player1Id)?.name})</option>
-                <option value={player2Id}>Player 2 ({players.find(p => p.id === player2Id)?.name})</option>
-              </select>
-            </div>
-
-            <div>
-              <label className="block text-xs font-black text-emerald-300 uppercase tracking-wider mb-1">Scoreline *</label>
-              <input
-                type="text"
-                required
-                value={score}
-                onChange={(e) => setScore(e.target.value)}
-                placeholder="e.g. 6-4, 3-6, 7-6(5)"
-                className="w-full bg-court-950/90 border border-court-700 rounded-xl px-4 py-2 text-sm text-white font-mono focus:outline-none focus:ring-2 focus:ring-volt-500/60 focus:border-volt-500"
-              />
-            </div>
-          </div>
-
-          {/* Headline */}
-          <div>
-            <label className="block text-xs font-black text-emerald-300 uppercase tracking-wider mb-1">Match Headline</label>
-            <input
-              type="text"
-              value={headline}
-              onChange={(e) => setHeadline(e.target.value)}
-              placeholder="e.g. Epic 5-set comeback victory"
-              className="w-full bg-court-950/90 border border-court-700 rounded-xl px-4 py-2 text-sm text-white placeholder-emerald-500/40 focus:outline-none focus:ring-2 focus:ring-volt-500/60 focus:border-volt-500"
-            />
-          </div>
-
-          {/* Highlights */}
-          <div>
-            <label className="block text-xs font-black text-emerald-300 uppercase tracking-wider mb-1">Key Match Highlights</label>
-            <input
-              type="text"
-              value={highlights}
-              onChange={(e) => setHighlights(e.target.value)}
-              placeholder="e.g. Saved 3 match points in the fourth set tiebreak..."
-              className="w-full bg-court-950/90 border border-court-700 rounded-xl px-4 py-2 text-sm text-white placeholder-emerald-500/40 focus:outline-none focus:ring-2 focus:ring-volt-500/60 focus:border-volt-500"
-            />
-          </div>
-
-          <div className="pt-2 flex justify-end gap-3">
             <button
-              type="button"
               onClick={onClose}
-              className="px-4 py-2 text-xs font-bold text-emerald-300/80 hover:text-white rounded-xl bg-court-800 hover:bg-court-750 transition border border-court-700"
+              className="w-8 h-8 rounded-full bg-white/[0.04] hover:bg-white/[0.08] text-white/50 hover:text-white flex items-center justify-center transition border border-white/[0.08]"
+              aria-label="Close modal"
             >
-              Cancel
-            </button>
-            <button
-              type="submit"
-              className="px-6 py-2 text-xs font-black text-court-950 rounded-xl bg-gradient-to-r from-volt-500 to-grass-500 hover:from-volt-400 hover:to-grass-400 shadow-lg shadow-volt-500/20 transition border border-volt-300/40"
-            >
-              Record Match
+              <X className="w-4 h-4" />
             </button>
           </div>
-        </form>
+
+          <form onSubmit={handleSubmit} className="p-5 sm:p-6 space-y-4 overflow-y-auto custom-scrollbar flex-1 relative z-10">
+            {/* Tournament & Year */}
+            <div className="grid grid-cols-2 gap-3">
+              <div>
+                <label className="block text-[10px] font-mono uppercase tracking-wider text-white/50 mb-1">Tournament *</label>
+                <input
+                  type="text"
+                  required
+                  value={tournamentName}
+                  onChange={(e) => setTournamentName(e.target.value)}
+                  placeholder="e.g. Wimbledon 2026"
+                  className="w-full bg-white/[0.03] border border-white/[0.08] focus:border-amber-400/40 rounded-xl px-3.5 py-2 text-xs text-white placeholder-white/25 focus:outline-none transition font-sans"
+                />
+              </div>
+
+              <div>
+                <label className="block text-[10px] font-mono uppercase tracking-wider text-white/50 mb-1">Year</label>
+                <input
+                  type="number"
+                  value={year}
+                  onChange={(e) => setYear(Number(e.target.value))}
+                  className="w-full bg-white/[0.03] border border-white/[0.08] focus:border-amber-400/40 rounded-xl px-3.5 py-2 text-xs text-white focus:outline-none transition font-mono"
+                />
+              </div>
+            </div>
+
+            {/* Surface & Round */}
+            <div className="grid grid-cols-2 gap-3">
+              <div>
+                <label className="block text-[10px] font-mono uppercase tracking-wider text-white/50 mb-1">Surface</label>
+                <select
+                  value={surface}
+                  onChange={(e) => setSurface(e.target.value as Surface)}
+                  className="w-full bg-[#0c0f16] border border-white/[0.08] focus:border-amber-400/40 rounded-xl px-3 py-2 text-xs text-white focus:outline-none"
+                >
+                  <option value="Hard" className="bg-[#0c0f16]">Hard Court</option>
+                  <option value="Clay" className="bg-[#0c0f16]">Clay Court</option>
+                  <option value="Grass" className="bg-[#0c0f16]">Grass Court</option>
+                </select>
+              </div>
+
+              <div>
+                <label className="block text-[10px] font-mono uppercase tracking-wider text-white/50 mb-1">Round</label>
+                <select
+                  value={round}
+                  onChange={(e) => setRound(e.target.value)}
+                  className="w-full bg-[#0c0f16] border border-white/[0.08] focus:border-amber-400/40 rounded-xl px-3 py-2 text-xs text-white focus:outline-none"
+                >
+                  <option value="Final" className="bg-[#0c0f16]">Final</option>
+                  <option value="Semifinal" className="bg-[#0c0f16]">Semifinal</option>
+                  <option value="Quarterfinal" className="bg-[#0c0f16]">Quarterfinal</option>
+                  <option value="Round of 16" className="bg-[#0c0f16]">Round of 16</option>
+                  <option value="Round of 32" className="bg-[#0c0f16]">Round of 32</option>
+                </select>
+              </div>
+            </div>
+
+            {/* Players Selection */}
+            <div className="grid grid-cols-2 gap-3">
+              <div>
+                <label className="block text-[10px] font-mono uppercase tracking-wider text-white/50 mb-1">Player 1 *</label>
+                <select
+                  value={player1Id}
+                  onChange={(e) => setPlayer1Id(e.target.value)}
+                  className="w-full bg-[#0c0f16] border border-white/[0.08] focus:border-amber-400/40 rounded-xl px-3 py-2 text-xs text-white focus:outline-none"
+                >
+                  {players.map((p) => (
+                    <option key={p.id} value={p.id} className="bg-[#0c0f16]">{p.flag} {p.name}</option>
+                  ))}
+                </select>
+              </div>
+
+              <div>
+                <label className="block text-[10px] font-mono uppercase tracking-wider text-white/50 mb-1">Player 2 *</label>
+                <select
+                  value={player2Id}
+                  onChange={(e) => setPlayer2Id(e.target.value)}
+                  className="w-full bg-[#0c0f16] border border-white/[0.08] focus:border-amber-400/40 rounded-xl px-3 py-2 text-xs text-white focus:outline-none"
+                >
+                  {players.map((p) => (
+                    <option key={p.id} value={p.id} className="bg-[#0c0f16]">{p.flag} {p.name}</option>
+                  ))}
+                </select>
+              </div>
+            </div>
+
+            {/* Winner & Score */}
+            <div className="grid grid-cols-2 gap-3">
+              <div>
+                <label className="block text-[10px] font-mono uppercase tracking-wider text-white/50 mb-1">Match Winner *</label>
+                <select
+                  value={winnerId}
+                  onChange={(e) => setWinnerId(e.target.value)}
+                  className="w-full bg-[#0c0f16] border border-white/[0.08] focus:border-amber-400/40 rounded-xl px-3 py-2 text-xs text-amber-300 font-semibold focus:outline-none"
+                >
+                  <option value={player1Id} className="bg-[#0c0f16]">Player 1 ({players.find(p => p.id === player1Id)?.name})</option>
+                  <option value={player2Id} className="bg-[#0c0f16]">Player 2 ({players.find(p => p.id === player2Id)?.name})</option>
+                </select>
+              </div>
+
+              <div>
+                <label className="block text-[10px] font-mono uppercase tracking-wider text-white/50 mb-1">Scoreline *</label>
+                <input
+                  type="text"
+                  required
+                  value={score}
+                  onChange={(e) => setScore(e.target.value)}
+                  placeholder="e.g. 6-4, 3-6, 7-6(5)"
+                  className="w-full bg-white/[0.03] border border-white/[0.08] focus:border-amber-400/40 rounded-xl px-3.5 py-2 text-xs text-white font-mono focus:outline-none transition"
+                />
+              </div>
+            </div>
+
+            {/* Headline */}
+            <div>
+              <label className="block text-[10px] font-mono uppercase tracking-wider text-white/50 mb-1">Match Headline</label>
+              <input
+                type="text"
+                value={headline}
+                onChange={(e) => setHeadline(e.target.value)}
+                placeholder="e.g. Epic 5-set comeback victory"
+                className="w-full bg-white/[0.03] border border-white/[0.08] focus:border-amber-400/40 rounded-xl px-3.5 py-2 text-xs text-white placeholder-white/25 focus:outline-none transition font-sans"
+              />
+            </div>
+
+            {/* Highlights */}
+            <div>
+              <label className="block text-[10px] font-mono uppercase tracking-wider text-white/50 mb-1">Key Match Highlights</label>
+              <input
+                type="text"
+                value={highlights}
+                onChange={(e) => setHighlights(e.target.value)}
+                placeholder="e.g. Saved 3 match points in the fourth set tiebreak..."
+                className="w-full bg-white/[0.03] border border-white/[0.08] focus:border-amber-400/40 rounded-xl px-3.5 py-2 text-xs text-white placeholder-white/25 focus:outline-none transition font-sans"
+              />
+            </div>
+
+            <div className="pt-2 flex justify-end gap-2.5">
+              <button
+                type="button"
+                onClick={onClose}
+                className="px-4 py-2 text-xs font-mono font-medium text-white/60 hover:text-white rounded-xl bg-white/[0.04] hover:bg-white/[0.08] transition border border-white/[0.08]"
+              >
+                Cancel
+              </button>
+              <button
+                type="submit"
+                className="px-5 py-2 text-xs font-mono font-semibold text-black rounded-xl bg-amber-300 hover:bg-amber-200 shadow-lg shadow-amber-400/10 transition"
+              >
+                Record Match
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   );

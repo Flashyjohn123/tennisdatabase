@@ -388,7 +388,7 @@ export const TournamentDrawsView: React.FC<TournamentDrawsViewProps> = ({ onSele
                         : 'bg-white/[0.02] hover:bg-white/[0.05] text-white/50 border-white/[0.06]'
                     }`}
                   >
-                    <span>{draw.tournamentName} ({draw.tour})</span>
+                    <span>{draw.tournamentName} '{String(draw.year).slice(-2)} ({draw.tour})</span>
                   </button>
                 );
               })}

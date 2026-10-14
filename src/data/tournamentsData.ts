@@ -16,7 +16,7 @@ export const INITIAL_TOURNAMENTS: Tournament[] = [
       titles: 10,
     },
     defendingChampions: {
-      singlesMen: 'Jannik Sinner',
+      singlesMen: 'Alexander Zverev',
       singlesWomen: 'Aryna Sabalenka',
     },
     description: 'The first Grand Slam tournament of the calendar year, played in January in the summer heat of Melbourne. Famous for its vibrant atmosphere and blue Plexicushion/GreenSet courts.',
@@ -59,7 +59,7 @@ export const INITIAL_TOURNAMENTS: Tournament[] = [
     },
     defendingChampions: {
       singlesMen: 'Carlos Alcaraz',
-      singlesWomen: 'Barbora Krejčíková',
+      singlesWomen: 'Aryna Sabalenka',
     },
     description: 'The oldest and most prestigious tennis tournament in the world. Known for its strict all-white dress code, royal patronage, and pure 100% perennial ryegrass courts.',
     icon: '👑',
@@ -141,7 +141,7 @@ export const INITIAL_TOURNAMENTS: Tournament[] = [
       titles: 5,
     },
     defendingChampions: {
-      singlesMen: 'Andrey Rublev',
+      singlesMen: 'Alexander Zverev',
       singlesWomen: 'Iga Świątek',
     },
     description: 'High-altitude European clay court spectacle at the Magic Box in Madrid, combining ATP Masters 1000 and WTA 1000 action.',

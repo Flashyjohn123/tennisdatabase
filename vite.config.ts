@@ -4,27 +4,15 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base: './',
   plugins: [react()],
+  resolve: {
+    dedupe: ['tslib'],
+  },
   server: {
     host: true,
     port: 5175,
+    allowedHosts: true,
     open: true,
     proxy: {
-      '/api/proxy/tennis-com': {
-        target: 'https://www.tennis.com',
-        changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api\/proxy\/tennis-com/, '/rss/news/'),
-        headers: {
-          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
-        },
-      },
-      '/api/proxy/bbc-tennis': {
-        target: 'https://feeds.bbci.co.uk',
-        changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api\/proxy\/bbc-tennis/, '/sport/tennis/rss.xml'),
-        headers: {
-          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
-        },
-      },
       '/api/proxy/espn-tennis': {
         target: 'https://www.espn.com',
         changeOrigin: true,
@@ -33,12 +21,36 @@ export default defineConfig({
           'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
         },
       },
-      '/api/proxy/google-tennis': {
-        target: 'https://news.google.com',
+      '/api/proxy/atp-tour': {
+        target: 'https://www.atptour.com',
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api\/proxy\/google-tennis/, '/rss/search?q=tennis+(ATP+OR+WTA+OR+"Grand+Slam")+when:3d&hl=en-US&gl=US&ceid=US:en'),
+        rewrite: (path) => path.replace(/^\/api\/proxy\/atp-tour/, '/en/media/rss/news'),
         headers: {
           'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+        },
+      },
+      '/api/proxy/wta-tennis': {
+        target: 'https://www.wtatennis.com',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api\/proxy\/wta-tennis/, '/rss-news.xml'),
+        headers: {
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+        },
+      },
+      '/api/proxy/espn-scoreboard-atp': {
+        target: 'https://site.api.espn.com',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api\/proxy\/espn-scoreboard-atp/, '/apis/site/v2/sports/tennis/atp/scoreboard'),
+        headers: {
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        },
+      },
+      '/api/proxy/espn-scoreboard-wta': {
+        target: 'https://site.api.espn.com',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api\/proxy\/espn-scoreboard-wta/, '/apis/site/v2/sports/tennis/wta/scoreboard'),
+        headers: {
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
         },
       },
     },
