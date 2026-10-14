@@ -22,7 +22,7 @@
       "destination": "https://site.api.espn.com/apis/site/v2/sports/tennis/wta/scoreboard"
     },
     {
-      "source": "/(.*)",
+      "source": "/((?!assets/|.*\\..*).*)",
       "destination": "/index.html"
     }
   ]
