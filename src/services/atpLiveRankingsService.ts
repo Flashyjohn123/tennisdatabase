@@ -294,7 +294,8 @@ export async function fetchLiveAtpRankings(timeoutMs = 7500): Promise<{
   isLive: boolean;
   timestamp: string;
 }> {
-  const candidateUrls = CORS_PROXIES.map((proxy) => proxy(ATP_LIVE_URL));
+  const candidateUrls: string[] = ['/api/proxy/atp-rankings'];
+  CORS_PROXIES.forEach((proxy) => candidateUrls.push(proxy(ATP_LIVE_URL)));
   let scrapedEntries: Partial<AtpLiveRankEntry>[] = [];
   let isLiveSuccess = false;
 
@@ -392,11 +393,16 @@ export function useAtpLiveRankings() {
   }, []);
 
   useEffect(() => {
-    // Check if initial cached sync is older than 5 minutes, or never synced
-    if (!lastSynced) {
+    // Initial sync
+    syncLiveRankings();
+    
+    // Auto-update every 60 seconds whenever ATP rankings update
+    const timer = setInterval(() => {
       syncLiveRankings();
-    }
-  }, [lastSynced, syncLiveRankings]);
+    }, 60000);
+
+    return () => clearInterval(timer);
+  }, [syncLiveRankings]);
 
   return {
     atpLiveRankings,

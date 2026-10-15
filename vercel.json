@@ -7,7 +7,15 @@
     },
     {
       "source": "/api/proxy/atp-tour",
-      "destination": "https://www.atptour.com/en/media/rss/news"
+      "destination": "https://news.google.com/rss/search?q=site:atptour.com/en/news&hl=en-US&gl=US&ceid=US:en"
+    },
+    {
+      "source": "/api/proxy/atp-news",
+      "destination": "https://news.google.com/rss/search?q=site:atptour.com/en/news&hl=en-US&gl=US&ceid=US:en"
+    },
+    {
+      "source": "/api/proxy/atp-rankings",
+      "destination": "https://www.atptour.com/en/rankings/singles"
     },
     {
       "source": "/api/proxy/wta-tennis",

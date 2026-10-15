@@ -2,8 +2,8 @@ name: Sync Official Tennis Rankings
 
 on:
   schedule:
-    # Run every Monday at 06:00 UTC when official weekly rankings are released
-    - cron: '0 6 * * 1'
+    # Run every 6 hours to auto-sync fresh ATP & WTA updates
+    - cron: '0 */6 * * *'
   workflow_dispatch:
 
 jobs:
@@ -38,5 +38,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add src/data/
-          git commit -m "chore(data): auto-sync official ATP & WTA rankings [skip ci]"
+          git commit -m "chore(data): auto-sync official ATP & WTA rankings and live news"
           git push

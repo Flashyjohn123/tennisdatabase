@@ -10,29 +10,29 @@ export interface RssFeedConfig {
 
 export const KNOWN_RSS_SOURCES: RssFeedConfig[] = [
   {
-    id: 'espn-tennis',
-    name: 'ESPN Tennis',
-    url: 'https://www.espn.com/espn/rss/tennis/news',
-    categoryDefault: 'breaking',
-  },
-  {
     id: 'atp-tour',
     name: 'ATP Tour News',
-    url: 'https://www.atptour.com/en/media/rss/news',
+    url: 'https://news.google.com/rss/search?q=site:atptour.com/en/news&hl=en-US&gl=US&ceid=US:en',
     categoryDefault: 'breaking',
   },
   {
     id: 'wta-tennis',
     name: 'WTA Tennis News',
-    url: 'https://www.wtatennis.com/rss-news.xml',
+    url: 'https://news.google.com/rss/search?q=site:wtatennis.com/news&hl=en-US&gl=US&ceid=US:en',
+    categoryDefault: 'breaking',
+  },
+  {
+    id: 'espn-tennis',
+    name: 'ESPN Tennis',
+    url: 'https://www.espn.com/espn/rss/tennis/news',
     categoryDefault: 'breaking',
   },
 ];
 
 const DEV_PROXIES: Record<string, string> = {
-  'espn-tennis': '/api/proxy/espn-tennis',
-  'atp-tour': '/api/proxy/atp-tour',
+  'atp-tour': '/api/proxy/atp-news',
   'wta-tennis': '/api/proxy/wta-tennis',
+  'espn-tennis': '/api/proxy/espn-tennis',
 };
 
 export function isAuthorizedSource(source: string): boolean {

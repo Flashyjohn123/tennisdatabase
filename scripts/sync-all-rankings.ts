@@ -1,4 +1,4 @@
-// Unified automated synchronization script for ATP & WTA Top 500 rankings
+// Unified automated synchronization script for ATP & WTA Top 500 rankings & live news
 import fs from 'fs';
 import path from 'path';
 
@@ -68,6 +68,7 @@ export async function syncWta() {
   console.log('🔄 Syncing Official WTA Top 500...');
   const existingWtaPath = path.resolve('src/data/rankingsTop500WTA.ts');
   const existingContent = fs.readFileSync(existingWtaPath, 'utf8');
+
   let existingList: any[] = [];
   try {
     const jsonMatch = existingContent.match(/\[\s*\{[\s\S]*\}\s*\]/);
@@ -145,10 +146,65 @@ export const TOP_500_WTA_PLAYERS = RANKINGS_TOP_500_WTA;
   console.log(`✅ WTA Top 500 synced successfully (${updatedTop500.length} records).`);
 }
 
+export async function syncNews() {
+  console.log('🔄 Syncing Live ATP & WTA News from atptour.com...');
+  try {
+    const atpRes = await fetch('https://news.google.com/rss/search?q=site:atptour.com/en/news&hl=en-US&gl=US&ceid=US:en');
+    const atpXml = await atpRes.text();
+    const items = [...atpXml.matchAll(/<item>[\s\S]*?<title>([\s\S]*?)<\/title>[\s\S]*?<link>([\s\S]*?)<\/link>[\s\S]*?<pubDate>([\s\S]*?)<\/pubDate>/g)];
+    
+    if (items.length > 0) {
+      console.log(`Found ${items.length} live ATP news articles.`);
+      const feedPath = path.resolve('src/data/mockLiveFeedData.ts');
+      let feedContent = fs.readFileSync(feedPath, 'utf8');
+      
+      const newArticles = items.slice(0, 10).map((m, idx) => {
+        const title = m[1].replace(/ - ATP Tour$/i, '').trim();
+        const url = m[2].trim();
+        const date = new Date(m[3]).toISOString();
+        const id = `atp-live-${Date.now()}-${idx}`;
+        return {
+          id,
+          title,
+          summary: `${title}. Full real-time coverage direct from ATP Tour.`,
+          category: 'breaking',
+          severity: 'high',
+          timestamp: date,
+          source: 'ATP Tour',
+          url,
+          verified: true,
+          tags: ['ATP Tour', 'Live News', 'Circuit Wire']
+        };
+      });
+
+      // Merge into mockLiveFeedData
+      const existingMatch = feedContent.match(/export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem\[\] = (\[[\s\S]*?\]);/);
+      if (existingMatch) {
+        try {
+          const currentList = eval(existingMatch[1]);
+          const existingTitles = new Set(currentList.map((x: any) => x.title.toLowerCase().trim()));
+          const filteredNew = newArticles.filter(a => !existingTitles.has(a.title.toLowerCase().trim()));
+          if (filteredNew.length > 0) {
+            const merged = [...filteredNew, ...currentList].slice(0, 50);
+            feedContent = feedContent.replace(existingMatch[0], `export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = ${JSON.stringify(merged, null, 2)};`);
+            fs.writeFileSync(feedPath, feedContent, 'utf8');
+            console.log(`✅ Appended ${filteredNew.length} fresh ATP articles to newsroom.`);
+          }
+        } catch (e) {
+          console.warn('Could not update mockLiveFeedData.ts', e);
+        }
+      }
+    }
+  } catch (err) {
+    console.warn('Live news sync failed:', err);
+  }
+}
+
 async function main() {
   try {
     await syncWta();
-    console.log('✨ All official rankings synchronized.');
+    await syncNews();
+    console.log('✨ All official rankings & news synchronized.');
   } catch (e) {
     console.error('❌ Sync failed:', e);
     process.exit(1);

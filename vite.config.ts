@@ -22,9 +22,25 @@ export default defineConfig({
         },
       },
       '/api/proxy/atp-tour': {
+        target: 'https://news.google.com',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api\/proxy\/atp-tour/, '/rss/search?q=site:atptour.com/en/news&hl=en-US&gl=US&ceid=US:en'),
+        headers: {
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+        },
+      },
+      '/api/proxy/atp-news': {
+        target: 'https://news.google.com',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api\/proxy\/atp-news/, '/rss/search?q=site:atptour.com/en/news&hl=en-US&gl=US&ceid=US:en'),
+        headers: {
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+        },
+      },
+      '/api/proxy/atp-rankings': {
         target: 'https://www.atptour.com',
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api\/proxy\/atp-tour/, '/en/media/rss/news'),
+        rewrite: (path) => path.replace(/^\/api\/proxy\/atp-rankings/, '/en/rankings/singles'),
         headers: {
           'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
         },

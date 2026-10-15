@@ -171,11 +171,11 @@ class LiveFeedEngineService {
     // Initial RSS fetch merge
     this.fetchAndMergeRss();
 
-    // Set recurring timer
-    const interval = Math.max(15000, this.config.pollIntervalMs || 45000);
+    // Set recurring timer to fetch live ATP & WTA news
+    const interval = Math.max(15000, this.config.pollIntervalMs || 30000);
     this.timer = setInterval(() => {
       if (this.config.autoRefresh) {
-        this.injectSimulatedLiveEvent();
+        this.fetchAndMergeRss();
       }
     }, interval);
   }
