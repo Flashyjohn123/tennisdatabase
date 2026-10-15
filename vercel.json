@@ -2,34 +2,6 @@
   "framework": "vite",
   "rewrites": [
     {
-      "source": "/api/proxy/espn-tennis",
-      "destination": "https://www.espn.com/espn/rss/tennis/news"
-    },
-    {
-      "source": "/api/proxy/atp-tour",
-      "destination": "https://news.google.com/rss/search?q=site:atptour.com/en/news&hl=en-US&gl=US&ceid=US:en"
-    },
-    {
-      "source": "/api/proxy/atp-news",
-      "destination": "https://news.google.com/rss/search?q=site:atptour.com/en/news&hl=en-US&gl=US&ceid=US:en"
-    },
-    {
-      "source": "/api/proxy/atp-rankings",
-      "destination": "https://www.atptour.com/en/rankings/singles"
-    },
-    {
-      "source": "/api/proxy/wta-tennis",
-      "destination": "https://www.wtatennis.com/rss"
-    },
-    {
-      "source": "/api/proxy/espn-scores-atp",
-      "destination": "https://site.api.espn.com/apis/site/v2/sports/tennis/atp/scoreboard"
-    },
-    {
-      "source": "/api/proxy/espn-scores-wta",
-      "destination": "https://site.api.espn.com/apis/site/v2/sports/tennis/wta/scoreboard"
-    },
-    {
       "source": "/((?!assets/|.*\\..*).*)",
       "destination": "/index.html"
     }
