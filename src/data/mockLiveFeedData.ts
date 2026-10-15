@@ -4,6 +4,22 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1792097285751-0",
+    "title": "An Open Letter from ATP Chairman Andrea Gaudenzi",
+    "summary": "An Open Letter from ATP Chairman Andrea Gaudenzi. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-15T12:45:13.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQR3JIWGNPekNrMm94bkxUNktUQ3VleUNYQ0tOOTYzV2JYS25rNXBXQUNBMnhXcl9MYTh5dnlXZTltbkxySHJ5b2FTWDZYNGQ2N3JmQ191X29kY3BoSzhaY0R0Z2Qzb2VCcGRZM0ZNbGpkcTNzOTFwelpBclhHaldUbEVVb0VuclFnSjIxcnN3?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "Circuit Wire"
+    ]
+  },
+  {
     "id": "atp-live-1792080224127-9",
     "title": "Djokovic back on track for Turin following Beijing triumph",
     "summary": "Djokovic back on track for Turin following Beijing triumph. Full real-time coverage direct from ATP Tour.",
@@ -1095,30 +1111,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
       "Fritz",
       "Wimbledon",
       "Grass"
-    ]
-  },
-  {
-    "id": "feed-res-paolini-dubai",
-    "title": "Jasmine Paolini captures Dubai WTA 1000 title in thrilling 3-set duel",
-    "summary": "Italy's Jasmine Paolini continued her elite 1000-level pedigree, recovering from a set down to defeat Anna Kalinskaya 4-6, 7-5, 7-5 to hoist her second WTA 1000 trophy.",
-    "category": "match_result",
-    "severity": "medium",
-    "timestamp": "2026-02-21T17:40:00Z",
-    "source": "WTA Tennis",
-    "url": "https://www.wtatennis.com/news/3971289/jasmine-paolini-captures-dubai-title-wta-1000",
-    "playerIds": [
-      "jasmine-paolini"
-    ],
-    "playerNames": [
-      "Jasmine Paolini"
-    ],
-    "tournamentName": "Dubai Duty Free Tennis Championships",
-    "verified": true,
-    "tags": [
-      "Paolini",
-      "Dubai",
-      "WTA 1000",
-      "Title"
     ]
   }
 ];
