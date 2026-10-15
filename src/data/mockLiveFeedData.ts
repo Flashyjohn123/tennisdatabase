@@ -4,6 +4,22 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1792080224127-9",
+    "title": "Djokovic back on track for Turin following Beijing triumph",
+    "summary": "Djokovic back on track for Turin following Beijing triumph. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-07T09:02:51.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOSjNoU0g0NVliQkJySnVrbGJzQ2V4R21IZFhsaTVPQm9VaTBvOXZRSkFMT2VudHVaQm9ieTZ3Uk5VZ094ZlZmRHd5SVl1UE56VGoyaU5WSWtIbUFqRWZvdEM5SEVGVXdOTDA4YXgxMUFqdjRqNll2MF9EUDJKeEl5RnV0ZjE1RmRnNGc?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "Circuit Wire"
+    ]
+  },
+  {
     "id": "atp-live-1792024229635-0",
     "title": "Medvedev continues Shanghai love affair, defeats Tsitsipas to reach QFs",
     "summary": "Medvedev continues Shanghai love affair, defeats Tsitsipas to reach QFs. Full real-time coverage direct from ATP Tour.",
@@ -1103,31 +1119,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
       "Dubai",
       "WTA 1000",
       "Title"
-    ]
-  },
-  {
-    "id": "feed-res-zverev-paris",
-    "title": "Alexander Zverev captures second Rolex Paris Masters title over Ugo Humbert: 6-2, 6-2",
-    "summary": "Alexander Zverev delivered a flawless serving display at the Accor Arena, dropping just five points on first serve to claim his seventh ATP Masters 1000 crown.",
-    "category": "match_result",
-    "severity": "low",
-    "timestamp": "2026-09-01T16:00:00Z",
-    "source": "ATP Tour",
-    "url": "https://www.atptour.com/en/news/zverev-paris-masters-championship-2026",
-    "playerIds": [
-      "alexander-zverev"
-    ],
-    "playerNames": [
-      "Alexander Zverev"
-    ],
-    "tournamentName": "Rolex Paris Masters",
-    "tournamentId": "paris-masters",
-    "verified": true,
-    "tags": [
-      "Zverev",
-      "Paris Masters",
-      "Title",
-      "Indoor Hard"
     ]
   }
 ];
