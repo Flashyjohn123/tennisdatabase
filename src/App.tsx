@@ -60,13 +60,14 @@ export const App: React.FC = () => {
     isLiveSource,
   } = useAtpLiveRankings();
 
-  // State for Players, Matches, and Tournaments with LocalStorage Persistence (v15 Official ATP & WTA Live Sync)
-  const STORAGE_KEY_PLAYERS = 'tennisdb_players_v15';
+  // State for Players, Matches, and Tournaments with LocalStorage Persistence (v16 Live Asian Swing Sync)
+  const STORAGE_KEY_PLAYERS = 'tennisdb_players_v16';
   const STORAGE_KEY_MATCHES = 'tennisdb_matches_v13';
 
   const [players, setPlayers] = useState<Player[]>(() => {
     // Clear obsolete legacy caches so updated 2026 records take full precedence
     try {
+      localStorage.removeItem('tennisdb_players_v15');
       localStorage.removeItem('tennisdb_players_v14');
       localStorage.removeItem('tennisdb_players_v13');
       localStorage.removeItem('tennisdb_players_v12');
