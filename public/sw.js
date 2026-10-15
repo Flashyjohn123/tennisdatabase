@@ -1,5 +1,5 @@
 // Service Worker for Circuit Pro Tennis
-const CACHE_NAME = 'circuit-pro-v18';
+const CACHE_NAME = 'circuit-pro-v19';
 const ASSETS_TO_CACHE = [
   '/',
   '/index.html',

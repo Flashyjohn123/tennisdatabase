@@ -16,47 +16,74 @@ export const INITIAL_PLAYERS: Player[] = [
     "plays": "Right-handed (two-handed backhand)",
     "currentRank": 1,
     "careerHighRank": 1,
-    "careerTitles": 18,
-    "grandSlams": 3,
-    "slamFinals": 3,
+    "careerTitles": 20,
+    "grandSlams": 4,
+    "slamFinals": 5,
     "slamBreakdown": {
-      "australianOpen": 1,
+      "australianOpen": 2,
       "rolandGarros": 0,
       "wimbledon": 1,
       "usOpen": 1
     },
-    "prizeMoneyUsd": "$43,500,000",
+    "prizeMoneyUsd": "$42,000,000",
     "careerWinLoss": {
-      "wins": 334,
-      "losses": 79,
-      "winPercentage": 80.9
+      "wins": 312,
+      "losses": 76,
+      "winPercentage": 80.4
     },
     "surfaceStats": {
       "hard": {
-        "wins": 225,
+        "wins": 222,
         "losses": 48,
-        "winPercentage": 82.5
+        "winPercentage": 82.2
       },
       "clay": {
-        "wins": 68,
-        "losses": 21,
-        "winPercentage": 76.5
+        "wins": 60,
+        "losses": 19,
+        "winPercentage": 75.9
       },
       "grass": {
-        "wins": 41,
-        "losses": 10,
-        "winPercentage": 78
+        "wins": 30,
+        "losses": 9,
+        "winPercentage": 76.9
       }
     },
-    "avatarUrl": "https://images.unsplash.com/photo-1546519638-68e109498ffc?w=800&auto=format&fit=crop&q=80",
-    "bio": "Reigning World No. 1 and three-time Grand Slam champion (Australian Open 2024, US Open 2024, and Wimbledon 2026). Known for his ferocious baseline timing, devastating crosscourt forehands, and icy temperament in pressure moments.",
-    "playStyle": "Explosive baseline first-strike aggressor with pinpoint timing and elite court coverage.",
+    "avatarUrl": "/images/players/jannik-sinner.jpg",
+    "bio": "As of September 20, 2026, World No. 1 Jannik Sinner holds 4 Grand Slam singles titles (Australian Open 2024, US Open 2024, Australian Open 2025, Wimbledon 2026) and 20 career titles. He successfully mounted a heroic run at Wimbledon 2026 to defeat Alexander Zverev in four sets for the Gentlemen's Singles trophy, before a right knee injury forced his withdrawal from the 2026 US Open.",
+    "playStyle": "Heavy baseline power-striker with immense groundstroke velocity, deep penetrating flat ball flight, and laser precision on both wings.",
     "notableRivalries": [
       "Carlos Alcaraz",
       "Daniil Medvedev",
       "Alexander Zverev",
-      "Novak Djokovic"
+      "Taylor Fritz"
     ],
+    "injuryHistory": [
+      {
+        "year": 2024,
+        "injury": "Right Hip Inflammation",
+        "durationOrTournament": "Mutua Madrid Open & Rome Masters",
+        "details": "Withdrew prior to Madrid quarterfinal and skipped Rome to undergo targeted physiotherapy before Roland Garros.",
+        "severity": "moderate",
+        "status": "Resolved"
+      },
+      {
+        "year": 2022,
+        "injury": "Right Ankle Sprain",
+        "durationOrTournament": "Sofia Open Semifinal",
+        "details": "Sustained severe grade 2 ankle inversion against Rune, ending indoor campaign.",
+        "severity": "moderate",
+        "status": "Resolved"
+      },
+      {
+        "year": 2022,
+        "injury": "Left Knee Tendonitis",
+        "durationOrTournament": "Roland Garros Fourth Round",
+        "details": "Forced mid-match retirement against Andrey Rublev due to knee tracking pain.",
+        "severity": "mild",
+        "status": "Resolved"
+      }
+    ],
+    "status": "active",
     "points": 11000,
     "movement": 0,
     "tournamentsPlayed": 17
@@ -76,7 +103,7 @@ export const INITIAL_PLAYERS: Player[] = [
     "plays": "Right-handed (two-handed backhand)",
     "currentRank": 3,
     "careerHighRank": 1,
-    "careerTitles": 18,
+    "careerTitles": 19,
     "grandSlams": 5,
     "slamFinals": 5,
     "slamBreakdown": {
@@ -85,37 +112,65 @@ export const INITIAL_PLAYERS: Player[] = [
       "wimbledon": 2,
       "usOpen": 1
     },
-    "prizeMoneyUsd": "$45,200,000",
+    "prizeMoneyUsd": "$41,500,000",
     "careerWinLoss": {
-      "wins": 388,
-      "losses": 92,
-      "winPercentage": 80.8
+      "wins": 372,
+      "losses": 88,
+      "winPercentage": 80.9
     },
     "surfaceStats": {
       "hard": {
-        "wins": 175,
-        "losses": 40,
-        "winPercentage": 81.5
+        "wins": 215,
+        "losses": 50,
+        "winPercentage": 81.1
       },
       "clay": {
-        "wins": 132,
-        "losses": 28,
+        "wins": 118,
+        "losses": 25,
         "winPercentage": 82.5
       },
       "grass": {
-        "wins": 38,
-        "losses": 12,
-        "winPercentage": 76
+        "wins": 39,
+        "losses": 13,
+        "winPercentage": 75
       }
     },
-    "avatarUrl": "https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=800&auto=format&fit=crop&q=80",
-    "bio": "Five-time Grand Slam champion across all three surfaces. By capturing the 2026 Australian Open alongside Roland Garros, Wimbledon, and the US Open, Alcaraz became the youngest man in tennis history to achieve the Career Grand Slam.",
-    "playStyle": "Dynamic all-court shotmaker combining thunderous groundstrokes with delicate disguised drop shots.",
+    "avatarUrl": "/images/players/carlos-alcaraz.jpg",
+    "bio": "As of September 20, 2026, Carlos Alcaraz is World No. 2 with 5 Grand Slam singles crowns (US Open 2022; Wimbledon 2023, 2024; Roland Garros 2024; Australian Open 2026) and 19 career titles. By defeating Novak Djokovic in four sets to capture the 2026 Australian Open, he became the youngest player in tennis history to complete the Career Grand Slam at age 22. A persistent wrist injury forced him out of Roland Garros and Wimbledon, before he reached the 2026 US Open quarterfinals in a legendary 3:33 AM five-set duel against Ben Shelton.",
+    "playStyle": "Electrifying all-court aggressive game featuring blistering drop shots, supersonic foot speed, and an explosive inside-out forehand.",
     "notableRivalries": [
       "Jannik Sinner",
       "Novak Djokovic",
+      "Daniil Medvedev",
       "Alexander Zverev"
     ],
+    "injuryHistory": [
+      {
+        "year": 2024,
+        "injury": "Right Forearm Pronator Strain",
+        "durationOrTournament": "Monte-Carlo & Barcelona",
+        "details": "Muscular edema in hitting forearm forced withdrawals from Monte-Carlo, Barcelona, and Rome.",
+        "severity": "moderate",
+        "status": "Resolved"
+      },
+      {
+        "year": 2023,
+        "injury": "Right Hamstring Muscle Tear",
+        "durationOrTournament": "Australian Open Warmup",
+        "details": "Sustained 4cm leg tear during pre-season practice match; forced withdrawal from Australian Open.",
+        "severity": "severe",
+        "status": "Resolved"
+      },
+      {
+        "year": 2022,
+        "injury": "Internal Oblique Abdominal Tear",
+        "durationOrTournament": "Paris Masters Quarterfinal",
+        "details": "Sustained abdominal wall tear serving against Rune; forced withdrawal from ATP Finals and Davis Cup.",
+        "severity": "severe",
+        "status": "Resolved"
+      }
+    ],
+    "status": "active",
     "points": 5560,
     "movement": 0,
     "tournamentsPlayed": 17
@@ -134,8 +189,8 @@ export const INITIAL_PLAYERS: Player[] = [
     "turnedPro": 2013,
     "plays": "Right-handed (two-handed backhand)",
     "currentRank": 2,
-    "careerHighRank": 1,
-    "careerTitles": 24,
+    "careerHighRank": 2,
+    "careerTitles": 26,
     "grandSlams": 2,
     "slamFinals": 4,
     "slamBreakdown": {
@@ -144,37 +199,65 @@ export const INITIAL_PLAYERS: Player[] = [
       "wimbledon": 0,
       "usOpen": 1
     },
-    "prizeMoneyUsd": "$49,800,000",
+    "prizeMoneyUsd": "$53,500,000",
     "careerWinLoss": {
-      "wins": 485,
-      "losses": 198,
-      "winPercentage": 71
+      "wins": 464,
+      "losses": 192,
+      "winPercentage": 70.7
     },
     "surfaceStats": {
       "hard": {
-        "wins": 298,
-        "losses": 125,
-        "winPercentage": 70.5
+        "wins": 277,
+        "losses": 120,
+        "winPercentage": 69.8
       },
       "clay": {
         "wins": 152,
-        "losses": 48,
-        "winPercentage": 76
+        "losses": 50,
+        "winPercentage": 75.2
       },
       "grass": {
         "wins": 35,
-        "losses": 25,
-        "winPercentage": 62
+        "losses": 22,
+        "winPercentage": 61.4
       }
     },
-    "avatarUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&auto=format&fit=crop&q=80",
-    "bio": "Two-time Grand Slam champion in 2026 (Roland Garros and US Open) and Olympic Gold medalist. Towering competitor anchored by a world-class backhand and massive first serve delivery.",
-    "playStyle": "Big-serving defensive baseline powerhouse with lethal backhand down-the-line accuracy.",
+    "avatarUrl": "/images/players/alexander-zverev.jpg",
+    "bio": "As of September 20, 2026, World No. 3 Alexander Zverev has achieved a historic Grand Slam double in 2026, capturing both the French Open (Roland Garros) and the US Open. He outlasted Italian star Flavio Cobolli in a dramatic five-set Court Philippe-Chatrier final to win his maiden major, then conquered Ben Shelton under the Arthur Ashe Stadium lights in four sets to secure his second Grand Slam crown. He now holds 26 career titles, the Tokyo Olympic Singles Gold Medal, and two ATP Finals trophies.",
+    "playStyle": "Power baseliner with a devastating backhand down-the-line, imposing 140mph first serve, and elite court coverage.",
     "notableRivalries": [
-      "Carlos Alcaraz",
       "Daniil Medvedev",
-      "Jannik Sinner"
+      "Carlos Alcaraz",
+      "Stefanos Tsitsipas",
+      "Casper Ruud"
     ],
+    "injuryHistory": [
+      {
+        "year": 2022,
+        "injury": "Multi-Ligament Ankle Tear",
+        "durationOrTournament": "Roland Garros Semifinal",
+        "details": "Suffered severe lateral ankle ligament rupture sliding on Court Philippe-Chatrier vs Nadal; required surgery and 7-month layoff.",
+        "severity": "severe",
+        "status": "Rehabilitated"
+      },
+      {
+        "year": 2023,
+        "injury": "Bone Edema",
+        "durationOrTournament": "Australian Open & Spring Circuit",
+        "details": "Persistent bone edema in right foot following ligament reconstructive surgery.",
+        "severity": "moderate",
+        "status": "Resolved"
+      },
+      {
+        "year": 2024,
+        "injury": "Knee Bone Bruise & Capsule Strain",
+        "durationOrTournament": "Wimbledon Fourth Round",
+        "details": "Hyper-extended knee following awkward slip against Norrie; played with heavy strapping.",
+        "severity": "moderate",
+        "status": "Resolved"
+      }
+    ],
+    "status": "active",
     "points": 9720,
     "movement": 0,
     "tournamentsPlayed": 20
@@ -194,47 +277,82 @@ export const INITIAL_PLAYERS: Player[] = [
     "plays": "Right-handed (two-handed backhand)",
     "currentRank": 8,
     "careerHighRank": 1,
-    "careerTitles": 100,
+    "careerTitles": 99,
     "grandSlams": 24,
-    "slamFinals": 37,
     "slamBreakdown": {
       "australianOpen": 10,
       "rolandGarros": 3,
       "wimbledon": 7,
       "usOpen": 4
     },
-    "prizeMoneyUsd": "$187,500,000",
+    "prizeMoneyUsd": "$185,000,000",
     "careerWinLoss": {
-      "wins": 1132,
-      "losses": 225,
-      "winPercentage": 83.4
+      "wins": 1124,
+      "losses": 222,
+      "winPercentage": 83.5
     },
     "surfaceStats": {
       "hard": {
-        "wins": 715,
-        "losses": 132,
+        "wins": 722,
+        "losses": 133,
         "winPercentage": 84.4
       },
       "clay": {
-        "wins": 286,
-        "losses": 70,
+        "wins": 282,
+        "losses": 69,
         "winPercentage": 80.3
       },
       "grass": {
-        "wins": 131,
-        "losses": 23,
+        "wins": 120,
+        "losses": 20,
         "winPercentage": 85.7
       }
     },
-    "avatarUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=800&auto=format&fit=crop&q=80",
-    "bio": "All-time men's record holder with 24 Grand Slam singles titles and Career Golden Slam achiever. Reached his milestone 100th career ATP title with his China Open victory in autumn 2026.",
-    "playStyle": "Master strategist and greatest returner in tennis history, combining surgical depth and elastic defensive range.",
+    "avatarUrl": "/images/players/novak-djokovic.jpg",
+    "bio": "As of September 20, 2026, 39-year-old Novak Djokovic is World No. 5 with an all-time record 24 Grand Slam titles, 99 career tour-level trophies, and the Olympic Gold Medal completing his Career Golden Slam. Reached his 13th Australian Open semifinal in 2026, proving his legendary competitive spirit endures.",
+    "playStyle": "Impenetrable baseline counter-aggression, legendary return of serve, acrobatic flexibility, and unmatched clutch performance in pressure moments.",
     "notableRivalries": [
       "Carlos Alcaraz",
       "Jannik Sinner",
-      "Rafael Nadal",
-      "Roger Federer"
+      "Daniil Medvedev",
+      "Alexander Zverev"
     ],
+    "injuryHistory": [
+      {
+        "year": 2024,
+        "injury": "Right Medial Meniscus Tear",
+        "durationOrTournament": "Roland Garros Fourth Round",
+        "details": "Tore medial meniscus during 5-set duel vs Cerundolo; withdrew before QF, underwent Paris arthroscopy, and reached Wimbledon final 4 weeks later.",
+        "severity": "severe",
+        "status": "Cleared"
+      },
+      {
+        "year": 2023,
+        "injury": "Left Hamstring Tear (3cm)",
+        "durationOrTournament": "Adelaide & Australian Open",
+        "details": "Carried a 3cm hamstring tear throughout the tournament with daily hyperbaric and physio treatment to capture title.",
+        "severity": "severe",
+        "status": "Resolved"
+      },
+      {
+        "year": 2021,
+        "injury": "Abdominal Muscle Tear",
+        "durationOrTournament": "Australian Open Third Round",
+        "details": "Suffered oblique abdominal muscle tear vs Fritz; managed with medical taping to win 9th Australian Open title.",
+        "severity": "moderate",
+        "status": "Resolved"
+      },
+      {
+        "year": 2017,
+        "injury": "Chronic Right Elbow Tendonitis",
+        "durationOrTournament": "Wimbledon Quarterfinal",
+        "details": "Required 6-month hiatus and subsequent minor surgical cleanup in Switzerland in early 2018.",
+        "severity": "severe",
+        "status": "Rehabilitated"
+      }
+    ],
+    "status": "active",
+    "slamFinals": 37,
     "points": 3480,
     "movement": 3,
     "tournamentsPlayed": 16
@@ -246,7 +364,7 @@ export const INITIAL_PLAYERS: Player[] = [
     "country": "United States",
     "countryCode": "USA",
     "flag": "🇺🇸",
-    "age": 24,
+    "age": 23,
     "birthDate": "2002-10-09",
     "birthPlace": "Atlanta, Georgia, USA",
     "heightCm": 193,
@@ -254,7 +372,7 @@ export const INITIAL_PLAYERS: Player[] = [
     "plays": "Left-handed (two-handed backhand)",
     "currentRank": 4,
     "careerHighRank": 4,
-    "careerTitles": 4,
+    "careerTitles": 2,
     "grandSlams": 0,
     "slamFinals": 1,
     "slamBreakdown": {
@@ -263,37 +381,57 @@ export const INITIAL_PLAYERS: Player[] = [
       "wimbledon": 0,
       "usOpen": 0
     },
-    "prizeMoneyUsd": "$8,900,000",
+    "prizeMoneyUsd": "$7,800,000",
     "careerWinLoss": {
-      "wins": 105,
-      "losses": 62,
-      "winPercentage": 62.9
+      "wins": 87,
+      "losses": 53,
+      "winPercentage": 62.1
     },
     "surfaceStats": {
       "hard": {
-        "wins": 76,
-        "losses": 39,
-        "winPercentage": 66
+        "wins": 67,
+        "losses": 36,
+        "winPercentage": 65
       },
       "clay": {
-        "wins": 18,
-        "losses": 14,
-        "winPercentage": 56.5
+        "wins": 12,
+        "losses": 10,
+        "winPercentage": 54.5
       },
       "grass": {
-        "wins": 11,
-        "losses": 9,
-        "winPercentage": 54
+        "wins": 8,
+        "losses": 7,
+        "winPercentage": 53.3
       }
     },
-    "avatarUrl": "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=800&auto=format&fit=crop&q=80",
-    "bio": "Explosive American left-hander with an artillery 145+ mph serve. Reached the 2026 US Open final on Arthur Ashe Stadium and captured two ATP 500 crowns in Dallas and Munich.",
-    "playStyle": "Ultra-athletic southpaw powerhouse with booming kick serves and heavy forehand rotation.",
+    "avatarUrl": "/images/players/ben-shelton.jpg",
+    "bio": "As of September 20, 2026, 23-year-old Ben Shelton holds 2 ATP titles and World No. 6 ranking. He staged an unforgettable run to the 2026 US Open final, outlasting Carlos Alcaraz in a historic 3:33 AM five-set quarterfinal thriller and defeating Frances Tiafoe in the semifinals, before finishing runner-up to Alexander Zverev under the Arthur Ashe Stadium lights.",
+    "playStyle": "Ultra-explosive left-handed power serve with sharp swinging kick angles, destructive forehand winners, and fearless net approaches.",
     "notableRivalries": [
+      "Novak Djokovic",
       "Frances Tiafoe",
-      "Carlos Alcaraz",
-      "Alexander Zverev"
+      "Taylor Fritz",
+      "Jannik Sinner"
     ],
+    "injuryHistory": [
+      {
+        "year": 2023,
+        "injury": "Left Hamstring Tightness",
+        "durationOrTournament": "Wimbledon Second Round",
+        "details": "Retained precautionary protection after slipping on outer grass courts against Djere.",
+        "severity": "mild",
+        "status": "Resolved"
+      },
+      {
+        "year": 2024,
+        "injury": "Right Shoulder Muscular Fatigue",
+        "durationOrTournament": "European Clay Swing",
+        "details": "High service load triggered rotator cuff soreness requiring load management.",
+        "severity": "mild",
+        "status": "Resolved"
+      }
+    ],
+    "status": "active",
     "points": 4680,
     "movement": 0,
     "tournamentsPlayed": 22
@@ -313,46 +451,66 @@ export const INITIAL_PLAYERS: Player[] = [
     "plays": "Right-handed (two-handed backhand)",
     "currentRank": 6,
     "careerHighRank": 1,
-    "careerTitles": 21,
+    "careerTitles": 20,
     "grandSlams": 1,
-    "slamFinals": 6,
     "slamBreakdown": {
       "australianOpen": 0,
       "rolandGarros": 0,
       "wimbledon": 0,
       "usOpen": 1
     },
-    "prizeMoneyUsd": "$44,100,000",
+    "prizeMoneyUsd": "$44,500,000",
     "careerWinLoss": {
-      "wins": 395,
-      "losses": 160,
-      "winPercentage": 71.2
+      "wins": 382,
+      "losses": 154,
+      "winPercentage": 71.3
     },
     "surfaceStats": {
       "hard": {
-        "wins": 312,
-        "losses": 101,
-        "winPercentage": 75.5
+        "wins": 300,
+        "losses": 98,
+        "winPercentage": 75.4
       },
       "clay": {
-        "wins": 44,
-        "losses": 36,
-        "winPercentage": 55
+        "wins": 38,
+        "losses": 32,
+        "winPercentage": 54.3
       },
       "grass": {
-        "wins": 39,
-        "losses": 23,
-        "winPercentage": 65
+        "wins": 44,
+        "losses": 24,
+        "winPercentage": 64.7
       }
     },
-    "avatarUrl": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=800&auto=format&fit=crop&q=80",
-    "bio": "2021 US Open champion and six-time Grand Slam finalist. Celebrated tactical mastermind known as 'The Octopus' for his impenetrable backcourt court coverage and flat baseline strikes.",
-    "playStyle": "Unorthodox counterpunching brick wall with deep return positioning and flat impenetrable rallies.",
+    "avatarUrl": "/images/players/daniil-medvedev.jpg",
+    "bio": "As of September 20, 2026, Daniil Medvedev is World No. 7 with 20 career titles, the 2021 US Open championship, and 6 Grand Slam final appearances. His deep court positioning, flat precision, and relentless defensive counterpunching remain hallmarks of the tour.",
+    "playStyle": "Unorthodox tactical mastermind with low-skidding flat groundstrokes, extreme return depth, and extraordinary endurance.",
     "notableRivalries": [
       "Jannik Sinner",
       "Alexander Zverev",
+      "Carlos Alcaraz",
       "Stefanos Tsitsipas"
     ],
+    "injuryHistory": [
+      {
+        "year": 2024,
+        "injury": "Right Adductor Muscle Pull",
+        "durationOrTournament": "Mutua Madrid Open Quarterfinal",
+        "details": "Felt sharp groin pull during opening set against Lehecka; retired to protect French Open campaign.",
+        "severity": "moderate",
+        "status": "Resolved"
+      },
+      {
+        "year": 2022,
+        "injury": "Inguinal Small Hernia",
+        "durationOrTournament": "Miami Open",
+        "details": "Underwent minor laparoscopic hernia repair; missed first two months of European clay swing.",
+        "severity": "moderate",
+        "status": "Rehabilitated"
+      }
+    ],
+    "status": "active",
+    "slamFinals": 6,
     "points": 3860,
     "movement": 0,
     "tournamentsPlayed": 24
@@ -372,45 +530,65 @@ export const INITIAL_PLAYERS: Player[] = [
     "plays": "Right-handed (two-handed backhand)",
     "currentRank": 9,
     "careerHighRank": 6,
-    "careerTitles": 10,
+    "careerTitles": 9,
     "grandSlams": 0,
-    "slamFinals": 0,
     "slamBreakdown": {
       "australianOpen": 0,
       "rolandGarros": 0,
       "wimbledon": 0,
       "usOpen": 0
     },
-    "prizeMoneyUsd": "$17,500,000",
+    "prizeMoneyUsd": "$17,200,000",
     "careerWinLoss": {
-      "wins": 265,
-      "losses": 152,
-      "winPercentage": 63.5
+      "wins": 250,
+      "losses": 145,
+      "winPercentage": 63.3
     },
     "surfaceStats": {
       "hard": {
-        "wins": 185,
-        "losses": 98,
-        "winPercentage": 65.4
+        "wins": 175,
+        "losses": 95,
+        "winPercentage": 64.8
       },
       "clay": {
-        "wins": 42,
-        "losses": 34,
-        "winPercentage": 55.3
+        "wins": 38,
+        "losses": 30,
+        "winPercentage": 55.9
       },
       "grass": {
-        "wins": 38,
+        "wins": 37,
         "losses": 20,
-        "winPercentage": 65.5
+        "winPercentage": 64.9
       }
     },
-    "avatarUrl": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=800&auto=format&fit=crop&q=80",
-    "bio": "The 'Demon' is widely regarded as the fastest mover in professional tennis, possessing relentless court retrieval and a 2026 Rotterdam 500 championship.",
-    "playStyle": "High-octane defensive scrambler with elite counterpunching speed and transition redirection.",
+    "avatarUrl": "/images/players/alex-de-minaur.jpg",
+    "bio": "As of September 20, 2026, Alex de Minaur sits at World No. 8 with 9 career titles. Nicknamed 'Demon' for his unmatched speed and defensive tenacity, the Australian reached major quarterfinals at Roland Garros and Wimbledon in 2026.",
+    "playStyle": "Super-human foot speed, counter-punching recovery, and razor-sharp flat passing shots from anywhere on court.",
     "notableRivalries": [
       "Taylor Fritz",
-      "Stefanos Tsitsipas"
+      "Andrey Rublev",
+      "Stefanos Tsitsipas",
+      "Novak Djokovic"
     ],
+    "injuryHistory": [
+      {
+        "year": 2024,
+        "injury": "Hip Cartilage Avulsion Tear",
+        "durationOrTournament": "Wimbledon Fourth Round",
+        "details": "Suffered rare hip adductor fiber avulsion on match point against Fils; forced withdrawal from QF clash with Djokovic.",
+        "severity": "severe",
+        "status": "Rehabilitated"
+      },
+      {
+        "year": 2020,
+        "injury": "Abdominal Wall Tear",
+        "durationOrTournament": "ATP Cup / Australian Open",
+        "details": "Severe abdominal tear suffered during physical ATP Cup battles; missed home Grand Slam in Melbourne.",
+        "severity": "severe",
+        "status": "Resolved"
+      }
+    ],
+    "status": "active",
     "points": 3430,
     "movement": 1,
     "tournamentsPlayed": 24
@@ -430,49 +608,234 @@ export const INITIAL_PLAYERS: Player[] = [
     "plays": "Right-handed (two-handed backhand)",
     "currentRank": 12,
     "careerHighRank": 4,
-    "careerTitles": 9,
+    "careerTitles": 8,
     "grandSlams": 0,
-    "slamFinals": 1,
     "slamBreakdown": {
       "australianOpen": 0,
       "rolandGarros": 0,
       "wimbledon": 0,
       "usOpen": 0
     },
-    "prizeMoneyUsd": "$21,400,000",
+    "prizeMoneyUsd": "$22,800,000",
     "careerWinLoss": {
-      "wins": 302,
-      "losses": 175,
+      "wins": 288,
+      "losses": 167,
       "winPercentage": 63.3
     },
     "surfaceStats": {
       "hard": {
-        "wins": 218,
-        "losses": 115,
-        "winPercentage": 65.5
+        "wins": 195,
+        "losses": 110,
+        "winPercentage": 63.9
       },
       "clay": {
         "wins": 45,
-        "losses": 38,
-        "winPercentage": 54.2
+        "losses": 35,
+        "winPercentage": 56.3
       },
       "grass": {
-        "wins": 39,
+        "wins": 48,
         "losses": 22,
-        "winPercentage": 63.9
+        "winPercentage": 68.6
       }
     },
-    "avatarUrl": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=800&auto=format&fit=crop&q=80",
-    "bio": "American No. 1 leader and 2024 US Open finalist. Elite server backed by flat, penetrating forehands and a 2026 Washington DC title.",
-    "playStyle": "Offensive big-serve baseline aggressor dictating pace through first-strike depth.",
+    "avatarUrl": "/images/players/taylor-fritz.jpg",
+    "bio": "As of September 20, 2026, Taylor Fritz is World No. 9 with 8 career titles, the Indian Wells Masters crown, and a 2024 US Open final appearance. Fritz pushed Novak Djokovic in a four-hour Wimbledon quarterfinal in 2026.",
+    "playStyle": "Big-serving aggressive hardcourt specialist with a booming first delivery and punishing flat forehand drives.",
     "notableRivalries": [
+      "Alexander Zverev",
+      "Novak Djokovic",
       "Ben Shelton",
-      "Tommy Paul",
-      "Alexander Zverev"
+      "Tommy Paul"
     ],
+    "injuryHistory": [
+      {
+        "year": 2021,
+        "injury": "Right Knee Meniscus Tear",
+        "durationOrTournament": "Roland Garros Second Round",
+        "details": "Left court in wheelchair after hearing knee pop; underwent arthroscopy and returned for Wimbledon in 22 days.",
+        "severity": "severe",
+        "status": "Rehabilitated"
+      },
+      {
+        "year": 2022,
+        "injury": "Severe Ankle Sprain & Plantar Fasciitis",
+        "durationOrTournament": "Indian Wells Final",
+        "details": "Managed pain with extensive numbing and taping to capture maiden Masters 1000 crown over Rafael Nadal.",
+        "severity": "moderate",
+        "status": "Resolved"
+      },
+      {
+        "year": 2023,
+        "injury": "Abdominal Oblique Strain",
+        "durationOrTournament": "Paris Masters Second Round",
+        "details": "Withdrew prior to second-round match with acute oblique inflammation.",
+        "severity": "mild",
+        "status": "Resolved"
+      }
+    ],
+    "status": "active",
+    "slamFinals": 1,
     "points": 2880,
     "movement": 0,
     "tournamentsPlayed": 22
+  },
+  {
+    "id": "casper-ruud",
+    "name": "Casper Ruud",
+    "tour": "ATP",
+    "country": "Norway",
+    "countryCode": "NOR",
+    "flag": "🇳🇴",
+    "age": 27,
+    "birthDate": "1998-12-22",
+    "birthPlace": "Oslo, Norway",
+    "heightCm": 183,
+    "turnedPro": 2015,
+    "plays": "Right-handed (two-handed backhand)",
+    "currentRank": 24,
+    "careerHighRank": 2,
+    "careerTitles": 12,
+    "grandSlams": 0,
+    "slamBreakdown": {
+      "australianOpen": 0,
+      "rolandGarros": 0,
+      "wimbledon": 0,
+      "usOpen": 0
+    },
+    "prizeMoneyUsd": "$21,500,000",
+    "careerWinLoss": {
+      "wins": 265,
+      "losses": 130,
+      "winPercentage": 67.1
+    },
+    "surfaceStats": {
+      "hard": {
+        "wins": 95,
+        "losses": 65,
+        "winPercentage": 59.4
+      },
+      "clay": {
+        "wins": 155,
+        "losses": 50,
+        "winPercentage": 75.6
+      },
+      "grass": {
+        "wins": 15,
+        "losses": 15,
+        "winPercentage": 50
+      }
+    },
+    "avatarUrl": "/images/players/casper-ruud.jpg",
+    "bio": "As of September 20, 2026, Casper Ruud is World No. 10 with 12 career titles and three Grand Slam finals (Roland Garros 2022, 2023; US Open 2022). Renowned as one of clay tennis's most destructive heavy topspin forehands.",
+    "playStyle": "Heavy topspin clay-court technician with extraordinary forehand RPM, supreme physical conditioning, and calculated tactical discipline.",
+    "notableRivalries": [
+      "Alexander Zverev",
+      "Carlos Alcaraz",
+      "Stefanos Tsitsipas",
+      "Holger Rune"
+    ],
+    "injuryHistory": [
+      {
+        "year": 2022,
+        "injury": "Right Ankle Ligament Sprain",
+        "durationOrTournament": "Australian Open Eve",
+        "details": "Rolled ankle during practice in Melbourne two days before first-round match; forced withdrawal.",
+        "severity": "moderate",
+        "status": "Resolved"
+      },
+      {
+        "year": 2024,
+        "injury": "Acute Gastrointestinal Infection",
+        "durationOrTournament": "Roland Garros Semifinal",
+        "details": "Severe stomach virus and dehydration restricted energy levels in 4-set loss to Zverev.",
+        "severity": "moderate",
+        "status": "Resolved"
+      }
+    ],
+    "status": "active",
+    "slamFinals": 3,
+    "points": 2145,
+    "movement": 0,
+    "tournamentsPlayed": 22
+  },
+  {
+    "id": "andrey-rublev",
+    "name": "Andrey Rublev",
+    "tour": "ATP",
+    "country": "International",
+    "countryCode": "INT",
+    "flag": "🏳️",
+    "age": 28,
+    "birthDate": "1997-10-20",
+    "birthPlace": "Moscow, Russia",
+    "heightCm": 188,
+    "turnedPro": 2014,
+    "plays": "Right-handed (two-handed backhand)",
+    "currentRank": 23,
+    "careerHighRank": 5,
+    "careerTitles": 16,
+    "grandSlams": 0,
+    "slamBreakdown": {
+      "australianOpen": 0,
+      "rolandGarros": 0,
+      "wimbledon": 0,
+      "usOpen": 0
+    },
+    "prizeMoneyUsd": "$26,900,000",
+    "careerWinLoss": {
+      "wins": 330,
+      "losses": 175,
+      "winPercentage": 65.3
+    },
+    "surfaceStats": {
+      "hard": {
+        "wins": 210,
+        "losses": 110,
+        "winPercentage": 65.6
+      },
+      "clay": {
+        "wins": 95,
+        "losses": 45,
+        "winPercentage": 67.9
+      },
+      "grass": {
+        "wins": 25,
+        "losses": 20,
+        "winPercentage": 55.6
+      }
+    },
+    "avatarUrl": "/images/players/andrey-rublev.jpg",
+    "bio": "As of September 20, 2026, Andrey Rublev is World No. 11 with 16 career ATP titles, including Masters 1000 crowns in Monte-Carlo and Madrid. Known for blistering baseline power and raw emotional intensity on court.",
+    "playStyle": "High-octane first-strike baseline aggressor who attacks every ball with blistering velocity on both forehand and serve.",
+    "notableRivalries": [
+      "Daniil Medvedev",
+      "Alexander Zverev",
+      "Casper Ruud",
+      "Alex de Minaur"
+    ],
+    "injuryHistory": [
+      {
+        "year": 2024,
+        "injury": "Peritonsillar Throat Abscess",
+        "durationOrTournament": "Mutua Madrid Open Final",
+        "details": "Hospitalized for two nights with severe throat abscess and internal fever; played final on anesthetics to win title.",
+        "severity": "severe",
+        "status": "Resolved"
+      },
+      {
+        "year": 2018,
+        "injury": "Lumbar Spine Stress Fracture",
+        "durationOrTournament": "European Clay Swing",
+        "details": "Lower back stress fracture sidelined him for three months, missing Roland Garros and Wimbledon.",
+        "severity": "severe",
+        "status": "Rehabilitated"
+      }
+    ],
+    "status": "active",
+    "points": 2175,
+    "movement": 1,
+    "tournamentsPlayed": 23
   },
   {
     "id": "tommy-paul",
@@ -483,113 +846,309 @@ export const INITIAL_PLAYERS: Player[] = [
     "flag": "🇺🇸",
     "age": 29,
     "birthDate": "1997-05-17",
-    "birthPlace": "Voorhees Township, New Jersey, USA",
+    "birthPlace": "Voorhees, New Jersey, USA",
     "heightCm": 185,
     "turnedPro": 2015,
     "plays": "Right-handed (two-handed backhand)",
     "currentRank": 18,
     "careerHighRank": 12,
-    "careerTitles": 4,
+    "careerTitles": 3,
     "grandSlams": 0,
-    "slamFinals": 0,
     "slamBreakdown": {
       "australianOpen": 0,
       "rolandGarros": 0,
       "wimbledon": 0,
       "usOpen": 0
     },
-    "prizeMoneyUsd": "$13,200,000",
+    "prizeMoneyUsd": "$10,900,000",
     "careerWinLoss": {
-      "wins": 188,
-      "losses": 128,
-      "winPercentage": 59.5
+      "wins": 175,
+      "losses": 120,
+      "winPercentage": 59.3
     },
     "surfaceStats": {
       "hard": {
-        "wins": 128,
-        "losses": 82,
-        "winPercentage": 61
+        "wins": 115,
+        "losses": 78,
+        "winPercentage": 59.6
       },
       "clay": {
-        "wins": 34,
-        "losses": 28,
-        "winPercentage": 54.8
+        "wins": 32,
+        "losses": 26,
+        "winPercentage": 55.2
       },
       "grass": {
-        "wins": 26,
-        "losses": 18,
-        "winPercentage": 59.1
+        "wins": 28,
+        "losses": 16,
+        "winPercentage": 63.6
       }
     },
-    "avatarUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=800&auto=format&fit=crop&q=80",
-    "bio": "Fluid all-court American competitor celebrated for razor-sharp transition net volleys and his 2026 Houston clay crown.",
-    "playStyle": "Creative all-court mover with soft hands at net and sudden forehand angle changes.",
+    "avatarUrl": "/images/players/tommy-paul.jpg",
+    "bio": "As of September 20, 2026, Tommy Paul is World No. 12 with 3 career titles, Queen's Club grass trophy, and an Olympic doubles medal. His athletic transition game and all-court craft make him a perpetual threat.",
+    "playStyle": "Dynamic all-court athlete with rapid footwork, crafty drop shots, sharp volley technique, and strong baseline defense.",
     "notableRivalries": [
       "Taylor Fritz",
-      "Ben Shelton"
+      "Carlos Alcaraz",
+      "Ben Shelton",
+      "Alexander Zverev"
     ],
+    "injuryHistory": [
+      {
+        "year": 2024,
+        "injury": "Ankle Inversion Ligament Sprain",
+        "durationOrTournament": "Miami Open Second Round",
+        "details": "Suffered severe lateral ankle roll against Damm; sidelined for 4 weeks.",
+        "severity": "moderate",
+        "status": "Resolved"
+      },
+      {
+        "year": 2023,
+        "injury": "Abdominal Muscle Strain",
+        "durationOrTournament": "US Hard Court Swing",
+        "details": "Oblique wall strain limited service velocity during late summer Masters events.",
+        "severity": "mild",
+        "status": "Resolved"
+      }
+    ],
+    "status": "active",
     "points": 2375,
     "movement": 0,
     "tournamentsPlayed": 22
   },
   {
-    "id": "elena-rybakina",
-    "name": "Elena Rybakina",
-    "tour": "WTA",
-    "country": "Kazakhstan",
-    "countryCode": "KAZ",
-    "flag": "🇰🇿",
-    "age": 27,
-    "birthDate": "1999-06-17",
-    "birthPlace": "Moscow, Russia",
-    "heightCm": 184,
+    "id": "stefanos-tsitsipas",
+    "name": "Stefanos Tsitsipas",
+    "tour": "ATP",
+    "country": "Greece",
+    "countryCode": "GRE",
+    "flag": "🇬🇷",
+    "age": 28,
+    "birthDate": "1998-08-12",
+    "birthPlace": "Athens, Greece",
+    "heightCm": 193,
     "turnedPro": 2016,
-    "plays": "Right-handed (two-handed backhand)",
-    "currentRank": 1,
-    "careerHighRank": 1,
-    "careerTitles": 10,
-    "grandSlams": 2,
-    "slamFinals": 3,
+    "plays": "Right-handed (one-handed backhand)",
+    "currentRank": 43,
+    "careerHighRank": 3,
+    "careerTitles": 11,
+    "grandSlams": 0,
     "slamBreakdown": {
-      "australianOpen": 1,
+      "australianOpen": 0,
       "rolandGarros": 0,
-      "wimbledon": 1,
+      "wimbledon": 0,
       "usOpen": 0
     },
-    "prizeMoneyUsd": "$22,800,000",
+    "prizeMoneyUsd": "$32,500,000",
     "careerWinLoss": {
       "wins": 335,
-      "losses": 145,
-      "winPercentage": 69.8
+      "losses": 160,
+      "winPercentage": 67.7
     },
     "surfaceStats": {
       "hard": {
-        "wins": 218,
-        "losses": 93,
-        "winPercentage": 70.1
+        "wins": 190,
+        "losses": 105,
+        "winPercentage": 64.4
       },
       "clay": {
-        "wins": 68,
-        "losses": 28,
-        "winPercentage": 70.8
+        "wins": 118,
+        "losses": 35,
+        "winPercentage": 77.1
       },
       "grass": {
-        "wins": 49,
-        "losses": 15,
-        "winPercentage": 76.6
+        "wins": 27,
+        "losses": 20,
+        "winPercentage": 57.4
       }
     },
-    "avatarUrl": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=800&auto=format&fit=crop&q=80",
-    "bio": "Reigning WTA World No. 1 and two-time Grand Slam champion (Wimbledon 2022, Australian Open 2026). The Tour's undisputed ace leader with unreturnable flat deliveries.",
-    "playStyle": "Uncompromising power baseline dominator with the highest ace conversion rate on tour.",
+    "avatarUrl": "/images/players/stefanos-tsitsipas.jpg",
+    "bio": "As of September 20, 2026, Stefanos Tsitsipas is World No. 13 with 11 career titles, three Monte-Carlo Masters titles, and two Grand Slam finals (Roland Garros, Australian Open). A signature classical all-court stylist with an attacking one-handed backhand.",
+    "playStyle": "Offensive all-court game with a lethal inside-out forehand, sweeping one-handed backhand topspin, and agile net transitions.",
     "notableRivalries": [
-      "Aryna Sabalenka",
-      "Iga Świątek",
-      "Coco Gauff"
+      "Alexander Zverev",
+      "Daniil Medvedev",
+      "Carlos Alcaraz",
+      "Casper Ruud"
     ],
-    "points": 9696,
+    "injuryHistory": [
+      {
+        "year": 2023,
+        "injury": "Lumbar Spine Disk Irritation",
+        "durationOrTournament": "Nitto ATP Finals",
+        "details": "Chronic lower back stress forced retirement after three games against Rune in Turin group stage.",
+        "severity": "moderate",
+        "status": "Active Monitoring"
+      },
+      {
+        "year": 2021,
+        "injury": "Right Elbow Arthroscopy",
+        "durationOrTournament": "Post-Season 2021",
+        "details": "Underwent surgical procedure in Switzerland to address chronic tendon degeneration in hitting elbow.",
+        "severity": "moderate",
+        "status": "Rehabilitated"
+      }
+    ],
+    "status": "active",
+    "slamFinals": 2,
+    "points": 1230,
+    "movement": 1,
+    "tournamentsPlayed": 26
+  },
+  {
+    "id": "holger-rune",
+    "name": "Holger Rune",
+    "tour": "ATP",
+    "country": "Denmark",
+    "countryCode": "DEN",
+    "flag": "🇩🇰",
+    "age": 23,
+    "birthDate": "2003-04-29",
+    "birthPlace": "Gentofte, Denmark",
+    "heightCm": 188,
+    "turnedPro": 2020,
+    "plays": "Right-handed (two-handed backhand)",
+    "currentRank": 195,
+    "careerHighRank": 4,
+    "careerTitles": 4,
+    "grandSlams": 0,
+    "slamBreakdown": {
+      "australianOpen": 0,
+      "rolandGarros": 0,
+      "wimbledon": 0,
+      "usOpen": 0
+    },
+    "prizeMoneyUsd": "$11,200,000",
+    "careerWinLoss": {
+      "wins": 145,
+      "losses": 85,
+      "winPercentage": 63
+    },
+    "surfaceStats": {
+      "hard": {
+        "wins": 82,
+        "losses": 48,
+        "winPercentage": 63.1
+      },
+      "clay": {
+        "wins": 50,
+        "losses": 25,
+        "winPercentage": 66.7
+      },
+      "grass": {
+        "wins": 13,
+        "losses": 12,
+        "winPercentage": 52
+      }
+    },
+    "avatarUrl": "/images/players/holger-rune.jpg",
+    "bio": "As of September 20, 2026, 23-year-old Holger Rune is World No. 14 with 4 career titles and the Paris Masters shield. Known for his fiery competitive spirit, explosive court movement, and lethal down-the-line backhand.",
+    "playStyle": "Aggressive baseline warrior with explosive redirect speed, heavy inside-in forehands, and intense fighting spirit.",
+    "notableRivalries": [
+      "Casper Ruud",
+      "Carlos Alcaraz",
+      "Jannik Sinner",
+      "Novak Djokovic"
+    ],
+    "injuryHistory": [
+      {
+        "year": 2023,
+        "injury": "Lumbar Spine Nerve Impingement",
+        "durationOrTournament": "US Open Hard Court Swing",
+        "details": "Herniated L5 disc caused shooting leg pain and serve velocity loss through autumn.",
+        "severity": "moderate",
+        "status": "Resolved"
+      },
+      {
+        "year": 2024,
+        "injury": "Right Wrist Ligament Inflammation",
+        "durationOrTournament": "Hamburg Open & Paris Olympics",
+        "details": "Withdrew from Olympic singles tournament due to persistent wrist joint swelling.",
+        "severity": "moderate",
+        "status": "Resolved"
+      }
+    ],
+    "status": "active",
+    "points": 300,
     "movement": 0,
-    "tournamentsPlayed": 18
+    "tournamentsPlayed": 15
+  },
+  {
+    "id": "jack-draper",
+    "name": "Jack Draper",
+    "tour": "ATP",
+    "country": "Great Britain",
+    "countryCode": "GBR",
+    "flag": "🇬🇧",
+    "age": 24,
+    "birthDate": "2001-12-22",
+    "birthPlace": "Sutton, London, England",
+    "heightCm": 193,
+    "turnedPro": 2018,
+    "plays": "Left-handed (two-handed backhand)",
+    "currentRank": 158,
+    "careerHighRank": 15,
+    "careerTitles": 2,
+    "grandSlams": 0,
+    "slamBreakdown": {
+      "australianOpen": 0,
+      "rolandGarros": 0,
+      "wimbledon": 0,
+      "usOpen": 0
+    },
+    "prizeMoneyUsd": "$5,400,000",
+    "careerWinLoss": {
+      "wins": 88,
+      "losses": 48,
+      "winPercentage": 64.7
+    },
+    "surfaceStats": {
+      "hard": {
+        "wins": 58,
+        "losses": 30,
+        "winPercentage": 65.9
+      },
+      "clay": {
+        "wins": 14,
+        "losses": 10,
+        "winPercentage": 58.3
+      },
+      "grass": {
+        "wins": 16,
+        "losses": 8,
+        "winPercentage": 66.7
+      }
+    },
+    "avatarUrl": "/images/players/jack-draper.jpg",
+    "bio": "As of September 20, 2026, 24-year-old Jack Draper is World No. 15 with 2 ATP titles (Vienna, Stuttgart) and a US Open semifinal run. The powerful British southpaw features one of the most lethal lefty deliveries on tour.",
+    "playStyle": "Towering left-handed power baseline game with heavy crosscourt slice, thunderous flat groundstrokes, and elite athletic transitions.",
+    "notableRivalries": [
+      "Jannik Sinner",
+      "Carlos Alcaraz",
+      "Alex de Minaur",
+      "Holger Rune"
+    ],
+    "injuryHistory": [
+      {
+        "year": 2023,
+        "injury": "Left Shoulder Tendon Tear",
+        "durationOrTournament": "Roland Garros First Round",
+        "details": "Suffered partial tendon tear in hitting shoulder; missed entire grass season including Wimbledon.",
+        "severity": "severe",
+        "status": "Rehabilitated"
+      },
+      {
+        "year": 2024,
+        "injury": "Intercostal Abdominal Strain",
+        "durationOrTournament": "cinch Championships Queens Club",
+        "details": "Mild muscular pull experienced during service motion follow-through.",
+        "severity": "mild",
+        "status": "Resolved"
+      }
+    ],
+    "status": "active",
+    "points": 360,
+    "movement": 0,
+    "tournamentsPlayed": 15
   },
   {
     "id": "aryna-sabalenka",
@@ -606,109 +1165,148 @@ export const INITIAL_PLAYERS: Player[] = [
     "plays": "Right-handed (two-handed backhand)",
     "currentRank": 2,
     "careerHighRank": 1,
-    "careerTitles": 18,
-    "grandSlams": 4,
-    "slamFinals": 5,
+    "careerTitles": 20,
+    "grandSlams": 5,
     "slamBreakdown": {
       "australianOpen": 2,
       "rolandGarros": 0,
-      "wimbledon": 0,
+      "wimbledon": 1,
       "usOpen": 2
     },
-    "prizeMoneyUsd": "$34,500,000",
+    "prizeMoneyUsd": "$36,000,000",
     "careerWinLoss": {
-      "wins": 452,
-      "losses": 192,
+      "wins": 438,
+      "losses": 186,
       "winPercentage": 70.2
     },
     "surfaceStats": {
       "hard": {
-        "wins": 320,
-        "losses": 121,
-        "winPercentage": 72.6
+        "wins": 309,
+        "losses": 119,
+        "winPercentage": 72.2
       },
       "clay": {
-        "wins": 88,
-        "losses": 44,
-        "winPercentage": 66.7
+        "wins": 86,
+        "losses": 47,
+        "winPercentage": 64.7
       },
       "grass": {
-        "wins": 44,
-        "losses": 27,
-        "winPercentage": 62
+        "wins": 43,
+        "losses": 20,
+        "winPercentage": 68.3
       }
     },
-    "avatarUrl": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&auto=format&fit=crop&q=80",
-    "bio": "Four-time Grand Slam champion (Australian Open 2023, 2024; US Open 2024, 2026). Known as 'The Tiger' for her intense competitive fire and ferocious baseline pace.",
-    "playStyle": "Maximum-velocity power hitter with unmatched ball speed off both forehand and backhand wings.",
+    "avatarUrl": "/images/players/aryna-sabalenka.jpg",
+    "bio": "As of September 20, 2026, Aryna Sabalenka is WTA World No. 1 with 5 Grand Slam titles (Australian Open 2023, 2024; Wimbledon 2026; US Open 2024, 2026), 20 career titles, and the 2026 Sunshine Double. Her thunderous baseline firepower was on full display capturing both Wimbledon and the US Open in 2026.",
+    "playStyle": "Ultra-aggressive power hitter with one of the most powerful forehands and serves on the women tour.",
     "notableRivalries": [
-      "Elena Rybakina",
-      "Iga Świątek",
+      "Iga Swiatek",
       "Coco Gauff",
-      "Zheng Qinwen"
+      "Elena Rybakina",
+      "Zheng Qinwen",
+      "Jessica Pegula"
     ],
+    "injuryHistory": [
+      {
+        "year": 2024,
+        "injury": "Teres Major Shoulder Muscle Tear",
+        "durationOrTournament": "Berlin & Wimbledon",
+        "details": "Rare micro-tear in upper shoulder rotator muscle forced withdrawal from Wimbledon; returned to win Cincinnati and US Open.",
+        "severity": "severe",
+        "status": "Rehabilitated"
+      },
+      {
+        "year": 2023,
+        "injury": "Left Adductor Groin Tightness",
+        "durationOrTournament": "WTA Finals Cancun",
+        "details": "Managed inner thigh muscular strain in humid court conditions.",
+        "severity": "mild",
+        "status": "Resolved"
+      }
+    ],
+    "status": "active",
+    "slamFinals": 7,
     "points": 7550,
     "movement": 0,
-    "tournamentsPlayed": 16
+    "tournamentsPlayed": 19
   },
   {
-    "id": "mirra-andreeva",
-    "name": "Mirra Andreeva",
+    "id": "elena-rybakina",
+    "name": "Elena Rybakina",
     "tour": "WTA",
-    "country": "International",
-    "countryCode": "INT",
-    "flag": "🏳️",
-    "age": 19,
-    "birthDate": "2007-04-29",
-    "birthPlace": "Krasnoyarsk, Russia",
-    "heightCm": 175,
-    "turnedPro": 2022,
+    "country": "Kazakhstan",
+    "countryCode": "KAZ",
+    "flag": "🇰🇿",
+    "age": 27,
+    "birthDate": "1999-06-17",
+    "birthPlace": "Moscow, Russia",
+    "heightCm": 184,
+    "turnedPro": 2016,
     "plays": "Right-handed (two-handed backhand)",
-    "currentRank": 3,
-    "careerHighRank": 3,
-    "careerTitles": 2,
-    "grandSlams": 0,
-    "slamFinals": 0,
+    "currentRank": 1,
+    "careerHighRank": 1,
+    "careerTitles": 8,
+    "grandSlams": 1,
     "slamBreakdown": {
       "australianOpen": 0,
       "rolandGarros": 0,
-      "wimbledon": 0,
+      "wimbledon": 1,
       "usOpen": 0
     },
-    "prizeMoneyUsd": "$5,600,000",
+    "prizeMoneyUsd": "$15,600,000",
     "careerWinLoss": {
-      "wins": 82,
-      "losses": 35,
-      "winPercentage": 70.1
+      "wins": 320,
+      "losses": 140,
+      "winPercentage": 69.6
     },
     "surfaceStats": {
       "hard": {
-        "wins": 52,
-        "losses": 22,
-        "winPercentage": 70.3
+        "wins": 209,
+        "losses": 98,
+        "winPercentage": 68.1
       },
       "clay": {
-        "wins": 24,
-        "losses": 9,
-        "winPercentage": 72.7
+        "wins": 78,
+        "losses": 32,
+        "winPercentage": 70.9
       },
       "grass": {
-        "wins": 6,
-        "losses": 4,
-        "winPercentage": 60
+        "wins": 33,
+        "losses": 10,
+        "winPercentage": 76.7
       }
     },
-    "avatarUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=800&auto=format&fit=crop&q=80",
-    "bio": "Teenage sensation who ascended to World No. 3 in autumn 2026 following her historic final run at the China Open in Beijing. Possesses uncanny court vision and tactical composure well beyond her years.",
-    "playStyle": "Precocious counterpunching prodigy with rapid redirection and instinctive defensive court senses.",
+    "avatarUrl": "/images/players/elena-rybakina.jpg",
+    "bio": "As of September 20, 2026, Elena Rybakina is World No. 4 with 8 career titles, the 2022 Wimbledon crown, and 2 Grand Slam finals. Her clinical, laser-accurate first delivery leads the WTA in aces and unreturned serve rate.",
+    "playStyle": "Tall, composed power player with effortless ball striking and devastating ace-serving delivery.",
     "notableRivalries": [
-      "Zheng Qinwen",
-      "Coco Gauff",
-      "Aryna Sabalenka"
+      "Aryna Sabalenka",
+      "Iga Swiatek",
+      "Jasmine Paolini"
     ],
-    "points": 6371,
-    "movement": 2,
-    "tournamentsPlayed": 18
+    "injuryHistory": [
+      {
+        "year": 2024,
+        "injury": "Acute Gastrointestinal Viral Infection & Lower Back Strain",
+        "durationOrTournament": "US Open & Olympic Games",
+        "details": "Severe respiratory and back issues forced withdrawals from Olympics and US Open second round.",
+        "severity": "severe",
+        "status": "Rehabilitated"
+      },
+      {
+        "year": 2023,
+        "injury": "Upper Respiratory Viral Flare-up",
+        "durationOrTournament": "Roland Garros Third Round",
+        "details": "Fever and breathing difficulty forced withdrawal hours before third-round match.",
+        "severity": "moderate",
+        "status": "Resolved"
+      }
+    ],
+    "status": "active",
+    "slamFinals": 2,
+    "points": 9696,
+    "movement": 0,
+    "tournamentsPlayed": 20
   },
   {
     "id": "jessica-pegula",
@@ -727,46 +1325,66 @@ export const INITIAL_PLAYERS: Player[] = [
     "careerHighRank": 3,
     "careerTitles": 6,
     "grandSlams": 0,
-    "slamFinals": 1,
     "slamBreakdown": {
       "australianOpen": 0,
       "rolandGarros": 0,
       "wimbledon": 0,
       "usOpen": 0
     },
-    "prizeMoneyUsd": "$18,200,000",
+    "prizeMoneyUsd": "$15,800,000",
     "careerWinLoss": {
-      "wins": 305,
-      "losses": 162,
-      "winPercentage": 65.3
+      "wins": 295,
+      "losses": 155,
+      "winPercentage": 65.6
     },
     "surfaceStats": {
       "hard": {
-        "wins": 228,
-        "losses": 110,
-        "winPercentage": 67.5
+        "wins": 205,
+        "losses": 95,
+        "winPercentage": 68.3
       },
       "clay": {
-        "wins": 48,
-        "losses": 34,
-        "winPercentage": 58.5
+        "wins": 55,
+        "losses": 38,
+        "winPercentage": 59.1
       },
       "grass": {
-        "wins": 29,
-        "losses": 18,
-        "winPercentage": 61.7
+        "wins": 35,
+        "losses": 22,
+        "winPercentage": 61.4
       }
     },
-    "avatarUrl": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=800&auto=format&fit=crop&q=80",
-    "bio": "American leader and 2024 US Open finalist. Renowned for surgical flat groundstrokes that take the ball early on the rise.",
-    "playStyle": "Precision flat-ball striker taking balls on the rise with textbook shot depth.",
+    "avatarUrl": "/images/players/jessica-pegula.jpg",
+    "bio": "As of September 20, 2026, Jessica Pegula is World No. 5 with 6 career titles, two Canadian Open trophies, and the 2024 US Open final. A consummate competitor renowned for flat ball striking, sharp angles, and consistency.",
+    "playStyle": "Clean, flat baseline ball striker taking balls early on the rise with textbook shot depth and pinpoint return placement.",
     "notableRivalries": [
+      "Aryna Sabalenka",
       "Coco Gauff",
-      "Iga Świątek",
-      "Aryna Sabalenka"
+      "Iga Swiatek",
+      "Emma Navarro"
     ],
+    "injuryHistory": [
+      {
+        "year": 2024,
+        "injury": "Severe Neck & Rib Joint Strain",
+        "durationOrTournament": "European Clay Season",
+        "details": "Forced withdrawal from entire clay swing including Roland Garros; rebounded to reach US Open Final.",
+        "severity": "severe",
+        "status": "Rehabilitated"
+      },
+      {
+        "year": 2017,
+        "injury": "Hip Labral Tear Reconstruction Surgery",
+        "durationOrTournament": "Early Career Hiatus",
+        "details": "Major hip reconstructive surgery required an 18-month competitive rehabilitation.",
+        "severity": "severe",
+        "status": "Rehabilitated"
+      }
+    ],
+    "status": "active",
+    "slamFinals": 1,
     "points": 6225,
-    "movement": 0,
+    "movement": -1,
     "tournamentsPlayed": 18
   },
   {
@@ -786,47 +1404,145 @@ export const INITIAL_PLAYERS: Player[] = [
     "careerHighRank": 2,
     "careerTitles": 9,
     "grandSlams": 1,
-    "slamFinals": 3,
     "slamBreakdown": {
       "australianOpen": 0,
       "rolandGarros": 0,
       "wimbledon": 0,
       "usOpen": 1
     },
-    "prizeMoneyUsd": "$21,500,000",
+    "prizeMoneyUsd": "$22,800,000",
     "careerWinLoss": {
-      "wins": 255,
-      "losses": 108,
-      "winPercentage": 70.2
+      "wins": 242,
+      "losses": 102,
+      "winPercentage": 70.3
     },
     "surfaceStats": {
       "hard": {
-        "wins": 178,
-        "losses": 68,
-        "winPercentage": 72.4
+        "wins": 156,
+        "losses": 62,
+        "winPercentage": 71.6
       },
       "clay": {
-        "wins": 55,
-        "losses": 25,
-        "winPercentage": 68.8
+        "wins": 60,
+        "losses": 26,
+        "winPercentage": 69.8
       },
       "grass": {
-        "wins": 22,
-        "losses": 15,
-        "winPercentage": 59.5
+        "wins": 26,
+        "losses": 14,
+        "winPercentage": 65
       }
     },
-    "avatarUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=800&auto=format&fit=crop&q=80",
-    "bio": "2023 US Open champion and 2024 WTA Finals victor. Elite speed and defensive reach anchored by one of the premier two-handed backhands in the sport.",
-    "playStyle": "Electric baseline athlete with lightning-fast court coverage and relentless defensive counter-striking.",
+    "avatarUrl": "/images/players/coco-gauff.jpg",
+    "bio": "As of September 20, 2026, 22-year-old Coco Gauff is World No. 3 with 9 career titles, the 2023 US Open title, and 3 Grand Slam finals. She captured the 2026 Madrid Open and battled into the 2026 US Open final against Aryna Sabalenka.",
+    "playStyle": "World-class athletic defender with superhuman recovery range, lightning first serve, and sharp backhand drives down the line.",
     "notableRivalries": [
-      "Iga Świątek",
+      "Iga Swiatek",
       "Aryna Sabalenka",
-      "Jessica Pegula"
+      "Jessica Pegula",
+      "Zheng Qinwen"
     ],
+    "injuryHistory": [
+      {
+        "year": 2023,
+        "injury": "Left Ankle Inversion Sprain",
+        "durationOrTournament": "WTA 1000 Doha",
+        "details": "Sustained mild ankle roll during baseline defense; recovered in 10 days.",
+        "severity": "mild",
+        "status": "Resolved"
+      },
+      {
+        "year": 2022,
+        "injury": "Right Ankle Ligament Sprain",
+        "durationOrTournament": "San Diego Open Quarterfinal",
+        "details": "Retired in second set against Swiatek after rolling ankle sliding on hard court.",
+        "severity": "moderate",
+        "status": "Resolved"
+      }
+    ],
+    "status": "active",
+    "slamFinals": 3,
     "points": 5974,
-    "movement": 0,
-    "tournamentsPlayed": 17
+    "movement": -1,
+    "tournamentsPlayed": 18
+  },
+  {
+    "id": "mirra-andreeva",
+    "name": "Mirra Andreeva",
+    "tour": "WTA",
+    "country": "International",
+    "countryCode": "INT",
+    "flag": "🏳️",
+    "age": 19,
+    "birthDate": "2007-04-29",
+    "birthPlace": "Krasnoyarsk, Russia",
+    "heightCm": 175,
+    "turnedPro": 2022,
+    "plays": "Right-handed (two-handed backhand)",
+    "currentRank": 3,
+    "careerHighRank": 5,
+    "careerTitles": 1,
+    "grandSlams": 0,
+    "slamBreakdown": {
+      "australianOpen": 0,
+      "rolandGarros": 0,
+      "wimbledon": 0,
+      "usOpen": 0
+    },
+    "prizeMoneyUsd": "$3,200,000",
+    "careerWinLoss": {
+      "wins": 72,
+      "losses": 30,
+      "winPercentage": 70.6
+    },
+    "surfaceStats": {
+      "hard": {
+        "wins": 38,
+        "losses": 18,
+        "winPercentage": 67.9
+      },
+      "clay": {
+        "wins": 26,
+        "losses": 8,
+        "winPercentage": 76.5
+      },
+      "grass": {
+        "wins": 8,
+        "losses": 4,
+        "winPercentage": 66.7
+      }
+    },
+    "avatarUrl": "/images/players/mirra-andreeva.jpg",
+    "bio": "As of September 20, 2026, 19-year-old Mirra Andreeva is World No. 11 with 1 WTA title, an Olympic doubles silver medal, and a Roland Garros semifinal. Possesses extraordinary tennis IQ, court anticipation, and touch.",
+    "playStyle": "Prodigious court vision, effortless direction change on both wings, sharp anticipation, and mature baseline poise.",
+    "notableRivalries": [
+      "Aryna Sabalenka",
+      "Jasmine Paolini",
+      "Coco Gauff",
+      "Iga Swiatek"
+    ],
+    "injuryHistory": [
+      {
+        "year": 2024,
+        "injury": "Right Wrist Extensor Tendonitis",
+        "durationOrTournament": "Clay Court Transition",
+        "details": "Managed wrist inflammation caused by high-RPM topspin baseline game.",
+        "severity": "mild",
+        "status": "Resolved"
+      },
+      {
+        "year": 2023,
+        "injury": "Forearm Muscle Fatigue",
+        "durationOrTournament": "Post-Wimbledon Swing",
+        "details": "Sidelined for two weeks following intense junior and senior Grand Slam transition.",
+        "severity": "mild",
+        "status": "Resolved"
+      }
+    ],
+    "status": "active",
+    "points": 6371,
+    "movement": 2,
+    "tournamentsPlayed": 20
   },
   {
     "id": "iga-swiatek",
@@ -843,49 +1559,382 @@ export const INITIAL_PLAYERS: Player[] = [
     "plays": "Right-handed (two-handed backhand)",
     "currentRank": 9,
     "careerHighRank": 1,
-    "careerTitles": 23,
-    "grandSlams": 5,
-    "slamFinals": 5,
+    "careerTitles": 24,
+    "grandSlams": 6,
     "slamBreakdown": {
       "australianOpen": 0,
-      "rolandGarros": 4,
+      "rolandGarros": 5,
       "wimbledon": 0,
       "usOpen": 1
     },
-    "prizeMoneyUsd": "$33,800,000",
+    "prizeMoneyUsd": "$37,200,000",
     "careerWinLoss": {
-      "wins": 388,
-      "losses": 82,
+      "wins": 376,
+      "losses": 79,
       "winPercentage": 82.6
     },
     "surfaceStats": {
       "hard": {
-        "wins": 215,
-        "losses": 52,
-        "winPercentage": 80.5
+        "wins": 198,
+        "losses": 51,
+        "winPercentage": 79.5
       },
       "clay": {
-        "wins": 142,
-        "losses": 18,
-        "winPercentage": 88.8
+        "wins": 155,
+        "losses": 19,
+        "winPercentage": 89.1
       },
       "grass": {
-        "wins": 31,
-        "losses": 12,
-        "winPercentage": 72.1
+        "wins": 23,
+        "losses": 9,
+        "winPercentage": 71.9
       }
     },
-    "avatarUrl": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=800&auto=format&fit=crop&q=80",
-    "bio": "Five-time Grand Slam champion (four French Open crowns and 2022 US Open). Revered as the greatest clay-court master of her generation with unprecedented topspin rotation.",
-    "playStyle": "Hyper-aggressive topspin baseline dictator with heavy court angles and explosive sliding recovery.",
+    "avatarUrl": "/images/players/iga-swiatek.jpg",
+    "bio": "As of September 20, 2026, Iga Świątek is World No. 2 with 6 Grand Slam singles titles (Roland Garros 2020, 2022, 2023, 2024, 2026; US Open 2022) and 24 career titles. Dominant on European clay, her heavy topspin forehand averages over 3,250 RPM.",
+    "playStyle": "High-intensity baseline game with exceptional clay sliding, violent topspin forehand angles, and suffocating court position.",
     "notableRivalries": [
       "Aryna Sabalenka",
+      "Coco Gauff",
       "Elena Rybakina",
-      "Coco Gauff"
+      "Jasmine Paolini"
     ],
-    "points": 3999,
-    "movement": 0,
-    "tournamentsPlayed": 16
+    "injuryHistory": [
+      {
+        "year": 2023,
+        "injury": "Right Thigh Adductor Muscle Strain",
+        "durationOrTournament": "Rome Masters Quarterfinal",
+        "details": "Felt sharp thigh pain in third-set tiebreak vs Rybakina; retired to ensure fitness for Roland Garros victory.",
+        "severity": "moderate",
+        "status": "Resolved"
+      },
+      {
+        "year": 2023,
+        "injury": "Rib Cartilage Stress Injury",
+        "durationOrTournament": "Indian Wells & Miami Open",
+        "details": "Bone and cartilage bruising in ribcage forced withdrawal from Miami Open title defense.",
+        "severity": "moderate",
+        "status": "Resolved"
+      },
+      {
+        "year": 2019,
+        "injury": "Severe Right Ankle Surgery",
+        "durationOrTournament": "WTA Tour Debut Season",
+        "details": "Underwent complex ankle surgery as a teenager, missing seven months of competition.",
+        "severity": "severe",
+        "status": "Rehabilitated"
+      }
+    ],
+    "status": "active",
+    "slamFinals": 6,
+    "movement": 0
+  },
+  {
+    "id": "amanda-anisimova",
+    "name": "Amanda Anisimova",
+    "tour": "WTA",
+    "country": "United States",
+    "countryCode": "USA",
+    "flag": "🇺🇸",
+    "age": 25,
+    "birthDate": "2001-08-31",
+    "birthPlace": "Freehold Township, New Jersey, USA",
+    "heightCm": 180,
+    "turnedPro": 2016,
+    "plays": "Right-handed (two-handed backhand)",
+    "currentRank": 17,
+    "careerHighRank": 8,
+    "careerTitles": 2,
+    "grandSlams": 0,
+    "slamBreakdown": {
+      "australianOpen": 0,
+      "rolandGarros": 0,
+      "wimbledon": 0,
+      "usOpen": 0
+    },
+    "prizeMoneyUsd": "$6,150,000",
+    "careerWinLoss": {
+      "wins": 178,
+      "losses": 95,
+      "winPercentage": 65.2
+    },
+    "surfaceStats": {
+      "hard": {
+        "wins": 114,
+        "losses": 60,
+        "winPercentage": 65.5
+      },
+      "clay": {
+        "wins": 44,
+        "losses": 22,
+        "winPercentage": 66.7
+      },
+      "grass": {
+        "wins": 20,
+        "losses": 13,
+        "winPercentage": 60.6
+      }
+    },
+    "avatarUrl": "/images/players/amanda-anisimova.jpg",
+    "bio": "As of September 20, 2026, Amanda Anisimova is World No. 12 with 2 career titles and a Grand Slam final at the 2025 US Open. Known for her clean, explosive groundstrokes from both wings, she completed an inspiring surge into the world elite.",
+    "playStyle": "Ultra-clean, early-take baseline ball striker with extraordinary timing, flat groundstroke penetration on both wings, and aggressive return positioning.",
+    "notableRivalries": [
+      "Aryna Sabalenka",
+      "Jessica Pegula",
+      "Coco Gauff",
+      "Iga Świątek"
+    ],
+    "injuryHistory": [
+      {
+        "year": 2022,
+        "injury": "Broken Right Big Toe",
+        "durationOrTournament": "Western & Southern Open Cincinnati",
+        "details": "Suffered fractured toe in practice, limiting mobility at US Open.",
+        "severity": "moderate",
+        "status": "Resolved"
+      },
+      {
+        "year": 2023,
+        "injury": "Mental Health & Physical Fatigue Hiatus",
+        "durationOrTournament": "Full WTA Sabbatical",
+        "details": "Took 8-month competitive sabbatical to rehabilitate physical injuries and burnout before 2024 resurgence.",
+        "severity": "severe",
+        "status": "Rehabilitated"
+      }
+    ],
+    "status": "active",
+    "slamFinals": 1,
+    "points": 2363,
+    "movement": -6,
+    "tournamentsPlayed": 14
+  },
+  {
+    "id": "jasmine-paolini",
+    "name": "Jasmine Paolini",
+    "tour": "WTA",
+    "country": "Italy",
+    "countryCode": "ITA",
+    "flag": "🇮🇹",
+    "age": 30,
+    "birthDate": "1996-01-04",
+    "birthPlace": "Castelnuovo di Garfagnana, Italy",
+    "heightCm": 163,
+    "turnedPro": 2011,
+    "plays": "Right-handed (two-handed backhand)",
+    "currentRank": 33,
+    "careerHighRank": 4,
+    "careerTitles": 2,
+    "grandSlams": 0,
+    "slamBreakdown": {
+      "australianOpen": 0,
+      "rolandGarros": 0,
+      "wimbledon": 0,
+      "usOpen": 0
+    },
+    "prizeMoneyUsd": "$9,800,000",
+    "careerWinLoss": {
+      "wins": 210,
+      "losses": 140,
+      "winPercentage": 60
+    },
+    "surfaceStats": {
+      "hard": {
+        "wins": 120,
+        "losses": 85,
+        "winPercentage": 58.5
+      },
+      "clay": {
+        "wins": 72,
+        "losses": 42,
+        "winPercentage": 63.2
+      },
+      "grass": {
+        "wins": 18,
+        "losses": 13,
+        "winPercentage": 58.1
+      }
+    },
+    "avatarUrl": "/images/players/jasmine-paolini.jpg",
+    "bio": "As of September 20, 2026, 30-year-old Jasmine Paolini is World No. 6 with 2 WTA titles, the Dubai 1000 trophy, two Grand Slam finals (Roland Garros 2024, Wimbledon 2024), and Olympic Gold in doubles.",
+    "playStyle": "Relentless offensive baseline tempo with rapid footwork, explosive forehand whip, and exceptional net agility.",
+    "notableRivalries": [
+      "Iga Swiatek",
+      "Aryna Sabalenka",
+      "Elena Rybakina",
+      "Mirra Andreeva"
+    ],
+    "injuryHistory": [
+      {
+        "year": 2023,
+        "injury": "Right Wrist Tendonitis",
+        "durationOrTournament": "European Summer Swing",
+        "details": "Sidelined for three weeks with wrist extensor inflammation.",
+        "severity": "mild",
+        "status": "Resolved"
+      },
+      {
+        "year": 2024,
+        "injury": "Lower Back Muscular Spasm",
+        "durationOrTournament": "Late Season Asian Swing",
+        "details": "Physical fatigue following historic French Open and Wimbledon final runs.",
+        "severity": "mild",
+        "status": "Resolved"
+      }
+    ],
+    "status": "active",
+    "slamFinals": 2,
+    "points": 1528,
+    "movement": -13,
+    "tournamentsPlayed": 19
+  },
+  {
+    "id": "emma-navarro",
+    "name": "Emma Navarro",
+    "tour": "WTA",
+    "country": "United States",
+    "countryCode": "USA",
+    "flag": "🇺🇸",
+    "age": 25,
+    "birthDate": "2001-05-18",
+    "birthPlace": "New York City, New York, USA",
+    "heightCm": 170,
+    "turnedPro": 2022,
+    "plays": "Right-handed (two-handed backhand)",
+    "currentRank": 27,
+    "careerHighRank": 8,
+    "careerTitles": 1,
+    "grandSlams": 0,
+    "slamBreakdown": {
+      "australianOpen": 0,
+      "rolandGarros": 0,
+      "wimbledon": 0,
+      "usOpen": 0
+    },
+    "prizeMoneyUsd": "$4,800,000",
+    "careerWinLoss": {
+      "wins": 110,
+      "losses": 55,
+      "winPercentage": 66.7
+    },
+    "surfaceStats": {
+      "hard": {
+        "wins": 68,
+        "losses": 32,
+        "winPercentage": 68
+      },
+      "clay": {
+        "wins": 28,
+        "losses": 15,
+        "winPercentage": 65.1
+      },
+      "grass": {
+        "wins": 14,
+        "losses": 8,
+        "winPercentage": 63.6
+      }
+    },
+    "avatarUrl": "/images/players/emma-navarro.jpg",
+    "bio": "As of September 20, 2026, Emma Navarro is World No. 8 with 1 WTA title and back-to-back Grand Slam semifinal appearances. Known for tactical clarity, precise counter-punching, and remarkable court coverage.",
+    "playStyle": "Masterful court craftsman with calm temperament, crisp counter-punching depth, deceptive slice changes, and pinpoint accuracy.",
+    "notableRivalries": [
+      "Coco Gauff",
+      "Zheng Qinwen",
+      "Jessica Pegula",
+      "Aryna Sabalenka"
+    ],
+    "injuryHistory": [
+      {
+        "year": 2024,
+        "injury": "Patellar Knee Tendon Soreness",
+        "durationOrTournament": "Late Season Autumn Swing",
+        "details": "Managed knee inflammation following marathon 75-match breakthrough season.",
+        "severity": "mild",
+        "status": "Resolved"
+      },
+      {
+        "year": 2023,
+        "injury": "Lateral Ankle Sprain",
+        "durationOrTournament": "US Open Warmup",
+        "details": "Rolled ankle during baseline practice; taped throughout tournament.",
+        "severity": "mild",
+        "status": "Resolved"
+      }
+    ],
+    "status": "active",
+    "points": 1809,
+    "movement": -3,
+    "tournamentsPlayed": 24
+  },
+  {
+    "id": "barbora-krejcikova",
+    "name": "Barbora Krejcikova",
+    "tour": "WTA",
+    "country": "Czech Republic",
+    "countryCode": "CZE",
+    "flag": "🇨🇿",
+    "age": 30,
+    "birthDate": "1995-12-18",
+    "birthPlace": "Brno, Czech Republic",
+    "heightCm": 178,
+    "turnedPro": 2014,
+    "plays": "Right-handed (two-handed backhand)",
+    "currentRank": 46,
+    "careerHighRank": 2,
+    "careerTitles": 8,
+    "grandSlams": 2,
+    "slamBreakdown": {
+      "australianOpen": 0,
+      "rolandGarros": 1,
+      "wimbledon": 1,
+      "usOpen": 0
+    },
+    "prizeMoneyUsd": "$16,500,000",
+    "careerWinLoss": {
+      "wins": 255,
+      "losses": 125,
+      "winPercentage": 67.1
+    },
+    "surfaceStats": {
+      "hard": {
+        "wins": 135,
+        "losses": 70,
+        "winPercentage": 65.9
+      },
+      "clay": {
+        "wins": 75,
+        "losses": 35,
+        "winPercentage": 68.2
+      },
+      "grass": {
+        "wins": 45,
+        "losses": 20,
+        "winPercentage": 69.2
+      }
+    },
+    "avatarUrl": "/images/players/barbora-krejcikova.jpg",
+    "bio": "As of September 20, 2026, Barbora Krejcikova is World No. 10 with 8 career titles, two Grand Slam singles crowns (Roland Garros 2021, Wimbledon 2024), and a Career Golden Slam in doubles. Renowned for supreme tactical artistry.",
+    "playStyle": "All-court tactical maestro with exceptional touch, crafty changes of pace, fluid net approaches, and punishing precision backhands.",
+    "notableRivalries": [
+      "Iga Swiatek",
+      "Aryna Sabalenka",
+      "Elena Rybakina",
+      "Jasmine Paolini"
+    ],
+    "injuryHistory": [
+      {
+        "year": 2024,
+        "injury": "Back Muscle Strain",
+        "durationOrTournament": "Middle East WTA 1000 Swing",
+        "details": "Withdrew from Doha and Dubai to rehabilitate spinal muscular inflammation ahead of Wimbledon championship run.",
+        "severity": "moderate",
+        "status": "Resolved"
+      }
+    ],
+    "status": "active",
+    "slamFinals": 2,
+    "points": 1134,
+    "movement": -3,
+    "tournamentsPlayed": 19
   },
   {
     "id": "zheng-qinwen",
@@ -894,55 +1943,229 @@ export const INITIAL_PLAYERS: Player[] = [
     "country": "China",
     "countryCode": "CHN",
     "flag": "🇨🇳",
-    "age": 24,
+    "age": 23,
     "birthDate": "2002-10-08",
     "birthPlace": "Shiyan, Hubei, China",
     "heightCm": 178,
     "turnedPro": 2018,
     "plays": "Right-handed (two-handed backhand)",
     "currentRank": 54,
-    "careerHighRank": 7,
-    "careerTitles": 5,
+    "careerHighRank": 5,
+    "careerTitles": 4,
     "grandSlams": 0,
-    "slamFinals": 1,
     "slamBreakdown": {
       "australianOpen": 0,
       "rolandGarros": 0,
       "wimbledon": 0,
       "usOpen": 0
     },
-    "prizeMoneyUsd": "$9,400,000",
+    "prizeMoneyUsd": "$8,900,000",
     "careerWinLoss": {
-      "wins": 175,
-      "losses": 80,
-      "winPercentage": 68.6
+      "wins": 165,
+      "losses": 75,
+      "winPercentage": 68.8
     },
     "surfaceStats": {
       "hard": {
-        "wins": 115,
-        "losses": 54,
-        "winPercentage": 68
+        "wins": 105,
+        "losses": 50,
+        "winPercentage": 67.7
       },
       "clay": {
-        "wins": 48,
+        "wins": 45,
         "losses": 18,
-        "winPercentage": 72.7
+        "winPercentage": 71.4
       },
       "grass": {
-        "wins": 12,
-        "losses": 8,
-        "winPercentage": 60
+        "wins": 15,
+        "losses": 7,
+        "winPercentage": 68.2
       }
     },
-    "avatarUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=800&auto=format&fit=crop&q=80",
-    "bio": "Paris 2024 Olympic Gold medalist and 2024 Australian Open finalist. Captured the 2026 China Open title in Beijing in front of an electric home crowd.",
-    "playStyle": "Power-serving aggressive baseliner with heavy topspin forehands and clutch point delivery.",
+    "avatarUrl": "/images/players/zheng-qinwen.jpg",
+    "bio": "As of September 20, 2026, Zheng Qinwen is World No. 7 with 4 career titles, the Paris Olympic Gold Medal, and the 2024 Australian Open final. Celebrated for elite serving metrics and heavy groundstroke depth.",
+    "playStyle": "Power baseline game built around a massive first serve, heavy topspin forehand strikes, and aggressive return positioning.",
     "notableRivalries": [
       "Aryna Sabalenka",
-      "Mirra Andreeva"
+      "Iga Swiatek",
+      "Coco Gauff",
+      "Emma Navarro"
     ],
-    "points": 885,
-    "movement": 0,
-    "tournamentsPlayed": 18
+    "injuryHistory": [
+      {
+        "year": 2023,
+        "injury": "Right Wrist Tendon Inflammation",
+        "durationOrTournament": "Grass Court Season",
+        "details": "Wrist pain forced early withdrawal from WTA 500 events in Germany.",
+        "severity": "mild",
+        "status": "Resolved"
+      },
+      {
+        "year": 2024,
+        "injury": "Right Elbow Joint Soreness",
+        "durationOrTournament": "US Open Series",
+        "details": "Managed minor joint fluid accumulation following grueling Olympic Gold Medal run.",
+        "severity": "mild",
+        "status": "Resolved"
+      }
+    ],
+    "status": "active",
+    "slamFinals": 1,
+    "movement": 0
+  },
+  {
+    "id": "danielle-collins",
+    "name": "Danielle Collins",
+    "tour": "WTA",
+    "country": "United States",
+    "countryCode": "USA",
+    "flag": "🇺🇸",
+    "age": 32,
+    "birthDate": "1993-12-13",
+    "birthPlace": "St. Petersburg, Florida, USA",
+    "heightCm": 178,
+    "turnedPro": 2016,
+    "plays": "Right-handed (two-handed backhand)",
+    "currentRank": 9,
+    "careerHighRank": 7,
+    "careerTitles": 4,
+    "grandSlams": 0,
+    "slamBreakdown": {
+      "australianOpen": 0,
+      "rolandGarros": 0,
+      "wimbledon": 0,
+      "usOpen": 0
+    },
+    "prizeMoneyUsd": "$9,200,000",
+    "careerWinLoss": {
+      "wins": 235,
+      "losses": 145,
+      "winPercentage": 61.8
+    },
+    "surfaceStats": {
+      "hard": {
+        "wins": 155,
+        "losses": 95,
+        "winPercentage": 62
+      },
+      "clay": {
+        "wins": 58,
+        "losses": 32,
+        "winPercentage": 64.4
+      },
+      "grass": {
+        "wins": 22,
+        "losses": 18,
+        "winPercentage": 55
+      }
+    },
+    "avatarUrl": "/images/players/danielle-collins.jpg",
+    "bio": "As of September 20, 2026, Danielle Collins is World No. 9 with 4 career titles, the 2024 Miami Open 1000 crown, and the 2022 Australian Open final. 'Danimal' plays with explosive aggression and fearless shotmaking.",
+    "playStyle": "Fearless first-strike power baseline hitter who attacks second serves and hammers punishing two-handed backhands down the line.",
+    "notableRivalries": [
+      "Iga Swiatek",
+      "Elena Rybakina",
+      "Aryna Sabalenka",
+      "Ons Jabeur"
+    ],
+    "injuryHistory": [
+      {
+        "year": 2024,
+        "injury": "Rectus Abdominis Muscle Tear",
+        "durationOrTournament": "Paris Olympic Games Quarterfinal",
+        "details": "Suffered abdominal tear in heat vs Swiatek; played through pain in final professional season.",
+        "severity": "severe",
+        "status": "Resolved"
+      },
+      {
+        "year": 2021,
+        "injury": "Endometriosis Laparoscopic Surgery",
+        "durationOrTournament": "Spring WTA Circuit",
+        "details": "Underwent emergency surgical procedure to treat severe pelvic condition; returned 7 weeks later to win back-to-back titles.",
+        "severity": "severe",
+        "status": "Rehabilitated"
+      }
+    ],
+    "status": "active",
+    "slamFinals": 1,
+    "movement": 0
+  },
+  {
+    "id": "paula-badosa",
+    "name": "Paula Badosa",
+    "tour": "WTA",
+    "country": "Spain",
+    "countryCode": "ESP",
+    "flag": "🇪🇸",
+    "age": 28,
+    "birthDate": "1997-11-15",
+    "birthPlace": "New York City, New York, USA",
+    "heightCm": 180,
+    "turnedPro": 2015,
+    "plays": "Right-handed (two-handed backhand)",
+    "currentRank": 58,
+    "careerHighRank": 2,
+    "careerTitles": 4,
+    "grandSlams": 0,
+    "slamBreakdown": {
+      "australianOpen": 0,
+      "rolandGarros": 0,
+      "wimbledon": 0,
+      "usOpen": 0
+    },
+    "prizeMoneyUsd": "$8,400,000",
+    "careerWinLoss": {
+      "wins": 195,
+      "losses": 120,
+      "winPercentage": 61.9
+    },
+    "surfaceStats": {
+      "hard": {
+        "wins": 120,
+        "losses": 75,
+        "winPercentage": 61.5
+      },
+      "clay": {
+        "wins": 55,
+        "losses": 30,
+        "winPercentage": 64.7
+      },
+      "grass": {
+        "wins": 20,
+        "losses": 15,
+        "winPercentage": 57.1
+      }
+    },
+    "avatarUrl": "/images/players/paula-badosa.jpg",
+    "bio": "As of September 20, 2026, Paula Badosa is World No. 13 with 4 career titles and the Indian Wells 1000 shield. The Spaniard engineered a heroic resurgence into the WTA Top 15 following her spine rehabilitation.",
+    "playStyle": "Power baseline game with strong kick-serve placement, heavy forehand groundstrokes, and aggressive baseline court position.",
+    "notableRivalries": [
+      "Aryna Sabalenka",
+      "Coco Gauff",
+      "Elena Rybakina",
+      "Emma Navarro"
+    ],
+    "injuryHistory": [
+      {
+        "year": 2023,
+        "injury": "Lumbar L4/L5 Vertebral Stress Fracture",
+        "durationOrTournament": "Roland Garros & Wimbledon",
+        "details": "Chronic spinal stress fracture forced multiple retirements, missing 7 months of competition.",
+        "severity": "severe",
+        "status": "Rehabilitated"
+      },
+      {
+        "year": 2024,
+        "injury": "Adductor Thigh Muscular Strain",
+        "durationOrTournament": "Australian Open Warmup",
+        "details": "Minor groin strain during Adelaide campaign.",
+        "severity": "moderate",
+        "status": "Resolved"
+      }
+    ],
+    "status": "active",
+    "points": 1023,
+    "movement": 1,
+    "tournamentsPlayed": 22
   }
 ];
