@@ -322,19 +322,27 @@ export class PlayerService {
 
   // Find player by ID across all Top 500 ATP, WTA, and Initial datasets
   public getPlayerById(id: string): Player | null {
+    // 1. Check curated players first to preserve real Grand Slams, bio, and stats
+    const initial = this.initialPlayersMap.get(id);
+    if (initial) {
+      const atpSummary = this.atpRankingsMap.get(id);
+      const wtaSummary = this.wtaRankingsMap.get(id);
+      const summary = atpSummary || wtaSummary;
+      return {
+        ...initial,
+        currentRank: summary ? summary.rank : initial.currentRank,
+        points: summary ? summary.points : initial.points,
+        movement: summary ? summary.movement : (initial.movement || 0),
+        activeInjury: this.getInjuryStatus(initial.id, initial.name),
+      };
+    }
+
+    // 2. Hydrate procedural profile from Top 500 leaderboard
     const atpSummary = this.atpRankingsMap.get(id);
     if (atpSummary) return this.hydratePlayer(atpSummary);
 
     const wtaSummary = this.wtaRankingsMap.get(id);
     if (wtaSummary) return this.hydratePlayer(wtaSummary);
-
-    const initial = this.initialPlayersMap.get(id);
-    if (initial) {
-      return {
-        ...initial,
-        activeInjury: this.getInjuryStatus(initial.id, initial.name),
-      };
-    }
 
     return null;
   }
@@ -342,19 +350,28 @@ export class PlayerService {
   // Find player by full or partial name
   public getPlayerByName(name: string): Player | null {
     const clean = name.trim().toLowerCase();
+    
+    // 1. Check curated players first
+    const initial = this.initialPlayersMap.get(clean);
+    if (initial) {
+      const atpSummary = this.atpRankingsMap.get(initial.id);
+      const wtaSummary = this.wtaRankingsMap.get(initial.id);
+      const summary = atpSummary || wtaSummary;
+      return {
+        ...initial,
+        currentRank: summary ? summary.rank : initial.currentRank,
+        points: summary ? summary.points : initial.points,
+        movement: summary ? summary.movement : (initial.movement || 0),
+        activeInjury: this.getInjuryStatus(initial.id, initial.name),
+      };
+    }
+
+    // 2. Check leaderboard
     const atpSummary = this.atpRankingsMap.get(clean);
     if (atpSummary) return this.hydratePlayer(atpSummary);
 
     const wtaSummary = this.wtaRankingsMap.get(clean);
     if (wtaSummary) return this.hydratePlayer(wtaSummary);
-
-    const initial = this.initialPlayersMap.get(clean);
-    if (initial) {
-      return {
-        ...initial,
-        activeInjury: this.getInjuryStatus(initial.id, initial.name),
-      };
-    }
 
     return null;
   }
