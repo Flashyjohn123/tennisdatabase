@@ -4,8 +4,8 @@ import { MOCK_LIVE_FEED_ITEMS } from '../data/mockLiveFeedData';
 import { fetchAllRssFeeds, KNOWN_RSS_SOURCES, isAuthorizedSource } from './rssFeedService';
 import { useState, useEffect, useCallback } from 'react';
 
-const STORAGE_KEY_FEED = 'tennisdb_live_feed_v11';
-const STORAGE_KEY_CONFIG = 'tennisdb_feed_config';
+const STORAGE_KEY_FEED = 'tennisdb_live_feed_v18';
+const STORAGE_KEY_CONFIG = 'tennisdb_feed_config_v18';
 
 const DEFAULT_CONFIG: ApiConfig = {
   rapidApiKey: '',
@@ -350,7 +350,6 @@ export function useLiveFeed(initialFilterCategory?: FeedCategory) {
   const refreshFeed = useCallback(async () => {
     setIsRefreshing(true);
     await liveFeedEngine.fetchAndMergeRss();
-    liveFeedEngine.injectSimulatedLiveEvent();
     setIsRefreshing(false);
   }, []);
 
