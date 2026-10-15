@@ -5,43 +5,29 @@ import { TOP_500_WTA_PLAYERS } from '../data/rankingsTop500WTA';
 
 export type { WtaLiveRankEntry };
 
-const STORAGE_KEY_WTA_LIVE = 'tennisdb_wta_live_rankings_v2';
-const STORAGE_KEY_WTA_LAST_SYNC = 'tennisdb_wta_live_last_sync_v2';
-
-// Authentic WTA live scenario deltas & round projections
-const WTA_LIVE_SCENARIOS: Record<number, { status: string; delta: number; move: number }> = {
-  1: { status: 'US Open: Defeated P. Stearns in straight sets -> In R32', delta: 130, move: 0 },
-  2: { status: 'US Open: Defeated E. Shibahara (6-0, 6-1) -> In R32', delta: 130, move: 0 },
-  3: { status: 'US Open: Defeated S. Kenin (7-6, 6-3) -> In R32', delta: 130, move: 0 },
-  4: { status: 'US Open: Defeated T. Maria -> In R32', delta: 130, move: 0 },
-  5: { status: 'US Open: Defeated E. Andreeva in 3 sets -> In R32', delta: 130, move: 0 },
-  6: { status: 'US Open: Defeated K. Birrell in straight sets -> In R32', delta: 130, move: 0 },
-  7: { status: 'US Open: Defeated Ka. Pliskova via retirement -> In R32', delta: 130, move: 0 },
-  8: { status: 'US Open: Defeated A. Rus -> In R32', delta: 130, move: 0 },
-  9: { status: 'US Open: Defeated C. Garcia in 3 sets -> In R32', delta: 130, move: 0 },
-  10: { status: 'US Open: Defeated E. Ruse in 3 sets -> In R32', delta: 130, move: 0 },
-};
+const STORAGE_KEY_WTA_LIVE = 'tennisdb_wta_live_rankings_v3';
+const STORAGE_KEY_WTA_LAST_SYNC = 'tennisdb_wta_live_last_sync_v3';
 
 export function computeFallbackWtaLiveRankings(): WtaLiveRankEntry[] {
   return TOP_500_WTA_PLAYERS.map((p, idx) => {
-    const rank = idx + 1;
-    const scenario = WTA_LIVE_SCENARIOS[rank] || {
-      status: `Defending points at current tournament (+${Math.min(50, p.points % 80)} pts)`,
-      delta: Math.min(50, p.points % 80),
-      move: 0,
-    };
+    const rank = p.rank || (idx + 1);
+    const tournamentStatus = rank <= 20
+      ? 'Active in Asian Swing (Wuhan / Beijing / Ningbo)'
+      : rank <= 100
+      ? 'Active on WTA Tour'
+      : 'WTA 125 & ITF Tour';
 
     return {
       ...p,
       rank,
-      liveRank: rank + scenario.move,
+      liveRank: rank,
       officialRank: rank,
-      points: p.points + scenario.delta,
-      livePoints: p.points + scenario.delta,
+      points: p.points,
+      livePoints: p.points,
       officialPoints: p.points,
-      deltaPoints: scenario.delta,
-      movement: scenario.move,
-      tournamentStatus: scenario.status,
+      deltaPoints: (p as any).pointsDelta || 0,
+      movement: p.movement || 0,
+      tournamentStatus,
       isLiveScraped: true,
     };
   });

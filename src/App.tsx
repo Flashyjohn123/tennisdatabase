@@ -60,13 +60,14 @@ export const App: React.FC = () => {
     isLiveSource,
   } = useAtpLiveRankings();
 
-  // State for Players, Matches, and Tournaments with LocalStorage Persistence (v16 Live Asian Swing Sync)
-  const STORAGE_KEY_PLAYERS = 'tennisdb_players_v16';
+  // State for Players, Matches, and Tournaments with LocalStorage Persistence (v17 True Real-World Stats Sync)
+  const STORAGE_KEY_PLAYERS = 'tennisdb_players_v17';
   const STORAGE_KEY_MATCHES = 'tennisdb_matches_v13';
 
   const [players, setPlayers] = useState<Player[]>(() => {
     // Clear obsolete legacy caches so updated 2026 records take full precedence
     try {
+      localStorage.removeItem('tennisdb_players_v16');
       localStorage.removeItem('tennisdb_players_v15');
       localStorage.removeItem('tennisdb_players_v14');
       localStorage.removeItem('tennisdb_players_v13');
@@ -77,6 +78,7 @@ export const App: React.FC = () => {
       localStorage.removeItem('tennisdb_players_v9');
       localStorage.removeItem('tennisdb_players_v7');
       localStorage.removeItem('tennisdb_atp_live_rankings_v2');
+      localStorage.removeItem('tennisdb_wta_live_rankings_v2');
       localStorage.removeItem('tennisdb_matches_v12');
       localStorage.removeItem('tennisdb_matches_v11');
       localStorage.removeItem('tennisdb_matches_v10_2026usopen');

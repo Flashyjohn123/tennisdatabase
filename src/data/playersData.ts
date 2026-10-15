@@ -16,13 +16,13 @@ export const INITIAL_PLAYERS: Player[] = [
     "plays": "Right-handed (two-handed backhand)",
     "currentRank": 1,
     "careerHighRank": 1,
-    "careerTitles": 20,
-    "grandSlams": 4,
-    "slamFinals": 5,
+    "careerTitles": 16,
+    "grandSlams": 2,
+    "slamFinals": 2,
     "slamBreakdown": {
-      "australianOpen": 2,
+      "australianOpen": 1,
       "rolandGarros": 0,
-      "wimbledon": 1,
+      "wimbledon": 0,
       "usOpen": 1
     },
     "prizeMoneyUsd": "$42,000,000",
@@ -100,11 +100,11 @@ export const INITIAL_PLAYERS: Player[] = [
     "plays": "Right-handed (two-handed backhand)",
     "currentRank": 3,
     "careerHighRank": 1,
-    "careerTitles": 19,
-    "grandSlams": 5,
-    "slamFinals": 5,
+    "careerTitles": 16,
+    "grandSlams": 4,
+    "slamFinals": 4,
     "slamBreakdown": {
-      "australianOpen": 1,
+      "australianOpen": 0,
       "rolandGarros": 1,
       "wimbledon": 2,
       "usOpen": 1
@@ -184,14 +184,14 @@ export const INITIAL_PLAYERS: Player[] = [
     "plays": "Right-handed (two-handed backhand)",
     "currentRank": 2,
     "careerHighRank": 2,
-    "careerTitles": 26,
-    "grandSlams": 2,
-    "slamFinals": 4,
+    "careerTitles": 23,
+    "grandSlams": 0,
+    "slamFinals": 2,
     "slamBreakdown": {
       "australianOpen": 0,
-      "rolandGarros": 1,
+      "rolandGarros": 0,
       "wimbledon": 0,
-      "usOpen": 1
+      "usOpen": 0
     },
     "prizeMoneyUsd": "$53,500,000",
     "careerWinLoss": {
@@ -362,7 +362,7 @@ export const INITIAL_PLAYERS: Player[] = [
     "careerHighRank": 4,
     "careerTitles": 2,
     "grandSlams": 0,
-    "slamFinals": 1,
+    "slamFinals": 0,
     "slamBreakdown": {
       "australianOpen": 0,
       "rolandGarros": 0,
@@ -570,7 +570,8 @@ export const INITIAL_PLAYERS: Player[] = [
         "status": "Resolved"
       }
     ],
-    "status": "active"
+    "status": "active",
+    "slamFinals": 0
   },
   {
     "id": "taylor-fritz",
@@ -805,7 +806,8 @@ export const INITIAL_PLAYERS: Player[] = [
         "status": "Rehabilitated"
       }
     ],
-    "status": "active"
+    "status": "active",
+    "slamFinals": 0
   },
   {
     "id": "tommy-paul",
@@ -880,7 +882,8 @@ export const INITIAL_PLAYERS: Player[] = [
         "status": "Resolved"
       }
     ],
-    "status": "active"
+    "status": "active",
+    "slamFinals": 0
   },
   {
     "id": "stefanos-tsitsipas",
@@ -1031,7 +1034,8 @@ export const INITIAL_PLAYERS: Player[] = [
         "status": "Resolved"
       }
     ],
-    "status": "active"
+    "status": "active",
+    "slamFinals": 0
   },
   {
     "id": "jack-draper",
@@ -1106,7 +1110,8 @@ export const INITIAL_PLAYERS: Player[] = [
         "status": "Resolved"
       }
     ],
-    "status": "active"
+    "status": "active",
+    "slamFinals": 0
   },
   {
     "id": "aryna-sabalenka",
@@ -1123,13 +1128,13 @@ export const INITIAL_PLAYERS: Player[] = [
     "plays": "Right-handed (two-handed backhand)",
     "currentRank": 2,
     "careerHighRank": 1,
-    "careerTitles": 20,
-    "grandSlams": 5,
+    "careerTitles": 17,
+    "grandSlams": 3,
     "slamBreakdown": {
       "australianOpen": 2,
       "rolandGarros": 0,
-      "wimbledon": 1,
-      "usOpen": 2
+      "wimbledon": 0,
+      "usOpen": 1
     },
     "prizeMoneyUsd": "$36,000,000",
     "careerWinLoss": {
@@ -1183,7 +1188,7 @@ export const INITIAL_PLAYERS: Player[] = [
       }
     ],
     "status": "active",
-    "slamFinals": 7
+    "slamFinals": 4
   },
   {
     "id": "elena-rybakina",
@@ -1351,7 +1356,7 @@ export const INITIAL_PLAYERS: Player[] = [
     "plays": "Right-handed (two-handed backhand)",
     "currentRank": 5,
     "careerHighRank": 2,
-    "careerTitles": 9,
+    "careerTitles": 8,
     "grandSlams": 1,
     "slamBreakdown": {
       "australianOpen": 0,
@@ -1410,7 +1415,7 @@ export const INITIAL_PLAYERS: Player[] = [
       }
     ],
     "status": "active",
-    "slamFinals": 3
+    "slamFinals": 2
   },
   {
     "id": "mirra-andreeva",
@@ -1485,7 +1490,8 @@ export const INITIAL_PLAYERS: Player[] = [
         "status": "Resolved"
       }
     ],
-    "status": "active"
+    "status": "active",
+    "slamFinals": 0
   },
   {
     "id": "iga-swiatek",
@@ -1502,11 +1508,11 @@ export const INITIAL_PLAYERS: Player[] = [
     "plays": "Right-handed (two-handed backhand)",
     "currentRank": 9,
     "careerHighRank": 1,
-    "careerTitles": 24,
-    "grandSlams": 6,
+    "careerTitles": 22,
+    "grandSlams": 5,
     "slamBreakdown": {
       "australianOpen": 0,
-      "rolandGarros": 5,
+      "rolandGarros": 4,
       "wimbledon": 0,
       "usOpen": 1
     },
@@ -1569,7 +1575,7 @@ export const INITIAL_PLAYERS: Player[] = [
       }
     ],
     "status": "active",
-    "slamFinals": 6
+    "slamFinals": 5
   },
   {
     "id": "amanda-anisimova",
@@ -1645,7 +1651,7 @@ export const INITIAL_PLAYERS: Player[] = [
       }
     ],
     "status": "active",
-    "slamFinals": 1
+    "slamFinals": 0
   },
   {
     "id": "jasmine-paolini",
@@ -1796,7 +1802,8 @@ export const INITIAL_PLAYERS: Player[] = [
         "status": "Resolved"
       }
     ],
-    "status": "active"
+    "status": "active",
+    "slamFinals": 0
   },
   {
     "id": "barbora-krejcikova",
@@ -2091,6 +2098,7 @@ export const INITIAL_PLAYERS: Player[] = [
         "status": "Resolved"
       }
     ],
-    "status": "active"
+    "status": "active",
+    "slamFinals": 0
   }
 ];
