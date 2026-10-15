@@ -62,7 +62,7 @@ export const App: React.FC = () => {
 
   // State for Players, Matches, and Tournaments with LocalStorage Persistence (v18 Authentic Records Sync)
   const STORAGE_KEY_PLAYERS = 'tennisdb_players_v18';
-  const STORAGE_KEY_MATCHES = 'tennisdb_matches_v13';
+  const STORAGE_KEY_MATCHES = 'tennisdb_matches_v18';
 
   const [players, setPlayers] = useState<Player[]>(() => {
     // Clear obsolete legacy caches so updated authoritative records take full precedence
@@ -82,6 +82,7 @@ export const App: React.FC = () => {
       localStorage.removeItem('tennisdb_wta_live_rankings_v2');
       localStorage.removeItem('tennisdb_live_feed_v11');
       localStorage.removeItem('tennisdb_feed_config');
+      localStorage.removeItem('tennisdb_matches_v13');
       localStorage.removeItem('tennisdb_matches_v12');
       localStorage.removeItem('tennisdb_matches_v11');
       localStorage.removeItem('tennisdb_matches_v10_2026usopen');
