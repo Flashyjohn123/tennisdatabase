@@ -4,6 +4,22 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1792146311722-9",
+    "title": "Zverev powers past De Minaur for Shanghai SF return",
+    "summary": "Zverev powers past De Minaur for Shanghai SF return. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-15T14:31:49.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1sZDJZRkhPeVRSNVFpNjBuUEFGM0xWb0h3N1pySVd0Rzd4ZHB1aWRKRzJqVHNlMzBkU3JERS1OcVFEZ0VkbWRZUlZFei1mQi14YzlCeHNGRzZBeUlfY19YOFBGLXVNX0xyamtLeFYxU3MzdG8?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "Circuit Wire"
+    ]
+  },
+  {
     "id": "atp-live-1792097285751-0",
     "title": "An Open Letter from ATP Chairman Andrea Gaudenzi",
     "summary": "An Open Letter from ATP Chairman Andrea Gaudenzi. Full real-time coverage direct from ATP Tour.",
@@ -1084,33 +1100,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
       "US Open",
       "Aces",
       "Fast Serve"
-    ]
-  },
-  {
-    "id": "feed-res-djokovic-fritz-wimbledon",
-    "title": "Novak Djokovic outlasts Taylor Fritz in 4-hour Wimbledon Quarterfinal: 7-6(4), 4-6, 6-3, 7-6(6)",
-    "summary": "Seven-time champion Novak Djokovic fought off three set points in the fourth-set tiebreak to edge American Taylor Fritz and advance to his 14th career Wimbledon semifinal.",
-    "category": "match_result",
-    "severity": "medium",
-    "timestamp": "2026-07-08T18:10:00Z",
-    "source": "ATP Tour Communications",
-    "url": "https://www.atptour.com/en/news/djokovic-fritz-wimbledon-quarterfinal-2026",
-    "playerIds": [
-      "novak-djokovic",
-      "taylor-fritz"
-    ],
-    "playerNames": [
-      "Novak Djokovic",
-      "Taylor Fritz"
-    ],
-    "tournamentName": "Wimbledon",
-    "tournamentId": "wimbledon",
-    "verified": true,
-    "tags": [
-      "Djokovic",
-      "Fritz",
-      "Wimbledon",
-      "Grass"
     ]
   }
 ];
