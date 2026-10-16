@@ -4,6 +4,22 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1792182063707-7",
+    "title": "Djokovic accepts wild card for Basel",
+    "summary": "Djokovic accepts wild card for Basel. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-16T16:25:21.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9sTnRhaXBuSl9OX3ZzeTFDc1JsMENNYkl2b25HMTlidVU1blNjZU1JaGwzaXJhZllrcVZ2M0JlcldsQ1pPYk93bGJjcXRMbUU3dDF5amRYUTQ0Wlk5elJlaUlqZU83d1JkRzREeUV3?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "Circuit Wire"
+    ]
+  },
+  {
     "id": "atp-live-1792146311722-9",
     "title": "Zverev powers past De Minaur for Shanghai SF return",
     "summary": "Zverev powers past De Minaur for Shanghai SF return. Full real-time coverage direct from ATP Tour.",
@@ -1072,34 +1088,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
       "Swiatek",
       "Madrid Open",
       "Rivalry"
-    ]
-  },
-  {
-    "id": "feed-res-shelton-medvedev",
-    "title": "Ben Shelton fires 241 km/h (150 mph) serve en route to 4-set upset over Medvedev in NY",
-    "summary": "American Ben Shelton produced a serving clinic on Arthur Ashe Stadium, firing 24 aces and winning 86% of first-serve points to defeat former champion Daniil Medvedev 6-4, 3-6, 7-6(3), 6-4.",
-    "category": "match_result",
-    "severity": "medium",
-    "timestamp": "2026-09-06T22:30:00Z",
-    "source": "ESPN Tennis",
-    "url": "https://www.espn.com/tennis/story/_/id/41210492/ben-shelton-defeats-daniil-medvedev-us-open-quarterfinals",
-    "playerIds": [
-      "ben-shelton",
-      "daniil-medvedev"
-    ],
-    "playerNames": [
-      "Ben Shelton",
-      "Daniil Medvedev"
-    ],
-    "tournamentName": "US Open",
-    "tournamentId": "us-open",
-    "verified": true,
-    "tags": [
-      "Shelton",
-      "Medvedev",
-      "US Open",
-      "Aces",
-      "Fast Serve"
     ]
   }
 ];
