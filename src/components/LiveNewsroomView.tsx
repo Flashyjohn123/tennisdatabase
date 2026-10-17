@@ -24,16 +24,6 @@ interface LiveNewsroomViewProps {
   onSelectPlayer: (player: Player) => void;
 }
 
-// Curated high-res tennis court action and stadium photography
-const DEFAULT_NEWS_PHOTOS = [
-  'https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0?w=600&auto=format&fit=crop&q=80',
-  'https://images.unsplash.com/photo-1560012057-4372e14c5085?w=600&auto=format&fit=crop&q=80',
-  'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600&auto=format&fit=crop&q=80',
-  'https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?w=600&auto=format&fit=crop&q=80',
-  'https://images.unsplash.com/photo-1546519638-68e109498ffc?w=600&auto=format&fit=crop&q=80',
-  'https://images.unsplash.com/photo-1517649763962-0c623266ddc0?w=600&auto=format&fit=crop&q=80',
-];
-
 export const LiveNewsroomView: React.FC<LiveNewsroomViewProps> = ({ onSelectPlayer }) => {
   const {
     items,
@@ -189,17 +179,6 @@ export const LiveNewsroomView: React.FC<LiveNewsroomViewProps> = ({ onSelectPlay
     }
   };
 
-  // Look up player photo or fall back to curated tennis court photo
-  const getItemPhoto = (item: any, index: number) => {
-    if (item.playerNames && item.playerNames.length > 0) {
-      const p = playerService.getPlayerByName(item.playerNames[0]);
-      if (p && p.avatarUrl) {
-        return p.avatarUrl;
-      }
-    }
-    return DEFAULT_NEWS_PHOTOS[index % DEFAULT_NEWS_PHOTOS.length];
-  };
-
   return (
     <div className="space-y-8 animate-fadeIn pb-12">
       
@@ -296,7 +275,6 @@ export const LiveNewsroomView: React.FC<LiveNewsroomViewProps> = ({ onSelectPlay
             { id: 'injury', label: 'Medical & Injury' },
             { id: 'withdrawal', label: 'Withdrawals & Walkovers' },
             { id: 'controversy', label: 'Official Inquiries' },
-            { id: 'breaking', label: 'Circuit Breaking' },
             { id: 'tournament_update', label: 'Tournament Draws' },
           ].map((cat) => {
             const isSelected = selectedCategory === cat.id;
@@ -365,115 +343,97 @@ export const LiveNewsroomView: React.FC<LiveNewsroomViewProps> = ({ onSelectPlay
             </p>
           </div>
         ) : (
-          displayedItems.map((item, idx) => {
+          displayedItems.map((item) => {
             const styles = getCategoryStyles(item.category);
             const Icon = styles.icon;
-            const photoUrl = getItemPhoto(item, idx);
 
             return (
               <div key={item.id} className="double-bezel-card-outer group">
                 <div className="double-bezel-card-inner p-5 sm:p-6 relative overflow-hidden bg-gradient-to-b from-[#0c1015] to-[#080a0d]">
                   <div className="absolute inset-x-0 top-0 h-[1px] bg-gradient-to-r from-transparent via-white/10 to-transparent pointer-events-none" />
 
-                  <div className="flex flex-col sm:flex-row gap-5">
-                    
-                    {/* Real Tennis Action / Portrait Photography Thumbnail */}
-                    <div className="relative w-full sm:w-40 h-36 sm:h-32 shrink-0 rounded-xl overflow-hidden border border-white/[0.08] bg-black/50">
-                      <img
-                        src={photoUrl}
-                        alt={item.title}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
-                        loading="lazy"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none" />
-                      <div className="absolute bottom-2 left-2 right-2 flex items-center justify-between text-[9px] font-mono text-white/80">
-                        <span className="px-1.5 py-0.5 rounded bg-black/60 backdrop-blur-sm border border-white/10">
+                  <div className="flex flex-col justify-between min-w-0">
+                    <div>
+                      {/* Badges Bar */}
+                      <div className="flex flex-wrap items-center gap-2 mb-2.5">
+                        <span className={`inline-flex items-center gap-1.5 text-[10px] font-mono uppercase tracking-wider px-2 py-0.5 rounded-full border ${styles.badgeClass}`}>
+                          <Icon className="w-2.5 h-2.5" />
+                          <span>{styles.label}</span>
+                        </span>
+
+                        {getSeverityBadge(item.severity)}
+
+                        {item.verified && (
+                          <span className="inline-flex items-center gap-1 text-[10px] font-mono text-emerald-400/80 px-2 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/20">
+                            <CheckCircle2 className="w-2.5 h-2.5 text-emerald-400" />
+                            <span>Verified</span>
+                          </span>
+                        )}
+
+                        <span className="ml-auto text-[10px] font-mono text-white/40 tabular-nums">
                           {formatTimeAgo(item.timestamp)}
                         </span>
                       </div>
+
+                      {/* Title */}
+                      <h3 className="font-display font-semibold text-base sm:text-lg text-white group-hover:text-theme-accent transition-colors tracking-tight leading-snug mb-2">
+                        {item.title}
+                      </h3>
+
+                      {/* Summary */}
+                      <p className="text-xs text-white/60 leading-relaxed font-normal">
+                        {item.summary}
+                      </p>
                     </div>
 
-                    {/* Content Section */}
-                    <div className="flex-1 flex flex-col justify-between min-w-0">
-                      <div>
-                        {/* Badges Bar */}
-                        <div className="flex flex-wrap items-center gap-2 mb-2">
-                          <span className={`inline-flex items-center gap-1.5 text-[10px] font-mono uppercase tracking-wider px-2 py-0.5 rounded-full border ${styles.badgeClass}`}>
-                            <Icon className="w-2.5 h-2.5" />
-                            <span>{styles.label}</span>
+                    {/* Footer: Tagged Players, Tournament, Source Link */}
+                    <div className="flex flex-wrap items-center justify-between gap-3 pt-3 mt-3 border-t border-white/[0.05] text-xs">
+                      {/* Tagged Players */}
+                      <div className="flex flex-wrap items-center gap-1.5">
+                        {item.playerNames && item.playerNames.length > 0 ? (
+                          item.playerNames.map((pName) => (
+                            <button
+                              key={pName}
+                              onClick={() => handlePlayerClick(pName)}
+                              className="flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-white/[0.04] hover:bg-white/[0.08] text-white/80 hover:text-white border border-white/[0.07] text-[11px] font-mono transition"
+                            >
+                              <UserCheck className="w-3 h-3 text-theme-accent/80" />
+                              <span>{pName}</span>
+                            </button>
+                          ))
+                        ) : item.tournamentName ? (
+                          <span className="px-2.5 py-0.5 rounded-full bg-white/[0.03] text-white/70 border border-white/[0.06] text-[11px] font-mono">
+                            {item.tournamentName}
                           </span>
+                        ) : null}
 
-                          {getSeverityBadge(item.severity)}
-
-                          {item.verified && (
-                            <span className="inline-flex items-center gap-1 text-[10px] font-mono text-emerald-400/80 px-2 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/20">
-                              <CheckCircle2 className="w-2.5 h-2.5 text-emerald-400" />
-                              <span>Verified</span>
-                            </span>
-                          )}
-                        </div>
-
-                        {/* Title */}
-                        <h3 className="font-display font-semibold text-base sm:text-lg text-white group-hover:text-theme-accent transition-colors tracking-tight leading-snug mb-2">
-                          {item.title}
-                        </h3>
-
-                        {/* Summary */}
-                        <p className="text-xs text-white/60 leading-relaxed line-clamp-2 sm:line-clamp-3 font-normal">
-                          {item.summary}
-                        </p>
+                        {item.tags?.map((tag) => (
+                          <span
+                            key={tag}
+                            className="px-2 py-0.5 rounded text-[10px] font-mono text-white/35"
+                          >
+                            #{tag}
+                          </span>
+                        ))}
                       </div>
 
-                      {/* Footer: Tagged Players, Tournament, Source Link */}
-                      <div className="flex flex-wrap items-center justify-between gap-3 pt-3 mt-3 border-t border-white/[0.05] text-xs">
-                        {/* Tagged Players */}
-                        <div className="flex flex-wrap items-center gap-1.5">
-                          {item.playerNames && item.playerNames.length > 0 ? (
-                            item.playerNames.map((pName) => (
-                              <button
-                                key={pName}
-                                onClick={() => handlePlayerClick(pName)}
-                                className="flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-white/[0.04] hover:bg-white/[0.08] text-white/80 hover:text-white border border-white/[0.07] text-[11px] font-mono transition"
-                              >
-                                <UserCheck className="w-3 h-3 text-theme-accent/80" />
-                                <span>{pName}</span>
-                              </button>
-                            ))
-                          ) : item.tournamentName ? (
-                            <span className="px-2.5 py-0.5 rounded-full bg-white/[0.03] text-white/70 border border-white/[0.06] text-[11px] font-mono">
-                              {item.tournamentName}
-                            </span>
-                          ) : null}
-
-                          {item.tags?.map((tag) => (
-                            <span
-                              key={tag}
-                              className="px-2 py-0.5 rounded text-[10px] font-mono text-white/35"
-                            >
-                              #{tag}
-                            </span>
-                          ))}
-                        </div>
-
-                        {/* Source Attribution */}
-                        <div className="flex items-center gap-2 ml-auto">
-                          <span className="text-[10px] font-mono text-white/35">Source:</span>
-                          {item.url ? (
-                            <a
-                              href={item.url}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="flex items-center gap-1 text-[11px] font-mono text-white/80 hover:text-theme-accent transition"
-                            >
-                              <span>{item.source}</span>
-                              <ExternalLink className="w-2.5 h-2.5" />
-                            </a>
-                          ) : (
-                            <span className="text-[11px] font-mono text-white/70">{item.source}</span>
-                          )}
-                        </div>
+                      {/* Source Attribution */}
+                      <div className="flex items-center gap-2 ml-auto">
+                        <span className="text-[10px] font-mono text-white/35">Source:</span>
+                        {item.url ? (
+                          <a
+                            href={item.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-1 text-[11px] font-mono text-white/80 hover:text-theme-accent transition"
+                          >
+                            <span>{item.source}</span>
+                            <ExternalLink className="w-2.5 h-2.5" />
+                          </a>
+                        ) : (
+                          <span className="text-[11px] font-mono text-white/70">{item.source}</span>
+                        )}
                       </div>
-
                     </div>
 
                   </div>
