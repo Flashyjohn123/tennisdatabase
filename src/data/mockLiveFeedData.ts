@@ -4,6 +4,70 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1792231027815-1",
+    "title": "Medvedev fends off Paul for Shanghai SF berth",
+    "summary": "Medvedev fends off Paul for Shanghai SF berth. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-16T12:33:35.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5CTDlkTGhFQzJKRTg5b0lNUG94SlV6OXNMSnhPUElKMGdfSW9ITWR4X0NlUDRQQWc4VWhBTkdWSXRDZmJPaE56WmtiZHB5OHlBVWl6Y0F1Vl93T0drQnU4Um1FbTNUcWtSV3JjdUVBWWg3UzFm?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "Circuit Wire"
+    ]
+  },
+  {
+    "id": "atp-live-1792231027815-6",
+    "title": "Federer plays with his ‘brother from another mother’ Safin in Shanghai exhibition",
+    "summary": "Federer plays with his ‘brother from another mother’ Safin in Shanghai exhibition. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-16T15:52:40.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9WNFI1WXdMSGR6SXAtaGNBLXl5RUQtSHhYanhBZHhGcTRTY2xldmN3dzYwYVQ3dHdlWDZ6elFEb0NHanEzTXB4Y2FsZlNHNW1JbTBoTHhLQU9uaENGc0p1ZWd0ZkVJelNUdURzajJYN0ZTUQ?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "Circuit Wire"
+    ]
+  },
+  {
+    "id": "atp-live-1792231027815-7",
+    "title": "Alcaraz accepts wild card for Vienna",
+    "summary": "Alcaraz accepts wild card for Vienna. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-15T11:42:22.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9WdzhlQVdpbU5NTkpwb291S0d0SURMMUlBUHQ1WEp6QjFRaVloVUpvUUpRZ1hSSlNXbWN1WjBlSlE2VEh1cS1JT1RKcGdOazRoZlpQQkE4QUFzSXBmaDZZTDB3OTFjcGJo?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "Circuit Wire"
+    ]
+  },
+  {
+    "id": "atp-live-1792231027815-9",
+    "title": "Why Jodar's result in Shanghai will have massive implications",
+    "summary": "Why Jodar's result in Shanghai will have massive implications. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-16T03:35:19.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOQTZQbkRyUDhLa2U5alVGNGJ1R2NLY3VzYkdyVHB0OXBicWJkclhhVTkzalB5OWR5SEFiM3hFNmEzamRKejQwaDBrallacUJEcmVBaE9EaERJelp2aEpfWG81Q3FHaWxrZG1mdUJfRTBxek9JYVhzSk5OcWVJQTA1ZVJRWExHQU8xWmFJNDBR?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "Circuit Wire"
+    ]
+  },
+  {
     "id": "atp-live-1792203881139-9",
     "title": "ATP Q&amp;A: The next phase of progress under OneVision",
     "summary": "ATP Q&amp;A: The next phase of progress under OneVision. Full real-time coverage direct from ATP Tour.",
@@ -979,104 +1043,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
       "ATP Finals",
       "Qualification",
       "Points Race"
-    ]
-  },
-  {
-    "id": "feed-intel-rg-wildcards",
-    "title": "Roland Garros Wild Cards officially awarded by FFT for 2026 Parisian clay major",
-    "summary": "The French Tennis Federation confirmed main draw wildcard entries for Philippe-Chatrier, allocating bilateral reciprocal invitations to promising American and Australian talents alongside domestic French standouts.",
-    "category": "tournament_update",
-    "severity": "low",
-    "timestamp": "2026-05-12T14:00:00Z",
-    "source": "ESPN Tennis",
-    "url": "https://www.espn.com/tennis/story/_/id/40821948/roland-garros-2026-wild-cards-announced",
-    "tournamentName": "Roland Garros",
-    "tournamentId": "roland-garros",
-    "verified": true,
-    "tags": [
-      "Roland Garros",
-      "Wild Cards",
-      "Clay",
-      "FFT"
-    ]
-  },
-  {
-    "id": "feed-res-sinner-montecarlo-madrid",
-    "title": "Jannik Sinner claims Monte-Carlo and Madrid titles for historic Masters clay double",
-    "summary": "Jannik Sinner proved his clay pedigree, overpowering top-tier opposition in Monaco before capturing the Caja Mágica final in Madrid to become the first Italian champion of both European spring clay Masters in a single season.",
-    "category": "match_result",
-    "severity": "high",
-    "timestamp": "2026-05-08T18:30:00Z",
-    "source": "ATP Tour",
-    "url": "https://www.atptour.com/en/news/sinner-madrid-open-title-clay-double-2026",
-    "playerIds": [
-      "jannik-sinner"
-    ],
-    "playerNames": [
-      "Jannik Sinner"
-    ],
-    "tournamentName": "Mutua Madrid Open",
-    "tournamentId": "madrid-open",
-    "verified": true,
-    "tags": [
-      "Sinner",
-      "Madrid Open",
-      "Monte Carlo",
-      "Clay Double",
-      "Masters 1000"
-    ]
-  },
-  {
-    "id": "feed-res-gauff-madrid-rg",
-    "title": "Coco Gauff shines in European clay swing, capturing Madrid 1000 and reaching Roland Garros Final",
-    "summary": "World No. 3 Coco Gauff delivered masterclass clay tennis throughout May, capturing the Mutua Madrid Open crown before storming into her second career Roland Garros singles final against Iga Świątek.",
-    "category": "match_result",
-    "severity": "high",
-    "timestamp": "2026-06-06T17:15:00Z",
-    "source": "WTA Tennis",
-    "url": "https://www.wtatennis.com/news/4088912/coco-gauff-roland-garros-final-run-madrid-title-2026",
-    "playerIds": [
-      "coco-gauff"
-    ],
-    "playerNames": [
-      "Coco Gauff"
-    ],
-    "tournamentName": "Roland Garros",
-    "tournamentId": "roland-garros",
-    "verified": true,
-    "tags": [
-      "Coco Gauff",
-      "Roland Garros",
-      "Madrid Open",
-      "Clay",
-      "WTA"
-    ]
-  },
-  {
-    "id": "feed-res-zverev-rg-final",
-    "title": "Alexander Zverev outlasts Flavio Cobolli in 5-set Roland Garros Final epic: 6-1, 4-6, 6-4, 6-7(5), 6-1",
-    "summary": "In an unforgettable 4-hour, 12-minute clash on Court Philippe-Chatrier, Alexander Zverev held off Italian sensation Flavio Cobolli in a deciding set to claim his maiden Grand Slam crown.",
-    "category": "match_result",
-    "severity": "urgent",
-    "timestamp": "2026-06-07T19:45:00Z",
-    "source": "ATP Tour",
-    "url": "https://www.atptour.com/en/news/zverev-cobolli-roland-garros-final-2026",
-    "playerIds": [
-      "alexander-zverev"
-    ],
-    "playerNames": [
-      "Alexander Zverev",
-      "Flavio Cobolli"
-    ],
-    "tournamentName": "Roland Garros",
-    "tournamentId": "roland-garros",
-    "verified": true,
-    "tags": [
-      "Roland Garros",
-      "Zverev",
-      "Cobolli",
-      "Five Sets",
-      "Grand Slam"
     ]
   }
 ];
