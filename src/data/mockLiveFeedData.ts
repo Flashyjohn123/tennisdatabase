@@ -4,6 +4,22 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1792266938848-9",
+    "title": "Jodar storms to first Masters 1000 final in Shanghai",
+    "summary": "Jodar storms to first Masters 1000 final in Shanghai. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-17T13:16:38.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE96NmdMdU5BR1Q2dkQ3QXVDY09XN01HVkJ1WDhfeXFjYWRBQnBHdkV0U00tY0ttR1VYNDV6Z2RSTEo3VU5yS3RGcG1NR1htRVJJYWxLZVAwSjhtVlpPQnA0Yldwc1FEQ1dDcS1ROXFodDRMMkVaTV9YVQ?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "Circuit Wire"
+    ]
+  },
+  {
     "id": "atp-live-1792248295899-0",
     "title": "Davidovich Fokina stuns Zverev to reach Shanghai final",
     "summary": "Davidovich Fokina stuns Zverev to reach Shanghai final. Full real-time coverage direct from ATP Tour.",
@@ -1023,25 +1039,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
       "Prize Parity",
       "Equality",
       "Riyadh"
-    ]
-  },
-  {
-    "id": "feed-intel-ao-draws",
-    "title": "Australian Open 2026 Men’s and Women’s Official Main Draws Released in Melbourne",
-    "summary": "Defending champions Sinner and Sabalenka headline the top seeds at Melbourne Park. Sinner and Alcaraz are drawn into opposing halves, guaranteeing any rivalry clash would occur in the final.",
-    "category": "tournament_update",
-    "severity": "high",
-    "timestamp": "2026-01-15T06:00:00Z",
-    "source": "ESPN Tennis",
-    "url": "https://www.espn.com/tennis/story/_/id/40901245/australian-open-2026-draws-analysis",
-    "tournamentName": "Australian Open",
-    "tournamentId": "australian-open",
-    "verified": true,
-    "tags": [
-      "Draw Intel",
-      "Australian Open",
-      "Melbourne Park",
-      "Seeds"
     ]
   }
 ];
