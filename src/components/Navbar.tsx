@@ -61,7 +61,7 @@ export const NAV_ITEMS = [
   { id: 'live', label: 'Circuit Wire', sub: 'Live Feed & Intel', icon: Radio, isLive: true },
   { id: 'rankings', label: 'World Rankings', sub: 'ATP & WTA Top 500', icon: ListFilter },
   { id: 'tournaments', label: 'Grand Slam Calendar', sub: 'Tour Schedule', icon: Award },
-  { id: 'players', label: 'Player Dossiers', sub: 'Athlete Database', icon: Users },
+  { id: 'players', label: 'Player Bios', sub: 'Athlete Database', icon: Users },
   { id: 'h2h', label: 'Head-to-Head Lab', sub: 'Comparative Matrix', icon: Swords },
   { id: 'matches', label: 'Championship Log', sub: 'Historic Finals', icon: Compass },
 ];

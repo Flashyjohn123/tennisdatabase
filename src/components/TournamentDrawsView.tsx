@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { DrawMatchup, DrawCompetitor, TreeMatch, TreeCompetitor, Player } from '../types/tennis';
 import { TOURNAMENT_DRAWS, FULL_TOURNAMENT_BRACKETS } from '../data/tournamentDrawsData';
 import { playerService } from '../services/playerService';
+import { getAssetUrl } from '../utils/assetUtils';
 import { Trophy, MapPin, Activity, Check, Sparkles, RotateCcw, Zap } from 'lucide-react';
 
 interface TournamentDrawsViewProps {
@@ -802,11 +803,11 @@ const InteractiveCompetitorRow: React.FC<InteractiveCompetitorRowProps> = ({
         <div 
           onClick={onSelectDossier}
           className="relative w-8 h-8 rounded-lg overflow-hidden border border-white/[0.1] bg-black/60 shrink-0 shadow-sm hover:border-theme-accent transition-colors"
-          title="Click to view full player dossier"
+          title="Click to view full player bio"
         >
           {avatarUrl ? (
             <img
-              src={avatarUrl}
+              src={getAssetUrl(avatarUrl)}
               alt={comp.name}
               className="w-full h-full object-cover object-top"
               loading="lazy"

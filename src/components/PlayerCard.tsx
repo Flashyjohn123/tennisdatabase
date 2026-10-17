@@ -239,7 +239,7 @@ export const PlayerCard: React.FC<PlayerCardProps> = ({ player, onSelect, onComp
             onClick={() => onSelect(player)}
             className="flex-1 flex items-center justify-between pl-3.5 pr-2 py-1.5 rounded-full bg-white/[0.04] hover:bg-white/[0.08] text-white text-xs font-medium border border-white/[0.08] hover:border-white/20 transition-all duration-200 group/btn"
           >
-            <span className="tracking-tight">View Dossier</span>
+            <span className="tracking-tight">View Bio</span>
             <div className="w-6 h-6 rounded-full bg-white/10 group-hover/btn:bg-white/20 flex items-center justify-center text-white/80 group-hover/btn:text-white transition-all">
               <ArrowUpRight className="w-3 h-3" />
             </div>

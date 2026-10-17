@@ -115,7 +115,7 @@ export const PlayerDetailModal: React.FC<PlayerDetailModalProps> = ({
               <button
                 onClick={onClose}
                 className="w-8 h-8 rounded-full bg-white/[0.04] hover:bg-white/[0.08] text-white/50 hover:text-white flex items-center justify-center transition border border-white/[0.08]"
-                aria-label="Close dossier"
+                aria-label="Close bio"
               >
                 <X className="w-4 h-4" />
               </button>
@@ -402,13 +402,13 @@ export const PlayerDetailModal: React.FC<PlayerDetailModalProps> = ({
               </div>
             </div>
 
-            {/* Career Medical Dossier & Injury Ledger */}
+            {/* Career Medical History & Injury Ledger */}
             <div className="bg-black/40 border border-white/[0.06] rounded-xl p-5">
               <div className="flex flex-wrap items-center justify-between gap-2 mb-4 pb-3 border-b border-white/[0.06]">
                 <div className="flex items-center gap-2">
                   <Activity className="w-3.5 h-3.5 text-theme-accent" />
                   <h4 className="text-[11px] uppercase font-mono tracking-widest text-white/50">
-                    Career Medical Dossier & Injury Ledger
+                    Career Medical History & Injury Ledger
                   </h4>
                 </div>
 
@@ -568,7 +568,7 @@ export const PlayerDetailModal: React.FC<PlayerDetailModalProps> = ({
               onClick={onClose}
               className="bg-white/[0.1] hover:bg-white/[0.15] text-white border border-white/20 px-6 py-2 rounded-xl text-xs font-semibold transition"
             >
-              Close Dossier
+              Close Bio
             </button>
           </div>
 

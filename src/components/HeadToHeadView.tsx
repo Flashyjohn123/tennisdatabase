@@ -918,7 +918,7 @@ export const HeadToHeadView: React.FC<HeadToHeadViewProps> = ({
                     onClick={() => onSelectPlayer(p1)}
                     className="hover:text-theme-accent transition flex items-center gap-1"
                   >
-                    <span>View Dossier</span>
+                    <span>View Bio</span>
                     <ArrowUpRight className="w-3 h-3" />
                   </button>
                 </div>
@@ -1060,7 +1060,7 @@ export const HeadToHeadView: React.FC<HeadToHeadViewProps> = ({
                     onClick={() => onSelectPlayer(p2)}
                     className="hover:text-theme-accent transition flex items-center gap-1"
                   >
-                    <span>View Dossier</span>
+                    <span>View Bio</span>
                     <ArrowUpRight className="w-3 h-3" />
                   </button>
                 </div>

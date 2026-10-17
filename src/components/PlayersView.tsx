@@ -80,7 +80,7 @@ export const PlayersView: React.FC<PlayersViewProps> = ({
                 </span>
               </div>
               <h2 className="font-display font-semibold text-2xl sm:text-3xl text-white tracking-tight">
-                Player Dossiers ({filteredPlayers.length})
+                Player Bios ({filteredPlayers.length})
               </h2>
               <p className="text-xs sm:text-sm text-white/60 mt-1 font-normal">
                 Inspect world stars, Grand Slam trophy cabinets, bio telemetry, and surface statistics.

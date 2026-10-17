@@ -367,7 +367,7 @@ export const RankingsView: React.FC<RankingsViewProps> = ({
                   <th className="py-3.5 px-4 text-right">Live Points</th>
                   <th className="py-3.5 px-4 text-right hidden md:table-cell">Official Pts</th>
                   <th className="py-3.5 px-4 text-center hidden lg:table-cell">Win Rate</th>
-                  <th className="py-3.5 px-4 text-right">Dossier</th>
+                  <th className="py-3.5 px-4 text-right">Bio</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-white/[0.04] text-sm">
@@ -494,7 +494,7 @@ export const RankingsView: React.FC<RankingsViewProps> = ({
                             }}
                             className="px-2.5 py-1 rounded-full bg-white/[0.03] hover:bg-white/[0.08] text-white/70 hover:text-white text-[11px] font-mono border border-white/[0.07] transition"
                           >
-                            Dossier
+                            Bio
                           </button>
                         </td>
                       </tr>

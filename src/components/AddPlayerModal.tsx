@@ -279,7 +279,7 @@ export const AddPlayerModal: React.FC<AddPlayerModalProps> = ({ isOpen, onClose,
                 type="submit"
                 className="px-5 py-2 text-xs font-mono font-semibold text-black rounded-xl bg-amber-300 hover:bg-amber-200 shadow-lg shadow-amber-400/10 transition"
               >
-                Save Player Dossier
+                Save Player Bio
               </button>
             </div>
           </form>

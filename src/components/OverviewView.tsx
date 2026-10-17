@@ -282,7 +282,7 @@ export const OverviewView: React.FC<OverviewViewProps> = ({
                     </span>
                   </div>
                   <p className="font-mono text-[10px] text-white/40 uppercase tracking-widest mt-0.5">
-                    Personalized Telemetry & Grand Slam Dossiers
+                    Personalized Telemetry & Grand Slam Bios
                   </p>
                 </div>
               </div>
@@ -397,7 +397,7 @@ export const OverviewView: React.FC<OverviewViewProps> = ({
                         onClick={() => onSelectPlayer(player)}
                         className="flex-1 flex items-center justify-between pl-3 pr-2 py-1.5 rounded-lg bg-white/[0.03] hover:bg-white/[0.08] text-white text-[11px] font-medium border border-white/[0.06] hover:border-white/15 transition-all group/btn"
                       >
-                        <span>Open Dossier</span>
+                        <span>Open Bio</span>
                         <ArrowUpRight className="w-3 h-3 text-white/60 group-hover/btn:text-white" />
                       </button>
 
@@ -741,7 +741,7 @@ export const OverviewView: React.FC<OverviewViewProps> = ({
                 Apex Champions
               </h2>
               <p className="font-mono text-[10px] text-white/40 uppercase tracking-wider">
-                World No. 1 Dossiers & Surface Diagnostics
+                World No. 1 Bios & Surface Diagnostics
               </p>
             </div>
 
@@ -864,7 +864,7 @@ export const OverviewView: React.FC<OverviewViewProps> = ({
                     onClick={() => onSelectPlayer(atpNo1)}
                     className="flex-1 flex items-center justify-between pl-3 pr-2 py-1.5 rounded-lg bg-white/[0.03] hover:bg-white/[0.07] text-white text-xs font-medium border border-white/[0.08] transition-all"
                   >
-                    <span>Dossier</span>
+                    <span>Bio</span>
                     <User className="w-3 h-3 text-white/60" />
                   </button>
                   <button
@@ -985,7 +985,7 @@ export const OverviewView: React.FC<OverviewViewProps> = ({
                     onClick={() => onSelectPlayer(wtaNo1)}
                     className="flex-1 flex items-center justify-between pl-3 pr-2 py-1.5 rounded-lg bg-white/[0.03] hover:bg-white/[0.07] text-white text-xs font-medium border border-white/[0.08] transition-all"
                   >
-                    <span>Dossier</span>
+                    <span>Bio</span>
                     <User className="w-3 h-3 text-white/60" />
                   </button>
                   <button

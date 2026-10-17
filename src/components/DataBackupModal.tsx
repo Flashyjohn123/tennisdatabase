@@ -120,7 +120,7 @@ export const DataBackupModal: React.FC<DataBackupModalProps> = ({
         {/* Content */}
         <div className="py-5 space-y-4">
           <p className="text-xs text-white/70 leading-relaxed font-sans">
-            Transfer your starred player watchlist, customized athlete dossiers, and recorded match scorecards across devices or keep an offline archive.
+            Transfer your starred player watchlist, customized athlete bios, and recorded match scorecards across devices or keep an offline archive.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
