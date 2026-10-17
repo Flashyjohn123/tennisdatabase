@@ -4,6 +4,22 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1792248295899-0",
+    "title": "Davidovich Fokina stuns Zverev to reach Shanghai final",
+    "summary": "Davidovich Fokina stuns Zverev to reach Shanghai final. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-17T10:55:35.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPQl95bkNtUnRIUHRVenoxRDA0VG42VTU3M19KeWdvM1lmeWJqRjFaRS1WS0JrRWpRSUJIbkZib3h6RHNrZmx1RVUzYjRXeW5JeHNMQ3d4R2piTVFTVEdESGJNY25ESmswOThjZjJQZV82SlcwOVpKQncxMThxYXJiaFdMbVZ5UQ?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "Circuit Wire"
+    ]
+  },
+  {
     "id": "atp-live-1792231027815-1",
     "title": "Medvedev fends off Paul for Shanghai SF berth",
     "summary": "Medvedev fends off Paul for Shanghai SF berth. Full real-time coverage direct from ATP Tour.",
@@ -1026,23 +1042,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
       "Australian Open",
       "Melbourne Park",
       "Seeds"
-    ]
-  },
-  {
-    "id": "feed-intel-turin-race",
-    "title": "Nitto ATP Finals qualification race tightens: Only 120 points separate 7th and 9th position",
-    "summary": "With only two Masters 1000 events remaining before Turin, Taylor Fritz, Alex de Minaur, and Casper Ruud are locked in a ferocious dogfight for the final three spots in the 8-man field.",
-    "category": "tournament_update",
-    "severity": "medium",
-    "timestamp": "2026-09-14T10:00:00Z",
-    "source": "ATP Tour Communications",
-    "url": "https://www.atptour.com/en/news/race-to-turin-standings-september-2026",
-    "verified": true,
-    "tags": [
-      "Race to Turin",
-      "ATP Finals",
-      "Qualification",
-      "Points Race"
     ]
   }
 ];
