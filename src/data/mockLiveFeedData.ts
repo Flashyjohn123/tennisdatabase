@@ -4,6 +4,22 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1792203881139-9",
+    "title": "ATP Q&amp;A: The next phase of progress under OneVision",
+    "summary": "ATP Q&amp;A: The next phase of progress under OneVision. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-15T12:45:13.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5FQUxMTTRxc1o3SzA3c0pOQ29ZdkQ1dHdfbjhnT1ZIZ3RUanVKT2NteXlQcDFYVmMyVXJyZmF4a2lLMmUwOVlvVDRVWEZvdGNyaHc4dUhfUXhlcHVYZUY0Q01taWE3YmFMNmFkX0xoQQ?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "Circuit Wire"
+    ]
+  },
+  {
     "id": "atp-live-1792182063707-7",
     "title": "Djokovic accepts wild card for Basel",
     "summary": "Djokovic accepts wild card for Basel. Full real-time coverage direct from ATP Tour.",
@@ -1061,33 +1077,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
       "Cobolli",
       "Five Sets",
       "Grand Slam"
-    ]
-  },
-  {
-    "id": "feed-res-sabalenka-swiatek-madrid",
-    "title": "Aryna Sabalenka triumphs over Iga Świątek in electric Madrid Open final: 7-5, 4-6, 7-6(5)",
-    "summary": "The top two women in world tennis delivered a three-hour classic at the Caja Mágica, with Sabalenka saving two match points to capture the Madrid Open title in a deciding tiebreak.",
-    "category": "match_result",
-    "severity": "high",
-    "timestamp": "2026-05-09T21:00:00Z",
-    "source": "WTA Insider",
-    "url": "https://www.wtatennis.com/news/4079821/sabalenka-edges-swiatek-in-three-set-madrid-epic",
-    "playerIds": [
-      "aryna-sabalenka",
-      "iga-swiatek"
-    ],
-    "playerNames": [
-      "Aryna Sabalenka",
-      "Iga Świątek"
-    ],
-    "tournamentName": "Mutua Madrid Open",
-    "tournamentId": "madrid-open",
-    "verified": true,
-    "tags": [
-      "Sabalenka",
-      "Swiatek",
-      "Madrid Open",
-      "Rivalry"
     ]
   }
 ];

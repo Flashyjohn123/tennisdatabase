@@ -5503,7 +5503,7 @@ export const RANKINGS_TOP_500_WTA: PlayerRankSummary[] = [
     "country": "Japan",
     "countryCode": "JPN",
     "flag": "🇯🇵",
-    "age": 25,
+    "age": 26,
     "points": 230,
     "tournamentsPlayed": 31,
     "winPercentage": 65.6,
