@@ -17,7 +17,6 @@ import {
   Pause,
   Plus,
   X,
-  Activity,
   UserCheck
 } from 'lucide-react';
 
@@ -47,10 +46,6 @@ export const LiveNewsroomView: React.FC<LiveNewsroomViewProps> = ({ onSelectPlay
     config,
     updateConfig,
     isRefreshing,
-    totalCount,
-    activeInjuriesCount,
-    withdrawalsCount,
-    controversiesCount,
   } = useLiveFeed();
 
   const [selectedSeverity, setSelectedSeverity] = useState<FeedSeverity | 'ALL'>('ALL');
@@ -286,49 +281,6 @@ export const LiveNewsroomView: React.FC<LiveNewsroomViewProps> = ({ onSelectPlay
                 <Plus className="w-3.5 h-3.5" />
                 <span>Broadcast Alert</span>
               </button>
-            </div>
-          </div>
-
-          {/* Quick Stats Overview Row */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-6 pt-6 border-t border-white/[0.06]">
-            <div className="bg-black/40 border border-white/[0.06] rounded-xl p-3.5 flex items-center gap-3">
-              <div className="w-9 h-9 rounded-lg bg-white/[0.03] border border-white/[0.08] flex items-center justify-center text-theme-accent flex-shrink-0">
-                <Activity className="w-4 h-4" />
-              </div>
-              <div>
-                <div className="text-xl font-semibold text-white font-mono tabular-nums">{totalCount}</div>
-                <div className="text-[10px] font-mono text-white/40 uppercase tracking-wider">Active Alerts</div>
-              </div>
-            </div>
-
-            <div className="bg-black/40 border border-white/[0.06] rounded-xl p-3.5 flex items-center gap-3">
-              <div className="w-9 h-9 rounded-lg bg-white/[0.03] border border-white/[0.08] flex items-center justify-center text-amber-200 flex-shrink-0">
-                <AlertTriangle className="w-4 h-4" />
-              </div>
-              <div>
-                <div className="text-xl font-semibold text-white font-mono tabular-nums">{activeInjuriesCount}</div>
-                <div className="text-[10px] font-mono text-white/40 uppercase tracking-wider">Medical Cases</div>
-              </div>
-            </div>
-
-            <div className="bg-black/40 border border-white/[0.06] rounded-xl p-3.5 flex items-center gap-3">
-              <div className="w-9 h-9 rounded-lg bg-white/[0.03] border border-white/[0.08] flex items-center justify-center text-rose-300 flex-shrink-0">
-                <Ban className="w-4 h-4" />
-              </div>
-              <div>
-                <div className="text-xl font-semibold text-white font-mono tabular-nums">{withdrawalsCount}</div>
-                <div className="text-[10px] font-mono text-white/40 uppercase tracking-wider">Withdrawals</div>
-              </div>
-            </div>
-
-            <div className="bg-black/40 border border-white/[0.06] rounded-xl p-3.5 flex items-center gap-3">
-              <div className="w-9 h-9 rounded-lg bg-white/[0.03] border border-white/[0.08] flex items-center justify-center text-purple-300 flex-shrink-0">
-                <Scale className="w-4 h-4" />
-              </div>
-              <div>
-                <div className="text-xl font-semibold text-white font-mono tabular-nums">{controversiesCount}</div>
-                <div className="text-[10px] font-mono text-white/40 uppercase tracking-wider">Inquiries</div>
-              </div>
             </div>
           </div>
 
