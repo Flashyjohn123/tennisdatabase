@@ -56,17 +56,17 @@ export const App: React.FC = () => {
     atpLiveRankings,
     isSyncing: isSyncingLive,
     lastSynced: lastSyncedLive,
-    syncLiveRankings,
     isLiveSource,
   } = useAtpLiveRankings();
 
-  // State for Players, Matches, and Tournaments with LocalStorage Persistence (v19 Restored Profiles & Photos)
-  const STORAGE_KEY_PLAYERS = 'tennisdb_players_v19';
+  // State for Players, Matches, and Tournaments with LocalStorage Persistence (v20 Corrected WTA Pictures & Auto-Sync)
+  const STORAGE_KEY_PLAYERS = 'tennisdb_players_v20';
   const STORAGE_KEY_MATCHES = 'tennisdb_matches_v18';
 
   const [players, setPlayers] = useState<Player[]>(() => {
     // Clear obsolete legacy caches so updated authoritative records take full precedence
     try {
+      localStorage.removeItem('tennisdb_players_v19');
       localStorage.removeItem('tennisdb_players_v18');
       localStorage.removeItem('tennisdb_players_v17');
       localStorage.removeItem('tennisdb_players_v16');
@@ -299,7 +299,6 @@ export const App: React.FC = () => {
           onOpenAuthModal={() => setIsAuthModalOpen(true)}
           isSyncingLive={isSyncingLive}
           lastSyncedLive={lastSyncedLive}
-          onSyncLive={syncLiveRankings}
           activeTab={activeTab}
           setActiveTab={setActiveTab}
           selectedTour={selectedTour}
@@ -347,7 +346,6 @@ export const App: React.FC = () => {
                   atpLiveRankings={atpLiveRankings}
                   isSyncing={isSyncingLive}
                   lastSynced={lastSyncedLive}
-                  onSyncLiveRankings={syncLiveRankings}
                   isLiveSource={isLiveSource}
                 />
               )}

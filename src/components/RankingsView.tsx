@@ -3,9 +3,9 @@ import { Player, Tour, PlayerRankSummary, AtpLiveRankEntry } from '../types/tenn
 import { useAtpLiveRankings, ATP_LIVE_URL } from '../services/atpLiveRankingsService';
 import { useWtaLiveRankings, WtaLiveRankEntry } from '../services/wtaLiveRankingsService';
 import { playerService } from '../services/playerService';
+import { getAssetUrl } from '../utils/assetUtils';
 import {
   Search,
-  RefreshCw,
   TrendingUp,
   TrendingDown,
   Minus,
@@ -21,7 +21,6 @@ interface RankingsViewProps {
   atpLiveRankings?: AtpLiveRankEntry[];
   isSyncing?: boolean;
   lastSynced?: string | Date | null;
-  onSyncLiveRankings?: () => void;
   isLiveSource?: boolean;
 }
 
@@ -35,7 +34,6 @@ export const RankingsView: React.FC<RankingsViewProps> = ({
   atpLiveRankings: propAtpLiveRankings,
   isSyncing: propIsSyncing,
   lastSynced: propLastSynced,
-  onSyncLiveRankings: propOnSyncLiveRankings,
   isLiveSource: propIsLiveSource,
 }) => {
   // Use hook fallback if not passed directly via props
@@ -44,14 +42,6 @@ export const RankingsView: React.FC<RankingsViewProps> = ({
   const atpData = propAtpLiveRankings || hookData.atpLiveRankings;
   const isSyncing = propIsSyncing !== undefined ? propIsSyncing : (hookData.isSyncing || wtaHookData.isSyncing);
   const lastSynced = propLastSynced !== undefined ? propLastSynced : (hookData.lastSynced || wtaHookData.lastSynced);
-  const syncLiveRankings = () => {
-    if (propOnSyncLiveRankings) {
-      propOnSyncLiveRankings();
-    } else {
-      hookData.syncLiveRankings();
-      wtaHookData.syncWtaLiveRankings();
-    }
-  };
   const isLiveSource = propIsLiveSource !== undefined ? propIsLiveSource : hookData.isLiveSource;
 
   const [selectedTour, setSelectedTour] = useState<Tour>(
@@ -201,23 +191,17 @@ export const RankingsView: React.FC<RankingsViewProps> = ({
               </p>
             </div>
 
-            {/* Sync Button & Tour Switcher */}
+            {/* Automatic Live Sync Status & Tour Switcher */}
             <div className="flex flex-wrap items-center gap-3">
-              {selectedTour === 'ATP' && (
-                <div className="flex items-center gap-2 bg-black/40 rounded-full p-1 border border-white/[0.08]">
-                  <button
-                    onClick={() => syncLiveRankings()}
-                    disabled={isSyncing}
-                    className="flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/[0.05] hover:bg-white/[0.1] text-white font-medium text-xs border border-white/[0.08] transition disabled:opacity-50"
-                  >
-                    <RefreshCw className={`w-3 h-3 text-theme-accent ${isSyncing ? 'animate-spin' : ''}`} />
-                    <span>{isSyncing ? 'Scraping Live...' : 'Sync Live'}</span>
-                  </button>
-                  <div className="text-[10px] text-white/40 px-2 font-mono hidden sm:block">
-                    {formatLastSync(lastSynced)}
-                  </div>
-                </div>
-              )}
+              <div className="flex items-center gap-2 bg-black/40 rounded-full px-3.5 py-1.5 border border-white/[0.08] text-xs font-mono">
+                <span className={`w-2 h-2 rounded-full ${isSyncing ? 'bg-amber-400 animate-ping' : 'bg-emerald-400 animate-pulse'}`} />
+                <span className="text-[11px] uppercase tracking-wider text-white/80 font-medium">
+                  {isSyncing ? 'Auto-Syncing Live...' : 'Auto-Sync Active'}
+                </span>
+                <span className="text-[10px] text-white/40 border-l border-white/10 pl-2 hidden sm:inline tabular-nums">
+                  {formatLastSync(lastSynced)}
+                </span>
+              </div>
 
               {/* Tour Switcher (ATP vs WTA) */}
               <div className="flex bg-black/40 rounded-full p-1 border border-white/[0.08] text-xs font-mono">
@@ -439,7 +423,7 @@ export const RankingsView: React.FC<RankingsViewProps> = ({
                             <div className="relative w-8 h-8 rounded-lg overflow-hidden border border-white/[0.1] bg-black/60 shrink-0 group-hover:border-white/20 transition-all shadow-sm">
                               {photoUrl ? (
                                 <img
-                                  src={photoUrl}
+                                  src={getAssetUrl(photoUrl)}
                                   alt={player.name}
                                   className="w-full h-full object-cover object-top"
                                   loading="lazy"

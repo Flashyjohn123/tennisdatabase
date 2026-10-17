@@ -11,7 +11,6 @@ import {
   ListFilter, 
   Search, 
   Radio, 
-  RefreshCw,
   X,
   Compass,
   Menu,
@@ -38,7 +37,6 @@ export interface CommandBarProps {
   onOpenAuthModal?: () => void;
   isSyncingLive?: boolean;
   lastSyncedLive?: string | null;
-  onSyncLive?: () => void;
   activeTab: string;
   setActiveTab: (tab: string) => void;
   selectedTour: Tour | 'ALL';
@@ -213,7 +211,6 @@ export const CommandBar: React.FC<CommandBarProps> = ({
   onOpenAuthModal,
   isSyncingLive,
   lastSyncedLive,
-  onSyncLive,
   activeTab,
   setActiveTab,
   selectedTour,
@@ -327,20 +324,16 @@ export const CommandBar: React.FC<CommandBarProps> = ({
             </span>
           </button>
 
-          {/* Sync Trigger */}
-          {onSyncLive && (
-            <button
-              onClick={onSyncLive}
-              disabled={isSyncingLive}
-              className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/[0.03] hover:bg-white/[0.06] border border-white/[0.08] text-[11px] font-mono text-white/70 hover:text-white transition-all disabled:opacity-50"
-              title={lastSyncedLive ? `Scraper synced ${new Date(lastSyncedLive).toLocaleTimeString()}` : 'Sync live data'}
-            >
-              <RefreshCw className={`w-3 h-3 text-theme-accent ${isSyncingLive ? 'animate-spin' : ''}`} />
-              <span className="hidden md:inline text-[10px] font-medium tracking-wide">
-                {isSyncingLive ? 'Syncing...' : 'Sync Radar'}
-              </span>
-            </button>
-          )}
+          {/* Automatic Live Status Indicator */}
+          <div
+            className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/[0.03] border border-white/[0.08] text-[11px] font-mono text-white/70"
+            title={lastSyncedLive ? `Auto-synced ${new Date(lastSyncedLive).toLocaleTimeString()}` : 'Live auto-sync active'}
+          >
+            <span className={`w-1.5 h-1.5 rounded-full ${isSyncingLive ? 'bg-amber-400 animate-ping' : 'bg-emerald-400 animate-pulse'}`} />
+            <span className="hidden md:inline text-[10px] font-medium tracking-wide">
+              {isSyncingLive ? 'Syncing...' : 'Live Synced'}
+            </span>
+          </div>
         </div>
 
       </header>

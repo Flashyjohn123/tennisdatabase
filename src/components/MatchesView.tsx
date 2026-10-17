@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Match, Surface, Player } from '../types/tennis';
 import { ChevronDown, ChevronUp, Timer, Activity, Plus } from 'lucide-react';
 import { MiniDualShareMeter } from './charts/PieChart';
+import { getAssetUrl } from '../utils/assetUtils';
 
 interface MatchesViewProps {
   matches: Match[];
@@ -182,7 +183,7 @@ export const MatchesView: React.FC<MatchesViewProps> = ({
                           <div className="relative w-9 h-9 rounded-xl overflow-hidden border border-white/[0.1] bg-black/60 shrink-0 shadow-sm">
                             {p1?.avatarUrl ? (
                               <img
-                                src={p1.avatarUrl}
+                                src={getAssetUrl(p1.avatarUrl)}
                                 alt={m.player1Name}
                                 className="w-full h-full object-cover object-top"
                                 loading="lazy"
@@ -225,7 +226,7 @@ export const MatchesView: React.FC<MatchesViewProps> = ({
                           <div className="relative w-9 h-9 rounded-xl overflow-hidden border border-white/[0.1] bg-black/60 shrink-0 shadow-sm">
                             {p2?.avatarUrl ? (
                               <img
-                                src={p2?.avatarUrl}
+                                src={getAssetUrl(p2?.avatarUrl)}
                                 alt={m.player2Name}
                                 className="w-full h-full object-cover object-top"
                                 loading="lazy"

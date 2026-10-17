@@ -18,6 +18,7 @@ import {
   Award,
 } from 'lucide-react';
 import { DuelPieChart, SurfaceGaugePie, MiniDualShareMeter } from './charts/PieChart';
+import { getAssetUrl } from '../utils/assetUtils';
 
 interface HeadToHeadViewProps {
   players: Player[];
@@ -817,7 +818,7 @@ export const HeadToHeadView: React.FC<HeadToHeadViewProps> = ({
               {/* Subtle Player Portrait Vignette */}
               {p1.avatarUrl && (
                 <div className="absolute -top-10 -right-10 w-36 h-36 rounded-full overflow-hidden opacity-10 pointer-events-none filter blur-xl group-hover:opacity-15 transition-opacity">
-                  <img src={p1.avatarUrl} alt="" className="w-full h-full object-cover" />
+                  <img src={getAssetUrl(p1.avatarUrl)} alt="" className="w-full h-full object-cover" />
                 </div>
               )}
 
@@ -841,7 +842,7 @@ export const HeadToHeadView: React.FC<HeadToHeadViewProps> = ({
                   >
                     {p1.avatarUrl ? (
                       <img
-                        src={p1.avatarUrl}
+                        src={getAssetUrl(p1.avatarUrl)}
                         alt={p1.name}
                         className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
                       />
@@ -959,7 +960,7 @@ export const HeadToHeadView: React.FC<HeadToHeadViewProps> = ({
               {/* Subtle Player Portrait Vignette */}
               {p2.avatarUrl && (
                 <div className="absolute -top-10 -right-10 w-36 h-36 rounded-full overflow-hidden opacity-10 pointer-events-none filter blur-xl group-hover:opacity-15 transition-opacity">
-                  <img src={p2.avatarUrl} alt="" className="w-full h-full object-cover" />
+                  <img src={getAssetUrl(p2.avatarUrl)} alt="" className="w-full h-full object-cover" />
                 </div>
               )}
 
@@ -983,7 +984,7 @@ export const HeadToHeadView: React.FC<HeadToHeadViewProps> = ({
                   >
                     {p2.avatarUrl ? (
                       <img
-                        src={p2.avatarUrl}
+                        src={getAssetUrl(p2.avatarUrl)}
                         alt={p2.name}
                         className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
                       />
@@ -1251,7 +1252,7 @@ export const HeadToHeadView: React.FC<HeadToHeadViewProps> = ({
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-xl overflow-hidden border border-white/10 bg-black/60 shrink-0">
                   {p1.avatarUrl ? (
-                    <img src={p1.avatarUrl} alt={p1.name} className="w-full h-full object-cover object-top" />
+                    <img src={getAssetUrl(p1.avatarUrl)} alt={p1.name} className="w-full h-full object-cover object-top" />
                   ) : (
                     <div className="w-full h-full flex items-center justify-center font-mono text-xs text-theme-accent">
                       {p1.name.slice(0, 2).toUpperCase()}
@@ -1306,7 +1307,7 @@ export const HeadToHeadView: React.FC<HeadToHeadViewProps> = ({
                 </div>
                 <div className="w-10 h-10 rounded-xl overflow-hidden border border-white/10 bg-black/60 shrink-0">
                   {p2.avatarUrl ? (
-                    <img src={p2.avatarUrl} alt={p2.name} className="w-full h-full object-cover object-top" />
+                    <img src={getAssetUrl(p2.avatarUrl)} alt={p2.name} className="w-full h-full object-cover object-top" />
                   ) : (
                     <div className="w-full h-full flex items-center justify-center font-mono text-xs text-sky-400">
                       {p2.name.slice(0, 2).toUpperCase()}

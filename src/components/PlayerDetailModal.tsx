@@ -3,6 +3,7 @@ import { Player } from '../types/tennis';
 import { Trophy, Award, DollarSign, Calendar, MapPin, Ruler, X, Swords, Activity, ShieldCheck, Star } from 'lucide-react';
 import { DonutPieChart, SurfaceGaugePie, GrandSlamDonutChart } from './charts/PieChart';
 import { favoritesService } from '../services/favoritesService';
+import { getAssetUrl } from '../utils/assetUtils';
 
 interface PlayerDetailModalProps {
   player: Player | null;
@@ -87,7 +88,7 @@ export const PlayerDetailModal: React.FC<PlayerDetailModalProps> = ({
           {/* Subtle Ambient Player Backdrop Vignette */}
           {player.avatarUrl && (
             <div className="absolute -top-16 -right-16 w-64 h-64 rounded-full overflow-hidden opacity-10 pointer-events-none filter blur-2xl">
-              <img src={player.avatarUrl} alt="" className="w-full h-full object-cover" />
+              <img src={getAssetUrl(player.avatarUrl)} alt="" className="w-full h-full object-cover" />
             </div>
           )}
 
@@ -125,7 +126,7 @@ export const PlayerDetailModal: React.FC<PlayerDetailModalProps> = ({
               <div className="relative w-20 h-20 sm:w-24 sm:h-24 rounded-2xl overflow-hidden border border-white/[0.12] bg-black/60 shrink-0 shadow-2xl">
                 {player.avatarUrl ? (
                   <img
-                    src={player.avatarUrl}
+                    src={getAssetUrl(player.avatarUrl)}
                     alt={player.name}
                     className="w-full h-full object-cover object-top"
                     loading="lazy"

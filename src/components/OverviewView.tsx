@@ -24,6 +24,7 @@ import {
 import { PlayerCard } from './PlayerCard';
 import { MiniStatGauge, SurfaceGaugePie } from './charts/PieChart';
 import { useLiveScoreboard } from '../services/liveScoreboardService';
+import { getAssetUrl } from '../utils/assetUtils';
 
 interface OverviewViewProps {
   players: Player[];
@@ -316,7 +317,7 @@ export const OverviewView: React.FC<OverviewViewProps> = ({
                           <div className="relative w-9 h-9 rounded-lg overflow-hidden border border-white/[0.1] bg-black/60 shrink-0 shadow">
                             {player.avatarUrl ? (
                               <img
-                                src={player.avatarUrl}
+                                src={getAssetUrl(player.avatarUrl)}
                                 alt={player.name}
                                 className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
                                 loading="lazy"
@@ -761,7 +762,7 @@ export const OverviewView: React.FC<OverviewViewProps> = ({
                 {/* Background Player Vignette */}
                 {atpNo1.avatarUrl && (
                   <div className="absolute -top-10 -right-10 w-36 h-36 rounded-full overflow-hidden opacity-10 pointer-events-none filter blur-xl group-hover:opacity-15 transition-opacity">
-                    <img src={atpNo1.avatarUrl} alt="" className="w-full h-full object-cover" />
+                    <img src={getAssetUrl(atpNo1.avatarUrl)} alt="" className="w-full h-full object-cover" />
                   </div>
                 )}
 
@@ -771,7 +772,7 @@ export const OverviewView: React.FC<OverviewViewProps> = ({
                     <div className="relative w-12 h-12 rounded-xl overflow-hidden border border-white/[0.12] bg-black/50 shrink-0 shadow-md">
                       {atpNo1.avatarUrl ? (
                         <img
-                          src={atpNo1.avatarUrl}
+                          src={getAssetUrl(atpNo1.avatarUrl)}
                           alt={atpNo1.name}
                           className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
                         />
@@ -882,7 +883,7 @@ export const OverviewView: React.FC<OverviewViewProps> = ({
                 {/* Background Player Vignette */}
                 {wtaNo1.avatarUrl && (
                   <div className="absolute -top-10 -right-10 w-36 h-36 rounded-full overflow-hidden opacity-10 pointer-events-none filter blur-xl group-hover:opacity-15 transition-opacity">
-                    <img src={wtaNo1.avatarUrl} alt="" className="w-full h-full object-cover" />
+                    <img src={getAssetUrl(wtaNo1.avatarUrl)} alt="" className="w-full h-full object-cover" />
                   </div>
                 )}
 
@@ -892,7 +893,7 @@ export const OverviewView: React.FC<OverviewViewProps> = ({
                     <div className="relative w-12 h-12 rounded-xl overflow-hidden border border-white/[0.12] bg-black/50 shrink-0 shadow-md">
                       {wtaNo1.avatarUrl ? (
                         <img
-                          src={wtaNo1.avatarUrl}
+                          src={getAssetUrl(wtaNo1.avatarUrl)}
                           alt={wtaNo1.name}
                           className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
                         />

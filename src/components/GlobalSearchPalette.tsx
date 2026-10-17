@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Search, X, User, Trophy, ArrowRight, Star } from 'lucide-react';
 import { Player, Tournament } from '../types/tennis';
 import { favoritesService } from '../services/favoritesService';
+import { getAssetUrl } from '../utils/assetUtils';
 
 interface GlobalSearchPaletteProps {
   isOpen: boolean;
@@ -131,7 +132,7 @@ export const GlobalSearchPalette: React.FC<GlobalSearchPaletteProps> = ({
                       <div className="flex items-center gap-3">
                         <div className="w-8 h-8 rounded-lg overflow-hidden bg-white/[0.03] border border-white/[0.08] flex items-center justify-center shrink-0">
                           {player.avatarUrl ? (
-                            <img src={player.avatarUrl} alt={player.name} className="w-full h-full object-cover" />
+                            <img src={getAssetUrl(player.avatarUrl)} alt={player.name} className="w-full h-full object-cover" />
                           ) : (
                             <User className="w-4 h-4 text-white/40" />
                           )}

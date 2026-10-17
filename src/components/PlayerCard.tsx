@@ -3,6 +3,7 @@ import { Player } from '../types/tennis';
 import { Swords, ArrowUpRight, Star } from 'lucide-react';
 import { MiniStatGauge } from './charts/PieChart';
 import { favoritesService } from '../services/favoritesService';
+import { getAssetUrl } from '../utils/assetUtils';
 
 interface PlayerCardProps {
   player: Player;
@@ -84,7 +85,7 @@ export const PlayerCard: React.FC<PlayerCardProps> = ({ player, onSelect, onComp
         {/* Subtle Player Portrait Background Vignette */}
         {player.avatarUrl && (
           <div className="absolute -top-12 -right-12 w-48 h-48 rounded-full overflow-hidden opacity-10 pointer-events-none filter blur-xl group-hover:opacity-15 transition-opacity duration-500">
-            <img src={player.avatarUrl} alt="" className="w-full h-full object-cover" />
+            <img src={getAssetUrl(player.avatarUrl)} alt="" className="w-full h-full object-cover" />
           </div>
         )}
 
@@ -99,7 +100,7 @@ export const PlayerCard: React.FC<PlayerCardProps> = ({ player, onSelect, onComp
               <div className="relative w-11 h-11 rounded-xl overflow-hidden border border-white/[0.1] bg-black/60 shrink-0 group-hover:border-white/20 transition-all shadow-md">
                 {player.avatarUrl ? (
                   <img
-                    src={player.avatarUrl}
+                    src={getAssetUrl(player.avatarUrl)}
                     alt={player.name}
                     className="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-500"
                     loading="lazy"
