@@ -4,6 +4,22 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1792353318435-7",
+    "title": "How much prize money will the Shanghai champion earn?",
+    "summary": "How much prize money will the Shanghai champion earn?. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-17T17:55:07.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFB4dl9TS1d5NU9VNDV1UjBNNmwwZWkyazVwSnoyY0x2Q3d2SFctVXJDd1Y2UDFwRS14R3JtSzJZUUViTnJ2ME5zY3poUjFkUGFEcHVZZkJZQmVDaHhXcFNpRmxyRXU0MW1lSkNZc2FTdVNCbHJP?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "Circuit Wire"
+    ]
+  },
+  {
     "id": "atp-live-1792336231930-0",
     "title": "Davidovich Fokina stops Jodar for Shanghai title",
     "summary": "Davidovich Fokina stops Jodar for Shanghai title. Full real-time coverage direct from ATP Tour.",
@@ -1007,30 +1023,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
       "Zverev",
       "Halle",
       "Medical"
-    ]
-  },
-  {
-    "id": "feed-wd-andreeva-wuhan",
-    "title": "Mirra Andreeva concedes 2nd set retirement in Wuhan due to shoulder fatigue",
-    "summary": "Rising star Mirra Andreeva withdrew trailing 3-6, 1-4 in Wuhan after experiencing right rotator cuff soreness, prioritizing preventative recovery ahead of the WTA Finals.",
-    "category": "withdrawal",
-    "severity": "low",
-    "timestamp": "2026-09-08T07:25:00Z",
-    "source": "WTA Communications",
-    "url": "https://www.wtatennis.com/news/4113456/mirra-andreeva-retirement-wuhan-open-2026",
-    "playerIds": [
-      "mirra-andreeva"
-    ],
-    "playerNames": [
-      "Mirra Andreeva"
-    ],
-    "tournamentName": "Wuhan Open",
-    "verified": true,
-    "tags": [
-      "Retirement",
-      "Andreeva",
-      "Wuhan",
-      "WTA"
     ]
   }
 ];
