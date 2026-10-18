@@ -4,6 +4,22 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1792336231930-0",
+    "title": "Davidovich Fokina stops Jodar for Shanghai title",
+    "summary": "Davidovich Fokina stops Jodar for Shanghai title. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-18T14:04:45.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNRUJSQkE2N2RWbE9FUEhITFJraThsel9ScVBKNEJvX0NiTXpEaG1jRmhWOUR5OHdmNWdSVW4xekgxT0Vfc2JMQk9VTDhkUFU3Vm5zZjkwS0JScHhEcE5QMXZkbVRqMHpiUkUtSGdqNk1uLVVVM2xBQkkyUHlLTHUxMQ?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "Circuit Wire"
+    ]
+  },
+  {
     "id": "atp-live-1792290283235-3",
     "title": "How soon can Zverev become World No. 1?",
     "summary": "How soon can Zverev become World No. 1?. Full real-time coverage direct from ATP Tour.",
@@ -1015,25 +1031,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
       "Andreeva",
       "Wuhan",
       "WTA"
-    ]
-  },
-  {
-    "id": "feed-intel-usopen-purse",
-    "title": "US Open announces record $80 Million total purse with $5.5 Million champion checks",
-    "summary": "The USTA officially confirmed that the 2026 US Open prize money purse shattered historical records at $80,000,000, awarding men's and women's singles champions $5.50 Million each—the largest winner payout in sports.",
-    "category": "tournament_update",
-    "severity": "high",
-    "timestamp": "2026-08-05T15:00:00Z",
-    "source": "ESPN Tennis",
-    "url": "https://www.espn.com/tennis/story/_/id/41081290/us-open-record-80-million-purse-announcement-2026",
-    "tournamentName": "US Open",
-    "tournamentId": "us-open",
-    "verified": true,
-    "tags": [
-      "Prize Money",
-      "US Open",
-      "Record Purse",
-      "Arthur Ashe Stadium"
     ]
   }
 ];
