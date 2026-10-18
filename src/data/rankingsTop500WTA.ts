@@ -4153,7 +4153,7 @@ export const RANKINGS_TOP_500_WTA: PlayerRankSummary[] = [
     "country": "Turkey",
     "countryCode": "TUR",
     "flag": "🇹🇷",
-    "age": 26,
+    "age": 27,
     "points": 338,
     "tournamentsPlayed": 23,
     "winPercentage": 68.8,

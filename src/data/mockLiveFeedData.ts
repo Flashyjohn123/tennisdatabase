@@ -4,6 +4,38 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1792290283235-3",
+    "title": "How soon can Zverev become World No. 1?",
+    "summary": "How soon can Zverev become World No. 1?. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-16T18:57:59.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1YS1R6TVl6YTY5TmlDVDFnRWc3LWFNZVJHaDVGbXdXZmVnWnlsVEZhVWU5NkhnVE9GdEdsR1FveXVQVGY3bFNDNkl1SmNPNndTSGNaWjFSUFVsV3d4VUdqT1g4SE94UmJDN0pWVURLd0c4QzM2N1E?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "Circuit Wire"
+    ]
+  },
+  {
+    "id": "atp-live-1792290283235-8",
+    "title": "Zverev on Shanghai SF defeat: 'I overachieved this week'",
+    "summary": "Zverev on Shanghai SF defeat: 'I overachieved this week'. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-17T12:10:35.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE00U2p6UlZiazFYOHpHRlJFb1lWZjgxdmtieWgxak4taW9QTm1wVlBjN1B6a3Q0cU5WSmtjd0Z3dmxEUGxlZVEwX0Q2UWN0Z0x5RHZWc2FoaVNGdmNTQnFyQ29yeTE2aWdCM2ZUU1pzakNuajUzS29OYXhB?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "Circuit Wire"
+    ]
+  },
+  {
     "id": "atp-live-1792266938848-9",
     "title": "Jodar storms to first Masters 1000 final in Shanghai",
     "summary": "Jodar storms to first Masters 1000 final in Shanghai. Full real-time coverage direct from ATP Tour.",
@@ -1002,43 +1034,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
       "US Open",
       "Record Purse",
       "Arthur Ashe Stadium"
-    ]
-  },
-  {
-    "id": "feed-intel-wimbledon-purse",
-    "title": "Wimbledon confirms record £53,500,000 total prize pool for 2026 Championships",
-    "summary": "The All England Lawn Tennis Club unveiled an 11.9% prize money expansion across all main draw and qualifying rounds, with singles winners each receiving £3.00 Million.",
-    "category": "tournament_update",
-    "severity": "medium",
-    "timestamp": "2026-06-10T11:00:00Z",
-    "source": "ESPN News Services",
-    "url": "https://www.espn.com/tennis/story/_/id/40871142/wimbledon-announces-record-prize-money-2026",
-    "tournamentName": "Wimbledon",
-    "tournamentId": "wimbledon",
-    "verified": true,
-    "tags": [
-      "Wimbledon",
-      "Prize Money",
-      "AELTC",
-      "Grand Slam"
-    ]
-  },
-  {
-    "id": "feed-intel-wtafinals-parity",
-    "title": "WTA Finals 2026 prize pool reaches historic parity with ATP at $16.00 Million",
-    "summary": "WTA Ventures and Riyadh organizers finalized a landmark $16,000,000 purse for the 2026 WTA Finals, matching the Nitto ATP Finals to set an all-time high for women's professional sport.",
-    "category": "tournament_update",
-    "severity": "high",
-    "timestamp": "2026-07-15T09:30:00Z",
-    "source": "WTA Communications",
-    "url": "https://www.wtatennis.com/news/4091223/wta-finals-riyadh-prize-money-parity-announcement",
-    "tournamentName": "WTA Finals",
-    "verified": true,
-    "tags": [
-      "WTA Finals",
-      "Prize Parity",
-      "Equality",
-      "Riyadh"
     ]
   }
 ];
