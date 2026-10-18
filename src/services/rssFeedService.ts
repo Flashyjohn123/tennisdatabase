@@ -132,19 +132,49 @@ export function detectFeedSeverity(title: string, summary: string, category: Fee
   return 'low';
 }
 
-// Strip HTML tags and clean up string
-function cleanHtml(raw: string): string {
+// Decode all HTML entities and clean up string
+export function decodeHtmlEntities(raw: string): string {
   if (!raw) return '';
-  return raw
+  let str = raw
     .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1')
-    .replace(/<[^>]*>/g, '')
-    .replace(/&amp;/g, '&')
-    .replace(/&lt;/g, '<')
-    .replace(/&gt;/g, '>')
-    .replace(/&quot;/g, '"')
-    .replace(/&#39;/g, "'")
-    .replace(/\s+/g, ' ')
-    .trim();
+    .replace(/<[^>]*>/g, ' ')
+    .replace(/;?&nbsp;?/gi, ' ')
+    .replace(/&#160;/gi, ' ')
+    .replace(/&amp;/gi, '&')
+    .replace(/&lt;/gi, '<')
+    .replace(/&gt;/gi, '>')
+    .replace(/&quot;/gi, '"')
+    .replace(/&#39;/gi, "'")
+    .replace(/&apos;/gi, "'")
+    .replace(/&mdash;/gi, '—')
+    .replace(/&ndash;/gi, '–')
+    .replace(/&bull;/gi, '•')
+    .replace(/&hellip;/gi, '…')
+    .replace(/&#(\d+);/g, (_, dec) => {
+      try {
+        return String.fromCharCode(parseInt(dec, 10));
+      } catch {
+        return '';
+      }
+    })
+    .replace(/&#x([0-9a-f]+);/gi, (_, hex) => {
+      try {
+        return String.fromCharCode(parseInt(hex, 16));
+      } catch {
+        return '';
+      }
+    });
+
+  // Strip duplicate trailing source tags like " - ATP Tour" or " - WTA Tennis"
+  str = str.replace(/\s*-\s*(ATP Tour|WTA Tennis|ESPN)$/i, '');
+  str = str.replace(/\s*(ATP Tour|WTA Tennis|ESPN)$/i, '');
+
+  return str.replace(/\s+/g, ' ').trim();
+}
+
+// Strip HTML tags and clean up string
+export function cleanHtml(raw: string): string {
+  return decodeHtmlEntities(raw);
 }
 
 // Parse XML string safely using DOMParser (or regex fallback)

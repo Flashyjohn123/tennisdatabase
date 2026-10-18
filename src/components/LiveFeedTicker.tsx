@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { LiveFeedItem, Player } from '../types/tennis';
 import { useLiveFeed } from '../services/liveFeedEngine';
 import { playerService } from '../services/playerService';
+import { decodeHtmlEntities } from '../services/rssFeedService';
 import { 
   ChevronRight, 
   ChevronLeft, 
@@ -145,7 +146,7 @@ export const LiveFeedTicker: React.FC<LiveFeedTickerProps> = ({
 
             {/* Headline Title */}
             <div className="truncate text-white/80 group-hover:text-theme-accent transition-colors text-xs font-normal flex items-center gap-2">
-              <span className="truncate">{currentItem.title}</span>
+              <span className="truncate">{decodeHtmlEntities(currentItem.title)}</span>
             </div>
 
             {/* Tagged Players Pills (No Cartoon Emojis) */}

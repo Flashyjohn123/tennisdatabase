@@ -1,11 +1,11 @@
 // Real-time 24/7 live feed manager with RSS merge, simulated event injection, and local storage persistence
 import { LiveFeedItem, ApiConfig, FeedCategory, FeedSeverity } from '../types/tennis';
 import { MOCK_LIVE_FEED_ITEMS } from '../data/mockLiveFeedData';
-import { fetchAllRssFeeds, KNOWN_RSS_SOURCES, isAuthorizedSource } from './rssFeedService';
+import { fetchAllRssFeeds, KNOWN_RSS_SOURCES, isAuthorizedSource, decodeHtmlEntities } from './rssFeedService';
 import { useState, useEffect, useCallback } from 'react';
 
-const STORAGE_KEY_FEED = 'tennisdb_live_feed_v18';
-const STORAGE_KEY_CONFIG = 'tennisdb_feed_config_v18';
+const STORAGE_KEY_FEED = 'tennisdb_live_feed_v20';
+const STORAGE_KEY_CONFIG = 'tennisdb_feed_config_v20';
 
 const DEFAULT_CONFIG: ApiConfig = {
   rapidApiKey: '',
@@ -129,8 +129,14 @@ class LiveFeedEngineService {
       if (savedItems) {
         const parsed = JSON.parse(savedItems);
         if (Array.isArray(parsed) && parsed.length > 0) {
-          // Strictly filter through isAuthorizedSource to purge unauthorized cached items
-          this.items = parsed.filter((item: LiveFeedItem) => item && isAuthorizedSource(item.source));
+          // Strictly filter through isAuthorizedSource and clean HTML entities
+          this.items = parsed
+            .filter((item: LiveFeedItem) => item && isAuthorizedSource(item.source))
+            .map((item: LiveFeedItem) => ({
+              ...item,
+              title: decodeHtmlEntities(item.title),
+              summary: decodeHtmlEntities(item.summary),
+            }));
         }
       }
     } catch (e) {
@@ -138,7 +144,13 @@ class LiveFeedEngineService {
     }
 
     if (this.items.length === 0) {
-      this.items = MOCK_LIVE_FEED_ITEMS.filter((item) => isAuthorizedSource(item.source));
+      this.items = MOCK_LIVE_FEED_ITEMS
+        .filter((item) => isAuthorizedSource(item.source))
+        .map((item) => ({
+          ...item,
+          title: decodeHtmlEntities(item.title),
+          summary: decodeHtmlEntities(item.summary),
+        }));
     }
   }
 
@@ -202,13 +214,19 @@ class LiveFeedEngineService {
     const existingIds = new Set(this.items.map((i) => i.id));
     const existingTitles = new Set(this.items.map((i) => i.title.trim().toLowerCase()));
 
-    const uniqueIncoming = newItems.filter(
-      (item) =>
-        item &&
-        isAuthorizedSource(item.source) &&
-        !existingIds.has(item.id) &&
-        !existingTitles.has(item.title.trim().toLowerCase())
-    );
+    const uniqueIncoming = newItems
+      .filter(
+        (item) =>
+          item &&
+          isAuthorizedSource(item.source) &&
+          !existingIds.has(item.id) &&
+          !existingTitles.has(item.title.trim().toLowerCase())
+      )
+      .map((item) => ({
+        ...item,
+        title: decodeHtmlEntities(item.title),
+        summary: decodeHtmlEntities(item.summary),
+      }));
 
     if (uniqueIncoming.length > 0) {
       this.items = [...uniqueIncoming, ...this.items].sort(

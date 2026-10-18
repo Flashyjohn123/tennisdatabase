@@ -25,6 +25,7 @@ import { PlayerCard } from './PlayerCard';
 import { MiniStatGauge, SurfaceGaugePie } from './charts/PieChart';
 import { useLiveScoreboard } from '../services/liveScoreboardService';
 import { getAssetUrl } from '../utils/assetUtils';
+import { decodeHtmlEntities } from '../services/rssFeedService';
 
 interface OverviewViewProps {
   players: Player[];
@@ -1037,7 +1038,7 @@ export const OverviewView: React.FC<OverviewViewProps> = ({
                     </span>
                   </div>
                   <p className="text-xs text-white/85 line-clamp-2 leading-snug font-normal">
-                    {item.title}
+                    {decodeHtmlEntities(item.title)}
                   </p>
                 </div>
               ))}

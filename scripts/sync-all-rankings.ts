@@ -159,7 +159,15 @@ export async function syncNews() {
       let feedContent = fs.readFileSync(feedPath, 'utf8');
       
       const newArticles = items.slice(0, 10).map((m, idx) => {
-        const title = m[1].replace(/ - ATP Tour$/i, '').trim();
+        const title = m[1]
+          .replace(/;?&nbsp;?/gi, ' ')
+          .replace(/&#160;/gi, ' ')
+          .replace(/&amp;/gi, '&')
+          .replace(/&quot;/gi, '"')
+          .replace(/&#39;/gi, "'")
+          .replace(/ - ATP Tour$/i, '')
+          .replace(/\s+/g, ' ')
+          .trim();
         const url = m[2].trim();
         const date = new Date(m[3]).toISOString();
         const id = `atp-live-${Date.now()}-${idx}`;

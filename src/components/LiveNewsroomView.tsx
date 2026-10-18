@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { FeedCategory, FeedSeverity, Player } from '../types/tennis';
 import { useLiveFeed } from '../services/liveFeedEngine';
 import { playerService } from '../services/playerService';
+import { decodeHtmlEntities } from '../services/rssFeedService';
 import {
   Radio,
   RefreshCw,
@@ -377,12 +378,12 @@ export const LiveNewsroomView: React.FC<LiveNewsroomViewProps> = ({ onSelectPlay
 
                       {/* Title */}
                       <h3 className="font-display font-semibold text-base sm:text-lg text-white group-hover:text-theme-accent transition-colors tracking-tight leading-snug mb-2">
-                        {item.title}
+                        {decodeHtmlEntities(item.title)}
                       </h3>
 
                       {/* Summary */}
                       <p className="text-xs text-white/60 leading-relaxed font-normal">
-                        {item.summary}
+                        {decodeHtmlEntities(item.summary)}
                       </p>
                     </div>
 
