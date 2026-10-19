@@ -4,6 +4,38 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1792410227857-3",
+    "title": "Jodar surges into qualifying position; Will four debutants reach Turin?",
+    "summary": "Jodar surges into qualifying position; Will four debutants reach Turin?. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-18T15:33:44.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE00QXRzRlJTUjVDLXladExIZW1udnd2ZnROcENCMGpZMXFtY014dDF5enU5clNsclREeV9xUFBWa2VSX3ZFeFhwSkdGYk1nNlpUN3RwYlc0YXVxU3ZZQ0hoY3JTZVczczZBTzZqNlZRQWZpS3hzaTRuZ3JzM0ltZnM?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "Circuit Wire"
+    ]
+  },
+  {
+    "id": "atp-live-1792410227857-8",
+    "title": "Rune withdraws from Brussels due to injury: 'Really annoying and unfortunate timing'",
+    "summary": "Rune withdraws from Brussels due to injury: 'Really annoying and unfortunate timing'. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-18T17:54:01.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1lemFBR1Z1LXpiUEdlSkJEOW45MkhtX09vcU5CX000WUN2N0ZFRDNKdTM1dnlxLV9KYm95MXdkTmdCVFJ4UDcyWW1JelVwbm95ZUNHZ3hmdWZtRkNmSjRIQ3lSeVBkYlhlUkV1NHFB?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "Circuit Wire"
+    ]
+  },
+  {
     "id": "atp-live-1792377557133-6",
     "title": "Shelton qualifies for second consecutive Nitto ATP Finals",
     "summary": "Shelton qualifies for second consecutive Nitto ATP Finals. Full real-time coverage direct from ATP Tour.",
@@ -959,51 +991,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
       "Wrist",
       "Rune",
       "Monte Carlo"
-    ]
-  },
-  {
-    "id": "feed-inj-draper-ab",
-    "title": "Jack Draper managing abdominal tweak; targets immediate return for Asian hard-court swing",
-    "summary": "British No. 1 Jack Draper sustained a low-grade strain to his left rectus abdominis during service repetitions. Ultrasound imaging indicated rapid healing with return targeted for Tokyo.",
-    "category": "injury",
-    "severity": "medium",
-    "timestamp": "2026-08-30T15:00:00Z",
-    "source": "ATP Tour Communications",
-    "url": "https://www.atptour.com/en/news/draper-abdominal-update-us-open-2026",
-    "playerIds": [
-      "jack-draper"
-    ],
-    "playerNames": [
-      "Jack Draper"
-    ],
-    "verified": true,
-    "tags": [
-      "Abdominal",
-      "Draper",
-      "Rehab"
-    ]
-  },
-  {
-    "id": "feed-inj-badosa-back",
-    "title": "Paula Badosa receives clean spine scans in Madrid; ready for full autumn campaign",
-    "summary": "Former World No. 2 Paula Badosa completed her scheduled lower lumbar stress follow-up at the Madrid Sports Institute, confirming full bone regeneration and zero nerve impingement.",
-    "category": "injury",
-    "severity": "low",
-    "timestamp": "2026-09-02T13:30:00Z",
-    "source": "WTA Communications",
-    "url": "https://www.wtatennis.com/news/4108821/paula-badosa-spine-health-clearance-autumn-2026",
-    "playerIds": [
-      "paula-badosa"
-    ],
-    "playerNames": [
-      "Paula Badosa"
-    ],
-    "verified": true,
-    "tags": [
-      "Spine",
-      "Badosa",
-      "Medical",
-      "Comeback"
     ]
   }
 ];
