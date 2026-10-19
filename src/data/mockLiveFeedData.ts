@@ -4,6 +4,54 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1792377557133-6",
+    "title": "Shelton qualifies for second consecutive Nitto ATP Finals",
+    "summary": "Shelton qualifies for second consecutive Nitto ATP Finals. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-18T11:49:48.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOb1k1dzh6TFRMcjZIdU5hcU1wdEotYTIzZ2tweldpN0FudjctM1dvU2UxdkJ1QTkyMFlUUTBmQmhwWk1reGtlYnByTXJVcE9MendpNFE0b3loUXdUQmhmQW9rcUxKemwwRGFodGJMNHhtczZxaVVsWHpBNWxYSGl0MA?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "Circuit Wire"
+    ]
+  },
+  {
+    "id": "atp-live-1792377557133-7",
+    "title": "ATP Q&A: The next phase of progress under OneVision",
+    "summary": "ATP Q&A: The next phase of progress under OneVision. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-15T12:45:13.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5FQUxMTTRxc1o3SzA3c0pOQ29ZdkQ1dHdfbjhnT1ZIZ3RUanVKT2NteXlQcDFYVmMyVXJyZmF4a2lLMmUwOVlvVDRVWEZvdGNyaHc4dUhfUXhlcHVYZUY0Q01taWE3YmFMNmFkX0xoQQ?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "Circuit Wire"
+    ]
+  },
+  {
+    "id": "atp-live-1792377557133-8",
+    "title": "Jodar on Shanghai run: 'Happy about how things are going for me'",
+    "summary": "Jodar on Shanghai run: 'Happy about how things are going for me'. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-18T13:36:48.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE43NzExbUk0RloyYXhxNFM4Um1MektWcmtRcVU3SFNvaWNYUGgyc01DOEZnVlRWcmFqanRpNUhzbDJZSzVLWUVvZHRxUDlITnRQUzRSNnd3SU95TWIwTlpzVi1CMnRnLWFrRzQ0bDIyb040MzE5b0E?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "Circuit Wire"
+    ]
+  },
+  {
     "id": "atp-live-1792353318435-7",
     "title": "How much prize money will the Shanghai champion earn?",
     "summary": "How much prize money will the Shanghai champion earn?. Full real-time coverage direct from ATP Tour.",
@@ -956,73 +1004,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
       "Badosa",
       "Medical",
       "Comeback"
-    ]
-  },
-  {
-    "id": "feed-wd-medvedev-rome",
-    "title": "WALKOVER ALERT: Daniil Medvedev withdraws prior to Italian Open Quarterfinal due to groin strain",
-    "summary": "ATP Match Operations announced that Daniil Medvedev withdrew from his scheduled quarterfinal match in Rome after sustaining an acute adductor strain in the third set of his round-of-16 win.",
-    "category": "withdrawal",
-    "severity": "high",
-    "timestamp": "2026-05-16T12:00:00Z",
-    "source": "ATP Official Match Operations",
-    "url": "https://www.atptour.com/en/news/medvedev-rome-withdrawal-quarterfinal-2026",
-    "playerIds": [
-      "daniil-medvedev"
-    ],
-    "playerNames": [
-      "Daniil Medvedev"
-    ],
-    "tournamentName": "Italian Open",
-    "tournamentId": "italian-open-rome",
-    "verified": true,
-    "tags": [
-      "Walkover",
-      "Medvedev",
-      "Rome",
-      "Withdrawal"
-    ]
-  },
-  {
-    "id": "feed-wd-fils-cincy",
-    "title": "Official Retirement: Arthur Fils forced to retire down 4-6, 6-3, 3-1 in Cincinnati heat",
-    "summary": "Arthur Fils suffered heat cramps and dehydration during third-set play on Grandstand in Cincinnati, necessitating on-court medical assessment and retirement under ATP heat protocol.",
-    "category": "withdrawal",
-    "severity": "medium",
-    "timestamp": "2026-08-15T18:40:00Z",
-    "source": "ATP Official Match Operations",
-    "url": "https://www.atptour.com/en/news/fils-cincinnati-retirement-heat-protocol-2026",
-    "tournamentName": "Cincinnati Open",
-    "tournamentId": "cincinnati-open",
-    "verified": true,
-    "tags": [
-      "Retirement",
-      "Heat Protocol",
-      "Cincinnati"
-    ]
-  },
-  {
-    "id": "feed-wd-zverev-halle",
-    "title": "Alexander Zverev concedes walkover in Halle Semifinal due to foot blister infection",
-    "summary": "Alexander Zverev will not contest the Halle semifinals after medical staff diagnosed severe dermal infection beneath his left metatarsal requiring intravenous antibiotics.",
-    "category": "withdrawal",
-    "severity": "medium",
-    "timestamp": "2026-06-20T10:15:00Z",
-    "source": "ATP Tour Communications",
-    "url": "https://www.atptour.com/en/news/zverev-halle-walkover-foot-infection-2026",
-    "playerIds": [
-      "alexander-zverev"
-    ],
-    "playerNames": [
-      "Alexander Zverev"
-    ],
-    "tournamentName": "Terra Wortmann Open Halle",
-    "verified": true,
-    "tags": [
-      "Walkover",
-      "Zverev",
-      "Halle",
-      "Medical"
     ]
   }
 ];
