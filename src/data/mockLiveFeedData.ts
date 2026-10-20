@@ -4,6 +4,22 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1792464653838-4",
+    "title": "Davidovich Fokina: 'I cannot describe in words what I have achieved'",
+    "summary": "Davidovich Fokina: 'I cannot describe in words what I have achieved'. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-18T16:13:44.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQbzhoNXl6WnN3SnJCOGM3aXJkS2YxcHdKQS16WVdEdGdDZE9wdC1MSHMtVzdobG1reW43MzJQck1aUWxvM2wybTJmdDJuaER4MFVIMEVTLUVXZWlDaFpwUF9JWjYtMnVYMldHR0tGQmV6azF2eFNDVXFXaTNVRWZNLUJfWUQ?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "Circuit Wire"
+    ]
+  },
+  {
     "id": "atp-live-1792410227857-3",
     "title": "Jodar surges into qualifying position; Will four debutants reach Turin?",
     "summary": "Jodar surges into qualifying position; Will four debutants reach Turin?. Full real-time coverage direct from ATP Tour.",
@@ -967,30 +983,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
       "Knee",
       "Djokovic",
       "Wimbledon"
-    ]
-  },
-  {
-    "id": "feed-inj-rune-wrist",
-    "title": "Holger Rune completes wrist diagnostic evaluation; returns to full training regimen",
-    "summary": "Holger Rune experienced tendon irritation in his dominant wrist following back-to-back three-set matches. Scans showed no structural ligament damage and he resumed two-handed backhand drive drills.",
-    "category": "injury",
-    "severity": "low",
-    "timestamp": "2026-04-20T11:20:00Z",
-    "source": "ATP Tour Communications",
-    "url": "https://www.atptour.com/en/news/rune-wrist-update-spring-2026",
-    "playerIds": [
-      "holger-rune"
-    ],
-    "playerNames": [
-      "Holger Rune"
-    ],
-    "tournamentName": "Rolex Monte-Carlo Masters",
-    "tournamentId": "monte-carlo-masters",
-    "verified": true,
-    "tags": [
-      "Wrist",
-      "Rune",
-      "Monte Carlo"
     ]
   }
 ];

@@ -4855,7 +4855,7 @@ export const RANKINGS_TOP_500_WTA: PlayerRankSummary[] = [
     "country": "China",
     "countryCode": "CHN",
     "flag": "🇨🇳",
-    "age": 22,
+    "age": 23,
     "points": 266,
     "tournamentsPlayed": 29,
     "winPercentage": 66.5,
