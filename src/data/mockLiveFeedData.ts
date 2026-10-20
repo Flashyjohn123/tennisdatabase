@@ -4,6 +4,22 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1792493079175-3",
+    "title": "Scouting Report: Turin contenders Medvedev, Fils, Cobolli lead Almaty, Brussels, Lyon fields",
+    "summary": "Scouting Report: Turin contenders Medvedev, Fils, Cobolli lead Almaty, Brussels, Lyon fields. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-18T16:49:00.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1fVWZjNFJDbFdCUG5MTndzdnhmYVZ0T0J6amxOTVQyM0c3Qm90T3BROTZBcFY0TVFQMENUUVNkbkhMbzdwYWxRektaZS1COTdGMUliZ3hKUVZNTHhGR2doRF95b1pBdnA2Q0hzbXpESHcwbzlnZTVEYkNPVDFyUQ?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "Circuit Wire"
+    ]
+  },
+  {
     "id": "atp-live-1792464653838-4",
     "title": "Davidovich Fokina: 'I cannot describe in words what I have achieved'",
     "summary": "Davidovich Fokina: 'I cannot describe in words what I have achieved'. Full real-time coverage direct from ATP Tour.",
@@ -958,31 +974,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
       "Rybakina",
       "Recovery",
       "WTA Tour"
-    ]
-  },
-  {
-    "id": "feed-inj-djokovic-meniscus",
-    "title": "Novak Djokovic reports pain-free movement after right knee arthroscopic follow-up",
-    "summary": "Following periodic surgical review in Geneva, Novak Djokovic confirmed zero lateral knee effusion and excellent joint stability during maximum-load lateral sliding tests.",
-    "category": "injury",
-    "severity": "medium",
-    "timestamp": "2026-06-18T09:15:00Z",
-    "source": "ESPN News Services",
-    "url": "https://www.espn.com/tennis/story/_/id/40892341/novak-djokovic-knee-procedure-update",
-    "playerIds": [
-      "novak-djokovic"
-    ],
-    "playerNames": [
-      "Novak Djokovic"
-    ],
-    "tournamentName": "Wimbledon",
-    "tournamentId": "wimbledon",
-    "verified": true,
-    "tags": [
-      "Rehab",
-      "Knee",
-      "Djokovic",
-      "Wimbledon"
     ]
   }
 ];
