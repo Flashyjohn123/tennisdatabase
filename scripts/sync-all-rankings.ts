@@ -181,7 +181,7 @@ export async function syncNews() {
           source: 'ATP Tour',
           url,
           verified: true,
-          tags: ['ATP Tour', 'Live News', 'Circuit Wire']
+          tags: ['ATP Tour', 'Live News', 'News Outlet']
         };
       });
 

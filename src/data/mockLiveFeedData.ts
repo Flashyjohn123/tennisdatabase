@@ -192,7 +192,7 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "tags": [
       "ATP Tour",
       "Live News",
-      "Circuit Wire"
+      "News Outlet"
     ]
   },
   {
@@ -208,7 +208,7 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "tags": [
       "ATP Tour",
       "Live News",
-      "Circuit Wire"
+      "News Outlet"
     ]
   },
   {
@@ -224,7 +224,7 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "tags": [
       "ATP Tour",
       "Live News",
-      "Circuit Wire"
+      "News Outlet"
     ]
   },
   {
@@ -240,7 +240,7 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "tags": [
       "ATP Tour",
       "Live News",
-      "Circuit Wire"
+      "News Outlet"
     ]
   },
   {
@@ -256,7 +256,7 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "tags": [
       "ATP Tour",
       "Live News",
-      "Circuit Wire"
+      "News Outlet"
     ]
   },
   {
@@ -272,7 +272,7 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "tags": [
       "ATP Tour",
       "Live News",
-      "Circuit Wire"
+      "News Outlet"
     ]
   },
   {
@@ -288,7 +288,7 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "tags": [
       "ATP Tour",
       "Live News",
-      "Circuit Wire"
+      "News Outlet"
     ]
   },
   {
@@ -304,7 +304,7 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "tags": [
       "ATP Tour",
       "Live News",
-      "Circuit Wire"
+      "News Outlet"
     ]
   },
   {
@@ -320,7 +320,7 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "tags": [
       "ATP Tour",
       "Live News",
-      "Circuit Wire"
+      "News Outlet"
     ]
   },
   {
@@ -336,7 +336,7 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "tags": [
       "ATP Tour",
       "Live News",
-      "Circuit Wire"
+      "News Outlet"
     ]
   },
   {
@@ -352,7 +352,7 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "tags": [
       "ATP Tour",
       "Live News",
-      "Circuit Wire"
+      "News Outlet"
     ]
   },
   {
@@ -368,7 +368,7 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "tags": [
       "ATP Tour",
       "Live News",
-      "Circuit Wire"
+      "News Outlet"
     ]
   },
   {
@@ -384,7 +384,7 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "tags": [
       "ATP Tour",
       "Live News",
-      "Circuit Wire"
+      "News Outlet"
     ]
   },
   {
@@ -400,7 +400,7 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "tags": [
       "ATP Tour",
       "Live News",
-      "Circuit Wire"
+      "News Outlet"
     ]
   },
   {
@@ -416,7 +416,7 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "tags": [
       "ATP Tour",
       "Live News",
-      "Circuit Wire"
+      "News Outlet"
     ]
   },
   {
@@ -432,7 +432,7 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "tags": [
       "ATP Tour",
       "Live News",
-      "Circuit Wire"
+      "News Outlet"
     ]
   },
   {
@@ -448,7 +448,7 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "tags": [
       "ATP Tour",
       "Live News",
-      "Circuit Wire"
+      "News Outlet"
     ]
   },
   {
@@ -464,7 +464,7 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "tags": [
       "ATP Tour",
       "Live News",
-      "Circuit Wire"
+      "News Outlet"
     ]
   },
   {
@@ -480,7 +480,7 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "tags": [
       "ATP Tour",
       "Live News",
-      "Circuit Wire"
+      "News Outlet"
     ]
   },
   {
@@ -496,7 +496,7 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "tags": [
       "ATP Tour",
       "Live News",
-      "Circuit Wire"
+      "News Outlet"
     ]
   },
   {
@@ -512,7 +512,7 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "tags": [
       "ATP Tour",
       "Live News",
-      "Circuit Wire"
+      "News Outlet"
     ]
   },
   {
@@ -528,7 +528,7 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "tags": [
       "ATP Tour",
       "Live News",
-      "Circuit Wire"
+      "News Outlet"
     ]
   },
   {
@@ -544,7 +544,7 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "tags": [
       "ATP Tour",
       "Live News",
-      "Circuit Wire"
+      "News Outlet"
     ]
   },
   {

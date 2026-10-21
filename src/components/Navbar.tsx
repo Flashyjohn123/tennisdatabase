@@ -58,7 +58,7 @@ const CircuitProLogo: React.FC = () => (
 
 export const NAV_ITEMS = [
   { id: 'overview', label: 'Center Court', sub: 'Analytics Dashboard', icon: Trophy },
-  { id: 'live', label: 'Circuit Wire', sub: 'Live Feed & Intel', icon: Radio, isLive: true },
+  { id: 'live', label: 'News Outlet', sub: 'Live Feed & Intel', icon: Radio, isLive: true },
   { id: 'rankings', label: 'World Rankings', sub: 'ATP & WTA Top 500', icon: ListFilter },
   { id: 'tournaments', label: 'Grand Slam Calendar', sub: 'Tour Schedule', icon: Award },
   { id: 'players', label: 'Player Bios', sub: 'Athlete Database', icon: Users },

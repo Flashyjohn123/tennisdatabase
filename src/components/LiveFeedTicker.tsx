@@ -103,13 +103,13 @@ export const LiveFeedTicker: React.FC<LiveFeedTickerProps> = ({
       case 'withdrawal':
         return 'Official Withdrawal';
       case 'controversy':
-        return 'Circuit Inquiry';
+        return 'News Inquiry';
       case 'tournament_update':
         return 'Tournament Intel';
       case 'match_result':
         return 'Match Score';
       default:
-        return 'Circuit Dispatch';
+        return 'News Dispatch';
     }
   };
 
@@ -130,7 +130,7 @@ export const LiveFeedTicker: React.FC<LiveFeedTickerProps> = ({
           >
             <div className="w-1.5 h-1.5 rounded-full bg-theme-accent" />
             <span className="font-semibold text-white/80 group-hover:text-white transition-colors">
-              Circuit Wire
+              News Outlet
             </span>
           </button>
 

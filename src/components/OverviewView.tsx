@@ -1002,13 +1002,13 @@ export const OverviewView: React.FC<OverviewViewProps> = ({
           </div>
         </div>
 
-        {/* Right Column: Real-Time Circuit Dispatch Wire (5 cols) */}
+        {/* Right Column: Real-Time News Outlet Wire (5 cols) */}
         <div className="lg:col-span-5 flex flex-col justify-between space-y-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
               <Radio className="w-3.5 h-3.5 text-theme-accent animate-pulse" />
               <h2 className="font-display font-semibold text-lg text-white tracking-tight">
-                Circuit Wire
+                News Outlet
               </h2>
             </div>
 

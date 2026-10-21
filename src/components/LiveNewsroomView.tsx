@@ -131,7 +131,7 @@ export const LiveNewsroomView: React.FC<LiveNewsroomViewProps> = ({ onSelectPlay
       case 'controversy':
         return {
           icon: Scale,
-          label: 'Circuit Inquiry',
+          label: 'News Inquiry',
           badgeClass: 'bg-white/[0.04] text-purple-200 border-white/[0.08]',
         };
       case 'match_result':
@@ -149,7 +149,7 @@ export const LiveNewsroomView: React.FC<LiveNewsroomViewProps> = ({ onSelectPlay
       default:
         return {
           icon: Flame,
-          label: 'Circuit Dispatch',
+          label: 'News Dispatch',
           badgeClass: 'bg-white/[0.04] text-white/90 border-white/[0.08]',
         };
     }
@@ -194,12 +194,12 @@ export const LiveNewsroomView: React.FC<LiveNewsroomViewProps> = ({ onSelectPlay
                 <span className="w-2 h-2 rounded-full bg-rose-400 animate-pulse" />
                 <span className="font-mono text-xs uppercase tracking-widest text-theme-accent flex items-center gap-1.5">
                   <Radio className="w-3.5 h-3.5 text-rose-400" />
-                  Live Circuit Wire & Medical Terminal
+                  Live News Outlet & Medical Terminal
                 </span>
               </div>
 
               <h1 className="font-display font-semibold text-2xl sm:text-4xl text-white tracking-tight">
-                2026 Circuit Intelligence Wire
+                2026 News Outlet Intelligence Wire
               </h1>
               <div className="inline-flex items-center gap-1.5 mt-1 px-2.5 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/25 text-[11px] font-mono text-emerald-300">
                 <CheckCircle2 className="w-3 h-3 text-emerald-400" />
@@ -453,7 +453,7 @@ export const LiveNewsroomView: React.FC<LiveNewsroomViewProps> = ({ onSelectPlay
               <div className="flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-theme-accent" />
                 <h3 className="font-display font-semibold text-lg text-white">
-                  Broadcast Circuit Alert
+                  Broadcast News Alert
                 </h3>
               </div>
               <button
@@ -568,7 +568,7 @@ export const LiveNewsroomView: React.FC<LiveNewsroomViewProps> = ({ onSelectPlay
                   type="submit"
                   className="px-4 py-2 rounded-xl bg-white text-black hover:bg-white/90 text-xs font-medium"
                 >
-                  Publish to Circuit Wire
+                  Publish to News Outlet
                 </button>
               </div>
             </form>
