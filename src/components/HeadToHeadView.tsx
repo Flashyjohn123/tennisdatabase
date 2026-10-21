@@ -757,7 +757,7 @@ export const HeadToHeadView: React.FC<HeadToHeadViewProps> = ({
               <div className="flex items-center gap-2 mb-1.5">
                 <Swords className="w-4 h-4 text-theme-accent" />
                 <span className="font-mono text-xs uppercase tracking-widest text-theme-accent font-semibold">
-                  Head-to-Head Laboratory
+                  Head-to-Head
                 </span>
               </div>
               <h2 className="font-display font-semibold text-2xl sm:text-3xl text-white tracking-tight">
