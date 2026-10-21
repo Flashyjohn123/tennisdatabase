@@ -4,6 +4,22 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1792580171229-0",
+    "title": "Del Potro among 2027 nominees for International Tennis Hall of Fame",
+    "summary": "Del Potro among 2027 nominees for International Tennis Hall of Fame. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-19T17:49:32.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQMkJmLTM0TUViY2ZFVzBkYWo1YzBleG1hOXYyUDZpWkJIT0ZZNW1GQXcwMF92YS1WTE9CT2JhS1hRZ2o0S3ROdmd2aDA1Nk9HV2ZEajJyVUJaY2k0ZXlENUNsVHdzVFlsMW9FV0E3aURKRmlubjhCNXBqeTllRllPRGlKOVE?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "Circuit Wire"
+    ]
+  },
+  {
     "id": "atp-live-1792550709865-9",
     "title": "Jodar & Davidovich Fokina set for a high-stakes clash in Shanghai final",
     "summary": "Jodar & Davidovich Fokina set for a high-stakes clash in Shanghai final. Full real-time coverage direct from ATP Tour.",
@@ -942,31 +958,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
       "Sinner",
       "Medical",
       "Rehab"
-    ]
-  },
-  {
-    "id": "feed-inj-alcaraz-forearm",
-    "title": "Carlos Alcaraz undergoes MRI on right forearm pronator; cleared for clay competition",
-    "summary": "Carlos Alcaraz underwent diagnostic scans in Murcia confirming resolved muscular fatigue in his right hitting arm, clearing him for high-load baseline hitting at Roland Garros.",
-    "category": "injury",
-    "severity": "medium",
-    "timestamp": "2026-05-15T10:30:00Z",
-    "source": "ATP Tour Communications",
-    "url": "https://www.atptour.com/en/news/alcaraz-forearm-medical-clearance-may-2026",
-    "playerIds": [
-      "carlos-alcaraz"
-    ],
-    "playerNames": [
-      "Carlos Alcaraz"
-    ],
-    "tournamentName": "Roland Garros",
-    "tournamentId": "roland-garros",
-    "verified": true,
-    "tags": [
-      "Medical",
-      "Forearm",
-      "Alcaraz",
-      "Roland Garros"
     ]
   }
 ];
