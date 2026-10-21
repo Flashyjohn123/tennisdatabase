@@ -2605,7 +2605,7 @@ export const RANKINGS_TOP_500_WTA: PlayerRankSummary[] = [
     "country": "Slovakia",
     "countryCode": "SVK",
     "flag": "🇸🇰",
-    "age": 17,
+    "age": 18,
     "points": 504,
     "tournamentsPlayed": 17,
     "winPercentage": 72.8,

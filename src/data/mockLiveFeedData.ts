@@ -4,6 +4,22 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1792550709865-9",
+    "title": "Jodar & Davidovich Fokina set for a high-stakes clash in Shanghai final",
+    "summary": "Jodar & Davidovich Fokina set for a high-stakes clash in Shanghai final. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-17T21:18:04.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNMDlaVFBkejBBcmZnQ2FkR0h1MUQ5Mjk5YzFNbjF3ZTFwZml2c0ZITDNOS3FOUy10dHpwbE5NZXRMTGQ4ZUtaVC1pRVN6M1dGV3ZEN01pSEx2X3d1elpxOWsyZkFuUGg5Y2lhdVN5dkFLRjZVRDlhOU5fR2d2MVF2OE1hbDJYSm5EMGFr?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "Circuit Wire"
+    ]
+  },
+  {
     "id": "atp-live-1792493079175-3",
     "title": "Scouting Report: Turin contenders Medvedev, Fils, Cobolli lead Almaty, Brussels, Lyon fields",
     "summary": "Scouting Report: Turin contenders Medvedev, Fils, Cobolli lead Almaty, Brussels, Lyon fields. Full real-time coverage direct from ATP Tour.",
@@ -951,29 +967,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
       "Forearm",
       "Alcaraz",
       "Roland Garros"
-    ]
-  },
-  {
-    "id": "feed-inj-rybakina-medical",
-    "title": "Elena Rybakina receives comprehensive medical clearance following gastrointestinal recovery",
-    "summary": "Elena Rybakina has completed comprehensive clinical blood testing and hydration therapy in Dubai, receiving total medical clearance from WTA physicians ahead of the North American hard-court season.",
-    "category": "injury",
-    "severity": "medium",
-    "timestamp": "2026-07-22T14:40:00Z",
-    "source": "WTA Insider",
-    "url": "https://www.wtatennis.com/news/4095420/elena-rybakina-medical-update-hardcourt-swing",
-    "playerIds": [
-      "elena-rybakina"
-    ],
-    "playerNames": [
-      "Elena Rybakina"
-    ],
-    "verified": true,
-    "tags": [
-      "Medical",
-      "Rybakina",
-      "Recovery",
-      "WTA Tour"
     ]
   }
 ];
