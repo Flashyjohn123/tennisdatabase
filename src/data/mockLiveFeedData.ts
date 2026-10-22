@@ -4,6 +4,38 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1792702975660-0",
+    "title": "Celebrating newly retired David Goffin: 'I gave everything until the very end'",
+    "summary": "Celebrating newly retired David Goffin: 'I gave everything until the very end'. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-22T14:56:32.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1tYTd2ZzVKUUhvOU5zdk1yYnJIdTI1TWpFMmdCUHBleC1vMTlFWnhxTHhJNWgwMnpYeXA3RW5Ja3lKc0sxSUY3SUM4OWRXYXprZUdyMU0wQ1VsLWp3ajhSQ2RKVVM5WnlZTGxsbGJkMjh4OTJObUVF?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1792702975660-8",
+    "title": "Khachanov saves 5 MPs in Almaty: 'I am speechless'; Medvedev advances",
+    "summary": "Khachanov saves 5 MPs in Almaty: 'I am speechless'; Medvedev advances. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-22T15:51:32.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1SRXpoTkNXUjBUbDg0RC14RHN6eDNNRWhkZFdEVlBaU29qMjZ4Nmtra3pmM2lPaHdlUWp5cmVNSk5EeTg5SzRZdEpsaTdkRkh6aHZ1aVdidFc4U3VLTTNyRHI3WklvZVFwaFZZ?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1792686227496-0",
     "title": "ATP Safe Sport prevents 234,000 abusive comments reaching players & fans",
     "summary": "ATP Safe Sport prevents 234,000 abusive comments reaching players & fans. Full real-time coverage direct from ATP Tour.",
@@ -878,56 +910,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
       "ATP Rankings",
       "WTA Rankings",
       "World No 1"
-    ]
-  },
-  {
-    "id": "feed-brk-alcaraz-career-slam",
-    "title": "Carlos Alcaraz completes Career Grand Slam at 22 with historic Australian Open title",
-    "summary": "By capturing Melbourne Park alongside his Roland Garros, Wimbledon, and US Open triumphs, Carlos Alcaraz becomes the youngest man in tennis history to achieve the Career Grand Slam across all three surfaces.",
-    "category": "breaking",
-    "severity": "urgent",
-    "timestamp": "2026-02-01T12:00:00Z",
-    "source": "ESPN News Services",
-    "url": "https://www.espn.com/tennis/story/_/id/40982314/carlos-alcaraz-wins-australian-open-completes-career-grand-slam",
-    "playerIds": [
-      "carlos-alcaraz"
-    ],
-    "playerNames": [
-      "Carlos Alcaraz"
-    ],
-    "tournamentName": "Australian Open",
-    "tournamentId": "australian-open",
-    "verified": true,
-    "tags": [
-      "Career Grand Slam",
-      "Alcaraz",
-      "History",
-      "Australian Open"
-    ]
-  },
-  {
-    "id": "feed-brk-sabalenka-sunshine",
-    "title": "Aryna Sabalenka sweeps Miami Open to complete Sunshine Double and reach 76 consecutive weeks at No. 1",
-    "summary": "Aryna Sabalenka capped an untouchable spring hard-court swing with victory in Miami following her Indian Wells title, achieving the coveted Sunshine Double while hitting 76 straight weeks atop the WTA rankings.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-03-31T20:30:00Z",
-    "source": "WTA Insider",
-    "url": "https://www.wtatennis.com/news/3981245/sabalenka-completes-sunshine-double-with-miami-open-crown",
-    "playerIds": [
-      "aryna-sabalenka"
-    ],
-    "playerNames": [
-      "Aryna Sabalenka"
-    ],
-    "tournamentName": "Miami Open",
-    "tournamentId": "miami-open",
-    "verified": true,
-    "tags": [
-      "Sunshine Double",
-      "Sabalenka",
-      "Miami Open",
-      "WTA No 1"
     ]
   }
 ];
