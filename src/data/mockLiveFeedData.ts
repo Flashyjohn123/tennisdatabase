@@ -4,6 +4,70 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1792686227496-0",
+    "title": "ATP Safe Sport prevents 234,000 abusive comments reaching players & fans",
+    "summary": "ATP Safe Sport prevents 234,000 abusive comments reaching players & fans. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-22T08:06:32.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBMTlYtZllLbUlPbC04ZXp0anY4RzkwQ3JaMzctb0trQ3FoSWhwQm82OFFfblNoV3hIRjdtV1FYWEc3dG54VHRnb0hoLVpqa0loMENqbTRleVp2a2VfcV9JRlVOd1FfMzBaQzROZnJYQ2lNdnFVenFSV1U2MDhMUQ?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1792686227497-2",
+    "title": "Cerundolo on his magic Miami breakthrough: 'I felt like I was in a movie'",
+    "summary": "Cerundolo on his magic Miami breakthrough: 'I felt like I was in a movie'. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-22T09:01:32.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBDd2hJajVibjh4b2Y1VnQ4ZTJ6Mzg0cjNhTUQ1RlNidkkycTRjUlZKVnRremxhbXBRT0J3YmJtWDc5RnhUbVV6blMzbEVHR3ZIdFZOZkZrblgzaDV0cmxfWTYwdEV4MWtWY0JLYVVWOGQ1TmhSNmFyTG9iSmF2NWc?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1792686227497-3",
+    "title": "Tsitsipas' touching gesture to Kukushkin after Kazakhstani's final match in Almaty",
+    "summary": "Tsitsipas' touching gesture to Kukushkin after Kazakhstani's final match in Almaty. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-21T21:36:28.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNTWhzaGlDZnFpWm1FNjZiSEZNbUtZSmg3d0RFbUJEVl9qVDNzUE5QNUozMjk3UzhXOXFBOHZzbHRnNUwtUUd3TDNOX0tOWFpMbVNuclY5RmJ6cUdLNlVGUjRLdy1CSHdMYzFidHgwRnJMaGwyeEVzWlNCU0dyVEhMRnJhVWRFb00?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1792686227497-8",
+    "title": "Khachanov saves 5 MPs in Almaty: 'I am speechless'",
+    "summary": "Khachanov saves 5 MPs in Almaty: 'I am speechless'. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-22T13:06:32.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1SRXpoTkNXUjBUbDg0RC14RHN6eDNNRWhkZFdEVlBaU29qMjZ4Nmtra3pmM2lPaHdlUWp5cmVNSk5EeTg5SzRZdEpsaTdkRkh6aHZ1aVdidFc4U3VLTTNyRHI3WklvZVFwaFZZ?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1792580171229-0",
     "title": "Del Potro among 2027 nominees for International Tennis Hall of Fame",
     "summary": "Del Potro among 2027 nominees for International Tennis Hall of Fame. Full real-time coverage direct from ATP Tour.",
@@ -864,100 +928,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
       "Sabalenka",
       "Miami Open",
       "WTA No 1"
-    ]
-  },
-  {
-    "id": "feed-brk-anisimova-top5",
-    "title": "Amanda Anisimova continues sensational comeback, breaking into WTA Top 5 after North American swing",
-    "summary": "Following runs to the Toronto title and Cincinnati semifinals, 25-year-old American Amanda Anisimova vaults into the World Top 5, cementing one of the most inspirational resurgences in modern tennis.",
-    "category": "breaking",
-    "severity": "medium",
-    "timestamp": "2026-08-24T14:10:00Z",
-    "source": "ESPN Tennis",
-    "url": "https://www.espn.com/tennis/story/_/id/41129983/amanda-anisimova-resurgence-into-wta-top-5",
-    "playerIds": [
-      "amanda-anisimova"
-    ],
-    "playerNames": [
-      "Amanda Anisimova"
-    ],
-    "verified": true,
-    "tags": [
-      "Comeback",
-      "Anisimova",
-      "WTA Rankings",
-      "Top 5"
-    ]
-  },
-  {
-    "id": "feed-brk-swiatek-roig",
-    "title": "Iga Świątek partners with renowned strategist Francisco Roig to sharpen hard-court versatility",
-    "summary": "World No. 2 Iga Świątek has brought veteran Spanish coach Francisco Roig into her technical corner, targeting heightened offensive net transitions and second-serve velocity ahead of the Asian swing.",
-    "category": "breaking",
-    "severity": "medium",
-    "timestamp": "2026-07-28T11:00:00Z",
-    "source": "ESPN Tennis",
-    "url": "https://www.espn.com/tennis/story/_/id/41058291/iga-swiatek-hires-coach-francisco-roig",
-    "playerIds": [
-      "iga-swiatek"
-    ],
-    "playerNames": [
-      "Iga Świątek"
-    ],
-    "verified": true,
-    "tags": [
-      "Coaching",
-      "Swiatek",
-      "Francisco Roig",
-      "Tactics"
-    ]
-  },
-  {
-    "id": "feed-brk-djokovic-sf-quote",
-    "title": "Novak Djokovic advances to 13th Australian Open Semifinal: \"I'm not waving any white flags\"",
-    "summary": "Defying critics and physical fatigue, 24-time Grand Slam champion Novak Djokovic reached his 13th career Melbourne semifinal, telling reporters on Rod Laver Arena that his hunger for major silverware remains undiminished.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-01-28T13:45:00Z",
-    "source": "ATP Tour",
-    "url": "https://www.atptour.com/en/news/djokovic-australian-open-2026-semifinal-white-flag",
-    "playerIds": [
-      "novak-djokovic"
-    ],
-    "playerNames": [
-      "Novak Djokovic"
-    ],
-    "tournamentName": "Australian Open",
-    "tournamentId": "australian-open",
-    "verified": true,
-    "tags": [
-      "Djokovic",
-      "Australian Open",
-      "Semifinal",
-      "Legend"
-    ]
-  },
-  {
-    "id": "feed-inj-sinner-knee",
-    "title": "Jannik Sinner undergoes preventative knee scan; medical staff confirms rapid rehabilitation progress",
-    "summary": "World No. 1 Jannik Sinner completed MRI evaluations on his right knee patellar tendon in Monaco. The medical bulletin confirmed minimal inflammation with full clearance for tournament hard-court competition.",
-    "category": "injury",
-    "severity": "high",
-    "timestamp": "2026-08-10T16:20:00Z",
-    "source": "ESPN Tennis",
-    "url": "https://www.espn.com/tennis/story/_/id/41094321/jannik-sinner-knee-evaluation-recovery-update",
-    "playerIds": [
-      "jannik-sinner"
-    ],
-    "playerNames": [
-      "Jannik Sinner"
-    ],
-    "verified": true,
-    "tags": [
-      "Knee",
-      "Sinner",
-      "Medical",
-      "Rehab"
     ]
   }
 ];
