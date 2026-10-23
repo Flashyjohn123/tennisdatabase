@@ -4,6 +4,22 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1792723659029-8",
+    "title": "Bergs 'zones in' for home win in Brussels",
+    "summary": "Bergs 'zones in' for home win in Brussels. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-20T18:04:32.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5Hb1lCS21uU3R4ZnlGMXFJMVd5YklLNk9PVVIxaUgzRTRBS0xQQjhMbHhreEZSSVFwNWNaYmxpbzdQTUE1dWhBTDJlNHp3bldqa0FESUpXZE42RWtJN1RSTFZHbTM4UVJmbnN2aA?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1792702975660-0",
     "title": "Celebrating newly retired David Goffin: 'I gave everything until the very end'",
     "summary": "Celebrating newly retired David Goffin: 'I gave everything until the very end'. Full real-time coverage direct from ATP Tour.",
@@ -877,39 +893,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
       "Gauff",
       "Arthur Ashe Stadium",
       "WTA"
-    ]
-  },
-  {
-    "id": "feed-brk-uso-2026-rankings",
-    "title": "Official Rankings Released: Sinner & Sabalenka retain World No. 1; Zverev closes gap at No. 3",
-    "summary": "The post-US Open PIF ATP and WTA rankings are officially released: Jannik Sinner remains World No. 1 (11,180 pts), with Carlos Alcaraz at No. 2 (9,940 pts) and two-time 2026 major champion Alexander Zverev surging to 10,450 pts at No. 3. On the WTA side, Aryna Sabalenka solidifies No. 1 (9,730 pts), with Iga Świątek at No. 2 (8,955 pts) and finalist Coco Gauff holding No. 3 (6,830 pts).",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-09-14T08:00:00Z",
-    "source": "ATP Tour Communications",
-    "url": "https://www.atptour.com/en/news/atp-rankings-update-september-2026",
-    "playerIds": [
-      "jannik-sinner",
-      "alexander-zverev",
-      "carlos-alcaraz",
-      "aryna-sabalenka",
-      "iga-swiatek",
-      "coco-gauff"
-    ],
-    "playerNames": [
-      "Jannik Sinner",
-      "Alexander Zverev",
-      "Carlos Alcaraz",
-      "Aryna Sabalenka",
-      "Iga Świątek",
-      "Coco Gauff"
-    ],
-    "verified": true,
-    "tags": [
-      "Rankings",
-      "ATP Rankings",
-      "WTA Rankings",
-      "World No 1"
     ]
   }
 ];
