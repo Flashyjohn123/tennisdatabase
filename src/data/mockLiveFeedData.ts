@@ -4,6 +4,54 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1792788651672-0",
+    "title": "Medvedev continues Almaty title defence, Tsitsipas reaches SFs",
+    "summary": "Medvedev continues Almaty title defence, Tsitsipas reaches SFs. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-23T14:17:20.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9pdmpVQWgxY25uWlo0NzB3c0xpZlozRkhGMU5sTVBNMmZzYzZvUEVUNmhNcHNxNFV1bFVIX09NdFRYbEE0Nk1IcXJKVUFrYWtyR0x4UFBhNThDdlhEVThvY0hqNlBOWC1uSGI0ZEFNRzdJaTB5?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1792788651672-3",
+    "title": "Cerundolo on his magical Miami breakthrough: 'I felt like I was in a movie'",
+    "summary": "Cerundolo on his magical Miami breakthrough: 'I felt like I was in a movie'. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-22T09:01:32.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBDd2hJajVibjh4b2Y1VnQ4ZTJ6Mzg0cjNhTUQ1RlNidkkycTRjUlZKVnRremxhbXBRT0J3YmJtWDc5RnhUbVV6blMzbEVHR3ZIdFZOZkZrblgzaDV0cmxfWTYwdEV4MWtWY0JLYVVWOGQ1TmhSNmFyTG9iSmF2NWc?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1792788651672-4",
+    "title": "Fritz, Paul lift lid on Turin ambitions as Live Race heats up",
+    "summary": "Fritz, Paul lift lid on Turin ambitions as Live Race heats up. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-23T17:33:52.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNbzJTcmQ0X21vWDQ3VVgzWjFId2JlN3dzX0RiWDZ0UjVlRjJQR0lreEtHbkc3TlV2cVlKX3cwOWFWdTJUVVdXSUdZMlk1VnBaSERqakVNMkJKcF9QVkhQTUx2ekpNZzVaWjkzc0RkYUpOMGFZLWlweEk1NVRKSkwydExqbTZhdw?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1792771960657-4",
     "title": "Mannarino upsets Rublev, maintains impressive Almaty record, Tsitsipas ends Kukushkin's career",
     "summary": "Mannarino upsets Rublev, maintains impressive Almaty record, Tsitsipas ends Kukushkin's career. Full real-time coverage direct from ATP Tour.",
@@ -804,83 +852,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
       "Mirra Andreeva",
       "Champion",
       "Rankings"
-    ]
-  },
-  {
-    "id": "feed-wuhan-2026-swiatek",
-    "title": "Iga Świątek earns 40th win of 2026 season, marches into Wuhan Open quarterfinals",
-    "summary": "Four-time Roland Garros champion Iga Świątek delivered a flawless serving display to claim her 40th match victory of the 2026 campaign, booking a quarterfinal showdown in Wuhan.",
-    "category": "tournament_update",
-    "severity": "medium",
-    "timestamp": "2026-10-14T07:30:00Z",
-    "source": "WTA Tennis",
-    "url": "https://www.wtatennis.com/news/4592000/swiatek-earns-40th-win-of-season-in-wuhan",
-    "playerIds": [
-      "iga-swiatek"
-    ],
-    "playerNames": [
-      "Iga Świątek"
-    ],
-    "tournamentName": "Wuhan Open",
-    "tournamentId": "wuhan-open",
-    "verified": true,
-    "tags": [
-      "Iga Swiatek",
-      "Wuhan Open",
-      "40 Wins",
-      "Milestone"
-    ]
-  },
-  {
-    "id": "feed-shanghai-2026-paul-bergs",
-    "title": "Tommy Paul halts Zizou Bergs to book Shanghai Rolex Masters quarterfinal spot",
-    "summary": "American standout Tommy Paul survived a blistering challenge from Belgium’s Zizou Bergs, capturing a 6-3, 3-6, 6-4 victory to advance to his second ATP Masters 1000 quarterfinal of the season.",
-    "category": "match_result",
-    "severity": "medium",
-    "timestamp": "2026-10-14T06:00:00Z",
-    "source": "ATP Tour",
-    "url": "https://www.atptour.com/en/news/paul-halts-bergs-shanghai-2026",
-    "playerIds": [
-      "tommy-paul"
-    ],
-    "playerNames": [
-      "Tommy Paul"
-    ],
-    "tournamentName": "Rolex Shanghai Masters",
-    "tournamentId": "shanghai-masters",
-    "verified": true,
-    "tags": [
-      "Tommy Paul",
-      "Shanghai Masters",
-      "Quarterfinals"
-    ]
-  },
-  {
-    "id": "feed-brk-uso-2026-men",
-    "title": "Alexander Zverev conquers New York! Defeats Ben Shelton in four sets to capture 2026 US Open crown",
-    "summary": "Alexander Zverev produced an extraordinary display on Arthur Ashe Stadium to defeat American phenom Ben Shelton 6-3, 7-6(2), 5-7, 6-2, securing his second Grand Slam title of 2026 following his Roland Garros triumph.",
-    "category": "breaking",
-    "severity": "urgent",
-    "timestamp": "2026-09-13T23:30:00Z",
-    "source": "ESPN Tennis",
-    "url": "https://www.espn.com/tennis/story/_/id/41235678/alexander-zverev-defeats-ben-shelton-us-open-final-2026",
-    "playerIds": [
-      "alexander-zverev",
-      "ben-shelton"
-    ],
-    "playerNames": [
-      "Alexander Zverev",
-      "Ben Shelton"
-    ],
-    "tournamentName": "US Open",
-    "tournamentId": "us-open",
-    "verified": true,
-    "tags": [
-      "US Open Champion",
-      "Zverev",
-      "Shelton",
-      "Arthur Ashe Stadium",
-      "Grand Slam"
     ]
   }
 ];
