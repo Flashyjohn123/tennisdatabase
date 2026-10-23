@@ -4,6 +4,22 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1792771960657-4",
+    "title": "Mannarino upsets Rublev, maintains impressive Almaty record, Tsitsipas ends Kukushkin's career",
+    "summary": "Mannarino upsets Rublev, maintains impressive Almaty record, Tsitsipas ends Kukushkin's career. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-21T15:55:46.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1DaG0xZlhkLU5GUi03alM3U3U0TlNzMk1zcENGY0xkSEQ3dHp0anlEWmtsTlNISUIxY3ZMblduSUxoeHpvOEZacHhNbnZ2TDJGNnJ3WGpLOUh3QXRzZGo4cHpjcGNQazF5TFpVRQ?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1792723659029-8",
     "title": "Bergs 'zones in' for home win in Brussels",
     "summary": "Bergs 'zones in' for home win in Brussels. Full real-time coverage direct from ATP Tour.",
@@ -865,34 +881,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
       "Shelton",
       "Arthur Ashe Stadium",
       "Grand Slam"
-    ]
-  },
-  {
-    "id": "feed-brk-uso-2026-women",
-    "title": "Aryna Sabalenka captures second US Open title with fierce 3-set triumph over Coco Gauff",
-    "summary": "World No. 1 Aryna Sabalenka withstood an electric Arthur Ashe crowd backing American Coco Gauff, firing 42 winners to secure a 6-3, 4-6, 6-4 victory and her fifth career Grand Slam singles title.",
-    "category": "breaking",
-    "severity": "urgent",
-    "timestamp": "2026-09-12T23:45:00Z",
-    "source": "WTA Tennis",
-    "url": "https://www.wtatennis.com/news/4102941/sabalenka-edges-gauff-in-three-set-thriller-to-capture-us-open-title",
-    "playerIds": [
-      "aryna-sabalenka",
-      "coco-gauff"
-    ],
-    "playerNames": [
-      "Aryna Sabalenka",
-      "Coco Gauff"
-    ],
-    "tournamentName": "US Open",
-    "tournamentId": "us-open",
-    "verified": true,
-    "tags": [
-      "US Open Champion",
-      "Sabalenka",
-      "Gauff",
-      "Arthur Ashe Stadium",
-      "WTA"
     ]
   }
 ];
