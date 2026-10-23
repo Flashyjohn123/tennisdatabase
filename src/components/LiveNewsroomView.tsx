@@ -194,19 +194,19 @@ export const LiveNewsroomView: React.FC<LiveNewsroomViewProps> = ({ onSelectPlay
                 <span className="w-2 h-2 rounded-full bg-rose-400 animate-pulse" />
                 <span className="font-mono text-xs uppercase tracking-widest text-theme-accent flex items-center gap-1.5">
                   <Radio className="w-3.5 h-3.5 text-rose-400" />
-                  Live News Outlet & Medical Terminal
+                  Live News & Updates
                 </span>
               </div>
 
               <h1 className="font-display font-semibold text-2xl sm:text-4xl text-white tracking-tight">
-                2026 News Outlet Intelligence Wire
+                Tour News & Updates
               </h1>
               <div className="inline-flex items-center gap-1.5 mt-1 px-2.5 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/25 text-[11px] font-mono text-emerald-300">
                 <CheckCircle2 className="w-3 h-3 text-emerald-400" />
-                <span>Verified Official Sources Only: ESPN • ATP • WTA</span>
+                <span>Verified Official Sources: ESPN • ATP • WTA</span>
               </div>
               <p className="text-xs sm:text-sm text-white/60 mt-1.5 max-w-2xl font-normal">
-                Real-time official walkovers, tournament draw bulletins, court-side medical advisories, and player telemetry strictly aggregated and fact-checked from ESPN, ATP, and WTA communications.
+                Real-time official walkovers, tournament draw bulletins, injury updates, and match results from ESPN, ATP, and WTA communications.
               </p>
             </div>
 

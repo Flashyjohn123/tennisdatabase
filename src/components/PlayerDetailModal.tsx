@@ -320,10 +320,10 @@ export const PlayerDetailModal: React.FC<PlayerDetailModalProps> = ({
             <div className="bg-black/40 border border-white/[0.06] rounded-xl p-5">
               <div className="flex items-center justify-between mb-4 pb-2 border-b border-white/[0.06]">
                 <h4 className="text-[11px] uppercase font-mono tracking-widest text-white/50">
-                  Surface Mastery Breakdown
+                  Surface Performance Breakdown
                 </h4>
                 <span className="text-[10px] font-mono text-white/40 uppercase tracking-wider">
-                  Telemetry Gauges
+                  Win Rates
                 </span>
               </div>
 

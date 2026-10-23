@@ -100,7 +100,7 @@ export const CommandRail: React.FC<CommandRailProps> = ({
                 </span>
               </div>
               <p className="font-mono text-[9px] uppercase tracking-widest text-white/35 mt-0.5">
-                Sports Intelligence Hub
+                Pro Tennis Tracker
               </p>
             </div>
           </div>
@@ -133,7 +133,7 @@ export const CommandRail: React.FC<CommandRailProps> = ({
         {/* Main Navigation Sections */}
         <div className="px-3 py-3 flex-1">
           <div className="text-[9px] font-mono uppercase tracking-widest text-white/35 px-2 mb-2">
-            Command Modules
+            Navigation
           </div>
           <nav className="space-y-1">
             {NAV_ITEMS.map((item) => {

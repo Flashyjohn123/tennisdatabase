@@ -1485,10 +1485,10 @@ export const HeadToHeadView: React.FC<HeadToHeadViewProps> = ({
           <div className="flex items-center justify-between pb-4 mb-6 border-b border-white/[0.06]">
             <div>
               <h3 className="font-display font-semibold text-lg sm:text-xl text-white tracking-tight">
-                Tale of the Tape Telemetry
+                Head-to-Head Comparison
               </h3>
               <p className="font-mono text-[10px] uppercase tracking-widest text-white/40 mt-0.5">
-                Head-to-head career honors, serve firepower, clutch execution, and surface mastery
+                Career records, serve performance, return stats, and surface breakdown
               </p>
             </div>
 
@@ -1500,12 +1500,12 @@ export const HeadToHeadView: React.FC<HeadToHeadViewProps> = ({
           </div>
 
           <div className="space-y-6">
-            {/* 1. Career Honours & Biometrics */}
+            {/* 1. Career Titles & Profile */}
             <div>
               <div className="flex items-center gap-2 mb-2.5 pb-2 border-b border-white/[0.05]">
                 <Award className="w-3.5 h-3.5 text-white/40" />
                 <span className="font-mono text-[10px] uppercase tracking-widest text-white/50 font-semibold">
-                  Career Honours & Biometrics
+                  Career Titles & Profile
                 </span>
               </div>
               <div className="space-y-2">
@@ -1554,12 +1554,12 @@ export const HeadToHeadView: React.FC<HeadToHeadViewProps> = ({
               </div>
             </div>
 
-            {/* 2. Serve Telemetry */}
+            {/* 2. Serve Stats */}
             <div>
               <div className="flex items-center gap-2 mb-2.5 pb-2 border-b border-white/[0.05]">
                 <Zap className="w-3.5 h-3.5 text-amber-300" />
                 <span className="font-mono text-[10px] uppercase tracking-widest text-amber-200/80 font-semibold">
-                  Serve Telemetry
+                  Serve Stats
                 </span>
               </div>
               <div className="space-y-2">
@@ -1590,12 +1590,12 @@ export const HeadToHeadView: React.FC<HeadToHeadViewProps> = ({
               </div>
             </div>
 
-            {/* 3. Return & Clutch Telemetry */}
+            {/* 3. Return & Clutch Stats */}
             <div>
               <div className="flex items-center gap-2 mb-2.5 pb-2 border-b border-white/[0.05]">
                 <Shield className="w-3.5 h-3.5 text-sky-400" />
                 <span className="font-mono text-[10px] uppercase tracking-widest text-sky-200/80 font-semibold">
-                  Return & Clutch Telemetry
+                  Return & Clutch Stats
                 </span>
               </div>
               <div className="space-y-2">
@@ -1674,10 +1674,10 @@ export const HeadToHeadView: React.FC<HeadToHeadViewProps> = ({
           <div className="flex flex-wrap items-center justify-between gap-3 pb-4 mb-6 border-b border-white/[0.06]">
             <div>
               <h3 className="font-display font-semibold text-lg sm:text-xl text-white tracking-tight">
-                Surface Mastery Duel Telemetry
+                Surface Win Rates
               </h3>
               <p className="font-mono text-[10px] uppercase tracking-widest text-white/40 mt-0.5">
-                Comparative circular win-rate gauges across all official court surfaces
+                Head-to-head win percentage across Hard, Clay, and Grass courts
               </p>
             </div>
 
