@@ -4,6 +4,38 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1792872100213-0",
+    "title": "Cobolli’s Turin mission: A dream within reach",
+    "summary": "Cobolli’s Turin mission: A dream within reach. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-24T06:59:23.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9ON3lZbktNS3p5UHc4czJaaDlGU0hqVHBxdWdWbkUyOU84eE9ydHRsXzBKT1hxMzhEcTZwc0RGdlNsM2QtWEtPOXl1aVptNVdVbHY0SFJfMkU1b2F3bHN1V0F6SDNlczZvT196d3lmeDAzQQ?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1792872100213-4",
+    "title": "Fils converts sixth MP to down Michelsen in Brussels, boost Turin hopes",
+    "summary": "Fils converts sixth MP to down Michelsen in Brussels, boost Turin hopes. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-23T22:17:46.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9FT2wwY0FWTEt5TXJMOFRWV1ptWmN2RG40SVc2UmlZc0QxQXpZNEZreXZyejROd2FOX3F2aUNLeUx3bDdiX1BpNHlsRUU0TGs5M29lYkI1YndjLVBXd3JLYmhQT1RKbWFTd0EyYVVNdlZuZVRqblE?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1792854566339-4",
     "title": "Fritz impresses in Lyon, sets Paul SF clash",
     "summary": "Fritz impresses in Lyon, sets Paul SF clash. Full real-time coverage direct from ATP Tour.",
@@ -779,58 +811,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
       "Upset",
       "WTA 1000",
       "Asian Swing"
-    ]
-  },
-  {
-    "id": "feed-shanghai-2026-medvedev",
-    "title": "Daniil Medvedev continues Shanghai love affair, defeats Stefanos Tsitsipas to reach quarterfinals",
-    "summary": "Former Shanghai champion Daniil Medvedev neutralized Stefanos Tsitsipas with relentless deep baseline exchanges to seal a 6-4, 6-3 victory, setting up a blockbuster quarterfinal clash at the Rolex Shanghai Masters.",
-    "category": "match_result",
-    "severity": "high",
-    "timestamp": "2026-10-14T12:00:00Z",
-    "source": "ATP Tour",
-    "url": "https://www.atptour.com/en/news/medvedev-tsitsipas-shanghai-2026-r16",
-    "playerIds": [
-      "daniil-medvedev",
-      "stefanos-tsitsipas"
-    ],
-    "playerNames": [
-      "Daniil Medvedev",
-      "Stefanos Tsitsipas"
-    ],
-    "tournamentName": "Rolex Shanghai Masters",
-    "tournamentId": "shanghai-masters",
-    "verified": true,
-    "tags": [
-      "Rolex Shanghai Masters",
-      "Medvedev",
-      "Tsitsipas",
-      "ATP Masters 1000"
-    ]
-  },
-  {
-    "id": "feed-shanghai-2026-djokovic",
-    "title": "Novak Djokovic surges into Shanghai quarterfinals, closing in on historic 100th career ATP crown",
-    "summary": "World No. 8 Novak Djokovic produced a vintage masterclass in Shanghai, firing 31 winners to reach the quarterfinals as he targets his milestone 100th career singles title on the ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-14T10:15:00Z",
-    "source": "ATP Tour Communications",
-    "url": "https://www.atptour.com/en/news/djokovic-shanghai-2026-chasing-100th-title",
-    "playerIds": [
-      "novak-djokovic"
-    ],
-    "playerNames": [
-      "Novak Djokovic"
-    ],
-    "tournamentName": "Rolex Shanghai Masters",
-    "tournamentId": "shanghai-masters",
-    "verified": true,
-    "tags": [
-      "Novak Djokovic",
-      "100 Titles",
-      "Shanghai Masters",
-      "Milestone"
     ]
   }
 ];
