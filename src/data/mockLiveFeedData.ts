@@ -4,6 +4,22 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1792809875637-7",
+    "title": "Goffin keeps career alive with escape win in Brussels: 'Tomorrow we do it again'",
+    "summary": "Goffin keeps career alive with escape win in Brussels: 'Tomorrow we do it again'. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-21T20:41:01.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9UbHhMWHJ6SWUxUFEtYTB0Sy1wUTBzNlZRUk9MXzdLa0pCd01BeXE5VUlOMHBNcG4tdmQtZ1ZGbDdNZVRsLWdOTk41d0lBbHRBQkFGdlJFbTNncXdva0RyNktoWV9XMi01SVhKSWYzTmkwSVJFcDFtR05R?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1792788651672-0",
     "title": "Medvedev continues Almaty title defence, Tsitsipas reaches SFs",
     "summary": "Medvedev continues Almaty title defence, Tsitsipas reaches SFs. Full real-time coverage direct from ATP Tour.",
@@ -824,34 +840,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
       "Pegula",
       "Wuhan Open",
       "Comeback"
-    ]
-  },
-  {
-    "id": "feed-beijing-2026-zheng-andreeva",
-    "title": "Zheng Qinwen captures Beijing China Open crown; Mirra Andreeva ascends to career-high World No. 3",
-    "summary": "Olympic Gold Medalist Zheng Qinwen thrilled home crowds in Beijing by winning the China Open title, while 19-year-old finalist Mirra Andreeva officially climbs to World No. 3 in the latest WTA rankings.",
-    "category": "breaking",
-    "severity": "urgent",
-    "timestamp": "2026-10-13T18:00:00Z",
-    "source": "WTA Tennis",
-    "url": "https://www.wtatennis.com/news/4590763/zheng-qinwen-beijing-crown-andreeva-world-no-3",
-    "playerIds": [
-      "zheng-qinwen",
-      "mirra-andreeva"
-    ],
-    "playerNames": [
-      "Zheng Qinwen",
-      "Mirra Andreeva"
-    ],
-    "tournamentName": "China Open",
-    "tournamentId": "china-open",
-    "verified": true,
-    "tags": [
-      "China Open",
-      "Zheng Qinwen",
-      "Mirra Andreeva",
-      "Champion",
-      "Rankings"
     ]
   }
 ];
