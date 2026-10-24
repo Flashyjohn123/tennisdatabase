@@ -4,6 +4,22 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1792854566339-4",
+    "title": "Fritz impresses in Lyon, sets Paul SF clash",
+    "summary": "Fritz impresses in Lyon, sets Paul SF clash. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-23T17:09:01.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1DT1hRU2lKeFpBczBzR1ZpRG9KdmlJWllzbUlveVN2UE1Wd1RSRGM0NWxid3hmOC1mV3RiVHI5TmlXVUtTV3ZCczg5SVh5dkozLVRZRXpiVWZzTVFncDV4WTN0NEFnaHBJT1h3UnNQbGhPcFFWc3pjX3p3?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1792809875637-7",
     "title": "Goffin keeps career alive with escape win in Brussels: 'Tomorrow we do it again'",
     "summary": "Goffin keeps career alive with escape win in Brussels: 'Tomorrow we do it again'. Full real-time coverage direct from ATP Tour.",
@@ -815,31 +831,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
       "100 Titles",
       "Shanghai Masters",
       "Milestone"
-    ]
-  },
-  {
-    "id": "feed-wuhan-2026-ostapenko-pegula",
-    "title": "'In the moment' Jelena Ostapenko saves three match points to stun Jessica Pegula in Wuhan",
-    "summary": "Jelena Ostapenko unleashed fearless baseline artillery facing triple match point, storming back from 3-5 down in the deciding set to upset World No. 4 Jessica Pegula 4-6, 7-5, 7-6(4) at the Wuhan Open.",
-    "category": "match_result",
-    "severity": "high",
-    "timestamp": "2026-10-14T09:45:00Z",
-    "source": "WTA Tennis",
-    "url": "https://www.wtatennis.com/news/4592160/ostapenko-saves-three-match-points-stuns-pegula-in-wuhan",
-    "playerIds": [
-      "jessica-pegula"
-    ],
-    "playerNames": [
-      "Jessica Pegula"
-    ],
-    "tournamentName": "Wuhan Open",
-    "tournamentId": "wuhan-open",
-    "verified": true,
-    "tags": [
-      "Ostapenko",
-      "Pegula",
-      "Wuhan Open",
-      "Comeback"
     ]
   }
 ];
