@@ -4,6 +4,22 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1792924136510-7",
+    "title": "Musetti saves 4 MPs, shocks Cobolli to set Fritz final in Lyon",
+    "summary": "Musetti saves 4 MPs, shocks Cobolli to set Fritz final in Lyon. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-24T18:22:37.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1rVEN2NlhMSU1BdGRHQXViR1o0Z1BoX0dqanFuQzlHSUhoc3BYVkhza0NXTkFXTjhESmhlbkEyaFdHYU45TzRfMFE0VVRncVhpTEtHdGZHY0ZaQnVZRjhxREpCaEpvblNKOVJQc3o5Yjk3R2UweXA4TzQ1Wi0?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1792895695273-3",
     "title": "Struff shocks Fils in Brussels, sets Griekspoor final clash",
     "summary": "Struff shocks Fils in Brussels, sets Griekspoor final clash. Full real-time coverage direct from ATP Tour.",
@@ -780,22 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-10-13T07:18:57.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1KTkwyMEZiblE5eDJpR2c1OTVPbjBteWY4ZlplSlpUZnR2MVhlcWUybGNFRUdDYzFPUEthVXltRzRIcnRnRnI1YmpUTUstSHVOMVdQS3Exb3ctZ0o3N09kYXZqZ3ZOaElWWWdHQQ?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1792024229635-9",
-    "title": "Five facts about Zverev's journey to becoming Year-End No. 1",
-    "summary": "Five facts about Zverev's journey to becoming Year-End No. 1. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-12T12:28:52.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE91WVRrWmU1a3NvS3pMQ1A3Ym5iMko5c3hiRUduSG82S1VMeVJtVlhzZkYyOGNjZnd6S1VjZTBuZEFUQk95OGhBT3NuLWx1M0p0ajBWQVFmdkxIQWVwUC14aXNnXzhBNUR0RnhvdXg2TUFaRFVTdnFsNWF1UXdkdw?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
