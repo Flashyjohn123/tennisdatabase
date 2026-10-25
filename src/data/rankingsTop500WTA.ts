@@ -7915,7 +7915,7 @@ export const RANKINGS_TOP_500_WTA: PlayerRankSummary[] = [
     "country": "Bulgaria",
     "countryCode": "BUL",
     "flag": "🇧🇬",
-    "age": 34,
+    "age": 35,
     "points": 133,
     "tournamentsPlayed": 25,
     "winPercentage": 61.3,

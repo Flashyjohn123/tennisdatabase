@@ -4,6 +4,22 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1792895695273-3",
+    "title": "Struff shocks Fils in Brussels, sets Griekspoor final clash",
+    "summary": "Struff shocks Fils in Brussels, sets Griekspoor final clash. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-24T19:34:23.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9zUnd2cTBTR3h1LVRRNHZhbzdzNWVreEt4eGNmTlRZYkJzSjJkZTlrQV9GUXNWZnJKT0dFOGMtak5LUy1fV1BfTThhc1M4M0RSSjRveTRVSHRIbXZoZHdJdG5PWkhqOTNRUFdkYy1vQXJjNV9NM1pfcw?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1792872100213-0",
     "title": "Cobolli’s Turin mission: A dream within reach",
     "summary": "Cobolli’s Turin mission: A dream within reach. Full real-time coverage direct from ATP Tour.",
@@ -785,32 +801,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
       "ATP Tour",
       "Live News",
       "News Outlet"
-    ]
-  },
-  {
-    "id": "feed-wuhan-2026-li-sabalenka",
-    "title": "'I was about to crash out': Li converts 10th match point to stun Aryna Sabalenka in Wuhan thriller",
-    "summary": "In an unforgettable 3-hour center court classic, local hero Ann Li converted her 10th match point to eliminate World No. 2 Aryna Sabalenka 6-4, 4-6, 7-6(8), blowing the bottom half of the Wuhan Open draw wide open.",
-    "category": "breaking",
-    "severity": "urgent",
-    "timestamp": "2026-10-14T14:30:00Z",
-    "source": "WTA Tennis",
-    "url": "https://www.wtatennis.com/news/4592185/li-converts-10th-match-point-to-upset-sabalenka-in-wuhan",
-    "playerIds": [
-      "aryna-sabalenka"
-    ],
-    "playerNames": [
-      "Aryna Sabalenka"
-    ],
-    "tournamentName": "Wuhan Open",
-    "tournamentId": "wuhan-open",
-    "verified": true,
-    "tags": [
-      "Wuhan Open",
-      "Sabalenka",
-      "Upset",
-      "WTA 1000",
-      "Asian Swing"
     ]
   }
 ];
