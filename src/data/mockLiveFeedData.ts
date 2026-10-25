@@ -4,6 +4,38 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1792941666752-1",
+    "title": "Alcaraz faces Khachanov test in Vienna opener; Zverev meets Landaluce",
+    "summary": "Alcaraz faces Khachanov test in Vienna opener; Zverev meets Landaluce. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-24T18:22:37.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5fNzNFNlVyZ2hyX2RYWVNhWHA4UnZXMDhZcUVJOUpTUlVRcXFrYnNZaDZPWE1xZDVNc0tGN3l5QnQweXQtX1RPTTBFMGZEd25PWHF4Uzg5X3l4R20tTGc2SE8wVnNBbkNKRWdRZ0VvQTB4dw?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1792941666752-6",
+    "title": "Agassi, Wilander help raise $1.5 million for New Mexico youth",
+    "summary": "Agassi, Wilander help raise $1.5 million for New Mexico youth. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-23T14:38:20.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOTmlnQndXcDBWOWtjNzlmYkdMR3lraGc0MUJSX2Y0N0d1cFV3YXY5Tk8tZi0xOVFEYlBsQzE2TDdJMWctRl9rbHhoQ0lBTlRQZm1PX1VGRDRKZjU3bUF0dFZXZV81aTdNbVJxcVlJSFJuZFpEZFJ5bDFyOTQwb1Z3Ug?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1792924136510-7",
     "title": "Musetti saves 4 MPs, shocks Cobolli to set Fritz final in Lyon",
     "summary": "Musetti saves 4 MPs, shocks Cobolli to set Fritz final in Lyon. Full real-time coverage direct from ATP Tour.",
@@ -764,38 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-10-13T07:58:57.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE4wOWZwNGk0U2prWlRXak1LT29RY0VqWnlBTDBtdHBic1l3SzI5c0pRQ21oV1dvTVZQSkU1dHp6VEZfeUJLZjRMU0hTTnZfZ1lqVm05YmsxY1NnU1V5M3FRSVZCbkd5amEwYWhXd2dqRERPdw?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1792024229635-7",
-    "title": "Tsitsipas 'manifests' Fritz win, faces Medvedev in Shanghai R4",
-    "summary": "Tsitsipas 'manifests' Fritz win, faces Medvedev in Shanghai R4. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-12T09:08:52.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFA1dUhwcGg2WGVhVzlncE5BTmhsUVNyelM4SkxGR2FUbFpvSVB3LTFQclFoQXdJVmg1emFsZEZsWlZGVnFRdWFMWlhuclRtYVFYZk1QRC10TFdjTFNfOTM0Z1U2aklRWWtBUVZjZVhYdkd5ekl3MkJV?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1792024229635-8",
-    "title": "Henman &amp; Noah on Zverev's Year-End No. 1 season: 'It's absolutely phenomenal'",
-    "summary": "Henman &amp; Noah on Zverev's Year-End No. 1 season: 'It's absolutely phenomenal'. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-13T07:18:57.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1KTkwyMEZiblE5eDJpR2c1OTVPbjBteWY4ZlplSlpUZnR2MVhlcWUybGNFRUdDYzFPUEthVXltRzRIcnRnRnI1YmpUTUstSHVOMVdQS3Exb3ctZ0o3N09kYXZqZ3ZOaElWWWdHQQ?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
