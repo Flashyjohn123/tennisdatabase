@@ -4,6 +4,38 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1792982018466-7",
+    "title": "Medvedev successfully defends Almaty title, wins 25th crown",
+    "summary": "Medvedev successfully defends Almaty title, wins 25th crown. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-25T12:29:56.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1Bc1FmcG95VDUwdmZPODMwXzctdVFETXdDbkNPbnMwWDhfa1R4MWROR3NiVHJORmZmaVloLURYNXFzNlRGLVQwaHlVU0VFUjFrWmZRRzBiY0FNdzlfV1NDcHo0SlhxRURqQXFRcWxpdnZCVGxoeTl1Nl9xSQ?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1792982018466-9",
+    "title": "Medvedev into Almaty final after Bublik retirement, faces Basilashvili for trophy",
+    "summary": "Medvedev into Almaty final after Bublik retirement, faces Basilashvili for trophy. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-24T14:59:23.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9SVnlZS0VRdktVTkV4LVVaT2F6UzU5blRJQ0JWYXctcnNUQ1pONExsTnh1SktrZ3BDeWlMcTI1LWZqeUxDVTlxRnF4WTFZRHVMS1RuTWUtRnZKREM2T2phMHhsbUk3ZXRSdEo0THFDTTdMZ19nQkxv?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1792941666752-1",
     "title": "Alcaraz faces Khachanov test in Vienna opener; Zverev meets Landaluce",
     "summary": "Alcaraz faces Khachanov test in Vienna opener; Zverev meets Landaluce. Full real-time coverage direct from ATP Tour.",
@@ -764,38 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-10-12T15:16:04.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5MVGxkVE5tNHEyRW8zcmRXV1VHaU16RE10UlZ3d0NJZnRwZVFVMkhtcUVsSkh6OWlDR3VWdzdOZEpESE5ZbURNbW9RSXpqNnJTcGg4U1pKT1kyaGs4SXp4MWRJTFRfcHNLUnlDZEs0aHlIOEQzSGVNTQ?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1792024229635-5",
-    "title": "Zverev earns gutsy Bublik third-set tie-break win, reaches Shanghai QFs",
-    "summary": "Zverev earns gutsy Bublik third-set tie-break win, reaches Shanghai QFs. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-13T13:19:01.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9oYjJUcURlZDhIUmNUa0RtLTZrUW5QNTVjMTV5Q25PSW1NTjlFS1RDRUUtbUNubEF1aXFVYzY5VmZFYzNsOWduQlhDV2xpbHhjMHNfN0dKaTNBdVJBclFYQ0tHekR2UGRMamJXM1JtQ2dpN0NQblE?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1792024229635-6",
-    "title": "Gea upsets Mensik, Davidovich Fokina sinks former champion Hurkacz in Shanghai",
-    "summary": "Gea upsets Mensik, Davidovich Fokina sinks former champion Hurkacz in Shanghai. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-13T07:58:57.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE4wOWZwNGk0U2prWlRXak1LT29RY0VqWnlBTDBtdHBic1l3SzI5c0pRQ21oV1dvTVZQSkU1dHp6VEZfeUJLZjRMU0hTTnZfZ1lqVm05YmsxY1NnU1V5M3FRSVZCbkd5amEwYWhXd2dqRERPdw?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
