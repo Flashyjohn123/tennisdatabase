@@ -4,6 +4,38 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1793039569197-2",
+    "title": "Musetti triumphs in Lyon, wins first title since 2022",
+    "summary": "Musetti triumphs in Lyon, wins first title since 2022. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-25T17:39:09.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1fN3JiV2wyWlpkWlZFcS1BS1Q1WS1odFpKcmxRT2lDYlBGQmlNdWIya2drelEwWEV0YjJqNXVkeEhLc0hObHp2cURjMlJ3T29GZ0dodjRvb0FIMnVtSHd6d2RKTE1FaGNnZlhDYkRMNmFUb1h3blBv?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1793039569197-6",
+    "title": "Fils on facing his 'brother' Mpetshi Perricard in Basel & helping him in tough season",
+    "summary": "Fils on facing his 'brother' Mpetshi Perricard in Basel & helping him in tough season. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-26T12:24:01.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5hcVhpaW11VFA0QmtNOTk3ZkZqTTVhUnhJU2RGeG9qLU5fZjI5bWNfTWRJMlpmMkVCQi1HaWN5Y05qSEJhNmxPZjBRY3BISEVva3BFSGNqc3FRUkpsTTBfZUZnaUN3NEd4UTFLRUdUMU10OVpTTGpEakszUlN1Zw?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1793015992588-0",
     "title": "Djokovic, Wawrinka practice together in Basel",
     "summary": "Djokovic, Wawrinka practice together in Basel. Full real-time coverage direct from ATP Tour.",
@@ -764,38 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-10-14T15:30:41.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA5SVFnaXRONU9ScUtCd3l6cjhzRzMwaWlRU1NzSkdHdDBWRElXalF5WVk4YXVWbDd0WFhuUGJqcXMxMlM0OXFoZVZYRUxNRGNyUXZmYkVRa3J6RjVEcVB6MFpCQm43TlozWWlZdWdmX0RoMVU5VHB3NGZXV1NEWGs?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1792024229635-1",
-    "title": "Zverev reacts to No. 1 feat: 'I'm looking forward to the responsibility'",
-    "summary": "Zverev reacts to No. 1 feat: 'I'm looking forward to the responsibility'. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-13T13:59:01.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1JdTZUVDhzTzNqV3ROWFE3OWdpU3Qtb01JLTZ4N1k1Qm9BYk9NUEhQWjNkZmVVUHdUV2xIeTJwN3htbzlIUG8zdlhoZC0zTmdkTUtCUXBkWkVLMHpwZERhQnVkSzYxUmFYTGRkbGV0UmFhc0JINm1CLUVaVWlMaEU?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1792024229635-2",
-    "title": "Zverev clinches ATP Year-End No. 1 presented by PIF honours",
-    "summary": "Zverev clinches ATP Year-End No. 1 presented by PIF honours. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-12T12:28:52.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQdVNpMVVqM3JtbFFQS28zRjNGMFR4al9BbFVaWkh3VGo4WWRkc3NpMzFURzROU0VRRDZQM0s2Z2E2SVhfQ3RLLVNTQVNEX3NCeVZKSkhHSVNhWjQ5RGw2QjdwQlIyb1ZUWUROTVpTbldVVmJEdkZPdVk1ZFhZVEVsRVJR?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
