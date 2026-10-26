@@ -4,6 +4,38 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1793015992588-0",
+    "title": "Djokovic, Wawrinka practice together in Basel",
+    "summary": "Djokovic, Wawrinka practice together in Basel. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-25T20:44:25.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9OVEVCV2ppakgza3RmR1paVzZlUWt6ODNyVGlSU1d4Sm95M19TT0NxQVR5ZHRtRkFJR2JpMFh3T1BGLTNHT08xU21UUklkZ2V0RjhaLTE5RWIzakVqWjJzWTRIOHFvRWRISWFUNFQ2czdja1drSXZDRg?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1793015992589-8",
+    "title": "Djokovic, Shelton in same half of Basel draw; Wawrinka faces Lehecka",
+    "summary": "Djokovic, Shelton in same half of Basel draw; Wawrinka faces Lehecka. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-24T18:22:37.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFA4TVFxMHpnaW8ybXMxNEdsVmFSU1JJZGZpdU1odThHZWdpNHNWVGEzSldwVXhkNDMwaEhXcWJ0VkpXc3hTcTBPQV9kRTh1cVBCLVdSNWtHRy1qT25CZXM0SkFIRzMtemJWVnh0UzNxNFAzdw?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1792982018466-7",
     "title": "Medvedev successfully defends Almaty title, wins 25th crown",
     "summary": "Medvedev successfully defends Almaty title, wins 25th crown. Full real-time coverage direct from ATP Tour.",
@@ -764,38 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-10-12T12:28:52.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQdVNpMVVqM3JtbFFQS28zRjNGMFR4al9BbFVaWkh3VGo4WWRkc3NpMzFURzROU0VRRDZQM0s2Z2E2SVhfQ3RLLVNTQVNEX3NCeVZKSkhHSVNhWjQ5RGw2QjdwQlIyb1ZUWUROTVpTbldVVmJEdkZPdVk1ZFhZVEVsRVJR?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1792024229635-3",
-    "title": "Bergs stuns Alcaraz in Shanghai for biggest win of his career",
-    "summary": "Bergs stuns Alcaraz in Shanghai for biggest win of his career. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-12T14:38:03.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9KNWd1RnZmV0luTHdBME9HTHJwR01wa3E0c2kzdWRaWGtIZmd1YWhWMGJLX1hPN2lweldUYzRIaDRYeno0OElIa2JfT2FKbUU2Mkh1MHN5TzhSVGUxYWVDbmVpajJ4cW9rQUZuOTJaOVJrS3Qx?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1792024229635-4",
-    "title": "Alcaraz after Bergs defeat: 'Taking the positives is really difficult'",
-    "summary": "Alcaraz after Bergs defeat: 'Taking the positives is really difficult'. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-12T15:16:04.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5MVGxkVE5tNHEyRW8zcmRXV1VHaU16RE10UlZ3d0NJZnRwZVFVMkhtcUVsSkh6OWlDR3VWdzdOZEpESE5ZbURNbW9RSXpqNnJTcGg4U1pKT1kyaGs4SXp4MWRJTFRfcHNLUnlDZEs0aHlIOEQzSGVNTQ?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
