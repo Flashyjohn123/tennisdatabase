@@ -4,6 +4,22 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1793070507326-6",
+    "title": "Zverev, Alcaraz take tennis among the tenors at the Vienna State Opera!",
+    "summary": "Zverev, Alcaraz take tennis among the tenors at the Vienna State Opera!. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-26T11:29:01.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQZF83OUhaZnJ6VFZjMUVvY1hTc2NzN1ZxZVpEb3UwSVN3LWN0b2g1U2lGTEJta19PRklTM0oyUjZ2czE4N2FNVEFRQ2dsNVhPUlJzRURDa0ZzdFo1M0FvWHVTWUxyTW5ETDFoZ3dBMHRJbTM0dy1LVV9uY00zQU8tc0FR?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1793039569197-2",
     "title": "Musetti triumphs in Lyon, wins first title since 2022",
     "summary": "Musetti triumphs in Lyon, wins first title since 2022. Full real-time coverage direct from ATP Tour.",
@@ -780,22 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-10-07T09:02:51.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOSjNoU0g0NVliQkJySnVrbGJzQ2V4R21IZFhsaTVPQm9VaTBvOXZRSkFMT2VudHVaQm9ieTZ3Uk5VZ094ZlZmRHd5SVl1UE56VGoyaU5WSWtIbUFqRWZvdEM5SEVGVXdOTDA4YXgxMUFqdjRqNll2MF9EUDJKeEl5RnV0ZjE1RmRnNGc?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1792024229635-0",
-    "title": "Medvedev continues Shanghai love affair, defeats Tsitsipas to reach QFs",
-    "summary": "Medvedev continues Shanghai love affair, defeats Tsitsipas to reach QFs. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-14T15:30:41.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA5SVFnaXRONU9ScUtCd3l6cjhzRzMwaWlRU1NzSkdHdDBWRElXalF5WVk4YXVWbDd0WFhuUGJqcXMxMlM0OXFoZVZYRUxNRGNyUXZmYkVRa3J6RjVEcVB6MFpCQm43TlozWWlZdWdmX0RoMVU5VHB3NGZXV1NEWGs?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
