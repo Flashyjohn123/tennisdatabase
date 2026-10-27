@@ -4,6 +4,22 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1793137198182-0",
+    "title": "Djokovic states his end-of-year goals ahead of Basel bid...",
+    "summary": "Djokovic states his end-of-year goals ahead of Basel bid.... Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-27T15:14:41.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1Oc1ctSG1USkhTVl9ZSkdGc0R4RGlGTjB6UG1DNkNtTUFhRGh5MU9EdEZRaDBoOXpic2NrUzZyVV9XOTRua3RMRlRtWmxhUHREcjhNYmY2MC1CbURPYmxvRm9rNTJoYXhuYjRR?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1793120913796-3",
     "title": "What Zverev must do in Vienna to become World No. 1 next Monday",
     "summary": "What Zverev must do in Vienna to become World No. 1 next Monday. Full real-time coverage direct from ATP Tour.",
@@ -780,22 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-10-16T03:35:19.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOQTZQbkRyUDhLa2U5alVGNGJ1R2NLY3VzYkdyVHB0OXBicWJkclhhVTkzalB5OWR5SEFiM3hFNmEzamRKejQwaDBrallacUJEcmVBaE9EaERJelp2aEpfWG81Q3FHaWxrZG1mdUJfRTBxek9JYVhzSk5OcWVJQTA1ZVJRWExHQU8xWmFJNDBR?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1792203881139-9",
-    "title": "ATP Q&amp;A: The next phase of progress under OneVision",
-    "summary": "ATP Q&amp;A: The next phase of progress under OneVision. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-15T12:45:13.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5FQUxMTTRxc1o3SzA3c0pOQ29ZdkQ1dHdfbjhnT1ZIZ3RUanVKT2NteXlQcDFYVmMyVXJyZmF4a2lLMmUwOVlvVDRVWEZvdGNyaHc4dUhfUXhlcHVYZUY0Q01taWE3YmFMNmFkX0xoQQ?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
