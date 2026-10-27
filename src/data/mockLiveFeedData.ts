@@ -4,6 +4,38 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1793120913796-3",
+    "title": "What Zverev must do in Vienna to become World No. 1 next Monday",
+    "summary": "What Zverev must do in Vienna to become World No. 1 next Monday. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-25T05:49:23.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5lOFR1NENuZ0U3NW03LXZWalA1amt0Qm83dmdqZmJhUFhfRHNxY0VkNGcydU9vZGQ4RWNTTFdkeVF6a2xTVm1oU2VIM0dVellGTWd1c215eUptRlFONkFMZk8ybUJPaVRNV0JEMTd1S09ldw?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1793120913796-5",
+    "title": "Rune survives Halys' 32 aces in Basel for first ATP Tour win since injury",
+    "summary": "Rune survives Halys' 32 aces in Basel for first ATP Tour win since injury. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-26T23:24:03.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE14WThCWmg3X2kwQmxuRVJtMDlveXBPUUtyclBzcUpLM3JMTXVUeWJBSjJtYzc1WE11VGhUX2l6WnR2eVZGMnpUMU5HLVB5UGZFQ2x3cjJUbDZ3NnN0NmZWOElWYlFtLVBPNnl0SQ?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1793100056235-3",
     "title": "Griekspoor rallies past Struff for Brussels crown",
     "summary": "Griekspoor rallies past Struff for Brussels crown. Full real-time coverage direct from ATP Tour.",
@@ -764,38 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-10-15T12:45:13.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5FQUxMTTRxc1o3SzA3c0pOQ29ZdkQ1dHdfbjhnT1ZIZ3RUanVKT2NteXlQcDFYVmMyVXJyZmF4a2lLMmUwOVlvVDRVWEZvdGNyaHc4dUhfUXhlcHVYZUY0Q01taWE3YmFMNmFkX0xoQQ?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1792182063707-7",
-    "title": "Djokovic accepts wild card for Basel",
-    "summary": "Djokovic accepts wild card for Basel. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-16T16:25:21.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9sTnRhaXBuSl9OX3ZzeTFDc1JsMENNYkl2b25HMTlidVU1blNjZU1JaGwzaXJhZllrcVZ2M0JlcldsQ1pPYk93bGJjcXRMbUU3dDF5amRYUTQ0Wlk5elJlaUlqZU83d1JkRzREeUV3?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1792146311722-9",
-    "title": "Zverev powers past De Minaur for Shanghai SF return",
-    "summary": "Zverev powers past De Minaur for Shanghai SF return. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-15T14:31:49.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1sZDJZRkhPeVRSNVFpNjBuUEFGM0xWb0h3N1pySVd0Rzd4ZHB1aWRKRzJqVHNlMzBkU3JERS1OcVFEZ0VkbWRZUlZFei1mQi14YzlCeHNGRzZBeUlfY19YOFBGLXVNX0xyamtLeFYxU3MzdG8?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
