@@ -4,6 +4,38 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1793100056235-3",
+    "title": "Griekspoor rallies past Struff for Brussels crown",
+    "summary": "Griekspoor rallies past Struff for Brussels crown. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-25T18:43:18.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOeEc1VzJ4LU9hU0p1YkVZdnFfOFpNOW0zMmN0V2oxTE5XOE0zZjRka0NIY3ZlRThsWE9JNm04b2xkM1luaEVpYlc4NXhMSzJqRXRjS3JLRXdGRDA3RDdUU2FWSkNkMFhPWDFJX2tJbmtsc3pxdXRYRnZJQWlCQS1GZi1R?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1793100056235-4",
+    "title": "Arevalo & Pavic qualify for third consecutive Nitto ATP Finals together",
+    "summary": "Arevalo & Pavic qualify for third consecutive Nitto ATP Finals together. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-26T16:24:26.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOaGZKWE9vVVgweUZoSlRGbzA1Z3FSdjJwUkhEdjVaM0NzSUx6amNEaDFGT29TRjVGZHBoWlVieWh5OERWWjg1ZDNIendYelBRWDRRWk5fUVBkRWVkLW4yRUZyUG04NXNaTVA2UFFFbU5Pa2hpREVWejE1UFFsQVJyVXZLUnNHWkVm?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1793070507326-6",
     "title": "Zverev, Alcaraz take tennis among the tenors at the Vienna State Opera!",
     "summary": "Zverev, Alcaraz take tennis among the tenors at the Vienna State Opera!. Full real-time coverage direct from ATP Tour.",
@@ -764,38 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-10-15T14:31:49.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1sZDJZRkhPeVRSNVFpNjBuUEFGM0xWb0h3N1pySVd0Rzd4ZHB1aWRKRzJqVHNlMzBkU3JERS1OcVFEZ0VkbWRZUlZFei1mQi14YzlCeHNGRzZBeUlfY19YOFBGLXVNX0xyamtLeFYxU3MzdG8?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1792097285751-0",
-    "title": "An Open Letter from ATP Chairman Andrea Gaudenzi",
-    "summary": "An Open Letter from ATP Chairman Andrea Gaudenzi. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-15T12:45:13.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQR3JIWGNPekNrMm94bkxUNktUQ3VleUNYQ0tOOTYzV2JYS25rNXBXQUNBMnhXcl9MYTh5dnlXZTltbkxySHJ5b2FTWDZYNGQ2N3JmQ191X29kY3BoSzhaY0R0Z2Qzb2VCcGRZM0ZNbGpkcTNzOTFwelpBclhHaldUbEVVb0VuclFnSjIxcnN3?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1792080224127-9",
-    "title": "Djokovic back on track for Turin following Beijing triumph",
-    "summary": "Djokovic back on track for Turin following Beijing triumph. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-07T09:02:51.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOSjNoU0g0NVliQkJySnVrbGJzQ2V4R21IZFhsaTVPQm9VaTBvOXZRSkFMT2VudHVaQm9ieTZ3Uk5VZ094ZlZmRHd5SVl1UE56VGoyaU5WSWtIbUFqRWZvdEM5SEVGVXdOTDA4YXgxMUFqdjRqNll2MF9EUDJKeEl5RnV0ZjE1RmRnNGc?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
