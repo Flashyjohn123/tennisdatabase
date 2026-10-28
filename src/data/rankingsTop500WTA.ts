@@ -931,7 +931,7 @@ export const RANKINGS_TOP_500_WTA: PlayerRankSummary[] = [
     "country": "Great Britain",
     "countryCode": "GBR",
     "flag": "🇬🇧",
-    "age": 24,
+    "age": 25,
     "points": 1097,
     "tournamentsPlayed": 11,
     "winPercentage": 78.6,
