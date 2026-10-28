@@ -4,6 +4,22 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1793209443883-8",
+    "title": "Wawrinka, without regrets: 'That's the only way you can leave the sport'",
+    "summary": "Wawrinka, without regrets: 'That's the only way you can leave the sport'. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-27T22:14:41.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5VUFVNS2x3aTM2SDF2WE1VMjlRczFWUlhmYXc1WTRfTzdiRkRjUlQ0YmVFMEhOdXlUWXlzdWpnaUtYUHVaWHlnd18wMzJ6bG1OaVJUQ2Ztc2V5a0UwTVFpaXJzbHpUajNoUl8ydURfM29rU1FG?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1793188464760-1",
     "title": "Wawrinka, 41, retires after standout career",
     "summary": "Wawrinka, 41, retires after standout career. Full real-time coverage direct from ATP Tour.",
@@ -780,22 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-10-16T15:52:40.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9WNFI1WXdMSGR6SXAtaGNBLXl5RUQtSHhYanhBZHhGcTRTY2xldmN3dzYwYVQ3dHdlWDZ6elFEb0NHanEzTXB4Y2FsZlNHNW1JbTBoTHhLQU9uaENGc0p1ZWd0ZkVJelNUdURzajJYN0ZTUQ?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1792231027815-7",
-    "title": "Alcaraz accepts wild card for Vienna",
-    "summary": "Alcaraz accepts wild card for Vienna. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-15T11:42:22.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9WdzhlQVdpbU5NTkpwb291S0d0SURMMUlBUHQ1WEp6QjFRaVloVUpvUUpRZ1hSSlNXbWN1WjBlSlE2VEh1cS1JT1RKcGdOazRoZlpQQkE4QUFzSXBmaDZZTDB3OTFjcGJo?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
