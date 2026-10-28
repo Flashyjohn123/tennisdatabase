@@ -4,6 +4,22 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1793188464760-1",
+    "title": "Wawrinka, 41, retires after standout career",
+    "summary": "Wawrinka, 41, retires after standout career. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-27T22:09:41.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5rWlcxZW1UdUdINzhhM3FyUjBaSTMyUTVCNjN1ZGw3SHdIRmhPQzhJQ3RrUWN6WkxXQWVQV3E4QVg2WmozbGVWWHZoNFpyMVRrMURQY2RRRURWMmFDYkI0cURlWng3WEhyaExrYjhxdw?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1793137198182-0",
     "title": "Djokovic states his end-of-year goals ahead of Basel bid...",
     "summary": "Djokovic states his end-of-year goals ahead of Basel bid.... Full real-time coverage direct from ATP Tour.",
@@ -780,22 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-10-15T11:42:22.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9WdzhlQVdpbU5NTkpwb291S0d0SURMMUlBUHQ1WEp6QjFRaVloVUpvUUpRZ1hSSlNXbWN1WjBlSlE2VEh1cS1JT1RKcGdOazRoZlpQQkE4QUFzSXBmaDZZTDB3OTFjcGJo?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1792231027815-9",
-    "title": "Why Jodar's result in Shanghai will have massive implications",
-    "summary": "Why Jodar's result in Shanghai will have massive implications. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-16T03:35:19.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOQTZQbkRyUDhLa2U5alVGNGJ1R2NLY3VzYkdyVHB0OXBicWJkclhhVTkzalB5OWR5SEFiM3hFNmEzamRKejQwaDBrallacUJEcmVBaE9EaERJelp2aEpfWG81Q3FHaWxrZG1mdUJfRTBxek9JYVhzSk5OcWVJQTA1ZVJRWExHQU8xWmFJNDBR?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
