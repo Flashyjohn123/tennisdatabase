@@ -6637,7 +6637,7 @@ export const RANKINGS_TOP_500_WTA: PlayerRankSummary[] = [
     "country": "IND",
     "countryCode": "IND",
     "flag": "🌐",
-    "age": 25,
+    "age": 26,
     "points": 167,
     "tournamentsPlayed": 24,
     "winPercentage": 62.3,
