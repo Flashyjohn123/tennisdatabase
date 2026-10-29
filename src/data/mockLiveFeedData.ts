@@ -4,6 +4,70 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1793312106730-1",
+    "title": "Djokovic's big opportunity to make a move towards Turin in Basel",
+    "summary": "Djokovic's big opportunity to make a move towards Turin in Basel. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-29T14:03:22.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPYVBHcEdTR29aSzBCY3NYbTF6aDJaTGZjSXV4Q2haUUdlcHFXVXRBZmh0T1lzTEI4WXNZaTY0THJPSldTR0cyaUtmZ2l4Wi1pTnNhbFhtS01xdkx3eTdjT3p5N1ZPbHQxWVJTM2VwMXpQd2ktWXhlQ3NWeVlFQWxMbkxiVG5keHRLQmpj?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1793312106730-2",
+    "title": "Struff: ‘My H2H against Djokovic isn’t great, but whose is?’",
+    "summary": "Struff: ‘My H2H against Djokovic isn’t great, but whose is?’. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-28T21:18:13.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE4wY21LWnN6a1lqSExLbElqWmRaSEVDdnpYdFYtQTVVZkNOQzJ6MnJqZ1UtcHhGbFIwaGZhMS0wNkM3aGlmeVhQX2VFZTM4a1JTQ2J2RFBXR0k4N2RUMnJlRi1XaDg3dzFHNVFlQnR1UXBodl9s?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1793312106731-4",
+    "title": "Medvedev finds swift adjustment to overcome Merida, reach Vienna R2",
+    "summary": "Medvedev finds swift adjustment to overcome Merida, reach Vienna R2. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-28T15:22:21.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFA4NzdpWVRuN1NwQkFCSXF6Nl9SR2tCOGZWZzVDMW9vNFFUTTNRUHZnQ0ZIMmd2WnR2U25pNkRveF9CcEhrT1FHSVhwSzlBbVBkdXRTMndlZENiM0s5YWFlSmZfUllFSTBTU1Z5OFFJZjBrbGhZLWh6bg?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1793312106731-8",
+    "title": "Alcaraz settles to sink Khachanov in high-quality Vienna return",
+    "summary": "Alcaraz settles to sink Khachanov in high-quality Vienna return. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-27T17:43:46.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1nR1pBTXlCMnlSX0UzWmlOSnh5UVVXNHFUQ0lZTW44VW50OFVMMlh1QkRVbVZ5ZzhCbXZIb3gyZ09KR200YzNrS3hNUGxpdU1fcTFtdG4wcmZhaTVGbGtxaVllVUlpeGw0X2NsY3k5N2dGWDhaanNYZA?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1793275336388-3",
     "title": "Shelton blasts 44 aces in scare, Lehecka ends Wawrinka's career in Basel",
     "summary": "Shelton blasts 44 aces in scare, Lehecka ends Wawrinka's career in Basel. Full real-time coverage direct from ATP Tour.",
@@ -732,70 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-10-16T18:57:59.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1YS1R6TVl6YTY5TmlDVDFnRWc3LWFNZVJHaDVGbXdXZmVnWnlsVEZhVWU5NkhnVE9GdEdsR1FveXVQVGY3bFNDNkl1SmNPNndTSGNaWjFSUFVsV3d4VUdqT1g4SE94UmJDN0pWVURLd0c4QzM2N1E?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1792290283235-8",
-    "title": "Zverev on Shanghai SF defeat: 'I overachieved this week'",
-    "summary": "Zverev on Shanghai SF defeat: 'I overachieved this week'. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-17T12:10:35.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE00U2p6UlZiazFYOHpHRlJFb1lWZjgxdmtieWgxak4taW9QTm1wVlBjN1B6a3Q0cU5WSmtjd0Z3dmxEUGxlZVEwX0Q2UWN0Z0x5RHZWc2FoaVNGdmNTQnFyQ29yeTE2aWdCM2ZUU1pzakNuajUzS29OYXhB?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1792266938848-9",
-    "title": "Jodar storms to first Masters 1000 final in Shanghai",
-    "summary": "Jodar storms to first Masters 1000 final in Shanghai. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-17T13:16:38.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE96NmdMdU5BR1Q2dkQ3QXVDY09XN01HVkJ1WDhfeXFjYWRBQnBHdkV0U00tY0ttR1VYNDV6Z2RSTEo3VU5yS3RGcG1NR1htRVJJYWxLZVAwSjhtVlpPQnA0Yldwc1FEQ1dDcS1ROXFodDRMMkVaTV9YVQ?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1792248295899-0",
-    "title": "Davidovich Fokina stuns Zverev to reach Shanghai final",
-    "summary": "Davidovich Fokina stuns Zverev to reach Shanghai final. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-17T10:55:35.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPQl95bkNtUnRIUHRVenoxRDA0VG42VTU3M19KeWdvM1lmeWJqRjFaRS1WS0JrRWpRSUJIbkZib3h6RHNrZmx1RVUzYjRXeW5JeHNMQ3d4R2piTVFTVEdESGJNY25ESmswOThjZjJQZV82SlcwOVpKQncxMThxYXJiaFdMbVZ5UQ?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1792231027815-1",
-    "title": "Medvedev fends off Paul for Shanghai SF berth",
-    "summary": "Medvedev fends off Paul for Shanghai SF berth. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-16T12:33:35.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5CTDlkTGhFQzJKRTg5b0lNUG94SlV6OXNMSnhPUElKMGdfSW9ITWR4X0NlUDRQQWc4VWhBTkdWSXRDZmJPaE56WmtiZHB5OHlBVWl6Y0F1Vl93T0drQnU4Um1FbTNUcWtSV3JjdUVBWWg3UzFm?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
