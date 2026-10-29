@@ -4,6 +4,22 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1793275336388-3",
+    "title": "Shelton blasts 44 aces in scare, Lehecka ends Wawrinka's career in Basel",
+    "summary": "Shelton blasts 44 aces in scare, Lehecka ends Wawrinka's career in Basel. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-27T22:59:15.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBPdWFySFQ5ZjVmNGJXc3JLMFB1UWlUVXItMXJCSHNBd1UzaTc5N1N0TktkQ3huVHNkVE5Hd3JxejdNZWdaVFhKRHEybFliWHJONXFXZTBRaGVHREIzeGswdDZBQi1PcFlZYjNOTHNEV1JkS01fZ3hr?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1793209443883-8",
     "title": "Wawrinka, without regrets: 'That's the only way you can leave the sport'",
     "summary": "Wawrinka, without regrets: 'That's the only way you can leave the sport'. Full real-time coverage direct from ATP Tour.",
@@ -780,22 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-10-16T12:33:35.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5CTDlkTGhFQzJKRTg5b0lNUG94SlV6OXNMSnhPUElKMGdfSW9ITWR4X0NlUDRQQWc4VWhBTkdWSXRDZmJPaE56WmtiZHB5OHlBVWl6Y0F1Vl93T0drQnU4Um1FbTNUcWtSV3JjdUVBWWg3UzFm?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1792231027815-6",
-    "title": "Federer plays with his ‘brother from another mother’ Safin in Shanghai exhibition",
-    "summary": "Federer plays with his ‘brother from another mother’ Safin in Shanghai exhibition. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-16T15:52:40.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9WNFI1WXdMSGR6SXAtaGNBLXl5RUQtSHhYanhBZHhGcTRTY2xldmN3dzYwYVQ3dHdlWDZ6elFEb0NHanEzTXB4Y2FsZlNHNW1JbTBoTHhLQU9uaENGc0p1ZWd0ZkVJelNUdURzajJYN0ZTUQ?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
