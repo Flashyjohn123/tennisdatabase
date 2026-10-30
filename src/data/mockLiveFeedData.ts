@@ -4,6 +4,38 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1793361377976-0",
+    "title": "Alcaraz repels Basilashvili’s 4 set points in Vienna, books QF spot",
+    "summary": "Alcaraz repels Basilashvili’s 4 set points in Vienna, books QF spot. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-29T19:14:43.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1mR2t6R1gyYzZzdlQ2SGVZNzFIRk5yd3c3VXY3WkROeUI3am41YmZpTXNnUWhKM1ZDTVkwaUFvOWFyQ1JMdkR2bDFkMkludDk4R2d4MWxpMHoyb01lR0wzcGgxZXFqaFdYcXFmM3dzd0JxWFQzQjNGQk5xaFZEZw?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1793361377976-1",
+    "title": "Muster welcomes Zverev to ATP No. 1 Club in Vienna",
+    "summary": "Muster welcomes Zverev to ATP No. 1 Club in Vienna. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-29T20:38:20.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1aaFNHQzhkeXVBdmphTTFjQ2k1OUdyNU55UEJpdWZVQ0tEMk0yQ1ZkZ2J4bDZPV1Y1ZlRieXJ4Vjl6SUpnNHlDWkZpT0M3RW9WdG9CanB2ZXk3bWU1Z2EtMEJ6amZ2VEZEakpoQTZ5eGx6c1VicC05cVNBcw?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1793332110966-1",
     "title": "Zverev to become World No. 1 next Monday, 2 November",
     "summary": "Zverev to become World No. 1 next Monday, 2 November. Full real-time coverage direct from ATP Tour.",
@@ -764,38 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-10-15T12:45:13.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5FQUxMTTRxc1o3SzA3c0pOQ29ZdkQ1dHdfbjhnT1ZIZ3RUanVKT2NteXlQcDFYVmMyVXJyZmF4a2lLMmUwOVlvVDRVWEZvdGNyaHc4dUhfUXhlcHVYZUY0Q01taWE3YmFMNmFkX0xoQQ?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "Circuit Wire"
-    ]
-  },
-  {
-    "id": "atp-live-1792377557133-8",
-    "title": "Jodar on Shanghai run: 'Happy about how things are going for me'",
-    "summary": "Jodar on Shanghai run: 'Happy about how things are going for me'. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-18T13:36:48.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE43NzExbUk0RloyYXhxNFM4Um1MektWcmtRcVU3SFNvaWNYUGgyc01DOEZnVlRWcmFqanRpNUhzbDJZSzVLWUVvZHRxUDlITnRQUzRSNnd3SU95TWIwTlpzVi1CMnRnLWFrRzQ0bDIyb040MzE5b0E?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "Circuit Wire"
-    ]
-  },
-  {
-    "id": "atp-live-1792353318435-7",
-    "title": "How much prize money will the Shanghai champion earn?",
-    "summary": "How much prize money will the Shanghai champion earn?. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-17T17:55:07.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFB4dl9TS1d5NU9VNDV1UjBNNmwwZWkyazVwSnoyY0x2Q3d2SFctVXJDd1Y2UDFwRS14R3JtSzJZUUViTnJ2ME5zY3poUjFkUGFEcHVZZkJZQmVDaHhXcFNpRmxyRXU0MW1lSkNZc2FTdVNCbHJP?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
