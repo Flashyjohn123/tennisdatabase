@@ -4,6 +4,22 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1793397031306-6",
+    "title": "Djokovic shifts into lockdown mode in Basel, keeps Turin push on track",
+    "summary": "Djokovic shifts into lockdown mode in Basel, keeps Turin push on track. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-28T21:54:42.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9lOHAySDBEN2hENllVNlVweTg3aS1MSWloSFV0U3hrMmhIOHA2ZVMtZWh4Z25Ia2VQbm1iWmdMOTk0bms1RmhnZGROWHB6cEhuMlJzUkJtZDdNTUczUGwxUU1ZTGU1NDRKamxRV09ENjhmSmtMb3FYbw?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1793381993693-3",
     "title": "Djokovic's charge, Wawrinka's farewell & the next wave: Why Basel is buzzing",
     "summary": "Djokovic's charge, Wawrinka's farewell & the next wave: Why Basel is buzzing. Full real-time coverage direct from ATP Tour.",
@@ -780,22 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-10-18T17:54:01.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1lemFBR1Z1LXpiUEdlSkJEOW45MkhtX09vcU5CX000WUN2N0ZFRDNKdTM1dnlxLV9KYm95MXdkTmdCVFJ4UDcyWW1JelVwbm95ZUNHZ3hmdWZtRkNmSjRIQ3lSeVBkYlhlUkV1NHFB?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "Circuit Wire"
-    ]
-  },
-  {
-    "id": "atp-live-1792377557133-6",
-    "title": "Shelton qualifies for second consecutive Nitto ATP Finals",
-    "summary": "Shelton qualifies for second consecutive Nitto ATP Finals. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-18T11:49:48.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOb1k1dzh6TFRMcjZIdU5hcU1wdEotYTIzZ2tweldpN0FudjctM1dvU2UxdkJ1QTkyMFlUUTBmQmhwWk1reGtlYnByTXJVcE9MendpNFE0b3loUXdUQmhmQW9rcUxKemwwRGFodGJMNHhtczZxaVVsWHpBNWxYSGl0MA?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
