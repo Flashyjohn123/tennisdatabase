@@ -4,6 +4,38 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1793332110966-1",
+    "title": "Zverev to become World No. 1 next Monday, 2 November",
+    "summary": "Zverev to become World No. 1 next Monday, 2 November. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-29T19:27:59.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5HenpVT2Zhc3JIeEp2S28yalJOS1RKZVVlYzl1bHdxX2VxekZoMWVxel95NUV0eUkzbVpacVBzbEpYNlhSTHBFMjllcDREd1JlQlluYklBS183d2R0ZlpySDV1X2ZEQ2l5MVZWT1JpQm9MaWF6Q211Z2pFUmhhTFk?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1793332110966-4",
+    "title": "Zverev defeats Griekspoor in Vienna, set to become World No. 1",
+    "summary": "Zverev defeats Griekspoor in Vienna, set to become World No. 1. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-29T22:31:06.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBiUC15WG1IZHNuWnFrd3pwWnZXU2hfZXVDTFlINUE2RWpjUkdPSHM3SV9GZFRMYXlIVElpeTl6V3pJZnNQZEFEVk5ERTJCRlpaeE01MVRJSEl1b25COFF6VjJMYVgzakthcEwxZEZjSHJXaFQzVFNPd1VB?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1793312106730-1",
     "title": "Djokovic's big opportunity to make a move towards Turin in Basel",
     "summary": "Djokovic's big opportunity to make a move towards Turin in Basel. Full real-time coverage direct from ATP Tour.",
@@ -769,38 +801,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
       "ATP Tour",
       "Live News",
       "Circuit Wire"
-    ]
-  },
-  {
-    "id": "atp-live-1792336231930-0",
-    "title": "Davidovich Fokina stops Jodar for Shanghai title",
-    "summary": "Davidovich Fokina stops Jodar for Shanghai title. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-18T14:04:45.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNRUJSQkE2N2RWbE9FUEhITFJraThsel9ScVBKNEJvX0NiTXpEaG1jRmhWOUR5OHdmNWdSVW4xekgxT0Vfc2JMQk9VTDhkUFU3Vm5zZjkwS0JScHhEcE5QMXZkbVRqMHpiUkUtSGdqNk1uLVVVM2xBQkkyUHlLTHUxMQ?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "Circuit Wire"
-    ]
-  },
-  {
-    "id": "atp-live-1792290283235-3",
-    "title": "How soon can Zverev become World No. 1?",
-    "summary": "How soon can Zverev become World No. 1?. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-16T18:57:59.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1YS1R6TVl6YTY5TmlDVDFnRWc3LWFNZVJHaDVGbXdXZmVnWnlsVEZhVWU5NkhnVE9GdEdsR1FveXVQVGY3bFNDNkl1SmNPNndTSGNaWjFSUFVsV3d4VUdqT1g4SE94UmJDN0pWVURLd0c4QzM2N1E?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
     ]
   }
 ];
