@@ -4,6 +4,22 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1793381993693-3",
+    "title": "Djokovic's charge, Wawrinka's farewell & the next wave: Why Basel is buzzing",
+    "summary": "Djokovic's charge, Wawrinka's farewell & the next wave: Why Basel is buzzing. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-29T17:32:06.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE84N3k0WXQwb05aNktmamZMTVMzOWwzVGhqMnJLWnk5ZTlaLTNDSTZIdTlYSjhTSkNSNzE3RzMtcC1xV000S3JoeEJYUU1nVUFQMDRVTnRXQ2hDQk1BdUlUYTIzeGM5LTM3bmNzM2JFcXI?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1793361377976-0",
     "title": "Alcaraz repels Basilashvili’s 4 set points in Vienna, books QF spot",
     "summary": "Alcaraz repels Basilashvili’s 4 set points in Vienna, books QF spot. Full real-time coverage direct from ATP Tour.",
@@ -780,22 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-10-18T11:49:48.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOb1k1dzh6TFRMcjZIdU5hcU1wdEotYTIzZ2tweldpN0FudjctM1dvU2UxdkJ1QTkyMFlUUTBmQmhwWk1reGtlYnByTXJVcE9MendpNFE0b3loUXdUQmhmQW9rcUxKemwwRGFodGJMNHhtczZxaVVsWHpBNWxYSGl0MA?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "Circuit Wire"
-    ]
-  },
-  {
-    "id": "atp-live-1792377557133-7",
-    "title": "ATP Q&A: The next phase of progress under OneVision",
-    "summary": "ATP Q&A: The next phase of progress under OneVision. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-15T12:45:13.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5FQUxMTTRxc1o3SzA3c0pOQ29ZdkQ1dHdfbjhnT1ZIZ3RUanVKT2NteXlQcDFYVmMyVXJyZmF4a2lLMmUwOVlvVDRVWEZvdGNyaHc4dUhfUXhlcHVYZUY0Q01taWE3YmFMNmFkX0xoQQ?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
