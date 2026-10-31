@@ -4,6 +4,38 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1793446157587-1",
+    "title": "Medvedev returns to the Nitto ATP Finals",
+    "summary": "Medvedev returns to the Nitto ATP Finals. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-30T14:58:21.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNWjIxZFQyeDcwdG5ZLWpOajdsSTNJN21pZW9qbzNEQjhlbTlGczhBX1pQWjNyUi1HeEtxbGtVY0tKaWhILWV3SjJuLWNQeVQ1VjhRZU9WT054WEMxYmd1UkpxYUNVeS1VYUtzVHNQeFFsa1JRMFMtaGVQUkliVUM2dGw4T2hzaE9aTlIw?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1793446157587-6",
+    "title": "Fritz advances to Basel SFs after his Live Race rival Fils retires",
+    "summary": "Fritz advances to Basel SFs after his Live Race rival Fils retires. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-30T20:11:44.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBzbDNjNWUzUnJYV1R1Y0dWSlBoUXM3ZHY1alUwNnQtTktEdzUtb0ppVWhpenVtTk9NcDgwamZmc0lTUHNUSkI2SjBFM3ZKX05ROUhwTjByc1BKOTBXc2Jpakw1MXhXYXk0VmMtZg?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1793417517511-3",
     "title": "Alcaraz downs Paul, sets Vienna SF with Medvedev",
     "summary": "Alcaraz downs Paul, sets Vienna SF with Medvedev. Full real-time coverage direct from ATP Tour.",
@@ -764,38 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-10-18T16:49:00.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1fVWZjNFJDbFdCUG5MTndzdnhmYVZ0T0J6amxOTVQyM0c3Qm90T3BROTZBcFY0TVFQMENUUVNkbkhMbzdwYWxRektaZS1COTdGMUliZ3hKUVZNTHhGR2doRF95b1pBdnA2Q0hzbXpESHcwbzlnZTVEYkNPVDFyUQ?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "Circuit Wire"
-    ]
-  },
-  {
-    "id": "atp-live-1792464653838-4",
-    "title": "Davidovich Fokina: 'I cannot describe in words what I have achieved'",
-    "summary": "Davidovich Fokina: 'I cannot describe in words what I have achieved'. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-18T16:13:44.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQbzhoNXl6WnN3SnJCOGM3aXJkS2YxcHdKQS16WVdEdGdDZE9wdC1MSHMtVzdobG1reW43MzJQck1aUWxvM2wybTJmdDJuaER4MFVIMEVTLUVXZWlDaFpwUF9JWjYtMnVYMldHR0tGQmV6azF2eFNDVXFXaTNVRWZNLUJfWUQ?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "Circuit Wire"
-    ]
-  },
-  {
-    "id": "atp-live-1792410227857-3",
-    "title": "Jodar surges into qualifying position; Will four debutants reach Turin?",
-    "summary": "Jodar surges into qualifying position; Will four debutants reach Turin?. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-18T15:33:44.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE00QXRzRlJTUjVDLXladExIZW1udnd2ZnROcENCMGpZMXFtY014dDF5enU5clNsclREeV9xUFBWa2VSX3ZFeFhwSkdGYk1nNlpUN3RwYlc0YXVxU3ZZQ0hoY3JTZVczczZBTzZqNlZRQWZpS3hzaTRuZ3JzM0ltZnM?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
