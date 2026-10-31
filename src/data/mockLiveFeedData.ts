@@ -4,6 +4,22 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1793464628835-8",
+    "title": "Fils keeps his cool in Basel to boost Turin hopes, but Jodar falters",
+    "summary": "Fils keeps his cool in Basel to boost Turin hopes, but Jodar falters. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-29T19:24:50.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBKa0E4bFIwbDd6OXJWclhrWFhXMEdvNmthcDdYX1UwQWg2bV84ejgxYmVSTXJRa3NVdmdxemtfMjdCaVV4QkFySENHaTRWbm8zTWp2eUR6bEpyUG9SeE1LS0hHeUlVXzBValROazNUMzVPa2JiSlE?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1793446157587-1",
     "title": "Medvedev returns to the Nitto ATP Finals",
     "summary": "Medvedev returns to the Nitto ATP Finals. Full real-time coverage direct from ATP Tour.",
@@ -780,22 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-10-17T21:18:04.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNMDlaVFBkejBBcmZnQ2FkR0h1MUQ5Mjk5YzFNbjF3ZTFwZml2c0ZITDNOS3FOUy10dHpwbE5NZXRMTGQ4ZUtaVC1pRVN6M1dGV3ZEN01pSEx2X3d1elpxOWsyZkFuUGg5Y2lhdVN5dkFLRjZVRDlhOU5fR2d2MVF2OE1hbDJYSm5EMGFr?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "Circuit Wire"
-    ]
-  },
-  {
-    "id": "atp-live-1792493079175-3",
-    "title": "Scouting Report: Turin contenders Medvedev, Fils, Cobolli lead Almaty, Brussels, Lyon fields",
-    "summary": "Scouting Report: Turin contenders Medvedev, Fils, Cobolli lead Almaty, Brussels, Lyon fields. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-18T16:49:00.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1fVWZjNFJDbFdCUG5MTndzdnhmYVZ0T0J6amxOTVQyM0c3Qm90T3BROTZBcFY0TVFQMENUUVNkbkhMbzdwYWxRektaZS1COTdGMUliZ3hKUVZNTHhGR2doRF95b1pBdnA2Q0hzbXpESHcwbzlnZTVEYkNPVDFyUQ?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
