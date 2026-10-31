@@ -4,6 +4,22 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1793417517511-3",
+    "title": "Alcaraz downs Paul, sets Vienna SF with Medvedev",
+    "summary": "Alcaraz downs Paul, sets Vienna SF with Medvedev. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-30T19:13:20.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5Fc1dsaUxpTWYwaDZDQTM4U2V3TWFaeHhmMVR3RWhuUlBPOG9uNXNzVnF2MTN4OFBlaHkzRnMwLVotLWZyNmZOUGpONUh3cl9ONXNfSHRuS0tpTlI2Q1hZeHdvN1J6bnZvTW53?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1793397031306-6",
     "title": "Djokovic shifts into lockdown mode in Basel, keeps Turin push on track",
     "summary": "Djokovic shifts into lockdown mode in Basel, keeps Turin push on track. Full real-time coverage direct from ATP Tour.",
@@ -780,22 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-10-18T15:33:44.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE00QXRzRlJTUjVDLXladExIZW1udnd2ZnROcENCMGpZMXFtY014dDF5enU5clNsclREeV9xUFBWa2VSX3ZFeFhwSkdGYk1nNlpUN3RwYlc0YXVxU3ZZQ0hoY3JTZVczczZBTzZqNlZRQWZpS3hzaTRuZ3JzM0ltZnM?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "Circuit Wire"
-    ]
-  },
-  {
-    "id": "atp-live-1792410227857-8",
-    "title": "Rune withdraws from Brussels due to injury: 'Really annoying and unfortunate timing'",
-    "summary": "Rune withdraws from Brussels due to injury: 'Really annoying and unfortunate timing'. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-18T17:54:01.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1lemFBR1Z1LXpiUEdlSkJEOW45MkhtX09vcU5CX000WUN2N0ZFRDNKdTM1dnlxLV9KYm95MXdkTmdCVFJ4UDcyWW1JelVwbm95ZUNHZ3hmdWZtRkNmSjRIQ3lSeVBkYlhlUkV1NHFB?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
