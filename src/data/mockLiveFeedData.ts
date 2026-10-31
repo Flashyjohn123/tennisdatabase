@@ -4,6 +4,22 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1793479837217-0",
+    "title": "Zverev, Djokovic on course for Paris QF showdown; Turin contenders eye push",
+    "summary": "Zverev, Djokovic on course for Paris QF showdown; Turin contenders eye push. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-30T21:07:58.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE03LUpGZnNkWF9nWEFyWUh6OFJ2eG5DLWdYb0dlWlRZem5MLV9WUTF6cEVsVGstTnFXNGpVM2VIZi1RNERXMlJzU3dVRTF2RWQ3cmNHc0dDUVVlZmpBUGk5cDhRamtaZw?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1793464628835-8",
     "title": "Fils keeps his cool in Basel to boost Turin hopes, but Jodar falters",
     "summary": "Fils keeps his cool in Basel to boost Turin hopes, but Jodar falters. Full real-time coverage direct from ATP Tour.",
@@ -780,22 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-10-19T17:49:32.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQMkJmLTM0TUViY2ZFVzBkYWo1YzBleG1hOXYyUDZpWkJIT0ZZNW1GQXcwMF92YS1WTE9CT2JhS1hRZ2o0S3ROdmd2aDA1Nk9HV2ZEajJyVUJaY2k0ZXlENUNsVHdzVFlsMW9FV0E3aURKRmlubjhCNXBqeTllRllPRGlKOVE?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "Circuit Wire"
-    ]
-  },
-  {
-    "id": "atp-live-1792550709865-9",
-    "title": "Jodar & Davidovich Fokina set for a high-stakes clash in Shanghai final",
-    "summary": "Jodar & Davidovich Fokina set for a high-stakes clash in Shanghai final. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-17T21:18:04.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNMDlaVFBkejBBcmZnQ2FkR0h1MUQ5Mjk5YzFNbjF3ZTFwZml2c0ZITDNOS3FOUy10dHpwbE5NZXRMTGQ4ZUtaVC1pRVN6M1dGV3ZEN01pSEx2X3d1elpxOWsyZkFuUGg5Y2lhdVN5dkFLRjZVRDlhOU5fR2d2MVF2OE1hbDJYSm5EMGFr?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
