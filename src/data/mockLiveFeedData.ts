@@ -4,6 +4,38 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1793590989731-0",
+    "title": "Alcaraz storms past De Minaur to Vienna title, completes perfect ATP 500 season",
+    "summary": "Alcaraz storms past De Minaur to Vienna title, completes perfect ATP 500 season. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-01T17:41:05.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5BMUJJLWdRTVNOUkxMZWtlYnVUR05RUTZlUTBjSnZhTFdhN0xPVFcwVFFtYzlpNlc4dHAzMmhUSUZGWVR6cTVJRnZaanhwbkpfT0c1U08xMEVfd0o3MkRTY0VKMGk4WlMxMkhOWTZHVHlpUmVqZlE?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1793590989731-2",
+    "title": "Shelton to add Juan Carlos Ferrero to coaching team",
+    "summary": "Shelton to add Juan Carlos Ferrero to coaching team. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-01T23:07:40.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBQeTlVaUJjc3VnSkw5OGJIbUt3Tm90Sjlyd1JJQ3d0cUlxSVZvOXBHTGtraFpGOWxzVUowcm10Zk1DZXY3UGZ1bkxkbmtBOXJMNmYtVWJqa2tKWWtWRjZya3JNOFc3eXlMMU5oLW5JejRxTk9y?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1793479837217-0",
     "title": "Zverev, Djokovic on course for Paris QF showdown; Turin contenders eye push",
     "summary": "Zverev, Djokovic on course for Paris QF showdown; Turin contenders eye push. Full real-time coverage direct from ATP Tour.",
@@ -769,38 +801,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
       "ATP Tour",
       "Live News",
       "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1792686227497-8",
-    "title": "Khachanov saves 5 MPs in Almaty: 'I am speechless'",
-    "summary": "Khachanov saves 5 MPs in Almaty: 'I am speechless'. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-22T13:06:32.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1SRXpoTkNXUjBUbDg0RC14RHN6eDNNRWhkZFdEVlBaU29qMjZ4Nmtra3pmM2lPaHdlUWp5cmVNSk5EeTg5SzRZdEpsaTdkRkh6aHZ1aVdidFc4U3VLTTNyRHI3WklvZVFwaFZZ?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1792580171229-0",
-    "title": "Del Potro among 2027 nominees for International Tennis Hall of Fame",
-    "summary": "Del Potro among 2027 nominees for International Tennis Hall of Fame. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-19T17:49:32.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQMkJmLTM0TUViY2ZFVzBkYWo1YzBleG1hOXYyUDZpWkJIT0ZZNW1GQXcwMF92YS1WTE9CT2JhS1hRZ2o0S3ROdmd2aDA1Nk9HV2ZEajJyVUJaY2k0ZXlENUNsVHdzVFlsMW9FV0E3aURKRmlubjhCNXBqeTllRllPRGlKOVE?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "Circuit Wire"
     ]
   }
 ];
