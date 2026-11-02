@@ -4,6 +4,86 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1793629414975-0",
+    "title": "Vacherot rallies past Lehecka to capture Basel crown, make Monegasque history",
+    "summary": "Vacherot rallies past Lehecka to capture Basel crown, make Monegasque history. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-01T16:59:04.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5hUXR2S0lxdW9kc3hmazB6aWU5VmI4UnVIRVBtRTRRNEsxRnFFMzNJbHJaTURVTXlORlg5SUZxSmZtVnE5QUNhdndlTDZUUEJMSVdWVnpYUng1N0taNzIxYURnVlhGT09Wc3FpOV9HM0xZRFJtMDQ4WHZ5dXU?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1793629414975-1",
+    "title": "Kouame, 17, follows in Federer's footsteps & joins Sinner, Alcaraz in Challenger history",
+    "summary": "Kouame, 17, follows in Federer's footsteps & joins Sinner, Alcaraz in Challenger history. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-01T22:32:40.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9aSXJMcXN1ZndoaEd0ci1hV25DT1o0TGJUVEZjcWZ3eGpnemRMMmVGOUpqWW1NbnF3VGF4T2IzM0lQaXR1MGwtOGJvSHZvN19qdFR1bGswWWU5WUNkWjktaWt0T2tXXzd4OG94N0pUQkpkNlVF?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1793629414975-2",
+    "title": "Zverev new No. 1, Alcaraz chases Paris glory & Turin battle: Scouting Report",
+    "summary": "Zverev new No. 1, Alcaraz chases Paris glory & Turin battle: Scouting Report. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-01T20:25:16.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE0zS0hKQnhFakl1NnVQcW1TWEtRR0E1Q2RISHV4WWRFRlJHdGdFS3pndW9LUXdIekJrM0ltVnBSQzhMWXB5U3gwVEx0dU1tdnNMbWJlaUJ5RGl3UWJqLS1vWVVDQmQwbGRqYWc?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1793629414975-4",
+    "title": "De Minaur downs No. 1-bound Zverev to reach Vienna final, continue Turin charge",
+    "summary": "De Minaur downs No. 1-bound Zverev to reach Vienna final, continue Turin charge. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-31T19:03:33.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBuRnNqUFFPeTFyUXFicVJUTjZvOTZFSlhXTEJMZnBRSl95M3VpeTl0eEl4LWozSUlNcWk0WHBzRHhqZEhaTE11djhBcGFIMzRKRENXMXBkQkNFTmo3NVhOa29sa1k3TFVQOHM2bkFXdUo?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1793629414975-5",
+    "title": "Vacherot upsets Fritz, Lehecka saves MP to reach Basel final",
+    "summary": "Vacherot upsets Fritz, Lehecka saves MP to reach Basel final. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-10-31T19:02:29.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE0xQWxKQXV1SjFvclV2QjE5X2lkUmpObXItbWZKTDdoc3FYcXpsUnM1MjhWN28yTjlIUHZpQzJqeHpxTUtqT3RHTUlaWDdxUmVwZTUyNUxfNVcwdkd5cTJQWEp1ZzM3alVRQndoV3VNdGU3VUJT?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1793590989731-0",
     "title": "Alcaraz storms past De Minaur to Vienna title, completes perfect ATP 500 season",
     "summary": "Alcaraz storms past De Minaur to Vienna title, completes perfect ATP 500 season. Full real-time coverage direct from ATP Tour.",
@@ -716,86 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-10-20T18:04:32.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5Hb1lCS21uU3R4ZnlGMXFJMVd5YklLNk9PVVIxaUgzRTRBS0xQQjhMbHhreEZSSVFwNWNaYmxpbzdQTUE1dWhBTDJlNHp3bldqa0FESUpXZE42RWtJN1RSTFZHbTM4UVJmbnN2aA?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1792702975660-0",
-    "title": "Celebrating newly retired David Goffin: 'I gave everything until the very end'",
-    "summary": "Celebrating newly retired David Goffin: 'I gave everything until the very end'. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-22T14:56:32.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1tYTd2ZzVKUUhvOU5zdk1yYnJIdTI1TWpFMmdCUHBleC1vMTlFWnhxTHhJNWgwMnpYeXA3RW5Ja3lKc0sxSUY3SUM4OWRXYXprZUdyMU0wQ1VsLWp3ajhSQ2RKVVM5WnlZTGxsbGJkMjh4OTJObUVF?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1792702975660-8",
-    "title": "Khachanov saves 5 MPs in Almaty: 'I am speechless'; Medvedev advances",
-    "summary": "Khachanov saves 5 MPs in Almaty: 'I am speechless'; Medvedev advances. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-22T15:51:32.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1SRXpoTkNXUjBUbDg0RC14RHN6eDNNRWhkZFdEVlBaU29qMjZ4Nmtra3pmM2lPaHdlUWp5cmVNSk5EeTg5SzRZdEpsaTdkRkh6aHZ1aVdidFc4U3VLTTNyRHI3WklvZVFwaFZZ?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1792686227496-0",
-    "title": "ATP Safe Sport prevents 234,000 abusive comments reaching players & fans",
-    "summary": "ATP Safe Sport prevents 234,000 abusive comments reaching players & fans. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-22T08:06:32.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBMTlYtZllLbUlPbC04ZXp0anY4RzkwQ3JaMzctb0trQ3FoSWhwQm82OFFfblNoV3hIRjdtV1FYWEc3dG54VHRnb0hoLVpqa0loMENqbTRleVp2a2VfcV9JRlVOd1FfMzBaQzROZnJYQ2lNdnFVenFSV1U2MDhMUQ?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1792686227497-2",
-    "title": "Cerundolo on his magic Miami breakthrough: 'I felt like I was in a movie'",
-    "summary": "Cerundolo on his magic Miami breakthrough: 'I felt like I was in a movie'. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-22T09:01:32.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBDd2hJajVibjh4b2Y1VnQ4ZTJ6Mzg0cjNhTUQ1RlNidkkycTRjUlZKVnRremxhbXBRT0J3YmJtWDc5RnhUbVV6blMzbEVHR3ZIdFZOZkZrblgzaDV0cmxfWTYwdEV4MWtWY0JLYVVWOGQ1TmhSNmFyTG9iSmF2NWc?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1792686227497-3",
-    "title": "Tsitsipas' touching gesture to Kukushkin after Kazakhstani's final match in Almaty",
-    "summary": "Tsitsipas' touching gesture to Kukushkin after Kazakhstani's final match in Almaty. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-21T21:36:28.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNTWhzaGlDZnFpWm1FNjZiSEZNbUtZSmg3d0RFbUJEVl9qVDNzUE5QNUozMjk3UzhXOXFBOHZzbHRnNUwtUUd3TDNOX0tOWFpMbVNuclY5RmJ6cUdLNlVGUjRLdy1CSHdMYzFidHgwRnJMaGwyeEVzWlNCU0dyVEhMRnJhVWRFb00?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
