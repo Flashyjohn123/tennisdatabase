@@ -4,6 +4,38 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1793664906625-7",
+    "title": "Alexander Zverev No. 1 Longform Tribute",
+    "summary": "Alexander Zverev No. 1 Longform Tribute. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-02T04:00:49.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBZVmYwSU02ZE9YcTZmbHlmTV9pQmdaUU5XMno2WnkxeGpHWXhzQUpUcG01RjVLZjJZRDlnSVpwTFZENjZrSWZrSzZpSEpFUkVUWVZhVXRWSVBralJPOHZMTFhtRWliSXFQV2lhd3B2MDM1cl9GZG9N?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1793664906625-8",
+    "title": "Alexander Zverev: Why Type 1 diabetes didn't stop me from becoming World No. 1",
+    "summary": "Alexander Zverev: Why Type 1 diabetes didn't stop me from becoming World No. 1. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-02T04:03:56.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5KRGkweVZsSWpHcHBhNGZWa0xPWVUyZVo0ZFBtbkdnTXVUWVBIb2VPcjlJUVZEUW9UVk5nWVpfeGZQWHRWSzhONGE2ay1GS1k3WlVtVVJpVm1sNF9POVRKbU51NVV4LWZGSlZvUjZKdjhWdF9QQVNF?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1793629414975-0",
     "title": "Vacherot rallies past Lehecka to capture Basel crown, make Monegasque history",
     "summary": "Vacherot rallies past Lehecka to capture Basel crown, make Monegasque history. Full real-time coverage direct from ATP Tour.",
@@ -764,38 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-10-23T17:33:52.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNbzJTcmQ0X21vWDQ3VVgzWjFId2JlN3dzX0RiWDZ0UjVlRjJQR0lreEtHbkc3TlV2cVlKX3cwOWFWdTJUVVdXSUdZMlk1VnBaSERqakVNMkJKcF9QVkhQTUx2ekpNZzVaWjkzc0RkYUpOMGFZLWlweEk1NVRKSkwydExqbTZhdw?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1792771960657-4",
-    "title": "Mannarino upsets Rublev, maintains impressive Almaty record, Tsitsipas ends Kukushkin's career",
-    "summary": "Mannarino upsets Rublev, maintains impressive Almaty record, Tsitsipas ends Kukushkin's career. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-21T15:55:46.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1DaG0xZlhkLU5GUi03alM3U3U0TlNzMk1zcENGY0xkSEQ3dHp0anlEWmtsTlNISUIxY3ZMblduSUxoeHpvOEZacHhNbnZ2TDJGNnJ3WGpLOUh3QXRzZGo4cHpjcGNQazF5TFpVRQ?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1792723659029-8",
-    "title": "Bergs 'zones in' for home win in Brussels",
-    "summary": "Bergs 'zones in' for home win in Brussels. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-20T18:04:32.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5Hb1lCS21uU3R4ZnlGMXFJMVd5YklLNk9PVVIxaUgzRTRBS0xQQjhMbHhreEZSSVFwNWNaYmxpbzdQTUE1dWhBTDJlNHp3bldqa0FESUpXZE42RWtJN1RSTFZHbTM4UVJmbnN2aA?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
