@@ -4,6 +4,22 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1793745855078-4",
+    "title": "Alcaraz eager to bring his best in Paris: 'I really want to do great'",
+    "summary": "Alcaraz eager to bring his best in Paris: 'I really want to do great'. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-02T21:09:57.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBUU3VLZnVMeWhmSXpHRms4S1dpeEZwVmV5aWs0Z3hxNFVqSzFXeGJUaDlzc3U2cVVvYVI1ZXZ5aHhmVjMzdExwX2dBNTFadzJRaXB5MDZtbWw0UW85bjJESjRsVHk0eEZKeGc?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1793712198353-0",
     "title": "Vacherot ahead of Djokovic clash in Paris: 'My season could be over, I'm giving 100%'",
     "summary": "Vacherot ahead of Djokovic clash in Paris: 'My season could be over, I'm giving 100%'. Full real-time coverage direct from ATP Tour.",
@@ -780,22 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-10-23T17:09:01.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1DT1hRU2lKeFpBczBzR1ZpRG9KdmlJWllzbUlveVN2UE1Wd1RSRGM0NWxid3hmOC1mV3RiVHI5TmlXVUtTV3ZCczg5SVh5dkozLVRZRXpiVWZzTVFncDV4WTN0NEFnaHBJT1h3UnNQbGhPcFFWc3pjX3p3?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1792809875637-7",
-    "title": "Goffin keeps career alive with escape win in Brussels: 'Tomorrow we do it again'",
-    "summary": "Goffin keeps career alive with escape win in Brussels: 'Tomorrow we do it again'. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-21T20:41:01.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9UbHhMWHJ6SWUxUFEtYTB0Sy1wUTBzNlZRUk9MXzdLa0pCd01BeXE5VUlOMHBNcG4tdmQtZ1ZGbDdNZVRsLWdOTk41d0lBbHRBQkFGdlJFbTNncXdva0RyNktoWV9XMi01SVhKSWYzTmkwSVJFcDFtR05R?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
