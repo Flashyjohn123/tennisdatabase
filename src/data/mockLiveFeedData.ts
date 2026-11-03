@@ -4,6 +4,54 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1793712198353-0",
+    "title": "Vacherot ahead of Djokovic clash in Paris: 'My season could be over, I'm giving 100%'",
+    "summary": "Vacherot ahead of Djokovic clash in Paris: 'My season could be over, I'm giving 100%'. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-02T17:43:13.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5sZ2NzZGowS0E3aUVuWGNwZVFRZGJjN3lrWEprSVgyOHctN0FPRHlTcnhjeUlGQjhFQkRzYnI2eXNNLS1TZ2U0YjQ3akg3RmM4M2NsZnVFdzU1SUVQbkdJVU9jWUNwWVVGWG1wcHdfdw?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1793712198353-5",
+    "title": "Zverev receives World No. 1 trophy in Paris",
+    "summary": "Zverev receives World No. 1 trophy in Paris. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-02T16:53:13.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE94aW0ycWpHOUNrS3lpRFV0RklmYkNTbWRERGw0Ym5jc2NLczJMaUJJLVJTZ3VTaUZvU25NSThzdjhydVY5aHc4cWxrdXM3OS02UnplS3c1WUFtUTZYb2ZibXdWcUtPZ2I5SzJxWkV6eDUxWHNsRGZmLQ?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1793712198353-8",
+    "title": "Khachanov's ATP Perfect Player: What Karen would take from Alcaraz",
+    "summary": "Khachanov's ATP Perfect Player: What Karen would take from Alcaraz. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-02T14:48:13.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE41a05nODEyUDNGNzhxRE16ajZ0NmN2aW5MVFBlUERjWHp2akxIX0pLSE13TER3WVp5WV9JNnlQaF9sNEV6WWlzSGdxNUZfMjgwTXdsVTlJUFhrNS04VEFXRGNIRmt2YmZSZ2lVVWs0dXE2ZE0?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1793664906625-7",
     "title": "Alexander Zverev No. 1 Longform Tribute",
     "summary": "Alexander Zverev No. 1 Longform Tribute. Full real-time coverage direct from ATP Tour.",
@@ -748,54 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-10-21T20:41:01.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9UbHhMWHJ6SWUxUFEtYTB0Sy1wUTBzNlZRUk9MXzdLa0pCd01BeXE5VUlOMHBNcG4tdmQtZ1ZGbDdNZVRsLWdOTk41d0lBbHRBQkFGdlJFbTNncXdva0RyNktoWV9XMi01SVhKSWYzTmkwSVJFcDFtR05R?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1792788651672-0",
-    "title": "Medvedev continues Almaty title defence, Tsitsipas reaches SFs",
-    "summary": "Medvedev continues Almaty title defence, Tsitsipas reaches SFs. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-23T14:17:20.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9pdmpVQWgxY25uWlo0NzB3c0xpZlozRkhGMU5sTVBNMmZzYzZvUEVUNmhNcHNxNFV1bFVIX09NdFRYbEE0Nk1IcXJKVUFrYWtyR0x4UFBhNThDdlhEVThvY0hqNlBOWC1uSGI0ZEFNRzdJaTB5?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1792788651672-3",
-    "title": "Cerundolo on his magical Miami breakthrough: 'I felt like I was in a movie'",
-    "summary": "Cerundolo on his magical Miami breakthrough: 'I felt like I was in a movie'. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-22T09:01:32.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBDd2hJajVibjh4b2Y1VnQ4ZTJ6Mzg0cjNhTUQ1RlNidkkycTRjUlZKVnRremxhbXBRT0J3YmJtWDc5RnhUbVV6blMzbEVHR3ZIdFZOZkZrblgzaDV0cmxfWTYwdEV4MWtWY0JLYVVWOGQ1TmhSNmFyTG9iSmF2NWc?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1792788651672-4",
-    "title": "Fritz, Paul lift lid on Turin ambitions as Live Race heats up",
-    "summary": "Fritz, Paul lift lid on Turin ambitions as Live Race heats up. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-23T17:33:52.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNbzJTcmQ0X21vWDQ3VVgzWjFId2JlN3dzX0RiWDZ0UjVlRjJQR0lreEtHbkc3TlV2cVlKX3cwOWFWdTJUVVdXSUdZMlk1VnBaSERqakVNMkJKcF9QVkhQTUx2ekpNZzVaWjkzc0RkYUpOMGFZLWlweEk1NVRKSkwydExqbTZhdw?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
