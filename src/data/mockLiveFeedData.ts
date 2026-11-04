@@ -4,6 +4,22 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1793799263015-0",
+    "title": "Monfils honoured in Paris: 'Very difficult moment to say goodbye'",
+    "summary": "Monfils honoured in Paris: 'Very difficult moment to say goodbye'. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-03T20:20:32.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE13T1lFaWkwc2hNUWVZak84cm9zSFFXRHdXMVJUdXk5OWphZS0yMl9SYTR5WDVOQUtsZFN2SHJVVmRTVXFjNGljQWhmWERTUmw4dkg0ZGJwTndDZ0M4VHIwQlQ2ZlpVc2t2UnU5TnNjeXliM3NnbHpv?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1793765580098-2",
     "title": "Nouza & Venus claim first team win in Paris",
     "summary": "Nouza & Venus claim first team win in Paris. Full real-time coverage direct from ATP Tour.",
@@ -780,22 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-10-24T06:59:23.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9ON3lZbktNS3p5UHc4czJaaDlGU0hqVHBxdWdWbkUyOU84eE9ydHRsXzBKT1hxMzhEcTZwc0RGdlNsM2QtWEtPOXl1aVptNVdVbHY0SFJfMkU1b2F3bHN1V0F6SDNlczZvT196d3lmeDAzQQ?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1792872100213-4",
-    "title": "Fils converts sixth MP to down Michelsen in Brussels, boost Turin hopes",
-    "summary": "Fils converts sixth MP to down Michelsen in Brussels, boost Turin hopes. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-23T22:17:46.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9FT2wwY0FWTEt5TXJMOFRWV1ptWmN2RG40SVc2UmlZc0QxQXpZNEZreXZyejROd2FOX3F2aUNLeUx3bDdiX1BpNHlsRUU0TGs5M29lYkI1YndjLVBXd3JLYmhQT1RKbWFTd0EyYVVNdlZuZVRqblE?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
