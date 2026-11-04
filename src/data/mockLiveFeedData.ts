@@ -4,6 +4,38 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1793833348499-1",
+    "title": "Hijikata taking 'best-level season' into Djokovic meeting",
+    "summary": "Hijikata taking 'best-level season' into Djokovic meeting. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-04T08:49:53.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBhTnRhdnM2Qmo4U1NtSkpiazJ3R3pPaEFud0owMXlOMEltVlVyR0pjOUJEdEJpVUcyd2xEMGM0TFE0NjhnTXlSYVJiQUJjN0xPOC1kLVNDWlh2cFVCeVFQaGFSMnNMTUxGRVlz?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1793833348499-9",
+    "title": "What is the Paris tennis schedule?",
+    "summary": "What is the Paris tennis schedule?. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-03T16:50:20.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1oNXk5b1RqdGZ1RzZYalR5NTduVEt5XzVfRWw4dUJJYXhfb1J3ekVWUXN5bV9nLU9nMERURG5nTFFDV1hTWWZoaXZYcnVwUG5Lbk1lWUJUYlh0X3VnZks1dg?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1793799263015-0",
     "title": "Monfils honoured in Paris: 'Very difficult moment to say goodbye'",
     "summary": "Monfils honoured in Paris: 'Very difficult moment to say goodbye'. Full real-time coverage direct from ATP Tour.",
@@ -764,38 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-10-24T18:22:37.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1rVEN2NlhMSU1BdGRHQXViR1o0Z1BoX0dqanFuQzlHSUhoc3BYVkhza0NXTkFXTjhESmhlbkEyaFdHYU45TzRfMFE0VVRncVhpTEtHdGZHY0ZaQnVZRjhxREpCaEpvblNKOVJQc3o5Yjk3R2UweXA4TzQ1Wi0?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1792895695273-3",
-    "title": "Struff shocks Fils in Brussels, sets Griekspoor final clash",
-    "summary": "Struff shocks Fils in Brussels, sets Griekspoor final clash. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-24T19:34:23.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9zUnd2cTBTR3h1LVRRNHZhbzdzNWVreEt4eGNmTlRZYkJzSjJkZTlrQV9GUXNWZnJKT0dFOGMtak5LUy1fV1BfTThhc1M4M0RSSjRveTRVSHRIbXZoZHdJdG5PWkhqOTNRUFdkYy1vQXJjNV9NM1pfcw?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1792872100213-0",
-    "title": "Cobolli’s Turin mission: A dream within reach",
-    "summary": "Cobolli’s Turin mission: A dream within reach. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-24T06:59:23.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9ON3lZbktNS3p5UHc4czJaaDlGU0hqVHBxdWdWbkUyOU84eE9ydHRsXzBKT1hxMzhEcTZwc0RGdlNsM2QtWEtPOXl1aVptNVdVbHY0SFJfMkU1b2F3bHN1V0F6SDNlczZvT196d3lmeDAzQQ?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
