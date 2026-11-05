@@ -4,6 +4,22 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1793853124930-1",
+    "title": "Hijikata upsets Djokovic in Paris, leaves Live Race open",
+    "summary": "Hijikata upsets Djokovic in Paris, leaves Live Race open. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-04T20:26:23.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBmaFFmTTFSTThHRFJ5S3RWX2w5RTFBWkg4TkNfa0hsUG5GTHVPcUx0ZXNsWUxxZzF0aFAzVTg4clcydDdIVlpyajBtd1Y0N0tFRHA3Ty05dFR5a2QyMFVjTV9TU3V0Y2JqREZtUFdGNE15YzgteF9FYUln?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1793833348499-1",
     "title": "Hijikata taking 'best-level season' into Djokovic meeting",
     "summary": "Hijikata taking 'best-level season' into Djokovic meeting. Full real-time coverage direct from ATP Tour.",
@@ -780,22 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-10-23T14:38:20.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOTmlnQndXcDBWOWtjNzlmYkdMR3lraGc0MUJSX2Y0N0d1cFV3YXY5Tk8tZi0xOVFEYlBsQzE2TDdJMWctRl9rbHhoQ0lBTlRQZm1PX1VGRDRKZjU3bUF0dFZXZV81aTdNbVJxcVlJSFJuZFpEZFJ5bDFyOTQwb1Z3Ug?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1792924136510-7",
-    "title": "Musetti saves 4 MPs, shocks Cobolli to set Fritz final in Lyon",
-    "summary": "Musetti saves 4 MPs, shocks Cobolli to set Fritz final in Lyon. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-24T18:22:37.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1rVEN2NlhMSU1BdGRHQXViR1o0Z1BoX0dqanFuQzlHSUhoc3BYVkhza0NXTkFXTjhESmhlbkEyaFdHYU45TzRfMFE0VVRncVhpTEtHdGZHY0ZaQnVZRjhxREpCaEpvblNKOVJQc3o5Yjk3R2UweXA4TzQ1Wi0?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
