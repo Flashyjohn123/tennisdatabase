@@ -4,6 +4,54 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1793886462858-2",
+    "title": "Musetti shocks Zverev in Paris; Halys saves 4 MPs to shake up Live Race",
+    "summary": "Musetti shocks Zverev in Paris; Halys saves 4 MPs to shake up Live Race. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-04T14:39:46.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5BcmhwcDZUX095aG1iOUxTYzhvRGpSV1VEb3NTUlVHZ2loOHFVdmJnd2VSVnVacFdyVXFhV3RQREFZeHJJdkpNdXMtNWoxUFk4U29kVUtnSnlzczVVUVZZZ2JWYzdJNERlMnJkYVlQdng1ejd3bHc?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1793886462858-5",
+    "title": "Arribage/Olivetti upset Cash/Glasspool in Paris opener",
+    "summary": "Arribage/Olivetti upset Cash/Glasspool in Paris opener. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-04T17:32:41.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5yRHY2WXR4LW9Qc25faHhNQm1PekhldW9JR3VpdzYyY1o3b2daS0ExbEVzUzVSTVp4cGI4SDFGT2V0dU1BWTk1LTdTRW9lVFh0WGd4U0JGbTF6a2ZqaERYNmt4aUQ3Z0xi?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1793886462858-9",
+    "title": "Jodar shatters record books with Top-10 debut",
+    "summary": "Jodar shatters record books with Top-10 debut. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-02T16:02:52.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBYUWsyZW85VmlvTDJRUl9NbENYSEttdWFoajBNOFdDbk5ETjBPcG5mLU93XzZXZllISHBsaGozTWttcHJ1THNoalZvTUE0WmxaOU8wRHZpZ0w1eVhybk5KVGVOWjFwZTU2SjlnZlVldXpQdW1K?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1793853124930-1",
     "title": "Hijikata upsets Djokovic in Paris, leaves Live Race open",
     "summary": "Hijikata upsets Djokovic in Paris, leaves Live Race open. Full real-time coverage direct from ATP Tour.",
@@ -748,54 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-10-25T12:29:56.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1Bc1FmcG95VDUwdmZPODMwXzctdVFETXdDbkNPbnMwWDhfa1R4MWROR3NiVHJORmZmaVloLURYNXFzNlRGLVQwaHlVU0VFUjFrWmZRRzBiY0FNdzlfV1NDcHo0SlhxRURqQXFRcWxpdnZCVGxoeTl1Nl9xSQ?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1792982018466-9",
-    "title": "Medvedev into Almaty final after Bublik retirement, faces Basilashvili for trophy",
-    "summary": "Medvedev into Almaty final after Bublik retirement, faces Basilashvili for trophy. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-24T14:59:23.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9SVnlZS0VRdktVTkV4LVVaT2F6UzU5blRJQ0JWYXctcnNUQ1pONExsTnh1SktrZ3BDeWlMcTI1LWZqeUxDVTlxRnF4WTFZRHVMS1RuTWUtRnZKREM2T2phMHhsbUk3ZXRSdEo0THFDTTdMZ19nQkxv?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1792941666752-1",
-    "title": "Alcaraz faces Khachanov test in Vienna opener; Zverev meets Landaluce",
-    "summary": "Alcaraz faces Khachanov test in Vienna opener; Zverev meets Landaluce. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-24T18:22:37.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5fNzNFNlVyZ2hyX2RYWVNhWHA4UnZXMDhZcUVJOUpTUlVRcXFrYnNZaDZPWE1xZDVNc0tGN3l5QnQweXQtX1RPTTBFMGZEd25PWHF4Uzg5X3l4R20tTGc2SE8wVnNBbkNKRWdRZ0VvQTB4dw?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1792941666752-6",
-    "title": "Agassi, Wilander help raise $1.5 million for New Mexico youth",
-    "summary": "Agassi, Wilander help raise $1.5 million for New Mexico youth. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-23T14:38:20.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOTmlnQndXcDBWOWtjNzlmYkdMR3lraGc0MUJSX2Y0N0d1cFV3YXY5Tk8tZi0xOVFEYlBsQzE2TDdJMWctRl9rbHhoQ0lBTlRQZm1PX1VGRDRKZjU3bUF0dFZXZV81aTdNbVJxcVlJSFJuZFpEZFJ5bDFyOTQwb1Z3Ug?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
