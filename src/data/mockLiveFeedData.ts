@@ -4,6 +4,86 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1794004581640-2",
+    "title": "What were the Paris tennis results?",
+    "summary": "What were the Paris tennis results?. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-05T00:03:08.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBJRHVPSzFTTllWcEZkRUV2ZTBNQkl3a0lhMFNDWGxyM2c4dklmRkItR2dmNXNEY2lrVHlkOUlocmRoRFZTenlSRFRRYmJPamdDeWxHanBqNFdyS2dodEd3?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1794004581640-6",
+    "title": "Shanghai & Vienna champs Miedler/Oberleitner reach Paris SFs",
+    "summary": "Shanghai & Vienna champs Miedler/Oberleitner reach Paris SFs. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-06T18:26:27.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5yRHY2WXR4LW9Qc25faHhNQm1PekhldW9JR3VpdzYyY1o3b2daS0ExbEVzUzVSTVp4cGI4SDFGT2V0dU1BWTk1LTdTRW9lVFh0WGd4U0JGbTF6a2ZqaERYNmt4aUQ3Z0xi?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1794004581640-7",
+    "title": "What are the Nitto ATP Finals qualification scenarios?",
+    "summary": "What are the Nitto ATP Finals qualification scenarios?. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-05T23:45:25.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQRlZldXFpMXB5QlRHT2ZLUm9nQnBObFl5MXFKY253U1VWalQ5d0h2Mmh1TTFtUE02b1lnM1J5Y1VaT3B4MjF5X2RWNXhFLVpiVTJoX3JmLU5QSGxHeFFua3hFOXZrQXU4VUJodWJuU2NVN1dWZVd0UFdWT0IyTkp1VDdSSmZEQXZUM1ZicmZSMGF5Zw?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1794004581640-8",
+    "title": "Tiafoe qualifies for Nitto ATP Finals for first time",
+    "summary": "Tiafoe qualifies for Nitto ATP Finals for first time. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-06T15:05:25.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5zRU1TcTlLY3VkaExfb2lmenhPZVJuS2JBeW03ZTd2LTVrbnFkaWR0Yng5bkR2UUlEZ0hRZjBmekVSM3Z2cm1rWExmUVBDTkE3bUJza3FILThjUG9BQ2VVZExtUk5sWGE3QWtTNHB3TXg0WGdjTG9oNjd4UjBGNm8?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1794004581640-9",
+    "title": "Shelton shuts down Paul’s Turin hopes, reaches Paris SFs",
+    "summary": "Shelton shuts down Paul’s Turin hopes, reaches Paris SFs. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-06T21:43:04.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFA0TFM2WWpGeDMtUzFWRWY1d0tSc0NXQm15MVNoU3pSVkNvM2FfY01KUWtQTW1ScXRvV1RZZTBrT2M0NkJoZUF4dTYtejNjVFViSE1jN0dPUjdpYmRIV2R6WGltYnNTME5ieWc?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1793971882243-6",
     "title": "Fils first Frenchman to qualify for Nitto ATP Finals in 10 years",
     "summary": "Fils first Frenchman to qualify for Nitto ATP Finals in 10 years. Full real-time coverage direct from ATP Tour.",
@@ -716,86 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-10-26T23:24:03.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE14WThCWmg3X2kwQmxuRVJtMDlveXBPUUtyclBzcUpLM3JMTXVUeWJBSjJtYzc1WE11VGhUX2l6WnR2eVZGMnpUMU5HLVB5UGZFQ2x3cjJUbDZ3NnN0NmZWOElWYlFtLVBPNnl0SQ?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1793100056235-3",
-    "title": "Griekspoor rallies past Struff for Brussels crown",
-    "summary": "Griekspoor rallies past Struff for Brussels crown. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-25T18:43:18.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOeEc1VzJ4LU9hU0p1YkVZdnFfOFpNOW0zMmN0V2oxTE5XOE0zZjRka0NIY3ZlRThsWE9JNm04b2xkM1luaEVpYlc4NXhMSzJqRXRjS3JLRXdGRDA3RDdUU2FWSkNkMFhPWDFJX2tJbmtsc3pxdXRYRnZJQWlCQS1GZi1R?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1793100056235-4",
-    "title": "Arevalo & Pavic qualify for third consecutive Nitto ATP Finals together",
-    "summary": "Arevalo & Pavic qualify for third consecutive Nitto ATP Finals together. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-26T16:24:26.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOaGZKWE9vVVgweUZoSlRGbzA1Z3FSdjJwUkhEdjVaM0NzSUx6amNEaDFGT29TRjVGZHBoWlVieWh5OERWWjg1ZDNIendYelBRWDRRWk5fUVBkRWVkLW4yRUZyUG04NXNaTVA2UFFFbU5Pa2hpREVWejE1UFFsQVJyVXZLUnNHWkVm?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1793070507326-6",
-    "title": "Zverev, Alcaraz take tennis among the tenors at the Vienna State Opera!",
-    "summary": "Zverev, Alcaraz take tennis among the tenors at the Vienna State Opera!. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-26T11:29:01.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQZF83OUhaZnJ6VFZjMUVvY1hTc2NzN1ZxZVpEb3UwSVN3LWN0b2g1U2lGTEJta19PRklTM0oyUjZ2czE4N2FNVEFRQ2dsNVhPUlJzRURDa0ZzdFo1M0FvWHVTWUxyTW5ETDFoZ3dBMHRJbTM0dy1LVV9uY00zQU8tc0FR?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1793039569197-2",
-    "title": "Musetti triumphs in Lyon, wins first title since 2022",
-    "summary": "Musetti triumphs in Lyon, wins first title since 2022. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-25T17:39:09.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1fN3JiV2wyWlpkWlZFcS1BS1Q1WS1odFpKcmxRT2lDYlBGQmlNdWIya2drelEwWEV0YjJqNXVkeEhLc0hObHp2cURjMlJ3T29GZ0dodjRvb0FIMnVtSHd6d2RKTE1FaGNnZlhDYkRMNmFUb1h3blBv?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1793039569197-6",
-    "title": "Fils on facing his 'brother' Mpetshi Perricard in Basel & helping him in tough season",
-    "summary": "Fils on facing his 'brother' Mpetshi Perricard in Basel & helping him in tough season. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-26T12:24:01.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5hcVhpaW11VFA0QmtNOTk3ZkZqTTVhUnhJU2RGeG9qLU5fZjI5bWNfTWRJMlpmMkVCQi1HaWN5Y05qSEJhNmxPZjBRY3BISEVva3BFSGNqc3FRUkpsTTBfZUZnaUN3NEd4UTFLRUdUMU10OVpTTGpEakszUlN1Zw?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
