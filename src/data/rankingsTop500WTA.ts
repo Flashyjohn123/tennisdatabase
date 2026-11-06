@@ -1075,7 +1075,7 @@ export const RANKINGS_TOP_500_WTA: PlayerRankSummary[] = [
     "country": "Romania",
     "countryCode": "ROU",
     "flag": "🇷🇴",
-    "age": 28,
+    "age": 29,
     "points": 1033,
     "tournamentsPlayed": 24,
     "winPercentage": 81.4,
