@@ -4,6 +4,54 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1793971882243-6",
+    "title": "Fils first Frenchman to qualify for Nitto ATP Finals in 10 years",
+    "summary": "Fils first Frenchman to qualify for Nitto ATP Finals in 10 years. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-04T13:23:35.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBuMThNZlNJRERKcDRMS3NpYTZWSi1DelRkVHBUUlBhNkZVNS11QU5pMUN6OXhlSC0yNDVZYkJYRDRwOFptTVpJU0tUcHd5WGRhWWRUbkVUUVZYOGo2ZW50YU5jSXVGQzhJQ1c4OHM5RVJFanZIT0YyN2JYeWQ?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1793971882243-7",
+    "title": "What are the Nitto ATP Finals qualification scenarios Thursday in Paris?",
+    "summary": "What are the Nitto ATP Finals qualification scenarios Thursday in Paris?. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-05T00:30:28.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPcUdTUV9KM1hjeUl3Z0Q0cURJcnpGc1d4VE1KT01kX0Z2TnYya3JUcW5JMUlidm5wS0g3TUJ0dmU4dkdMOEdxSUMwQ3B4SWV1bFJLdnRqZnRJN2pPa1dwUi1zZkRwZFJMaV9rRUdfcjBuRnFTYmNhek16Nno2OXBNZzVzZ04yaFgzUVNlMXFpeTlMdw?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1793971882243-9",
+    "title": "Fritz beats Fils in Paris to keep Nitto ATP Finals dream alive",
+    "summary": "Fritz beats Fils in Paris to keep Nitto ATP Finals dream alive. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-05T22:51:48.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9BZDRyd0JmNzdUWGVEM2lUdnZxLU9pNGlUWWJoaUVpdjdwMXdYQkVUcVEweWU1Nl80YWQtSnhRQ051c2RHQTdGRUtPa0RZTUY0WGlmRnZrZFNSQVExb1k1SEFQVkxCRDZLN2pSVVRzaw?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1793886462858-2",
     "title": "Musetti shocks Zverev in Paris; Halys saves 4 MPs to shake up Live Race",
     "summary": "Musetti shocks Zverev in Paris; Halys saves 4 MPs to shake up Live Race. Full real-time coverage direct from ATP Tour.",
@@ -748,54 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-10-26T12:24:01.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5hcVhpaW11VFA0QmtNOTk3ZkZqTTVhUnhJU2RGeG9qLU5fZjI5bWNfTWRJMlpmMkVCQi1HaWN5Y05qSEJhNmxPZjBRY3BISEVva3BFSGNqc3FRUkpsTTBfZUZnaUN3NEd4UTFLRUdUMU10OVpTTGpEakszUlN1Zw?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1793015992588-0",
-    "title": "Djokovic, Wawrinka practice together in Basel",
-    "summary": "Djokovic, Wawrinka practice together in Basel. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-25T20:44:25.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9OVEVCV2ppakgza3RmR1paVzZlUWt6ODNyVGlSU1d4Sm95M19TT0NxQVR5ZHRtRkFJR2JpMFh3T1BGLTNHT08xU21UUklkZ2V0RjhaLTE5RWIzakVqWjJzWTRIOHFvRWRISWFUNFQ2czdja1drSXZDRg?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1793015992589-8",
-    "title": "Djokovic, Shelton in same half of Basel draw; Wawrinka faces Lehecka",
-    "summary": "Djokovic, Shelton in same half of Basel draw; Wawrinka faces Lehecka. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-24T18:22:37.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFA4TVFxMHpnaW8ybXMxNEdsVmFSU1JJZGZpdU1odThHZWdpNHNWVGEzSldwVXhkNDMwaEhXcWJ0VkpXc3hTcTBPQV9kRTh1cVBCLVdSNWtHRy1qT25CZXM0SkFIRzMtemJWVnh0UzNxNFAzdw?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1792982018466-7",
-    "title": "Medvedev successfully defends Almaty title, wins 25th crown",
-    "summary": "Medvedev successfully defends Almaty title, wins 25th crown. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-25T12:29:56.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1Bc1FmcG95VDUwdmZPODMwXzctdVFETXdDbkNPbnMwWDhfa1R4MWROR3NiVHJORmZmaVloLURYNXFzNlRGLVQwaHlVU0VFUjFrWmZRRzBiY0FNdzlfV1NDcHo0SlhxRURqQXFRcWxpdnZCVGxoeTl1Nl9xSQ?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
