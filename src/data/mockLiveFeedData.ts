@@ -4,6 +4,54 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1794023809066-4",
+    "title": "Sinner, coach Cahill to conclude partnership; Norman to join Italian’s team",
+    "summary": "Sinner, coach Cahill to conclude partnership; Norman to join Italian’s team. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-06T09:59:35.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOZEE3WUprcE9NYTJPajdWZmJobVlhM1VDMTlaUGRMZFdVcU9tOHQ2V0tHRm1RdUZUNkptV1JzUm5GWHFZTE56ZGNWVUktN1duVmtYUzJPVUJTdFRNMDNwcmZnUGZEWllsM0g1aTFZb2ZydXlWTlZ4cm1kLUpXYXFLN05uYUItUU1xdGc?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1794023809066-7",
+    "title": "Jodar completes 2026 Nitto ATP Finals field",
+    "summary": "Jodar completes 2026 Nitto ATP Finals field. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-06T22:00:27.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBsYnQxMHRSeTBXWWd1VTU0MlpGSmpacm5yQllSVUpkZFR4cGdjNURqZmpZbkNmQVcwZl9URUJzT2I4Z1pIb2p3NkdOWkdDSV92dnBYUGpPZERiYTFjdDVCS0xuZWN2aFNZendlVFBLN2pRTHZ6?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1794023809066-9",
+    "title": "Alcaraz advances to Paris QFs after Berrettini withdraws",
+    "summary": "Alcaraz advances to Paris QFs after Berrettini withdraws. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-05T11:50:25.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9tWnVPbGFUeml0Q1ktQ0JST2lNaXNYZXpmUHNZTEFjOFM5R043RTBBM2Z5eUZHQUM2WnBfNUJqUGpMYmlDMzQxbmZhUGVWUTZweGltX2RvNUtJTC1aOS1qWkdNSkVUZUdxSEhWeUdQWW9ZQUFfQzQ0RkF3VXg?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1794004581640-2",
     "title": "What were the Paris tennis results?",
     "summary": "What were the Paris tennis results?. Full real-time coverage direct from ATP Tour.",
@@ -748,54 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-10-27T22:09:41.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5rWlcxZW1UdUdINzhhM3FyUjBaSTMyUTVCNjN1ZGw3SHdIRmhPQzhJQ3RrUWN6WkxXQWVQV3E4QVg2WmozbGVWWHZoNFpyMVRrMURQY2RRRURWMmFDYkI0cURlWng3WEhyaExrYjhxdw?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1793137198182-0",
-    "title": "Djokovic states his end-of-year goals ahead of Basel bid...",
-    "summary": "Djokovic states his end-of-year goals ahead of Basel bid.... Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-27T15:14:41.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1Oc1ctSG1USkhTVl9ZSkdGc0R4RGlGTjB6UG1DNkNtTUFhRGh5MU9EdEZRaDBoOXpic2NrUzZyVV9XOTRua3RMRlRtWmxhUHREcjhNYmY2MC1CbURPYmxvRm9rNTJoYXhuYjRR?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1793120913796-3",
-    "title": "What Zverev must do in Vienna to become World No. 1 next Monday",
-    "summary": "What Zverev must do in Vienna to become World No. 1 next Monday. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-25T05:49:23.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5lOFR1NENuZ0U3NW03LXZWalA1amt0Qm83dmdqZmJhUFhfRHNxY0VkNGcydU9vZGQ4RWNTTFdkeVF6a2xTVm1oU2VIM0dVellGTWd1c215eUptRlFONkFMZk8ybUJPaVRNV0JEMTd1S09ldw?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1793120913796-5",
-    "title": "Rune survives Halys' 32 aces in Basel for first ATP Tour win since injury",
-    "summary": "Rune survives Halys' 32 aces in Basel for first ATP Tour win since injury. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-26T23:24:03.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE14WThCWmg3X2kwQmxuRVJtMDlveXBPUUtyclBzcUpLM3JMTXVUeWJBSjJtYzc1WE11VGhUX2l6WnR2eVZGMnpUMU5HLVB5UGZFQ2x3cjJUbDZ3NnN0NmZWOElWYlFtLVBPNnl0SQ?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
