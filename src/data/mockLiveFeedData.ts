@@ -4,6 +4,22 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1794086161607-7",
+    "title": "Shelton digs deep to oust home hope Van Assche, reach Paris final",
+    "summary": "Shelton digs deep to oust home hope Van Assche, reach Paris final. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-07T16:26:19.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBVM25LRFJmZzdEaUhJUnpDelJYaEFQT2pmaG1GS2lwWHlsU1ViY21haktIQlZGV1QyS2I0cmpsOF9Cb1VvTy1aUFBWblFFcVJYSllpQ2JxSmlzWm5qN0pRLTVISjJpS2hqNWpWcC1BVmhDUQ?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1794053565883-2",
     "title": "Fils’ dream of Turin: 'It would be insane'",
     "summary": "Fils’ dream of Turin: 'It would be insane'. Full real-time coverage direct from ATP Tour.",
@@ -780,22 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-10-27T22:59:15.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBPdWFySFQ5ZjVmNGJXc3JLMFB1UWlUVXItMXJCSHNBd1UzaTc5N1N0TktkQ3huVHNkVE5Hd3JxejdNZWdaVFhKRHEybFliWHJONXFXZTBRaGVHREIzeGswdDZBQi1PcFlZYjNOTHNEV1JkS01fZ3hr?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1793209443883-8",
-    "title": "Wawrinka, without regrets: 'That's the only way you can leave the sport'",
-    "summary": "Wawrinka, without regrets: 'That's the only way you can leave the sport'. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-27T22:14:41.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5VUFVNS2x3aTM2SDF2WE1VMjlRczFWUlhmYXc1WTRfTzdiRkRjUlQ0YmVFMEhOdXlUWXlzdWpnaUtYUHVaWHlnd18wMzJ6bG1OaVJUQ2Ztc2V5a0UwTVFpaXJzbHpUajNoUl8ydURfM29rU1FG?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
