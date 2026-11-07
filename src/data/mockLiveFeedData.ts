@@ -4,6 +4,22 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1794053565883-2",
+    "title": "Fils’ dream of Turin: 'It would be insane'",
+    "summary": "Fils’ dream of Turin: 'It would be insane'. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-04T10:34:53.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBxbzVYWXpLdWdUTVhtS0w3SDcyUFdod1huRnhydXBrRjI0c0w3aFNyanFabHVrd2hXclgwYkZNd0R6LUZyUmV6R1dHVlkwOUY4LWFMemtISl9EUTlpSEhJQ05GN0dVUU9zLUNGVEFR?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1794023809066-4",
     "title": "Sinner, coach Cahill to conclude partnership; Norman to join Italian’s team",
     "summary": "Sinner, coach Cahill to conclude partnership; Norman to join Italian’s team. Full real-time coverage direct from ATP Tour.",
@@ -780,22 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-10-27T22:14:41.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5VUFVNS2x3aTM2SDF2WE1VMjlRczFWUlhmYXc1WTRfTzdiRkRjUlQ0YmVFMEhOdXlUWXlzdWpnaUtYUHVaWHlnd18wMzJ6bG1OaVJUQ2Ztc2V5a0UwTVFpaXJzbHpUajNoUl8ydURfM29rU1FG?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1793188464760-1",
-    "title": "Wawrinka, 41, retires after standout career",
-    "summary": "Wawrinka, 41, retires after standout career. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-27T22:09:41.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5rWlcxZW1UdUdINzhhM3FyUjBaSTMyUTVCNjN1ZGw3SHdIRmhPQzhJQ3RrUWN6WkxXQWVQV3E4QVg2WmozbGVWWHZoNFpyMVRrMURQY2RRRURWMmFDYkI0cURlWng3WEhyaExrYjhxdw?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
