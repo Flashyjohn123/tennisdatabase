@@ -3433,7 +3433,7 @@ export const RANKINGS_TOP_500_WTA: PlayerRankSummary[] = [
     "country": "Argentina",
     "countryCode": "ARG",
     "flag": "🇦🇷",
-    "age": 19,
+    "age": 20,
     "points": 401,
     "tournamentsPlayed": 21,
     "winPercentage": 69.4,

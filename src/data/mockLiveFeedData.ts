@@ -4,6 +4,22 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1794109311395-0",
+    "title": "Alcaraz marches past Ruud in Paris, sets Shelton final showdown",
+    "summary": "Alcaraz marches past Ruud in Paris, sets Shelton final showdown. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-07T18:44:06.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBfNEZzbDMxcUE4SE91RkRuOUNDLTJock55bUZnT1hRRGluVFZKRTB2eEpTSEZvZklXTEJ1Wm9tZGYyaUxFV3hScmVwNm9uanFESkYzMkNfXzczejJXS1JUNGhRSjRfWkFtemc?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1794086161607-7",
     "title": "Shelton digs deep to oust home hope Van Assche, reach Paris final",
     "summary": "Shelton digs deep to oust home hope Van Assche, reach Paris final. Full real-time coverage direct from ATP Tour.",
@@ -780,22 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-10-27T17:43:46.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1nR1pBTXlCMnlSX0UzWmlOSnh5UVVXNHFUQ0lZTW44VW50OFVMMlh1QkRVbVZ5ZzhCbXZIb3gyZ09KR200YzNrS3hNUGxpdU1fcTFtdG4wcmZhaTVGbGtxaVllVUlpeGw0X2NsY3k5N2dGWDhaanNYZA?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1793275336388-3",
-    "title": "Shelton blasts 44 aces in scare, Lehecka ends Wawrinka's career in Basel",
-    "summary": "Shelton blasts 44 aces in scare, Lehecka ends Wawrinka's career in Basel. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-27T22:59:15.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBPdWFySFQ5ZjVmNGJXc3JLMFB1UWlUVXItMXJCSHNBd1UzaTc5N1N0TktkQ3huVHNkVE5Hd3JxejdNZWdaVFhKRHEybFliWHJONXFXZTBRaGVHREIzeGswdDZBQi1PcFlZYjNOTHNEV1JkS01fZ3hr?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
