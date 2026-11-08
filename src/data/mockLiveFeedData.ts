@@ -4,6 +4,54 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1794173465169-0",
+    "title": "Alcaraz downs Shelton to win first Paris title",
+    "summary": "Alcaraz downs Shelton to win first Paris title. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-08T19:14:39.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9hNnBuNG10V3FYRVBPZ196aWwzZ0M1QnZIUThhYXIxMXlkamRyRC00Mk5KZGwzeUx1RzVIbU5zUjJldjBPVkpxRmdwMDBQZ3lOaV93Z3BCQllOQ19uektxQjdMeDZ0SHE2YUR0S0kxX3k3VWpxYmNBMFYwOA?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1794173465169-3",
+    "title": "Alcaraz eyes Shelton revenge in Paris title showdown",
+    "summary": "Alcaraz eyes Shelton revenge in Paris title showdown. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-07T19:33:37.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE56cV9xaVg0Qnp1SEZlVDdEekY5OW9XZXJTbnp4cFRVZmRmQmdtcXFNOGs3Qm1zNjBLdkRoQjRJandSZ2dQT1AwLUk4QWdmX3A3UU5QTkVUYy12M2I4X2lpVmo4U0dIUDlCNFl0N3NvUURORTA0NGxNbnFGWjE?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1794173465169-5",
+    "title": "Alcaraz claws closer to Sinner in Big Titles battle",
+    "summary": "Alcaraz claws closer to Sinner in Big Titles battle. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-08T16:24:51.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1vWDJKdmp3NjNDaEJuQkxjT3FfZUNsNTNKZXhzTTFxZ2xXNmVQYnpKaExUR2ZpZlg0RzdxTjlaZG80dDNTUE81S085aG1Wb0M4am5DQ0g4RFhmTHRlREdwdEp6alNNUWJJVUVSVHFB?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1794141165662-0",
     "title": "What time is the Alcaraz vs. Shelton Paris final?",
     "summary": "What time is the Alcaraz vs. Shelton Paris final?. Full real-time coverage direct from ATP Tour.",
@@ -748,54 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-10-29T20:38:20.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1aaFNHQzhkeXVBdmphTTFjQ2k1OUdyNU55UEJpdWZVQ0tEMk0yQ1ZkZ2J4bDZPV1Y1ZlRieXJ4Vjl6SUpnNHlDWkZpT0M3RW9WdG9CanB2ZXk3bWU1Z2EtMEJ6amZ2VEZEakpoQTZ5eGx6c1VicC05cVNBcw?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1793332110966-1",
-    "title": "Zverev to become World No. 1 next Monday, 2 November",
-    "summary": "Zverev to become World No. 1 next Monday, 2 November. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-29T19:27:59.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5HenpVT2Zhc3JIeEp2S28yalJOS1RKZVVlYzl1bHdxX2VxekZoMWVxel95NUV0eUkzbVpacVBzbEpYNlhSTHBFMjllcDREd1JlQlluYklBS183d2R0ZlpySDV1X2ZEQ2l5MVZWT1JpQm9MaWF6Q211Z2pFUmhhTFk?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1793332110966-4",
-    "title": "Zverev defeats Griekspoor in Vienna, set to become World No. 1",
-    "summary": "Zverev defeats Griekspoor in Vienna, set to become World No. 1. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-29T22:31:06.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBiUC15WG1IZHNuWnFrd3pwWnZXU2hfZXVDTFlINUE2RWpjUkdPSHM3SV9GZFRMYXlIVElpeTl6V3pJZnNQZEFEVk5ERTJCRlpaeE01MVRJSEl1b25COFF6VjJMYVgzakthcEwxZEZjSHJXaFQzVFNPd1VB?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1793312106730-1",
-    "title": "Djokovic's big opportunity to make a move towards Turin in Basel",
-    "summary": "Djokovic's big opportunity to make a move towards Turin in Basel. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-29T14:03:22.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPYVBHcEdTR29aSzBCY3NYbTF6aDJaTGZjSXV4Q2haUUdlcHFXVXRBZmh0T1lzTEI4WXNZaTY0THJPSldTR0cyaUtmZ2l4Wi1pTnNhbFhtS01xdkx3eTdjT3p5N1ZPbHQxWVJTM2VwMXpQd2ktWXhlQ3NWeVlFQWxMbkxiVG5keHRLQmpj?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
