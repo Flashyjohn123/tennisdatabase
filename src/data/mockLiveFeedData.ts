@@ -4,6 +4,54 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1794141165662-0",
+    "title": "What time is the Alcaraz vs. Shelton Paris final?",
+    "summary": "What time is the Alcaraz vs. Shelton Paris final?. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-07T19:36:04.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBJZVI5NlFra01XMkhDZzVXbk10d0dpMk00QWdERzV3X2l3dXkxQy13alotLUZBTEdhYUhrTkl2bnE2ZXdvTHh0N05OUVZVZkdDSFFMMDQ5dEFnZmxuT3ZFcGtLN09IZFNh?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1794141165662-1",
+    "title": "Alcaraz marches past Ruud in Paris, sets Shelton title clash",
+    "summary": "Alcaraz marches past Ruud in Paris, sets Shelton title clash. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-07T18:44:06.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBfNEZzbDMxcUE4SE91RkRuOUNDLTJock55bUZnT1hRRGluVFZKRTB2eEpTSEZvZklXTEJ1Wm9tZGYyaUxFV3hScmVwNm9uanFESkYzMkNfXzczejJXS1JUNGhRSjRfWkFtemc?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1794141165662-6",
+    "title": "Fritz faces Alcaraz with Turin qualification on the line",
+    "summary": "Fritz faces Alcaraz with Turin qualification on the line. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-06T15:55:25.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1HZ0dLNFAtaEpvU0VTNFlrR1dGal91SVgtRWlDSmlTWkNpUnVCQi1KWGZpMzhDdmhmR0lETnh2aDBBR0FKRnE3LTZKREVqYTBWM0JCTkxuMDJySXZFa004YmlTd1BZbWhLT1dJZDZLbmRGakR6?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1794109311395-0",
     "title": "Alcaraz marches past Ruud in Paris, sets Shelton final showdown",
     "summary": "Alcaraz marches past Ruud in Paris, sets Shelton final showdown. Full real-time coverage direct from ATP Tour.",
@@ -748,54 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-10-29T14:03:22.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPYVBHcEdTR29aSzBCY3NYbTF6aDJaTGZjSXV4Q2haUUdlcHFXVXRBZmh0T1lzTEI4WXNZaTY0THJPSldTR0cyaUtmZ2l4Wi1pTnNhbFhtS01xdkx3eTdjT3p5N1ZPbHQxWVJTM2VwMXpQd2ktWXhlQ3NWeVlFQWxMbkxiVG5keHRLQmpj?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1793312106730-2",
-    "title": "Struff: ‘My H2H against Djokovic isn’t great, but whose is?’",
-    "summary": "Struff: ‘My H2H against Djokovic isn’t great, but whose is?’. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-28T21:18:13.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE4wY21LWnN6a1lqSExLbElqWmRaSEVDdnpYdFYtQTVVZkNOQzJ6MnJqZ1UtcHhGbFIwaGZhMS0wNkM3aGlmeVhQX2VFZTM4a1JTQ2J2RFBXR0k4N2RUMnJlRi1XaDg3dzFHNVFlQnR1UXBodl9s?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1793312106731-4",
-    "title": "Medvedev finds swift adjustment to overcome Merida, reach Vienna R2",
-    "summary": "Medvedev finds swift adjustment to overcome Merida, reach Vienna R2. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-28T15:22:21.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFA4NzdpWVRuN1NwQkFCSXF6Nl9SR2tCOGZWZzVDMW9vNFFUTTNRUHZnQ0ZIMmd2WnR2U25pNkRveF9CcEhrT1FHSVhwSzlBbVBkdXRTMndlZENiM0s5YWFlSmZfUllFSTBTU1Z5OFFJZjBrbGhZLWh6bg?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1793312106731-8",
-    "title": "Alcaraz settles to sink Khachanov in high-quality Vienna return",
-    "summary": "Alcaraz settles to sink Khachanov in high-quality Vienna return. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-27T17:43:46.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1nR1pBTXlCMnlSX0UzWmlOSnh5UVVXNHFUQ0lZTW44VW50OFVMMlh1QkRVbVZ5ZzhCbXZIb3gyZ09KR200YzNrS3hNUGxpdU1fcTFtdG4wcmZhaTVGbGtxaVllVUlpeGw0X2NsY3k5N2dGWDhaanNYZA?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
