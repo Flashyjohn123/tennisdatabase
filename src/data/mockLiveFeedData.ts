@@ -4,6 +4,22 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1794235819262-5",
+    "title": "Heliovaara & Patten claim Year-End ATP Doubles No. 1 honours",
+    "summary": "Heliovaara & Patten claim Year-End ATP Doubles No. 1 honours. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-08T16:58:46.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOQVU2UUpKUFlnMzNOb3Z1Z09wa3ZxcU5pQXZKczQyTF9DZmJhajRsRlNpVWQzbmgxRXRtbS1ocmR2QmpHWXBrcThKZlctZDQtV0FIdzlNcjdyQzQ3V3dqWW5OYVNCZ1N0SzNqSjJ1ZFRLbkJXcHNOaG1OcXAwUGF4WWs4am5Fc2c?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1794173465169-0",
     "title": "Alcaraz downs Shelton to win first Paris title",
     "summary": "Alcaraz downs Shelton to win first Paris title. Full real-time coverage direct from ATP Tour.",
@@ -780,22 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-10-29T19:14:43.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1mR2t6R1gyYzZzdlQ2SGVZNzFIRk5yd3c3VXY3WkROeUI3am41YmZpTXNnUWhKM1ZDTVkwaUFvOWFyQ1JMdkR2bDFkMkludDk4R2d4MWxpMHoyb01lR0wzcGgxZXFqaFdYcXFmM3dzd0JxWFQzQjNGQk5xaFZEZw?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1793361377976-1",
-    "title": "Muster welcomes Zverev to ATP No. 1 Club in Vienna",
-    "summary": "Muster welcomes Zverev to ATP No. 1 Club in Vienna. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-29T20:38:20.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1aaFNHQzhkeXVBdmphTTFjQ2k1OUdyNU55UEJpdWZVQ0tEMk0yQ1ZkZ2J4bDZPV1Y1ZlRieXJ4Vjl6SUpnNHlDWkZpT0M3RW9WdG9CanB2ZXk3bWU1Z2EtMEJ6amZ2VEZEakpoQTZ5eGx6c1VicC05cVNBcw?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
