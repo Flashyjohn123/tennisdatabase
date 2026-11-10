@@ -4,6 +4,54 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1794272495648-4",
+    "title": "5 things to watch in Stockholm: Fritz, Ruud, Musetti & more",
+    "summary": "5 things to watch in Stockholm: Fritz, Ruud, Musetti & more. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-09T02:48:54.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBXSlFtOFBLU1V4SE1Nc1lKa2VMN09IY2o1RXRldm1lQU5tR3JVdHVZWW5YZUp1SnNZNThZdm5xSnVEcmQ0NHN3c0NKRmhfejdzbFNLRE82YVJkNWFYN05OdUlsLTg1d0pGS0ViYzFSaw?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1794272495648-7",
+    "title": "ATP signs global partnership with Julius Baer",
+    "summary": "ATP signs global partnership with Julius Baer. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-09T08:09:01.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNeVhjVjB2OEZyLTVDa016S1pBUVlxOHIxRjItU3hveHQ5bkNHbDJJLUh5R0VtOVRQSDQtSGJkRlhZdUhYeU9QdGVTWG5hdGo5WEFwWWU1N0FJRUhRaFZhNzh0Y3RuWTZLSUJjRnU1cnA0WWxLSVlOWVpDNVRCVmxOeDdYQ2o?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1794272495648-8",
+    "title": "Alcaraz on Paris title run: ‘Probably my best week’ since injury",
+    "summary": "Alcaraz on Paris title run: ‘Probably my best week’ since injury. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-08T18:29:09.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBHMFVzbnlPSWg1RlhUdEp6cDJxU3dIejRCbmlHOE1MenRqZkRXcDZoem9uZUttWkdpOVF5M2NZOUp6R3BGcGJFRzlydHcxY3ZOYXZLZnBsVFM1bkpDVVpZZzZYbDZfNl9UWTZ1cEFlM2RoZVk?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1794235819262-5",
     "title": "Heliovaara & Patten claim Year-End ATP Doubles No. 1 honours",
     "summary": "Heliovaara & Patten claim Year-End ATP Doubles No. 1 honours. Full real-time coverage direct from ATP Tour.",
@@ -748,54 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-10-30T19:13:20.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5Fc1dsaUxpTWYwaDZDQTM4U2V3TWFaeHhmMVR3RWhuUlBPOG9uNXNzVnF2MTN4OFBlaHkzRnMwLVotLWZyNmZOUGpONUh3cl9ONXNfSHRuS0tpTlI2Q1hZeHdvN1J6bnZvTW53?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1793397031306-6",
-    "title": "Djokovic shifts into lockdown mode in Basel, keeps Turin push on track",
-    "summary": "Djokovic shifts into lockdown mode in Basel, keeps Turin push on track. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-28T21:54:42.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9lOHAySDBEN2hENllVNlVweTg3aS1MSWloSFV0U3hrMmhIOHA2ZVMtZWh4Z25Ia2VQbm1iWmdMOTk0bms1RmhnZGROWHB6cEhuMlJzUkJtZDdNTUczUGwxUU1ZTGU1NDRKamxRV09ENjhmSmtMb3FYbw?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1793381993693-3",
-    "title": "Djokovic's charge, Wawrinka's farewell & the next wave: Why Basel is buzzing",
-    "summary": "Djokovic's charge, Wawrinka's farewell & the next wave: Why Basel is buzzing. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-29T17:32:06.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE84N3k0WXQwb05aNktmamZMTVMzOWwzVGhqMnJLWnk5ZTlaLTNDSTZIdTlYSjhTSkNSNzE3RzMtcC1xV000S3JoeEJYUU1nVUFQMDRVTnRXQ2hDQk1BdUlUYTIzeGM5LTM3bmNzM2JFcXI?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1793361377976-0",
-    "title": "Alcaraz repels Basilashvili’s 4 set points in Vienna, books QF spot",
-    "summary": "Alcaraz repels Basilashvili’s 4 set points in Vienna, books QF spot. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-29T19:14:43.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1mR2t6R1gyYzZzdlQ2SGVZNzFIRk5yd3c3VXY3WkROeUI3am41YmZpTXNnUWhKM1ZDTVkwaUFvOWFyQ1JMdkR2bDFkMkludDk4R2d4MWxpMHoyb01lR0wzcGgxZXFqaFdYcXFmM3dzd0JxWFQzQjNGQk5xaFZEZw?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
