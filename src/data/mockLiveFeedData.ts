@@ -4,6 +4,54 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1794350497858-0",
+    "title": "Nitto ATP Finals 2026: Draws, Dates, History & All You Need To Know",
+    "summary": "Nitto ATP Finals 2026: Draws, Dates, History & All You Need To Know. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-09T11:59:01.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPSmliU1JvRHlFTEJUSUFVZFpOcmd1dlNtM2VhTTFaNHcxSXE1N0REUDBaSFZTOXYyNTVjZ3JraXRNbDV3TWRMNzBuaDlFNEdDLVhvU3Q0bEdqU3FCLUxmMUwxbUNWVWh1QTZPckZtYVFIRFJnalF5Qm5lSl81ZlFsaA?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1794350497858-4",
+    "title": "Tiafoe among quartet of Nitto ATP Finals first-time qualifiers, Mover of Week",
+    "summary": "Tiafoe among quartet of Nitto ATP Finals first-time qualifiers, Mover of Week. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-09T11:32:57.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNTmdxcGsyU0VzSFJhZDZRS1BhbnFLd2d2T2tMQXYzMnoxS3hkSjJUTGtub00zMFFlTnJMNDJrbWRrZWloM05TckpJbG9yZGNRUnVCUXZVMkdaZFRiZ292RnpuUE1sdE80RFk0TW1LeUxhQy1IbmVnOWRXc3dJR1ZENmQ5dEV5d0pL?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1794350497858-9",
+    "title": "Rune returns to Stockholm with statement win, Musetti advances",
+    "summary": "Rune returns to Stockholm with statement win, Musetti advances. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-10T20:34:55.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1sYjVsQWZGTnEyYjNFckRzbGVnbzl3QUR1YTNfWG95ZExyT1pYcE9UcGlUM2RCZGFzenlSbFZabGpVTzk5LVlxVjNodjZBSXRJTmFDSDA3aGRlMjNFRlZCQ2dtemVmQUF4Y1gzM2JB?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1794319332398-6",
     "title": "ATP puts creators at the heart of its push to reach new fans",
     "summary": "ATP puts creators at the heart of its push to reach new fans. Full real-time coverage direct from ATP Tour.",
@@ -748,54 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-10-30T21:07:58.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE03LUpGZnNkWF9nWEFyWUh6OFJ2eG5DLWdYb0dlWlRZem5MLV9WUTF6cEVsVGstTnFXNGpVM2VIZi1RNERXMlJzU3dVRTF2RWQ3cmNHc0dDUVVlZmpBUGk5cDhRamtaZw?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1793464628835-8",
-    "title": "Fils keeps his cool in Basel to boost Turin hopes, but Jodar falters",
-    "summary": "Fils keeps his cool in Basel to boost Turin hopes, but Jodar falters. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-29T19:24:50.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBKa0E4bFIwbDd6OXJWclhrWFhXMEdvNmthcDdYX1UwQWg2bV84ejgxYmVSTXJRa3NVdmdxemtfMjdCaVV4QkFySENHaTRWbm8zTWp2eUR6bEpyUG9SeE1LS0hHeUlVXzBValROazNUMzVPa2JiSlE?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1793446157587-1",
-    "title": "Medvedev returns to the Nitto ATP Finals",
-    "summary": "Medvedev returns to the Nitto ATP Finals. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-30T14:58:21.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNWjIxZFQyeDcwdG5ZLWpOajdsSTNJN21pZW9qbzNEQjhlbTlGczhBX1pQWjNyUi1HeEtxbGtVY0tKaWhILWV3SjJuLWNQeVQ1VjhRZU9WT054WEMxYmd1UkpxYUNVeS1VYUtzVHNQeFFsa1JRMFMtaGVQUkliVUM2dGw4T2hzaE9aTlIw?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1793446157587-6",
-    "title": "Fritz advances to Basel SFs after his Live Race rival Fils retires",
-    "summary": "Fritz advances to Basel SFs after his Live Race rival Fils retires. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-30T20:11:44.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBzbDNjNWUzUnJYV1R1Y0dWSlBoUXM3ZHY1alUwNnQtTktEdzUtb0ppVWhpenVtTk9NcDgwamZmc0lTUHNUSkI2SjBFM3ZKX05ROUhwTjByc1BKOTBXc2Jpakw1MXhXYXk0VmMtZg?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
