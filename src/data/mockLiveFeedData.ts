@@ -4,6 +4,22 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1794319332398-6",
+    "title": "ATP puts creators at the heart of its push to reach new fans",
+    "summary": "ATP puts creators at the heart of its push to reach new fans. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-10T09:04:20.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQaUhKVXpjWTZMWEktRHRsbTVmOFBhQkhwSy1oU08wdi1wZ1hXOHA4eEFUMVFoMi1aRTBMZFZUenZ6a2JwX2xIRGZ0V2NGWWd0Mk9vUVE4T1Mzb05tblV0TVlKZkFUcDM0Y2hLeTZISlNZOHJIVEhHcElUZWE5SDdWOQ?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1794272495648-4",
     "title": "5 things to watch in Stockholm: Fritz, Ruud, Musetti & more",
     "summary": "5 things to watch in Stockholm: Fritz, Ruud, Musetti & more. Full real-time coverage direct from ATP Tour.",
@@ -780,22 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-10-30T20:11:44.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBzbDNjNWUzUnJYV1R1Y0dWSlBoUXM3ZHY1alUwNnQtTktEdzUtb0ppVWhpenVtTk9NcDgwamZmc0lTUHNUSkI2SjBFM3ZKX05ROUhwTjByc1BKOTBXc2Jpakw1MXhXYXk0VmMtZg?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1793417517511-3",
-    "title": "Alcaraz downs Paul, sets Vienna SF with Medvedev",
-    "summary": "Alcaraz downs Paul, sets Vienna SF with Medvedev. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-30T19:13:20.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5Fc1dsaUxpTWYwaDZDQTM4U2V3TWFaeHhmMVR3RWhuUlBPOG9uNXNzVnF2MTN4OFBlaHkzRnMwLVotLWZyNmZOUGpONUh3cl9ONXNfSHRuS0tpTlI2Q1hZeHdvN1J6bnZvTW53?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
