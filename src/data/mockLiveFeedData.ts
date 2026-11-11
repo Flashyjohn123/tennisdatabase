@@ -4,6 +4,22 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1794369531143-9",
+    "title": "Rune reflects on 'scary' injury as he embraces Stockholm return",
+    "summary": "Rune reflects on 'scary' injury as he embraces Stockholm return. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-09T16:54:01.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE84aVM4aFVWUzR2WWxIeFhTaDRmbnFFelJzUU96NjVFQVlvd2dqU1hhOVdfNUJWMGlQOURXbVloWGo5eHMyMmpMNExuRXJWUU1XZjlGNm9uV0JUYlpTZGlJVk4zUVBxdlZXeUY1QmNzREN6QkdDTGc?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1794350497858-0",
     "title": "Nitto ATP Finals 2026: Draws, Dates, History & All You Need To Know",
     "summary": "Nitto ATP Finals 2026: Draws, Dates, History & All You Need To Know. Full real-time coverage direct from ATP Tour.",
@@ -780,22 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-11-01T23:07:40.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBQeTlVaUJjc3VnSkw5OGJIbUt3Tm90Sjlyd1JJQ3d0cUlxSVZvOXBHTGtraFpGOWxzVUowcm10Zk1DZXY3UGZ1bkxkbmtBOXJMNmYtVWJqa2tKWWtWRjZya3JNOFc3eXlMMU5oLW5JejRxTk9y?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1793479837217-0",
-    "title": "Zverev, Djokovic on course for Paris QF showdown; Turin contenders eye push",
-    "summary": "Zverev, Djokovic on course for Paris QF showdown; Turin contenders eye push. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-30T21:07:58.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE03LUpGZnNkWF9nWEFyWUh6OFJ2eG5DLWdYb0dlWlRZem5MLV9WUTF6cEVsVGstTnFXNGpVM2VIZi1RNERXMlJzU3dVRTF2RWQ3cmNHc0dDUVVlZmpBUGk5cDhRamtaZw?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
