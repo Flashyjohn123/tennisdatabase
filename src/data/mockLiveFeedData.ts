@@ -4,6 +4,38 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1794441266642-8",
+    "title": "Watch the Nitto ATP Finals draw live",
+    "summary": "Watch the Nitto ATP Finals draw live. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-11T11:00:00.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1qNC1LcFUyckZobVBvb0pHQ29tODRkWndmQmxSYS1aWEd4c3luS3FWRWlJMEhnWEdNdVpjQ2liaFlNUHJhX1RKWU42OGV0Sk1Za1M4MkMzclFWWVlNMERoTS1Rd3lrMUt4MUlqdjVaNXh2Sjg?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1794441266642-9",
+    "title": "Zverev, Alcaraz first players confirmed for 2027 Laver Cup",
+    "summary": "Zverev, Alcaraz first players confirmed for 2027 Laver Cup. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-10T19:49:20.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE50TzJLbE1jSU1EQVdLdDFoYkVxQVJ4Zld2cTdoQ3B0N1RtVzQxajRZZm1ObWhzRm1QcWtfRWp4OXFkZUNxbml6cS1VSTRrN0FGZV93QXQ3WHBWWkF0LTFPdi1peWt6ZXRCLUlsQjEteGZOOWdBeFNNWFJ6eV8?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1794369531143-9",
     "title": "Rune reflects on 'scary' injury as he embraces Stockholm return",
     "summary": "Rune reflects on 'scary' injury as he embraces Stockholm return. Full real-time coverage direct from ATP Tour.",
@@ -764,38 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-10-31T19:02:29.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE0xQWxKQXV1SjFvclV2QjE5X2lkUmpObXItbWZKTDdoc3FYcXpsUnM1MjhWN28yTjlIUHZpQzJqeHpxTUtqT3RHTUlaWDdxUmVwZTUyNUxfNVcwdkd5cTJQWEp1ZzM3alVRQndoV3VNdGU3VUJT?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1793590989731-0",
-    "title": "Alcaraz storms past De Minaur to Vienna title, completes perfect ATP 500 season",
-    "summary": "Alcaraz storms past De Minaur to Vienna title, completes perfect ATP 500 season. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-11-01T17:41:05.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5BMUJJLWdRTVNOUkxMZWtlYnVUR05RUTZlUTBjSnZhTFdhN0xPVFcwVFFtYzlpNlc4dHAzMmhUSUZGWVR6cTVJRnZaanhwbkpfT0c1U08xMEVfd0o3MkRTY0VKMGk4WlMxMkhOWTZHVHlpUmVqZlE?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1793590989731-2",
-    "title": "Shelton to add Juan Carlos Ferrero to coaching team",
-    "summary": "Shelton to add Juan Carlos Ferrero to coaching team. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-11-01T23:07:40.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBQeTlVaUJjc3VnSkw5OGJIbUt3Tm90Sjlyd1JJQ3d0cUlxSVZvOXBHTGtraFpGOWxzVUowcm10Zk1DZXY3UGZ1bkxkbmtBOXJMNmYtVWJqa2tKWWtWRjZya3JNOFc3eXlMMU5oLW5JejRxTk9y?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
