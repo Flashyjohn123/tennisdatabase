@@ -4,6 +4,22 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1794493435625-6",
+    "title": "Alcaraz, Zverev learn Nitto ATP Finals draw fate",
+    "summary": "Alcaraz, Zverev learn Nitto ATP Finals draw fate. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-12T12:25:18.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5aaXJnY202MGlsd0pzT0lMb21sb0xtOXJSYURLNHIzZGpMenlGSU9ySWJQN3dzNGIxbTByaDZoQ3lLWkU0Y1FiQzlIWkVYbGg5cjJoOUFIMWdfaHRFTVF2dkFjUDUtNXBuY1E?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1794441266642-8",
     "title": "Watch the Nitto ATP Finals draw live",
     "summary": "Watch the Nitto ATP Finals draw live. Full real-time coverage direct from ATP Tour.",
@@ -780,22 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-10-31T19:03:33.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBuRnNqUFFPeTFyUXFicVJUTjZvOTZFSlhXTEJMZnBRSl95M3VpeTl0eEl4LWozSUlNcWk0WHBzRHhqZEhaTE11djhBcGFIMzRKRENXMXBkQkNFTmo3NVhOa29sa1k3TFVQOHM2bkFXdUo?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1793629414975-5",
-    "title": "Vacherot upsets Fritz, Lehecka saves MP to reach Basel final",
-    "summary": "Vacherot upsets Fritz, Lehecka saves MP to reach Basel final. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-31T19:02:29.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE0xQWxKQXV1SjFvclV2QjE5X2lkUmpObXItbWZKTDdoc3FYcXpsUnM1MjhWN28yTjlIUHZpQzJqeHpxTUtqT3RHTUlaWDdxUmVwZTUyNUxfNVcwdkd5cTJQWEp1ZzM3alVRQndoV3VNdGU3VUJT?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
