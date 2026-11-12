@@ -4,6 +4,22 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1794524551719-7",
+    "title": "Zverev, Alcaraz learn Nitto ATP Finals draw fate",
+    "summary": "Zverev, Alcaraz learn Nitto ATP Finals draw fate. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-12T12:25:18.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5aaXJnY202MGlsd0pzT0lMb21sb0xtOXJSYURLNHIzZGpMenlGSU9ySWJQN3dzNGIxbTByaDZoQ3lLWkU0Y1FiQzlIWkVYbGg5cjJoOUFIMWdfaHRFTVF2dkFjUDUtNXBuY1E?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1794493435625-6",
     "title": "Alcaraz, Zverev learn Nitto ATP Finals draw fate",
     "summary": "Alcaraz, Zverev learn Nitto ATP Finals draw fate. Full real-time coverage direct from ATP Tour.",
@@ -780,22 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-11-01T20:25:16.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE0zS0hKQnhFakl1NnVQcW1TWEtRR0E1Q2RISHV4WWRFRlJHdGdFS3pndW9LUXdIekJrM0ltVnBSQzhMWXB5U3gwVEx0dU1tdnNMbWJlaUJ5RGl3UWJqLS1vWVVDQmQwbGRqYWc?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1793629414975-4",
-    "title": "De Minaur downs No. 1-bound Zverev to reach Vienna final, continue Turin charge",
-    "summary": "De Minaur downs No. 1-bound Zverev to reach Vienna final, continue Turin charge. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-10-31T19:03:33.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBuRnNqUFFPeTFyUXFicVJUTjZvOTZFSlhXTEJMZnBRSl95M3VpeTl0eEl4LWozSUlNcWk0WHBzRHhqZEhaTE11djhBcGFIMzRKRENXMXBkQkNFTmo3NVhOa29sa1k3TFVQOHM2bkFXdUo?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
