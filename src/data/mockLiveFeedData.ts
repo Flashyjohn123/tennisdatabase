@@ -4,6 +4,70 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1794611114786-0",
+    "title": "Best Nitto ATP Finals Media Day photos through the years",
+    "summary": "Best Nitto ATP Finals Media Day photos through the years. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-13T11:03:21.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNOGp1VlY2MEdZUjFwUkpYQkFhQnRPa0xtdzE3M3QyOVU5RFJXUnFGUnJBQ2JzZ21KRGJBOFVTZnJKZ1dEcndMY3VMZ1RGZkcyeW1wT0tyNFpfdFdqcjhpemoydXhzX1h0ejJvMkhNQkl5cHhhYXk1MS1iOXdmWnVxcVhvLTc5STlr?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1794611114787-1",
+    "title": "Musetti survives Humbert in Stockholm, Fritz into SFs after Rune withdraws",
+    "summary": "Musetti survives Humbert in Stockholm, Fritz into SFs after Rune withdraws. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-12T22:07:59.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBDUGJOWGhGblgtTzdtdVRIWTdlUlJRdGxKY3V4U1FTTDhhLUU4Y2R2d011bEREUUJWVHVlQjZGckV6dmlGUXJiTHhnUWpqTU40cGwxdW11MU1XN3lUakFUaHR5d3FpekEyYmhMTVY2Q3hIWVFm?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1794611114787-3",
+    "title": "Alcaraz hits with junior World No. 1 Guto Miguel at Nitto ATP Finals",
+    "summary": "Alcaraz hits with junior World No. 1 Guto Miguel at Nitto ATP Finals. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-12T16:21:05.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPbU9UMFB2S19kaVZqeS1pVlRBQ19tVmN1Ymd1TkdGeEU0eko5aWhfbXItR2NUdEQzSTVObklDU2NlRnhEa0JHci05ZmVQY1BIYnR3MHdmVDM1eXRfajhDdDl0ZHVKelFkNmFvTjFJUzZjaE9BVzI4Z0hsa2JOcGp3ODJMTGF1RXd4R2FpTlF3MDdKTzJqRkFvLVlfSjM0N0dzdUllbA?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1794611114787-8",
+    "title": "World No. 107 Shevchenko upsets defending champ Ruud; Fritz wins in Stockholm",
+    "summary": "World No. 107 Shevchenko upsets defending champ Ruud; Fritz wins in Stockholm. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-11T22:26:57.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE8xUkFWNVZDZk9paC1yQks4Z3RwZlFiSHdSWFBrbmRmZm5aQnlLSFBGcWdUYVBOYmFHMmxhb1pyQnJJaHpZNW5XdlljM3RqN1pqa2hMWUtjZXFNSC1fZjFHTGNDOVhTRURrVGdpQloya2U?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1794577365093-5",
     "title": "Nitto ATP Finals Draw: Groups, H2H records & all you need to know",
     "summary": "Nitto ATP Finals Draw: Groups, H2H records & all you need to know. Full real-time coverage direct from ATP Tour.",
@@ -732,70 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-11-02T21:09:57.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBUU3VLZnVMeWhmSXpHRms4S1dpeEZwVmV5aWs0Z3hxNFVqSzFXeGJUaDlzc3U2cVVvYVI1ZXZ5aHhmVjMzdExwX2dBNTFadzJRaXB5MDZtbWw0UW85bjJESjRsVHk0eEZKeGc?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1793712198353-0",
-    "title": "Vacherot ahead of Djokovic clash in Paris: 'My season could be over, I'm giving 100%'",
-    "summary": "Vacherot ahead of Djokovic clash in Paris: 'My season could be over, I'm giving 100%'. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-11-02T17:43:13.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5sZ2NzZGowS0E3aUVuWGNwZVFRZGJjN3lrWEprSVgyOHctN0FPRHlTcnhjeUlGQjhFQkRzYnI2eXNNLS1TZ2U0YjQ3akg3RmM4M2NsZnVFdzU1SUVQbkdJVU9jWUNwWVVGWG1wcHdfdw?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1793712198353-5",
-    "title": "Zverev receives World No. 1 trophy in Paris",
-    "summary": "Zverev receives World No. 1 trophy in Paris. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-11-02T16:53:13.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE94aW0ycWpHOUNrS3lpRFV0RklmYkNTbWRERGw0Ym5jc2NLczJMaUJJLVJTZ3VTaUZvU25NSThzdjhydVY5aHc4cWxrdXM3OS02UnplS3c1WUFtUTZYb2ZibXdWcUtPZ2I5SzJxWkV6eDUxWHNsRGZmLQ?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1793712198353-8",
-    "title": "Khachanov's ATP Perfect Player: What Karen would take from Alcaraz",
-    "summary": "Khachanov's ATP Perfect Player: What Karen would take from Alcaraz. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-11-02T14:48:13.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE41a05nODEyUDNGNzhxRE16ajZ0NmN2aW5MVFBlUERjWHp2akxIX0pLSE13TER3WVp5WV9JNnlQaF9sNEV6WWlzSGdxNUZfMjgwTXdsVTlJUFhrNS04VEFXRGNIRmt2YmZSZ2lVVWs0dXE2ZE0?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1793664906625-7",
-    "title": "Alexander Zverev No. 1 Longform Tribute",
-    "summary": "Alexander Zverev No. 1 Longform Tribute. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-11-02T04:00:49.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBZVmYwSU02ZE9YcTZmbHlmTV9pQmdaUU5XMno2WnkxeGpHWXhzQUpUcG01RjVLZjJZRDlnSVpwTFZENjZrSWZrSzZpSEpFUkVUWVZhVXRWSVBralJPOHZMTFhtRWliSXFQV2lhd3B2MDM1cl9GZG9N?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
