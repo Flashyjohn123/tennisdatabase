@@ -4,6 +4,54 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1794577365093-5",
+    "title": "Nitto ATP Finals Draw: Groups, H2H records & all you need to know",
+    "summary": "Nitto ATP Finals Draw: Groups, H2H records & all you need to know. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-12T15:00:18.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE13RTZsSnlxNmNVZWk5eVBmMDlJc2RyUVZfUjlFNmI4dG1xZlNGSWdRcUJ4SjZ6MXVIbmVzc3BpT1VXNHJ3Q2k2dWNxZkd0cmE1cnVRX01adFoyMlVHZ2xUT1E3LXc3UGZFbFhhMkxqbHlxNWRZMjFDYTh2WDE?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1794577365093-7",
+    "title": "When will Zverev, Alcaraz play their first matches at the Nitto ATP Finals?",
+    "summary": "When will Zverev, Alcaraz play their first matches at the Nitto ATP Finals?. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-12T14:55:18.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQT3Vxb0VfMnRES2djNDB0UHpFajFyU3hIMF9zZmZvVGthazBsbmh2SzA3bjJuRmZtcE9vWUM0cUhxWTJUVzl3djZ1VFJmb0daNmdnanloY1V5VXZJQW1sLUZJYXJlVDZzNWlUc2VUU1dOSHJFakdTcFJHMEhWTEFZUkNB?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1794577365093-8",
+    "title": "ATP partnership revenues rise 49% to record high",
+    "summary": "ATP partnership revenues rise 49% to record high. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-12T14:31:56.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPdEl2WmZzNXBMbUhuYVdWSkNweFBKNlRmYVljRVloQlZIVzE3Q2FqTGl5cm9ua2FRUU5uVEV1Uy1KSXp2UGhZbDdwajhnX1dkQVZjQkt2TmVaUGJFMHNuR3NLYVZ4WFpOeUxjZlNWX2dMelJBeUh1MUhZaGlwMktkVTNR?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1794543968106-9",
     "title": "How Jodar emulated Alcaraz: From Next Gen to the Nitto ATP Finals in one year",
     "summary": "How Jodar emulated Alcaraz: From Next Gen to the Nitto ATP Finals in one year. Full real-time coverage direct from ATP Tour.",
@@ -748,54 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-11-02T04:00:49.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBZVmYwSU02ZE9YcTZmbHlmTV9pQmdaUU5XMno2WnkxeGpHWXhzQUpUcG01RjVLZjJZRDlnSVpwTFZENjZrSWZrSzZpSEpFUkVUWVZhVXRWSVBralJPOHZMTFhtRWliSXFQV2lhd3B2MDM1cl9GZG9N?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1793664906625-8",
-    "title": "Alexander Zverev: Why Type 1 diabetes didn't stop me from becoming World No. 1",
-    "summary": "Alexander Zverev: Why Type 1 diabetes didn't stop me from becoming World No. 1. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-11-02T04:03:56.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5KRGkweVZsSWpHcHBhNGZWa0xPWVUyZVo0ZFBtbkdnTXVUWVBIb2VPcjlJUVZEUW9UVk5nWVpfeGZQWHRWSzhONGE2ay1GS1k3WlVtVVJpVm1sNF9POVRKbU51NVV4LWZGSlZvUjZKdjhWdF9QQVNF?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1793629414975-0",
-    "title": "Vacherot rallies past Lehecka to capture Basel crown, make Monegasque history",
-    "summary": "Vacherot rallies past Lehecka to capture Basel crown, make Monegasque history. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-11-01T16:59:04.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5hUXR2S0lxdW9kc3hmazB6aWU5VmI4UnVIRVBtRTRRNEsxRnFFMzNJbHJaTURVTXlORlg5SUZxSmZtVnE5QUNhdndlTDZUUEJMSVdWVnpYUng1N0taNzIxYURnVlhGT09Wc3FpOV9HM0xZRFJtMDQ4WHZ5dXU?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1793629414975-1",
-    "title": "Kouame, 17, follows in Federer's footsteps & joins Sinner, Alcaraz in Challenger history",
-    "summary": "Kouame, 17, follows in Federer's footsteps & joins Sinner, Alcaraz in Challenger history. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-11-01T22:32:40.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9aSXJMcXN1ZndoaEd0ci1hV25DT1o0TGJUVEZjcWZ3eGpnemRMMmVGOUpqWW1NbnF3VGF4T2IzM0lQaXR1MGwtOGJvSHZvN19qdFR1bGswWWU5WUNkWjktaWt0T2tXXzd4OG94N0pUQkpkNlVF?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
