@@ -4,6 +4,22 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1794630113434-3",
+    "title": "Fils’ stunning tweener earns October Hot Shot of the Month honours",
+    "summary": "Fils’ stunning tweener earns October Hot Shot of the Month honours. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-12T17:28:46.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPd3JFSnBpMXpoclRYZ3dFejlNU0RhVFdGMjltcU1aS0FNcFpKUFpzQ1poeUxBVUVSREJuN0QtdzFXMFlKeGZkTjluMmRUX3liTk1zTkJaYzFTZHVncDZxTkVocVZFNEVreWRtNmRnWG0ySkIxMTRlemhESHdfZXZKOGlmbHE?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1794611114786-0",
     "title": "Best Nitto ATP Finals Media Day photos through the years",
     "summary": "Best Nitto ATP Finals Media Day photos through the years. Full real-time coverage direct from ATP Tour.",
@@ -780,22 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-11-03T19:01:02.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5yRHY2WXR4LW9Qc25faHhNQm1PekhldW9JR3VpdzYyY1o3b2daS0ExbEVzUzVSTVp4cGI4SDFGT2V0dU1BWTk1LTdTRW9lVFh0WGd4U0JGbTF6a2ZqaERYNmt4aUQ3Z0xi?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1793745855078-4",
-    "title": "Alcaraz eager to bring his best in Paris: 'I really want to do great'",
-    "summary": "Alcaraz eager to bring his best in Paris: 'I really want to do great'. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-11-02T21:09:57.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBUU3VLZnVMeWhmSXpHRms4S1dpeEZwVmV5aWs0Z3hxNFVqSzFXeGJUaDlzc3U2cVVvYVI1ZXZ5aHhmVjMzdExwX2dBNTFadzJRaXB5MDZtbWw0UW85bjJESjRsVHk0eEZKeGc?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
