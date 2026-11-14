@@ -4,6 +4,38 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1794693081386-0",
+    "title": "Fritz ends season with Stockholm title",
+    "summary": "Fritz ends season with Stockholm title. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-14T17:54:10.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPX2pHZW9RZUVwTDlxd1h5b1lKSU1RQ2xsTUMwS2djVFdGWW9ybjNkZDY0RGNjSTZUeXBHby1xVnBxdkNwWWJOT2V6cVV5NVp1aGpwZEl4bk1tbTVWN24zRUhNV01YR3RzYzNlNFB4WjBRUnFQcVpzUnh1LW1iYW5YLQ?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1794693081386-2",
+    "title": "ATP No. 1 Club Gala Photo Gallery 2026",
+    "summary": "ATP No. 1 Club Gala Photo Gallery 2026. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-14T00:23:54.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBLTUdvRDZSRWp3OGpZd0FvQkczNnlaaUNrTmI2d1BUa0gza0RFa2x3ZE1aZDd0cFdhdzRwV2FIUVhuOWVmMF9uSF9hU3JyY0VCT1AzUVpPN2tIODQ4b0xiQ2FWRDBVR3hOQ0VVX0ZKTXlLQWhEMGZZ?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1794630113434-3",
     "title": "Fils’ stunning tweener earns October Hot Shot of the Month honours",
     "summary": "Fils’ stunning tweener earns October Hot Shot of the Month honours. Full real-time coverage direct from ATP Tour.",
@@ -764,38 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-11-03T16:50:20.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1oNXk5b1RqdGZ1RzZYalR5NTduVEt5XzVfRWw4dUJJYXhfb1J3ekVWUXN5bV9nLU9nMERURG5nTFFDV1hTWWZoaXZYcnVwUG5Lbk1lWUJUYlh0X3VnZks1dg?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1793799263015-0",
-    "title": "Monfils honoured in Paris: 'Very difficult moment to say goodbye'",
-    "summary": "Monfils honoured in Paris: 'Very difficult moment to say goodbye'. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-11-03T20:20:32.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE13T1lFaWkwc2hNUWVZak84cm9zSFFXRHdXMVJUdXk5OWphZS0yMl9SYTR5WDVOQUtsZFN2SHJVVmRTVXFjNGljQWhmWERTUmw4dkg0ZGJwTndDZ0M4VHIwQlQ2ZlpVc2t2UnU5TnNjeXliM3NnbHpv?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1793765580098-2",
-    "title": "Nouza & Venus claim first team win in Paris",
-    "summary": "Nouza & Venus claim first team win in Paris. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-11-03T19:01:02.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5yRHY2WXR4LW9Qc25faHhNQm1PekhldW9JR3VpdzYyY1o3b2daS0ExbEVzUzVSTVp4cGI4SDFGT2V0dU1BWTk1LTdTRW9lVFh0WGd4U0JGbTF6a2ZqaERYNmt4aUQ3Z0xi?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
