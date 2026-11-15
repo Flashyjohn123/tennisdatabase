@@ -4,6 +4,22 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1794715571381-3",
+    "title": "Zverev approaching Turin with 'joy' & playing down favourite talk",
+    "summary": "Zverev approaching Turin with 'joy' & playing down favourite talk. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-13T20:03:21.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9kbUJLRHYxMzZKbjJuZmdtbFdwcVVVSnlzMVh4OHV5amNoMG9UaThWUUNKREhsOUV4UzRkSmhnRHV2dXNzNFFqdHc4T3N0NWJYNjBrdFROOEo0Z1EzUEoxUVpyQnV4bWozRHBHb3UwbEFHN2NfcWJR?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1794693081386-0",
     "title": "Fritz ends season with Stockholm title",
     "summary": "Fritz ends season with Stockholm title. Full real-time coverage direct from ATP Tour.",
@@ -780,22 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-11-04T08:49:53.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBhTnRhdnM2Qmo4U1NtSkpiazJ3R3pPaEFud0owMXlOMEltVlVyR0pjOUJEdEJpVUcyd2xEMGM0TFE0NjhnTXlSYVJiQUJjN0xPOC1kLVNDWlh2cFVCeVFQaGFSMnNMTUxGRVlz?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1793833348499-9",
-    "title": "What is the Paris tennis schedule?",
-    "summary": "What is the Paris tennis schedule?. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-11-03T16:50:20.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1oNXk5b1RqdGZ1RzZYalR5NTduVEt5XzVfRWw4dUJJYXhfb1J3ekVWUXN5bV9nLU9nMERURG5nTFFDV1hTWWZoaXZYcnVwUG5Lbk1lWUJUYlh0X3VnZks1dg?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
