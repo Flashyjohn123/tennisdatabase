@@ -4,6 +4,38 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1794748482295-1",
+    "title": "Zverev meets debutant Jodar, Shelton & Fils clash on Day 1 in Turin",
+    "summary": "Zverev meets debutant Jodar, Shelton & Fils clash on Day 1 in Turin. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-14T20:08:37.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQNmJYUFhYQTdXeFFpdVNWZURCTFBVTl9pX3dhYzdjUllmUHJjbFYwSmJjaFVYOEI2eEJ5dE5jZDBwZEJobWpKWmN4YmVGeFA5MzdMNFBGS2tVOVBkZFBzUzVkTnFGNmMyY1FzOFZWZ015QTZBVmZtSlNrY3pycWxLcEN3SE1uaENTZzFwZ0VMd0FNQV9iekV5Vw?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1794748482296-3",
+    "title": "Carlos Alcaraz on Turin goals & Juan Carlos Ferrero reunion: 'I will give him a big hug' | ATP Tour | Tennis",
+    "summary": "Carlos Alcaraz on Turin goals & Juan Carlos Ferrero reunion: 'I will give him a big hug' | ATP Tour | Tennis. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-13T18:43:21.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNdHNreFU3OHkyNi1mNkdpN2FQQWw1ZkJXREF1cy14cGRLSWRpeG9uX0E4Vk02aTVTREo1eEpabzFpMHdYWUZ4WVN3YlhOdXowUFdqNmdnZFhSM1lqU0wxMlY4dGRQY3YtVy1taXFXc2wxNF85UExBMVFkalJUcUkzV2tn?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1794715571381-3",
     "title": "Zverev approaching Turin with 'joy' & playing down favourite talk",
     "summary": "Zverev approaching Turin with 'joy' & playing down favourite talk. Full real-time coverage direct from ATP Tour.",
@@ -764,38 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-11-02T16:02:52.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBYUWsyZW85VmlvTDJRUl9NbENYSEttdWFoajBNOFdDbk5ETjBPcG5mLU93XzZXZllISHBsaGozTWttcHJ1THNoalZvTUE0WmxaOU8wRHZpZ0w1eVhybk5KVGVOWjFwZTU2SjlnZlVldXpQdW1K?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1793853124930-1",
-    "title": "Hijikata upsets Djokovic in Paris, leaves Live Race open",
-    "summary": "Hijikata upsets Djokovic in Paris, leaves Live Race open. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-11-04T20:26:23.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBmaFFmTTFSTThHRFJ5S3RWX2w5RTFBWkg4TkNfa0hsUG5GTHVPcUx0ZXNsWUxxZzF0aFAzVTg4clcydDdIVlpyajBtd1Y0N0tFRHA3Ty05dFR5a2QyMFVjTV9TU3V0Y2JqREZtUFdGNE15YzgteF9FYUln?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1793833348499-1",
-    "title": "Hijikata taking 'best-level season' into Djokovic meeting",
-    "summary": "Hijikata taking 'best-level season' into Djokovic meeting. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-11-04T08:49:53.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBhTnRhdnM2Qmo4U1NtSkpiazJ3R3pPaEFud0owMXlOMEltVlVyR0pjOUJEdEJpVUcyd2xEMGM0TFE0NjhnTXlSYVJiQUJjN0xPOC1kLVNDWlh2cFVCeVFQaGFSMnNMTUxGRVlz?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
