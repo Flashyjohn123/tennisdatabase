@@ -4,6 +4,22 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1794781234731-9",
+    "title": "Zverev chases Nitto ATP Finals hat-trick; Alcaraz seeks first title in Turin",
+    "summary": "Zverev chases Nitto ATP Finals hat-trick; Alcaraz seeks first title in Turin. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-13T16:48:21.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE45YXdaWXQ1NGtPS0p1eENOVUN6YkpjTWI4NEZ3UkI3WmdCVGpaSXg4WlNDRTg3YnFnUF9zMkFkUGlPWnEybmxraFNaN2pHLVFNWklEdmVWcmNxeDRMVkFGQmxfQ25tYUp4QTN2alZUcnhhWWM4VWRUaA?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1794748482295-1",
     "title": "Zverev meets debutant Jodar, Shelton & Fils clash on Day 1 in Turin",
     "summary": "Zverev meets debutant Jodar, Shelton & Fils clash on Day 1 in Turin. Full real-time coverage direct from ATP Tour.",
@@ -780,22 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-11-04T17:32:41.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5yRHY2WXR4LW9Qc25faHhNQm1PekhldW9JR3VpdzYyY1o3b2daS0ExbEVzUzVSTVp4cGI4SDFGT2V0dU1BWTk1LTdTRW9lVFh0WGd4U0JGbTF6a2ZqaERYNmt4aUQ3Z0xi?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1793886462858-9",
-    "title": "Jodar shatters record books with Top-10 debut",
-    "summary": "Jodar shatters record books with Top-10 debut. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-11-02T16:02:52.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBYUWsyZW85VmlvTDJRUl9NbENYSEttdWFoajBNOFdDbk5ETjBPcG5mLU93XzZXZllISHBsaGozTWttcHJ1THNoalZvTUE0WmxaOU8wRHZpZ0w1eVhybk5KVGVOWjFwZTU2SjlnZlVldXpQdW1K?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
