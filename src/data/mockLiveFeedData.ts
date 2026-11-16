@@ -4,6 +4,22 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1794801931863-9",
+    "title": "Shanghai, Doha, Almaty named 2026 ATP Tournaments of the Year | ATP Tour | Tennis",
+    "summary": "Shanghai, Doha, Almaty named 2026 ATP Tournaments of the Year | ATP Tour | Tennis. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-14T12:13:36.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOX29QWHFQS3FxNHdGTXQ4Uy1ZcGFKOTJ5eGhIVzBKbDh6dzdMMmNCaHo4R2RoSDZUcTl1WHdra3lnQ19TaUI3UjRxbE12SVNRSkNjSXE3Qk9oYWxtOUlHbFgtcEZOdmI4WlVvUUVtV1RRd3RFUUw4Q0s0ek5VU05OOEFpb1hNYWl0?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1794781234731-9",
     "title": "Zverev chases Nitto ATP Finals hat-trick; Alcaraz seeks first title in Turin",
     "summary": "Zverev chases Nitto ATP Finals hat-trick; Alcaraz seeks first title in Turin. Full real-time coverage direct from ATP Tour.",
@@ -780,22 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-11-04T14:39:46.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5BcmhwcDZUX095aG1iOUxTYzhvRGpSV1VEb3NTUlVHZ2loOHFVdmJnd2VSVnVacFdyVXFhV3RQREFZeHJJdkpNdXMtNWoxUFk4U29kVUtnSnlzczVVUVZZZ2JWYzdJNERlMnJkYVlQdng1ejd3bHc?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1793886462858-5",
-    "title": "Arribage/Olivetti upset Cash/Glasspool in Paris opener",
-    "summary": "Arribage/Olivetti upset Cash/Glasspool in Paris opener. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-11-04T17:32:41.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5yRHY2WXR4LW9Qc25faHhNQm1PekhldW9JR3VpdzYyY1o3b2daS0ExbEVzUzVSTVp4cGI4SDFGT2V0dU1BWTk1LTdTRW9lVFh0WGd4U0JGbTF6a2ZqaERYNmt4aUQ3Z0xi?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
