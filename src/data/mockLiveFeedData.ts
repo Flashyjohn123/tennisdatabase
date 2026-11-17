@@ -4,6 +4,22 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1794878544001-9",
+    "title": "What were the Nitto ATP Finals results?",
+    "summary": "What were the Nitto ATP Finals results?. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-16T23:37:30.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9pMnRNaHdpX1o4b3BFNGJvTDJHT2ExLWsyaV9GRWpKbWpxQWVtQmZIb0VKYzdBU3A4Wm5UVElhemswSXRiOFVlYUJ4S2NRZlNFU0p2cTlBOHpRM0E4M0k4bkF3MUExazg3QXBfbFFB?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1794801931863-9",
     "title": "Shanghai, Doha, Almaty named 2026 ATP Tournaments of the Year | ATP Tour | Tennis",
     "summary": "Shanghai, Doha, Almaty named 2026 ATP Tournaments of the Year | ATP Tour | Tennis. Full real-time coverage direct from ATP Tour.",
@@ -780,22 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-11-05T22:51:48.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9BZDRyd0JmNzdUWGVEM2lUdnZxLU9pNGlUWWJoaUVpdjdwMXdYQkVUcVEweWU1Nl80YWQtSnhRQ051c2RHQTdGRUtPa0RZTUY0WGlmRnZrZFNSQVExb1k1SEFQVkxCRDZLN2pSVVRzaw?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1793886462858-2",
-    "title": "Musetti shocks Zverev in Paris; Halys saves 4 MPs to shake up Live Race",
-    "summary": "Musetti shocks Zverev in Paris; Halys saves 4 MPs to shake up Live Race. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-11-04T14:39:46.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5BcmhwcDZUX095aG1iOUxTYzhvRGpSV1VEb3NTUlVHZ2loOHFVdmJnd2VSVnVacFdyVXFhV3RQREFZeHJJdkpNdXMtNWoxUFk4U29kVUtnSnlzczVVUVZZZ2JWYzdJNERlMnJkYVlQdng1ejd3bHc?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
