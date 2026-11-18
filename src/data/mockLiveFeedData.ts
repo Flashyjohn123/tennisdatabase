@@ -4,6 +4,22 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1794961086465-1",
+    "title": "Arevalo/Pavic produce flying finish to upset defending champs Heliovaara/Patten at Nitto ATP Finals",
+    "summary": "Arevalo/Pavic produce flying finish to upset defending champs Heliovaara/Patten at Nitto ATP Finals. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-17T12:31:19.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQcXRHSDlvbkUwbWxhUG5Vc0hnWTdPTHZrOU5XX3RUX0o0dHh6bVdQWjVEZHd1WUZEV0dXamZsZWE3cFU1Tm1OXzVhRGhLeFlwSGhvMDNISlFHSzBHd3pyY3dIMXhzS0hxbHB1V002YlBmZGVldTRRMTZWLWRRUHkxUzdDNTRYV25QTjY0cHp6RmRtZ3lrZm5PVw?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1794928651875-0",
     "title": "Zverev on Year-End No. 1: 'This one is the most special'",
     "summary": "Zverev on Year-End No. 1: 'This one is the most special'. Full real-time coverage direct from ATP Tour.",
@@ -780,22 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-11-06T18:26:27.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5yRHY2WXR4LW9Qc25faHhNQm1PekhldW9JR3VpdzYyY1o3b2daS0ExbEVzUzVSTVp4cGI4SDFGT2V0dU1BWTk1LTdTRW9lVFh0WGd4U0JGbTF6a2ZqaERYNmt4aUQ3Z0xi?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1794004581640-7",
-    "title": "What are the Nitto ATP Finals qualification scenarios?",
-    "summary": "What are the Nitto ATP Finals qualification scenarios?. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-11-05T23:45:25.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQRlZldXFpMXB5QlRHT2ZLUm9nQnBObFl5MXFKY253U1VWalQ5d0h2Mmh1TTFtUE02b1lnM1J5Y1VaT3B4MjF5X2RWNXhFLVpiVTJoX3JmLU5QSGxHeFFua3hFOXZrQXU4VUJodWJuU2NVN1dWZVd0UFdWT0IyTkp1VDdSSmZEQXZUM1ZicmZSMGF5Zw?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
