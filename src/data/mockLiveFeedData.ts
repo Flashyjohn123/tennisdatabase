@@ -4,6 +4,54 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1795013631932-0",
+    "title": "Fils off the mark in Turin! Frenchman outlasts Jodar for first win",
+    "summary": "Fils off the mark in Turin! Frenchman outlasts Jodar for first win. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-17T15:26:19.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5aSFIzbWJfMDY2SWpZMEdiaTh0RjFLOXhjd2JNSXg5WmdZbmJUNjRxNFZPNkE2THJLMzJHSHpXa2xBTE9sZFNuRUUzSDRqalNPTnpreDFJNjVEaGhKcXZscEtMbDhfTmJsWTl2ajhFRWdwOXpjWE1PNnRqbXU?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1795013631932-2",
+    "title": "Zverev shuts down Shelton to seal Nitto ATP Finals SF berth",
+    "summary": "Zverev shuts down Shelton to seal Nitto ATP Finals SF berth. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-18T00:03:04.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQOFRsSWtIWGlPNzRhQWVHa3BQTmxOLTBmcjd4MGI0ZkpEMUwzYXBHUnVaRHA5QkQ1ZHdEZTVmb181QW53ejk1bWtUdFVyWnVudk53cGpIYkdDcHdCOFdvZTRfU2E2X2k4a0tzbFFuclVKOG15ck9HWFlQbEJOMWZCbm5n?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1795013631932-5",
+    "title": "Infosys launches AI-powered live commentary",
+    "summary": "Infosys launches AI-powered live commentary. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-16T10:35:39.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBFV2p1cHpsWTRxcmlkMXNEdnd6TzZ2R3JaQ3MwaHJtQjNWcDlSNk5BN2xncXZhZzdoZnVCYjZiNlNKWU9sSlJTdzBCeTd0WGRWYmNpdUhfQ2pMMWo1V2RZQW52MUU1eW0zNVVlaFhMVHNuOHkxdEdJdnY0bkI2LTA?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1794961086465-1",
     "title": "Arevalo/Pavic produce flying finish to upset defending champs Heliovaara/Patten at Nitto ATP Finals",
     "summary": "Arevalo/Pavic produce flying finish to upset defending champs Heliovaara/Patten at Nitto ATP Finals. Full real-time coverage direct from ATP Tour.",
@@ -748,54 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-11-06T22:00:27.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBsYnQxMHRSeTBXWWd1VTU0MlpGSmpacm5yQllSVUpkZFR4cGdjNURqZmpZbkNmQVcwZl9URUJzT2I4Z1pIb2p3NkdOWkdDSV92dnBYUGpPZERiYTFjdDVCS0xuZWN2aFNZendlVFBLN2pRTHZ6?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1794023809066-9",
-    "title": "Alcaraz advances to Paris QFs after Berrettini withdraws",
-    "summary": "Alcaraz advances to Paris QFs after Berrettini withdraws. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-11-05T11:50:25.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9tWnVPbGFUeml0Q1ktQ0JST2lNaXNYZXpmUHNZTEFjOFM5R043RTBBM2Z5eUZHQUM2WnBfNUJqUGpMYmlDMzQxbmZhUGVWUTZweGltX2RvNUtJTC1aOS1qWkdNSkVUZUdxSEhWeUdQWW9ZQUFfQzQ0RkF3VXg?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1794004581640-2",
-    "title": "What were the Paris tennis results?",
-    "summary": "What were the Paris tennis results?. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-11-05T00:03:08.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBJRHVPSzFTTllWcEZkRUV2ZTBNQkl3a0lhMFNDWGxyM2c4dklmRkItR2dmNXNEY2lrVHlkOUlocmRoRFZTenlSRFRRYmJPamdDeWxHanBqNFdyS2dodEd3?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1794004581640-6",
-    "title": "Shanghai & Vienna champs Miedler/Oberleitner reach Paris SFs",
-    "summary": "Shanghai & Vienna champs Miedler/Oberleitner reach Paris SFs. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-11-06T18:26:27.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5yRHY2WXR4LW9Qc25faHhNQm1PekhldW9JR3VpdzYyY1o3b2daS0ExbEVzUzVSTVp4cGI4SDFGT2V0dU1BWTk1LTdTRW9lVFh0WGd4U0JGbTF6a2ZqaERYNmt4aUQ3Z0xi?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
