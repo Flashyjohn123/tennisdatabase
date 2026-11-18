@@ -4,6 +4,22 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1795045486304-9",
+    "title": "Alcaraz qualifies for SFs at Nitto ATP Finals",
+    "summary": "Alcaraz qualifies for SFs at Nitto ATP Finals. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-18T20:51:28.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNQWtGNy1HRFptQnQwd1JJT3ZZeVZNU1ctVk1fdm1KeWVTN0FnS0Q3UHI3bDIzOGFEeGFQUVVHdVB0SDZfTzR1MW80RUtZbVM4SEVhVGpGbTRSemtPeFNoSGE0YUItNHNSeXJjSDB1R0VuZ2JHWVFqeE15SGNNdXFyaGQ0VldyQWU2RHUzbFY5VQ?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1795013631932-0",
     "title": "Fils off the mark in Turin! Frenchman outlasts Jodar for first win",
     "summary": "Fils off the mark in Turin! Frenchman outlasts Jodar for first win. Full real-time coverage direct from ATP Tour.",
@@ -780,22 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-11-06T09:59:35.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOZEE3WUprcE9NYTJPajdWZmJobVlhM1VDMTlaUGRMZFdVcU9tOHQ2V0tHRm1RdUZUNkptV1JzUm5GWHFZTE56ZGNWVUktN1duVmtYUzJPVUJTdFRNMDNwcmZnUGZEWllsM0g1aTFZb2ZydXlWTlZ4cm1kLUpXYXFLN05uYUItUU1xdGc?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1794023809066-7",
-    "title": "Jodar completes 2026 Nitto ATP Finals field",
-    "summary": "Jodar completes 2026 Nitto ATP Finals field. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-11-06T22:00:27.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBsYnQxMHRSeTBXWWd1VTU0MlpGSmpacm5yQllSVUpkZFR4cGdjNURqZmpZbkNmQVcwZl9URUJzT2I4Z1pIb2p3NkdOWkdDSV92dnBYUGpPZERiYTFjdDVCS0xuZWN2aFNZendlVFBLN2pRTHZ6?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
