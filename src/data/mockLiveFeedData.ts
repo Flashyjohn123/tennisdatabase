@@ -4,6 +4,22 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1795065606552-9",
+    "title": "Alcaraz eases past Medvedev, moves to brink of Turin SFs",
+    "summary": "Alcaraz eases past Medvedev, moves to brink of Turin SFs. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-18T17:53:00.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQbm5rVk5DckliU0lmVDlvSWR4Z2hsNVp3QVJRTmljeU41ZjlqbC1GSUNOdjF5RGdIZ1lRX2dabVVnQ0pVVHR2YkxrUWxxRzRfUWxaOVZpTTE1d3dEb1p1Zm1qV3VxSkEtNjE2RnVSa2h4RHBJZXlycGcySFpoaEdrQWVDR0cwNU0?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1795045486304-9",
     "title": "Alcaraz qualifies for SFs at Nitto ATP Finals",
     "summary": "Alcaraz qualifies for SFs at Nitto ATP Finals. Full real-time coverage direct from ATP Tour.",
@@ -780,22 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-11-04T10:34:53.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBxbzVYWXpLdWdUTVhtS0w3SDcyUFdod1huRnhydXBrRjI0c0w3aFNyanFabHVrd2hXclgwYkZNd0R6LUZyUmV6R1dHVlkwOUY4LWFMemtISl9EUTlpSEhJQ05GN0dVUU9zLUNGVEFR?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1794023809066-4",
-    "title": "Sinner, coach Cahill to conclude partnership; Norman to join Italian’s team",
-    "summary": "Sinner, coach Cahill to conclude partnership; Norman to join Italian’s team. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-11-06T09:59:35.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOZEE3WUprcE9NYTJPajdWZmJobVlhM1VDMTlaUGRMZFdVcU9tOHQ2V0tHRm1RdUZUNkptV1JzUm5GWHFZTE56ZGNWVUktN1duVmtYUzJPVUJTdFRNMDNwcmZnUGZEWllsM0g1aTFZb2ZydXlWTlZ4cm1kLUpXYXFLN05uYUItUU1xdGc?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
