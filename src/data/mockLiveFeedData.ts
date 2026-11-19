@@ -4,6 +4,38 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1795100366774-5",
+    "title": "What are the Nitto ATP Finals semi-final qualification scenarios?",
+    "summary": "What are the Nitto ATP Finals semi-final qualification scenarios?. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-18T22:36:03.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPQkxTZVIzekY1MWtsTDRuaVh0eTY2b2ZLVUwxeWlDbFRTWDNGRmpfSVJ5QzAzelZkU1pIVWlHU0lzaXZxZDhfdXZfc1BTZHloZXh4R2ZOMk1KcmM2RS1HUlIzaGl6OTJxRkNsVnVrRDNHcmJfUEFLbHp3dV9lUW9acEkwR1U5WFFrVFZKeHNxQ0xHLURCbklr?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1795100366774-9",
+    "title": "Alcaraz gives injury update at Nitto ATP Finals",
+    "summary": "Alcaraz gives injury update at Nitto ATP Finals. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-18T17:56:27.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNNGZpZ25KcF9xTmlKYmU2U0JGQmROSTVKVl9BRHJYRERLRFBDVEREbXVXclh2MGkyVXlHY3lZaS1GWUFETUpsaU92ZlhpUnpVTTFkMVBzaDJ5a3BQQXMwbTFlbnEyRmp1bEhUcDI4VHEyQW5NdU1ud1Ewal94cDJzd0czalR5N3c?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1795065606552-9",
     "title": "Alcaraz eases past Medvedev, moves to brink of Turin SFs",
     "summary": "Alcaraz eases past Medvedev, moves to brink of Turin SFs. Full real-time coverage direct from ATP Tour.",
@@ -764,38 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-11-07T18:44:06.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBfNEZzbDMxcUE4SE91RkRuOUNDLTJock55bUZnT1hRRGluVFZKRTB2eEpTSEZvZklXTEJ1Wm9tZGYyaUxFV3hScmVwNm9uanFESkYzMkNfXzczejJXS1JUNGhRSjRfWkFtemc?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1794086161607-7",
-    "title": "Shelton digs deep to oust home hope Van Assche, reach Paris final",
-    "summary": "Shelton digs deep to oust home hope Van Assche, reach Paris final. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-11-07T16:26:19.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBVM25LRFJmZzdEaUhJUnpDelJYaEFQT2pmaG1GS2lwWHlsU1ViY21haktIQlZGV1QyS2I0cmpsOF9Cb1VvTy1aUFBWblFFcVJYSllpQ2JxSmlzWm5qN0pRLTVISjJpS2hqNWpWcC1BVmhDUQ?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1794053565883-2",
-    "title": "Fils’ dream of Turin: 'It would be insane'",
-    "summary": "Fils’ dream of Turin: 'It would be insane'. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-11-04T10:34:53.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBxbzVYWXpLdWdUTVhtS0w3SDcyUFdod1huRnhydXBrRjI0c0w3aFNyanFabHVrd2hXclgwYkZNd0R6LUZyUmV6R1dHVlkwOUY4LWFMemtISl9EUTlpSEhJQ05GN0dVUU9zLUNGVEFR?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
