@@ -4,6 +4,38 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1795133145763-8",
+    "title": "Shelton faces Jodar, Zverev meets Fils on Day 5 as stars chase Turin SF spot",
+    "summary": "Shelton faces Jodar, Zverev meets Fils on Day 5 as stars chase Turin SF spot. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-18T22:11:28.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNZ3RQQzdULTBIRE55WUtMQnUtc3Awb1B3Rk94ck5YQnMxbUtGWEJ2RWZidHdfOVpzVWs1aERaZW1uYW1BdTlXM0g3WG9EZDdGMXZvWW85NUR6bnY1TlNza2lDOXhuai1hVmU5R055dGY1MXc5R3NscUlCRldkTUlSMlpEcTF2YUpGbGNCdHQ5S3JfWWJTVS1MSg?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1795133145763-9",
+    "title": "Arevalo/Pavic maintain perfect record at Nitto ATP Finals",
+    "summary": "Arevalo/Pavic maintain perfect record at Nitto ATP Finals. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-19T12:24:10.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOeHI1d3NkU1Q5M0FIMEpPdEJLNGsyREZJRU9HR2d3TGxkTUlsQ2VnN3BXMFFkZDZ4WndsWS16dlNDdkFzS2hsdzQ0UTBxOFh4bjdaM1c3RC1GU3l3V2tzVHppaGxvamdiMXdOTUhsaEZvanlSVWdiZU1Ua3ZyZnlFQ3gzZTJMaW5ZLTNHcHdVRQ?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1795100366774-5",
     "title": "What are the Nitto ATP Finals semi-final qualification scenarios?",
     "summary": "What are the Nitto ATP Finals semi-final qualification scenarios?. Full real-time coverage direct from ATP Tour.",
@@ -759,38 +791,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "id": "atp-live-1794141165662-1",
     "title": "Alcaraz marches past Ruud in Paris, sets Shelton title clash",
     "summary": "Alcaraz marches past Ruud in Paris, sets Shelton title clash. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-11-07T18:44:06.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBfNEZzbDMxcUE4SE91RkRuOUNDLTJock55bUZnT1hRRGluVFZKRTB2eEpTSEZvZklXTEJ1Wm9tZGYyaUxFV3hScmVwNm9uanFESkYzMkNfXzczejJXS1JUNGhRSjRfWkFtemc?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1794141165662-6",
-    "title": "Fritz faces Alcaraz with Turin qualification on the line",
-    "summary": "Fritz faces Alcaraz with Turin qualification on the line. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-11-06T15:55:25.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1HZ0dLNFAtaEpvU0VTNFlrR1dGal91SVgtRWlDSmlTWkNpUnVCQi1KWGZpMzhDdmhmR0lETnh2aDBBR0FKRnE3LTZKREVqYTBWM0JCTkxuMDJySXZFa004YmlTd1BZbWhLT1dJZDZLbmRGakR6?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1794109311395-0",
-    "title": "Alcaraz marches past Ruud in Paris, sets Shelton final showdown",
-    "summary": "Alcaraz marches past Ruud in Paris, sets Shelton final showdown. Full real-time coverage direct from ATP Tour.",
     "category": "breaking",
     "severity": "high",
     "timestamp": "2026-11-07T18:44:06.000Z",
