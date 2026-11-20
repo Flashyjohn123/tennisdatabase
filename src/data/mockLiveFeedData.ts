@@ -4,6 +4,54 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1795185737895-0",
+    "title": "Shelton defeats Jodar, reaches Nitto ATP Finals SFs for the first time",
+    "summary": "Shelton defeats Jodar, reaches Nitto ATP Finals SFs for the first time. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-19T21:24:35.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQVDdSRUpoWkc0VVhoNlA1Qml6THJDQ1VhLTRqMW1MMXR6Y3J3TG5NekRnckxhVHNFNW91Zmd4SVkwX2VaQWFjN0trN1NzV1ZZRER6dU9UZi03a3hkYW5LYlExU0VaV1RmNzdIR3d6Q0dQSUYxVnpsOHJ1X29hcUdiMUZ3?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1795185737895-8",
+    "title": "ATP unveils next phase of OneVision with more than $350 million in player compensation & approval of ATP Ventures",
+    "summary": "ATP unveils next phase of OneVision with more than $350 million in player compensation & approval of ATP Ventures. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-20T10:04:50.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxONVBSZEhDVTlzS21obDQ4SVJQS25iMVo3WHY1cl9pR3ZkQ0VlSks2bVR0Q2owV3lvb1V2Y1NUVnNtMlBHbUZDcWFLMGt6SFQzYVgwbm5qR1ZEU2ZycC1ueWpCQXZrcHpMWC1CQlBGODNXUUk2VkVWYWRtQjRrVURSMHlWMUUyV0tV?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1795185737895-9",
+    "title": "Medvedev, Tiafoe set for win-or-go-home clash; Alcaraz faces Cobolli",
+    "summary": "Medvedev, Tiafoe set for win-or-go-home clash; Alcaraz faces Cobolli. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-19T23:04:28.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOTlphekhyTnh6NkJJN2NvZ0NwalItREpFeXpMSXBPSm1TMjZyaDFrakFscjVQeG01aWx1MC1Gem8wUFkxU1UyTl9lZmQtbnNQNzRBcjRuWW9BMXNYNVpUdlNoSnVwek40aV9yYTZ5N0pXZnFBUVA3ZmZ5cm5CMFJhZlpfcnF1ZTVaMk5Oa0lvdGxfYV9CYjNBRkNRUEVNUVNj?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1795133145763-8",
     "title": "Shelton faces Jodar, Zverev meets Fils on Day 5 as stars chase Turin SF spot",
     "summary": "Shelton faces Jodar, Zverev meets Fils on Day 5 as stars chase Turin SF spot. Full real-time coverage direct from ATP Tour.",
@@ -748,54 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-11-07T19:33:37.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE56cV9xaVg0Qnp1SEZlVDdEekY5OW9XZXJTbnp4cFRVZmRmQmdtcXFNOGs3Qm1zNjBLdkRoQjRJandSZ2dQT1AwLUk4QWdmX3A3UU5QTkVUYy12M2I4X2lpVmo4U0dIUDlCNFl0N3NvUURORTA0NGxNbnFGWjE?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1794173465169-5",
-    "title": "Alcaraz claws closer to Sinner in Big Titles battle",
-    "summary": "Alcaraz claws closer to Sinner in Big Titles battle. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-11-08T16:24:51.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1vWDJKdmp3NjNDaEJuQkxjT3FfZUNsNTNKZXhzTTFxZ2xXNmVQYnpKaExUR2ZpZlg0RzdxTjlaZG80dDNTUE81S085aG1Wb0M4am5DQ0g4RFhmTHRlREdwdEp6alNNUWJJVUVSVHFB?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1794141165662-0",
-    "title": "What time is the Alcaraz vs. Shelton Paris final?",
-    "summary": "What time is the Alcaraz vs. Shelton Paris final?. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-11-07T19:36:04.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBJZVI5NlFra01XMkhDZzVXbk10d0dpMk00QWdERzV3X2l3dXkxQy13alotLUZBTEdhYUhrTkl2bnE2ZXdvTHh0N05OUVZVZkdDSFFMMDQ5dEFnZmxuT3ZFcGtLN09IZFNh?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1794141165662-1",
-    "title": "Alcaraz marches past Ruud in Paris, sets Shelton title clash",
-    "summary": "Alcaraz marches past Ruud in Paris, sets Shelton title clash. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-11-07T18:44:06.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBfNEZzbDMxcUE4SE91RkRuOUNDLTJock55bUZnT1hRRGluVFZKRTB2eEpTSEZvZklXTEJ1Wm9tZGYyaUxFV3hScmVwNm9uanFESkYzMkNfXzczejJXS1JUNGhRSjRfWkFtemc?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
