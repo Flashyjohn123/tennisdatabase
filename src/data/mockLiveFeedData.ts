@@ -4,6 +4,70 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1795269478375-0",
+    "title": "Shelton advances to Nitto ATP Finals knockout rounds",
+    "summary": "Shelton advances to Nitto ATP Finals knockout rounds. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-19T21:01:07.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOTTlNbTJXeDloMTJCZGdlYmF4QUszZDlHVFZtekFaMUppOUJ1a0Y0RGdtcGwyNWlBa0dSVnRPcnd6aWpDd0VpSmFEQjRqT29zcExUZTRxUTIzRlE3dnJuQjNodlg2NEpoM1NPektFZC1BRkN1MlBoREt1TXZYQVF2Y0xtM0Y?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1795269478375-1",
+    "title": "Alcaraz reflects on past 24 hours after Nitto ATP Finals injury scare",
+    "summary": "Alcaraz reflects on past 24 hours after Nitto ATP Finals injury scare. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-20T15:59:50.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNdWxmWGdFWWxNRW8xN2xCSEw0bmYtejN1dUlkT09qV1FEZ055eEhYUTBSUS1JMkVNekhBNXhBVVU5U0ljZUdhNG1maVgzMjRVUWtUNzNQM04xMERNUE1xNUlTamRjSTVoUklfNzNBQlZqSnBjVWFYOVRBYzZFUk9LY3d3MA?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1795269478375-6",
+    "title": "Preview: Alcaraz & Shelton clash in Nitto ATP Finals SFs",
+    "summary": "Preview: Alcaraz & Shelton clash in Nitto ATP Finals SFs. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-20T21:54:50.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOSUZEbjBQQTBPWUNmQTRGM2dHaGVCZTBqdVlGdXMyMi13RVQ3RlUtN21Ec2xLNjB1UnlpdEhRaHVLc19WMkxaY2h0ODRmcEUzY1F4eU1ZVGwwNmQzMlhrZnVVN3ViZXRNNkZiMlJ0VXhTeUNEMHlBdTVieWNoNzlKWUdYZ3JDclU?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1795269478375-8",
+    "title": "What is the Nitto ATP Finals SF schedule?",
+    "summary": "What is the Nitto ATP Finals SF schedule?. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-20T08:00:00.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9FM2xPVXhTVDNtclpoNHdlalFJa3RzX3JQZlBoUnhKSnJXQTdaVENCc0Vsb1BEQXp0RDJ3VkR4WnJteGlURjQzZHFFYlUyQWNKUDd2SEI2bml2bW9wMUhYaDdaOHM2WWZfVDlpR3lmTQ?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1795237183254-8",
     "title": "Medvedev sinks Tiafoe, books SF spot at Nitto ATP Finals",
     "summary": "Medvedev sinks Tiafoe, books SF spot at Nitto ATP Finals. Full real-time coverage direct from ATP Tour.",
@@ -732,70 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-11-09T02:48:54.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBXSlFtOFBLU1V4SE1Nc1lKa2VMN09IY2o1RXRldm1lQU5tR3JVdHVZWW5YZUp1SnNZNThZdm5xSnVEcmQ0NHN3c0NKRmhfejdzbFNLRE82YVJkNWFYN05OdUlsLTg1d0pGS0ViYzFSaw?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1794272495648-7",
-    "title": "ATP signs global partnership with Julius Baer",
-    "summary": "ATP signs global partnership with Julius Baer. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-11-09T08:09:01.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNeVhjVjB2OEZyLTVDa016S1pBUVlxOHIxRjItU3hveHQ5bkNHbDJJLUh5R0VtOVRQSDQtSGJkRlhZdUhYeU9QdGVTWG5hdGo5WEFwWWU1N0FJRUhRaFZhNzh0Y3RuWTZLSUJjRnU1cnA0WWxLSVlOWVpDNVRCVmxOeDdYQ2o?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1794272495648-8",
-    "title": "Alcaraz on Paris title run: ‘Probably my best week’ since injury",
-    "summary": "Alcaraz on Paris title run: ‘Probably my best week’ since injury. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-11-08T18:29:09.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBHMFVzbnlPSWg1RlhUdEp6cDJxU3dIejRCbmlHOE1MenRqZkRXcDZoem9uZUttWkdpOVF5M2NZOUp6R3BGcGJFRzlydHcxY3ZOYXZLZnBsVFM1bkpDVVpZZzZYbDZfNl9UWTZ1cEFlM2RoZVk?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1794235819262-5",
-    "title": "Heliovaara & Patten claim Year-End ATP Doubles No. 1 honours",
-    "summary": "Heliovaara & Patten claim Year-End ATP Doubles No. 1 honours. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-11-08T16:58:46.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOQVU2UUpKUFlnMzNOb3Z1Z09wa3ZxcU5pQXZKczQyTF9DZmJhajRsRlNpVWQzbmgxRXRtbS1ocmR2QmpHWXBrcThKZlctZDQtV0FIdzlNcjdyQzQ3V3dqWW5OYVNCZ1N0SzNqSjJ1ZFRLbkJXcHNOaG1OcXAwUGF4WWs4am5Fc2c?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1794173465169-0",
-    "title": "Alcaraz downs Shelton to win first Paris title",
-    "summary": "Alcaraz downs Shelton to win first Paris title. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-11-08T19:14:39.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9hNnBuNG10V3FYRVBPZ196aWwzZ0M1QnZIUThhYXIxMXlkamRyRC00Mk5KZGwzeUx1RzVIbU5zUjJldjBPVkpxRmdwMDBQZ3lOaV93Z3BCQllOQ19uektxQjdMeDZ0SHE2YUR0S0kxX3k3VWpxYmNBMFYwOA?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
