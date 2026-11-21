@@ -4,6 +4,22 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1795237183254-8",
+    "title": "Medvedev sinks Tiafoe, books SF spot at Nitto ATP Finals",
+    "summary": "Medvedev sinks Tiafoe, books SF spot at Nitto ATP Finals. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-20T21:40:29.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOSUN5cWdjT3ctOUNnSWlTS2tqMGt3aTRSVU5nV2dnY2kzQkY5cnNVd0tjWHpXcEhHVktIbjBHemlYLS1QanN6cUJuNlRUZllaZWx3RkEwb3hWZkxVeGQ1MzR5SU5nS2c1UVVYb0FZWmgwT2xSOWRaVHF5cG5SaTZlQ0xB?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1795185737895-0",
     "title": "Shelton defeats Jodar, reaches Nitto ATP Finals SFs for the first time",
     "summary": "Shelton defeats Jodar, reaches Nitto ATP Finals SFs for the first time. Full real-time coverage direct from ATP Tour.",
@@ -780,22 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-11-08T19:14:39.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9hNnBuNG10V3FYRVBPZ196aWwzZ0M1QnZIUThhYXIxMXlkamRyRC00Mk5KZGwzeUx1RzVIbU5zUjJldjBPVkpxRmdwMDBQZ3lOaV93Z3BCQllOQ19uektxQjdMeDZ0SHE2YUR0S0kxX3k3VWpxYmNBMFYwOA?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1794173465169-3",
-    "title": "Alcaraz eyes Shelton revenge in Paris title showdown",
-    "summary": "Alcaraz eyes Shelton revenge in Paris title showdown. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-11-07T19:33:37.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE56cV9xaVg0Qnp1SEZlVDdEekY5OW9XZXJTbnp4cFRVZmRmQmdtcXFNOGs3Qm1zNjBLdkRoQjRJandSZ2dQT1AwLUk4QWdmX3A3UU5QTkVUYy12M2I4X2lpVmo4U0dIUDlCNFl0N3NvUURORTA0NGxNbnFGWjE?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
