@@ -4,6 +4,38 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1795355482836-0",
+    "title": "Zverev downs Medvedev, sets Nitto ATP Finals title clash with Alcaraz",
+    "summary": "Zverev downs Medvedev, sets Nitto ATP Finals title clash with Alcaraz. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-22T00:19:51.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQVTYzZzIzQlVWZnpjODgyV21aMVd6WHdISGFFZ2lORDBXOEpMQlp2Q29vUDhUUTNZNnE3T1dNX3cybHJNUnItbmNCcHBvQlZISldNSXkwS3RybktNT2dGX3Nma3FRczdPay1wTEMwN1BrcXJaTlpTVlZISklPMXFEMlRRSXk?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1795355482836-9",
+    "title": "Landaluce qualifies for 2nd Next Gen ATP Finals; Kouame makes historic debut",
+    "summary": "Landaluce qualifies for 2nd Next Gen ATP Finals; Kouame makes historic debut. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-21T12:19:51.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQSHpRd3lDckNUcTdVeU00czJIb2FmblZSNk9ZSU1GR2lkWmFMQ1hBTm1kRVlTMUlmSm5NejA1N3dPeTNoUVpLNkRZYU51cU1IdW1mZVVUQklTWnlKbUpoM09FUHVKN3JmVlpWWGFHMXlvMFREM0lua05naVhYOGhEbVVnVHVVby1DdVBiY2wyOXQ?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1795321435721-0",
     "title": "Alcaraz, Medvedev & more: Miguel & Sesko learning from the best in Turin",
     "summary": "Alcaraz, Medvedev & more: Miguel & Sesko learning from the best in Turin. Full real-time coverage direct from ATP Tour.",
@@ -764,38 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-11-09T11:59:01.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPSmliU1JvRHlFTEJUSUFVZFpOcmd1dlNtM2VhTTFaNHcxSXE1N0REUDBaSFZTOXYyNTVjZ3JraXRNbDV3TWRMNzBuaDlFNEdDLVhvU3Q0bEdqU3FCLUxmMUwxbUNWVWh1QTZPckZtYVFIRFJnalF5Qm5lSl81ZlFsaA?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1794350497858-4",
-    "title": "Tiafoe among quartet of Nitto ATP Finals first-time qualifiers, Mover of Week",
-    "summary": "Tiafoe among quartet of Nitto ATP Finals first-time qualifiers, Mover of Week. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-11-09T11:32:57.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNTmdxcGsyU0VzSFJhZDZRS1BhbnFLd2d2T2tMQXYzMnoxS3hkSjJUTGtub00zMFFlTnJMNDJrbWRrZWloM05TckpJbG9yZGNRUnVCUXZVMkdaZFRiZ292RnpuUE1sdE80RFk0TW1LeUxhQy1IbmVnOWRXc3dJR1ZENmQ5dEV5d0pL?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1794350497858-9",
-    "title": "Rune returns to Stockholm with statement win, Musetti advances",
-    "summary": "Rune returns to Stockholm with statement win, Musetti advances. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-11-10T20:34:55.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1sYjVsQWZGTnEyYjNFckRzbGVnbzl3QUR1YTNfWG95ZExyT1pYcE9UcGlUM2RCZGFzenlSbFZabGpVTzk5LVlxVjNodjZBSXRJTmFDSDA3aGRlMjNFRlZCQ2dtemVmQUF4Y1gzM2JB?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
