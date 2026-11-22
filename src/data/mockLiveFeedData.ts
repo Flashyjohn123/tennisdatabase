@@ -4,6 +4,38 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1795388521447-0",
+    "title": "Alcaraz dispatches Zverev, wins first Nitto ATP Finals crown",
+    "summary": "Alcaraz dispatches Zverev, wins first Nitto ATP Finals crown. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-22T21:41:06.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNQWpNNjhWelI3bE90bWlnWW9peXZzNnRDQ2YwMXhzZzZpWnd0YWkwT05weXI4SlVUb1hlT0ZiUTFFdG1HeUJ5VGw4Y0VIYmhWX01ramtTVjM5b0p2TEV6Tk9RS29IRGNRS2liazRTV09HLWtlUTU0WHlHMzdWUzE2VA?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1795388521447-3",
+    "title": "Zverev on Alcaraz: 'An absolute legend at only 23 years old!'",
+    "summary": "Zverev on Alcaraz: 'An absolute legend at only 23 years old!'. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-22T20:24:52.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQdTFCcGl5V1BOQ05vZVYtX2QxOUZVUXdhRF9ZMHRFVk9nSzhyZ0dWVl9qeW5FQTlmWnhQMkg4d0xOMThCLUJ5YXhpSUhpSWc0VW0wOVFrbXAzc3dYRHhvTUxZdW03cFhwODZYd25CblBxU0lLMEt6UDFQTGdPaUlKeg?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1795355482836-0",
     "title": "Zverev downs Medvedev, sets Nitto ATP Finals title clash with Alcaraz",
     "summary": "Zverev downs Medvedev, sets Nitto ATP Finals title clash with Alcaraz. Full real-time coverage direct from ATP Tour.",
@@ -764,38 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-11-10T19:49:20.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE50TzJLbE1jSU1EQVdLdDFoYkVxQVJ4Zld2cTdoQ3B0N1RtVzQxajRZZm1ObWhzRm1QcWtfRWp4OXFkZUNxbml6cS1VSTRrN0FGZV93QXQ3WHBWWkF0LTFPdi1peWt6ZXRCLUlsQjEteGZOOWdBeFNNWFJ6eV8?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1794369531143-9",
-    "title": "Rune reflects on 'scary' injury as he embraces Stockholm return",
-    "summary": "Rune reflects on 'scary' injury as he embraces Stockholm return. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-11-09T16:54:01.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE84aVM4aFVWUzR2WWxIeFhTaDRmbnFFelJzUU96NjVFQVlvd2dqU1hhOVdfNUJWMGlQOURXbVloWGo5eHMyMmpMNExuRXJWUU1XZjlGNm9uV0JUYlpTZGlJVk4zUVBxdlZXeUY1QmNzREN6QkdDTGc?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1794350497858-0",
-    "title": "Nitto ATP Finals 2026: Draws, Dates, History & All You Need To Know",
-    "summary": "Nitto ATP Finals 2026: Draws, Dates, History & All You Need To Know. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-11-09T11:59:01.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPSmliU1JvRHlFTEJUSUFVZFpOcmd1dlNtM2VhTTFaNHcxSXE1N0REUDBaSFZTOXYyNTVjZ3JraXRNbDV3TWRMNzBuaDlFNEdDLVhvU3Q0bEdqU3FCLUxmMUwxbUNWVWh1QTZPckZtYVFIRFJnalF5Qm5lSl81ZlFsaA?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
