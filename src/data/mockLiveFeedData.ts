@@ -4,6 +4,38 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1795321435721-0",
+    "title": "Alcaraz, Medvedev & more: Miguel & Sesko learning from the best in Turin",
+    "summary": "Alcaraz, Medvedev & more: Miguel & Sesko learning from the best in Turin. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-20T18:34:50.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNbjBteW9XWl9HNGhLdklqLWdNb21sZm9Vbm1HMDMyY1J2OVZoWlJZOGJwb05DTXFkMDJoYWZRMEQtdU4zS1R0T2NqMVVENjhGZW03dVlRTV9zR0hhbTJpY2t1c3ljdnZYUF9rZlBVeXBVWDZRWnZuSTFtZ2hfSU1iOTViaEtIbldRTVdISQ?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1795321435721-7",
+    "title": "Alcaraz survives Shelton to reach final of Nitto ATP Finals",
+    "summary": "Alcaraz survives Shelton to reach final of Nitto ATP Finals. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-21T16:51:46.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQMWlCNk8xUEFEQUJpN0FCZ04zc3QzX2JiVy12X0MwMmJHTnpsX3MwZFUzcHVpWnhpZy1HTTh2ZHM5T1lZMFBUcVFINFIyM1gxYVo4SjdNUWV4ZGUxdW9RdF9EVjEtX3ZTVHg1ZjFNOXZ0MGNQekJZNHhwUzdTVElhZ2J4QTg?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1795269478375-0",
     "title": "Shelton advances to Nitto ATP Finals knockout rounds",
     "summary": "Shelton advances to Nitto ATP Finals knockout rounds. Full real-time coverage direct from ATP Tour.",
@@ -764,38 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-11-10T20:34:55.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1sYjVsQWZGTnEyYjNFckRzbGVnbzl3QUR1YTNfWG95ZExyT1pYcE9UcGlUM2RCZGFzenlSbFZabGpVTzk5LVlxVjNodjZBSXRJTmFDSDA3aGRlMjNFRlZCQ2dtemVmQUF4Y1gzM2JB?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1794319332398-6",
-    "title": "ATP puts creators at the heart of its push to reach new fans",
-    "summary": "ATP puts creators at the heart of its push to reach new fans. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-11-10T09:04:20.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQaUhKVXpjWTZMWEktRHRsbTVmOFBhQkhwSy1oU08wdi1wZ1hXOHA4eEFUMVFoMi1aRTBMZFZUenZ6a2JwX2xIRGZ0V2NGWWd0Mk9vUVE4T1Mzb05tblV0TVlKZkFUcDM0Y2hLeTZISlNZOHJIVEhHcElUZWE5SDdWOQ?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1794272495648-4",
-    "title": "5 things to watch in Stockholm: Fritz, Ruud, Musetti & more",
-    "summary": "5 things to watch in Stockholm: Fritz, Ruud, Musetti & more. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-11-09T02:48:54.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBXSlFtOFBLU1V4SE1Nc1lKa2VMN09IY2o1RXRldm1lQU5tR3JVdHVZWW5YZUp1SnNZNThZdm5xSnVEcmQ0NHN3c0NKRmhfejdzbFNLRE82YVJkNWFYN05OdUlsLTg1d0pGS0ViYzFSaw?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
