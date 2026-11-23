@@ -2797,8 +2797,8 @@ export const RANKINGS_TOP_500_WTA: PlayerRankSummary[] = [
     "rank": 156,
     "previousRank": 158,
     "movement": -2,
-    "id": "ayla-aksu",
-    "name": "Ayla Aksu",
+    "id": "ayla-aksu-kahraman",
+    "name": "Ayla Aksu Kahraman",
     "tour": "WTA",
     "country": "Turkey",
     "countryCode": "TUR",
@@ -2806,9 +2806,9 @@ export const RANKINGS_TOP_500_WTA: PlayerRankSummary[] = [
     "age": 30,
     "points": 494,
     "tournamentsPlayed": 25,
-    "winPercentage": 69.5,
+    "winPercentage": 72.2,
     "wins": 216,
-    "losses": 95,
+    "losses": 83,
     "careerTitles": 0
   },
   {
