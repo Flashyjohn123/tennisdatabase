@@ -4,6 +4,38 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1795538861187-5",
+    "title": "Inside Zverev & Alcaraz's jaw-dropping serving at Nitto ATP Finals",
+    "summary": "Inside Zverev & Alcaraz's jaw-dropping serving at Nitto ATP Finals. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-22T01:39:51.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOU3B3U3lvX2FVV3h3V3NBWllRZkhKdmhiT2RsazJ1Y0w0NDFMNTRHSGkxVlltUTVnLUZtR3ZWLWt3TEFxaXd6RW8wck1YbG95YmVyXy1IZGhpbmtJZHJTQ1VEQzJmMllVZzRiNnVEdk84cWZFQTJuTUw4NHNmeHFvazJyZXlnX1o3alJrQkZSWUxHMkNzNTJialVGTVg2Z08y?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1795538861187-8",
+    "title": "Cina & Basile set to lead Italian charge at Next Gen ATP Finals",
+    "summary": "Cina & Basile set to lead Italian charge at Next Gen ATP Finals. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-20T16:34:50.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQaHM2aC1LeDlUQjdydlVWU3JGUlYwVE1JRGQ0UTBPWkVGSmxHQnFqaGxtdW9pdFR5Z01YbTRYRFN2RFNOQnVBbmpONjJ3aUoyYkltSVFDU1ZySExJZi10Um5nYnFiaEFfV3VBS3hFWEFSZzRFOFF5OU9QbVFFT2huaQ?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1795491631668-2",
     "title": "Zverev claims year-end No. 1; Sinner, Alcaraz follow; Jodar finishes Top 10",
     "summary": "Zverev claims year-end No. 1; Sinner, Alcaraz follow; Jodar finishes Top 10. Full real-time coverage direct from ATP Tour.",
@@ -764,38 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-11-08T23:58:54.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBUbmFGMEZWbG5DSy1QU1h4UUlKNmJmRk9JWDRneTE3NFVNZS0zLTRRQ2JzR1R3WmpsczFJMmtVRllid2tzUHM2eUV1aXJPMHRicC1pX3F5R0QwVlVKVFNRNVU0Y2pWOGdoRTJHTWVzaE9fSVh4a0syUkt4RQ?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1794524551719-7",
-    "title": "Zverev, Alcaraz learn Nitto ATP Finals draw fate",
-    "summary": "Zverev, Alcaraz learn Nitto ATP Finals draw fate. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-11-12T12:25:18.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5aaXJnY202MGlsd0pzT0lMb21sb0xtOXJSYURLNHIzZGpMenlGSU9ySWJQN3dzNGIxbTByaDZoQ3lLWkU0Y1FiQzlIWkVYbGg5cjJoOUFIMWdfaHRFTVF2dkFjUDUtNXBuY1E?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1794493435625-6",
-    "title": "Alcaraz, Zverev learn Nitto ATP Finals draw fate",
-    "summary": "Alcaraz, Zverev learn Nitto ATP Finals draw fate. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-11-12T12:25:18.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5aaXJnY202MGlsd0pzT0lMb21sb0xtOXJSYURLNHIzZGpMenlGSU9ySWJQN3dzNGIxbTByaDZoQ3lLWkU0Y1FiQzlIWkVYbGg5cjJoOUFIMWdfaHRFTVF2dkFjUDUtNXBuY1E?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
