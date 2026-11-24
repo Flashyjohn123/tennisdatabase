@@ -4,6 +4,22 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1795491631668-2",
+    "title": "Zverev claims year-end No. 1; Sinner, Alcaraz follow; Jodar finishes Top 10",
+    "summary": "Zverev claims year-end No. 1; Sinner, Alcaraz follow; Jodar finishes Top 10. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-23T14:23:05.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9CUzcxTXI2amxHVnJUVFFkd09zajVlM3k4M2hobzB5dmxWWGFCT2RMWS1PSmZCbTI0eGVTejJsTW1KeC1zbGhfVm03Y3d4bHlXOEk0UldkWVlUamlQTXRlMU5felJsUXJSZm1naDV3enRxakJvakVjNm53?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1795453137263-0",
     "title": "Alcaraz ties Sinner in Big Titles battle with Nitto ATP Finals victory",
     "summary": "Alcaraz ties Sinner in Big Titles battle with Nitto ATP Finals victory. Full real-time coverage direct from ATP Tour.",
@@ -780,22 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-11-12T12:25:18.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5aaXJnY202MGlsd0pzT0lMb21sb0xtOXJSYURLNHIzZGpMenlGSU9ySWJQN3dzNGIxbTByaDZoQ3lLWkU0Y1FiQzlIWkVYbGg5cjJoOUFIMWdfaHRFTVF2dkFjUDUtNXBuY1E?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1794441266642-8",
-    "title": "Watch the Nitto ATP Finals draw live",
-    "summary": "Watch the Nitto ATP Finals draw live. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-11-11T11:00:00.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1qNC1LcFUyckZobVBvb0pHQ29tODRkWndmQmxSYS1aWEd4c3luS3FWRWlJMEhnWEdNdVpjQ2liaFlNUHJhX1RKWU42OGV0Sk1Za1M4MkMzclFWWVlNMERoTS1Rd3lrMUt4MUlqdjVaNXh2Sjg?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",

@@ -8311,7 +8311,7 @@ export const RANKINGS_TOP_500_WTA: PlayerRankSummary[] = [
     "country": "CHI",
     "countryCode": "CHI",
     "flag": "🌐",
-    "age": 19,
+    "age": 20,
     "points": 123,
     "tournamentsPlayed": 21,
     "winPercentage": 60.3,
