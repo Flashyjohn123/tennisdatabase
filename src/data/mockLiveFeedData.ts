@@ -4,6 +4,38 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1795624492993-2",
+    "title": "Dietrich enjoying remarkable Challenger run; Passaro also wins 3rd title since October",
+    "summary": "Dietrich enjoying remarkable Challenger run; Passaro also wins 3rd title since October. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-24T03:20:04.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxObWlzWDVMWmlpd1RURlViVThDMGJmWXBYRHg0WV83MS1VM1hESUc4WURkRzBHZTFpSDNIdlNvcWduRVRaSWFzUGdLa1lsVEUya0FzRG9LdzdmU0Nobjg3WnJSeHgwTXFGWHNDakdNcy12eVBjbEpvR2FzbHZtUUFlQnV3?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1795624492994-9",
+    "title": "Lehecka defeats Auger-Aliassime to send Czechia to Davis Cup semis",
+    "summary": "Lehecka defeats Auger-Aliassime to send Czechia to Davis Cup semis. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-24T21:02:53.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE53V1BpVnZEb1JxbHFqei1oSWtYTWJ1WkdlVlIyZXlJY3ZHcTE3MDlMS1JGU3ZNaVQ1RnpLdXI0MG4wVDNNUUtSVWplSEpYM1BaYks5bHZnMDI2ZWpGcUdyYTZmT1BWSm9MampSUjZ3?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1795571264514-2",
     "title": "Sakamoto, Blanch qualify for Next Gen ATP Finals debuts",
     "summary": "Sakamoto, Blanch qualify for Next Gen ATP Finals debuts. Full real-time coverage direct from ATP Tour.",
@@ -764,38 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-11-11T22:26:57.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE8xUkFWNVZDZk9paC1yQks4Z3RwZlFiSHdSWFBrbmRmZm5aQnlLSFBGcWdUYVBOYmFHMmxhb1pyQnJJaHpZNW5XdlljM3RqN1pqa2hMWUtjZXFNSC1fZjFHTGNDOVhTRURrVGdpQloya2U?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1794577365093-5",
-    "title": "Nitto ATP Finals Draw: Groups, H2H records & all you need to know",
-    "summary": "Nitto ATP Finals Draw: Groups, H2H records & all you need to know. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-11-12T15:00:18.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE13RTZsSnlxNmNVZWk5eVBmMDlJc2RyUVZfUjlFNmI4dG1xZlNGSWdRcUJ4SjZ6MXVIbmVzc3BpT1VXNHJ3Q2k2dWNxZkd0cmE1cnVRX01adFoyMlVHZ2xUT1E3LXc3UGZFbFhhMkxqbHlxNWRZMjFDYTh2WDE?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1794577365093-7",
-    "title": "When will Zverev, Alcaraz play their first matches at the Nitto ATP Finals?",
-    "summary": "When will Zverev, Alcaraz play their first matches at the Nitto ATP Finals?. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-11-12T14:55:18.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQT3Vxb0VfMnRES2djNDB0UHpFajFyU3hIMF9zZmZvVGthazBsbmh2SzA3bjJuRmZtcE9vWUM0cUhxWTJUVzl3djZ1VFJmb0daNmdnanloY1V5VXZJQW1sLUZJYXJlVDZzNWlUc2VUU1dOSHJFakdTcFJHMEhWTEFZUkNB?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
