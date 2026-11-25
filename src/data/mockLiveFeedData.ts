@@ -4,6 +4,38 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1795571264514-2",
+    "title": "Sakamoto, Blanch qualify for Next Gen ATP Finals debuts",
+    "summary": "Sakamoto, Blanch qualify for Next Gen ATP Finals debuts. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-22T15:41:34.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNTDdzR2NPdXMxbFBIbjFHaVhkTGdmdkJaeVRXa2tjX3ZHYVVYLWFReE15aXhueVZyNC1PaVFXbnFUd3lMb3lnYUtrQk1XSjA3cnNkX2R5dmxSMTJzMVhlSlFrZ1BVNnRxQ1Yza3NIUHF5MFFlUFltSFlZU1ZMbEt0RnBJTUNfT3pBcWt4eTNfVQ?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1795571264514-3",
+    "title": "Arribage & Olivetti find more Match Tie-break magic, win Nitto ATP Finals",
+    "summary": "Arribage & Olivetti find more Match Tie-break magic, win Nitto ATP Finals. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-22T18:53:34.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPZWlCTy1fbXFyUlQ4Z0lUVlZlQVBDLUV4Z2wwN1FXYlhScDFqSmktcmJVNHRDc3FORW9SVmdrOGlma0RwZEx4X09lOExKUXFZNlp6dWx2SDNCczNscnE4SkItZ19mZHMzX20zTm5CRjY5dEs1bEZXeVpnS2RwZ0lWY2xyUUs0R21ZYndOQnFaeWl2MGU3V2hQaDd1RWY3OWNV?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1795538861187-5",
     "title": "Inside Zverev & Alcaraz's jaw-dropping serving at Nitto ATP Finals",
     "summary": "Inside Zverev & Alcaraz's jaw-dropping serving at Nitto ATP Finals. Full real-time coverage direct from ATP Tour.",
@@ -764,38 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-11-12T14:55:18.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQT3Vxb0VfMnRES2djNDB0UHpFajFyU3hIMF9zZmZvVGthazBsbmh2SzA3bjJuRmZtcE9vWUM0cUhxWTJUVzl3djZ1VFJmb0daNmdnanloY1V5VXZJQW1sLUZJYXJlVDZzNWlUc2VUU1dOSHJFakdTcFJHMEhWTEFZUkNB?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1794577365093-8",
-    "title": "ATP partnership revenues rise 49% to record high",
-    "summary": "ATP partnership revenues rise 49% to record high. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-11-12T14:31:56.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPdEl2WmZzNXBMbUhuYVdWSkNweFBKNlRmYVljRVloQlZIVzE3Q2FqTGl5cm9ua2FRUU5uVEV1Uy1KSXp2UGhZbDdwajhnX1dkQVZjQkt2TmVaUGJFMHNuR3NLYVZ4WFpOeUxjZlNWX2dMelJBeUh1MUhZaGlwMktkVTNR?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1794543968106-9",
-    "title": "How Jodar emulated Alcaraz: From Next Gen to the Nitto ATP Finals in one year",
-    "summary": "How Jodar emulated Alcaraz: From Next Gen to the Nitto ATP Finals in one year. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-11-08T23:58:54.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBUbmFGMEZWbG5DSy1QU1h4UUlKNmJmRk9JWDRneTE3NFVNZS0zLTRRQ2JzR1R3WmpsczFJMmtVRllid2tzUHM2eUV1aXJPMHRicC1pX3F5R0QwVlVKVFNRNVU0Y2pWOGdoRTJHTWVzaE9fSVh4a0syUkt4RQ?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
