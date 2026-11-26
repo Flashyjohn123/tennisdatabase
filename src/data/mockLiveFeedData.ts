@@ -4,6 +4,22 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1795709273137-5",
+    "title": "Carlos Alcaraz's Nitto ATP Finals champion story",
+    "summary": "Carlos Alcaraz's Nitto ATP Finals champion story. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-22T20:04:52.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBVSHNrZU1xZWUtSmVDZmFKcXZsX09aMG5BV3dEME14Y2VESGwzbC1BQmYtRnR3MUV2bE0zNnRfaEJMMl9HY0tHeVdxVU91eGtFYkhQMUFSa2ozNXhWVG84ZzllXzRVb3dVdjhXbWVKeGNIQ092alZZ?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1795656200055-0",
     "title": "Jodar breaks Agassi’s 28-year record with year-end Top 10 jump",
     "summary": "Jodar breaks Agassi’s 28-year record with year-end Top 10 jump. Full real-time coverage direct from ATP Tour.",
@@ -780,22 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-11-13T11:03:21.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNOGp1VlY2MEdZUjFwUkpYQkFhQnRPa0xtdzE3M3QyOVU5RFJXUnFGUnJBQ2JzZ21KRGJBOFVTZnJKZ1dEcndMY3VMZ1RGZkcyeW1wT0tyNFpfdFdqcjhpemoydXhzX1h0ejJvMkhNQkl5cHhhYXk1MS1iOXdmWnVxcVhvLTc5STlr?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1794611114787-1",
-    "title": "Musetti survives Humbert in Stockholm, Fritz into SFs after Rune withdraws",
-    "summary": "Musetti survives Humbert in Stockholm, Fritz into SFs after Rune withdraws. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-11-12T22:07:59.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBDUGJOWGhGblgtTzdtdVRIWTdlUlJRdGxKY3V4U1FTTDhhLUU4Y2R2d011bEREUUJWVHVlQjZGckV6dmlGUXJiTHhnUWpqTU40cGwxdW11MU1XN3lUakFUaHR5d3FpekEyYmhMTVY2Q3hIWVFm?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
