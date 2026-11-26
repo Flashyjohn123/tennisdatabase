@@ -4,6 +4,38 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1795656200055-0",
+    "title": "Jodar breaks Agassi’s 28-year record with year-end Top 10 jump",
+    "summary": "Jodar breaks Agassi’s 28-year record with year-end Top 10 jump. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-24T11:29:14.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1JSnQzU0tNVzdwRHdkRHNkZ0s1NE0wX00yUUNSQkFUcmV6RjlhbDBuNW14X1pTRm0ySEhqMHFWLUdQTnFtRFh6enRWMmtXSWtMNHFuelhETXNzcVJQdF91TFRjVDIwVHVTS1lhNGRTb2U0VkE?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1795656200055-7",
+    "title": "Jannik Sinner announces surgery: 'See you soon!'",
+    "summary": "Jannik Sinner announces surgery: 'See you soon!'. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-24T17:21:51.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5iU18xUTk1UVc2OVluWVlWSElNbTN6c2dSREdQNGRHWWV1bVVVQURuNVB5bTNwdm0tM1dsWEY0MVhXY2lSZmZZeDNNOTVwTHZIUGRtZnNDd2ktaml2dFhfM3pEN0JXZVViQVFzeQ?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1795624492993-2",
     "title": "Dietrich enjoying remarkable Challenger run; Passaro also wins 3rd title since October",
     "summary": "Dietrich enjoying remarkable Challenger run; Passaro also wins 3rd title since October. Full real-time coverage direct from ATP Tour.",
@@ -764,38 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-11-12T22:07:59.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBDUGJOWGhGblgtTzdtdVRIWTdlUlJRdGxKY3V4U1FTTDhhLUU4Y2R2d011bEREUUJWVHVlQjZGckV6dmlGUXJiTHhnUWpqTU40cGwxdW11MU1XN3lUakFUaHR5d3FpekEyYmhMTVY2Q3hIWVFm?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1794611114787-3",
-    "title": "Alcaraz hits with junior World No. 1 Guto Miguel at Nitto ATP Finals",
-    "summary": "Alcaraz hits with junior World No. 1 Guto Miguel at Nitto ATP Finals. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-11-12T16:21:05.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPbU9UMFB2S19kaVZqeS1pVlRBQ19tVmN1Ymd1TkdGeEU0eko5aWhfbXItR2NUdEQzSTVObklDU2NlRnhEa0JHci05ZmVQY1BIYnR3MHdmVDM1eXRfajhDdDl0ZHVKelFkNmFvTjFJUzZjaE9BVzI4Z0hsa2JOcGp3ODJMTGF1RXd4R2FpTlF3MDdKTzJqRkFvLVlfSjM0N0dzdUllbA?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1794611114787-8",
-    "title": "World No. 107 Shevchenko upsets defending champ Ruud; Fritz wins in Stockholm",
-    "summary": "World No. 107 Shevchenko upsets defending champ Ruud; Fritz wins in Stockholm. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-11-11T22:26:57.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE8xUkFWNVZDZk9paC1yQks4Z3RwZlFiSHdSWFBrbmRmZm5aQnlLSFBGcWdUYVBOYmFHMmxhb1pyQnJJaHpZNW5XdlljM3RqN1pqa2hMWUtjZXFNSC1fZjFHTGNDOVhTRURrVGdpQloya2U?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
