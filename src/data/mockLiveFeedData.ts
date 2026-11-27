@@ -4,6 +4,22 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1795794879472-7",
+    "title": "Kumstat, Schwaerzler complete Next Gen ATP Finals field",
+    "summary": "Kumstat, Schwaerzler complete Next Gen ATP Finals field. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-23T12:52:49.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQRml0RTNELXdCRmRGSzdHQ3Vvb1lwWnE4cF9XbW42dlVUbFFDSUg2dFJVX0FBUUdxVXE3TWo1STI0Wnpack5rbXBESW9yTVdSVG9GWkJZY3R2LXo2djZkMmh1aXlZQjVfTkVzSW5VNTkxY1hhZk1Ed3FjLWtNSS1WblJNODhpZ0lGenJ6SzVNYmVCUF80?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1795742474966-0",
     "title": "Jodar, Merida fire Spain into Davis Cup SFs as Alcaraz watches on",
     "summary": "Jodar, Merida fire Spain into Davis Cup SFs as Alcaraz watches on. Full real-time coverage direct from ATP Tour.",
@@ -780,22 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-11-13T20:03:21.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9kbUJLRHYxMzZKbjJuZmdtbFdwcVVVSnlzMVh4OHV5amNoMG9UaThWUUNKREhsOUV4UzRkSmhnRHV2dXNzNFFqdHc4T3N0NWJYNjBrdFROOEo0Z1EzUEoxUVpyQnV4bWozRHBHb3UwbEFHN2NfcWJR?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1794693081386-0",
-    "title": "Fritz ends season with Stockholm title",
-    "summary": "Fritz ends season with Stockholm title. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-11-14T17:54:10.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPX2pHZW9RZUVwTDlxd1h5b1lKSU1RQ2xsTUMwS2djVFdGWW9ybjNkZDY0RGNjSTZUeXBHby1xVnBxdkNwWWJOT2V6cVV5NVp1aGpwZEl4bk1tbTVWN24zRUhNV01YR3RzYzNlNFB4WjBRUnFQcVpzUnh1LW1iYW5YLQ?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
