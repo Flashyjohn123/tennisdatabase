@@ -4,6 +4,54 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1795742474966-0",
+    "title": "Jodar, Merida fire Spain into Davis Cup SFs as Alcaraz watches on",
+    "summary": "Jodar, Merida fire Spain into Davis Cup SFs as Alcaraz watches on. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-26T20:20:33.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQeldBa05rRnFLVmQ4UzRMTWlsQUFMQzFxeUNNdC02Z2o5bkhGU096WW5Uc3h4U3VPZS1mcTdkT2ZiTVEyMGJ1WGVJS3lockxlRHFEdFlnd2tCaDJkZVRDUjFNalBQS01FSHpBcmFkSXBQbVZHZWRIWG9JaEJLeHJRLUtMZ1ZaaDlONUE?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1795742474966-1",
+    "title": "Zverev notches 70 wins in 2026, joins exclusive list",
+    "summary": "Zverev notches 70 wins in 2026, joins exclusive list. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-26T16:36:55.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1kNFE0ZmFsTUd0aWRXS29zRm9IOERzblFHTTRsbnVZMWJybTV1dGIwb0VoTGl2d081V0gwSFpHVThZdjk4cnNBd2ktX2RXQ2YySVF5ZnhLMG84cGtHZVRzZ1ZETUttT2o1Z1E?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
+    "id": "atp-live-1795742474966-5",
+    "title": "Patten/Skupski send Great Britain to Davis Cup Finals SFs",
+    "summary": "Patten/Skupski send Great Britain to Davis Cup Finals SFs. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-26T15:10:32.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE43ZUc4LS1iMnZQWW1LUVZPY3lrazRmaHc5dkpIb3ozNTRJZGR0VWxic0o2aWNlOTdlSmVuWUFIVDlsYlVmVW56SUdDdFoydWxLRE9DbGFpTExkOWNPTWJ1ZElYbG1odjMxMzVXc2F5OVBiQjk0OV9B?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1795709273137-5",
     "title": "Carlos Alcaraz's Nitto ATP Finals champion story",
     "summary": "Carlos Alcaraz's Nitto ATP Finals champion story. Full real-time coverage direct from ATP Tour.",
@@ -748,54 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-11-14T17:54:10.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPX2pHZW9RZUVwTDlxd1h5b1lKSU1RQ2xsTUMwS2djVFdGWW9ybjNkZDY0RGNjSTZUeXBHby1xVnBxdkNwWWJOT2V6cVV5NVp1aGpwZEl4bk1tbTVWN24zRUhNV01YR3RzYzNlNFB4WjBRUnFQcVpzUnh1LW1iYW5YLQ?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1794693081386-2",
-    "title": "ATP No. 1 Club Gala Photo Gallery 2026",
-    "summary": "ATP No. 1 Club Gala Photo Gallery 2026. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-11-14T00:23:54.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBLTUdvRDZSRWp3OGpZd0FvQkczNnlaaUNrTmI2d1BUa0gza0RFa2x3ZE1aZDd0cFdhdzRwV2FIUVhuOWVmMF9uSF9hU3JyY0VCT1AzUVpPN2tIODQ4b0xiQ2FWRDBVR3hOQ0VVX0ZKTXlLQWhEMGZZ?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1794630113434-3",
-    "title": "Fils’ stunning tweener earns October Hot Shot of the Month honours",
-    "summary": "Fils’ stunning tweener earns October Hot Shot of the Month honours. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-11-12T17:28:46.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPd3JFSnBpMXpoclRYZ3dFejlNU0RhVFdGMjltcU1aS0FNcFpKUFpzQ1poeUxBVUVSREJuN0QtdzFXMFlKeGZkTjluMmRUX3liTk1zTkJaYzFTZHVncDZxTkVocVZFNEVreWRtNmRnWG0ySkIxMTRlemhESHdfZXZKOGlmbHE?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1794611114786-0",
-    "title": "Best Nitto ATP Finals Media Day photos through the years",
-    "summary": "Best Nitto ATP Finals Media Day photos through the years. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-11-13T11:03:21.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNOGp1VlY2MEdZUjFwUkpYQkFhQnRPa0xtdzE3M3QyOVU5RFJXUnFGUnJBQ2JzZ21KRGJBOFVTZnJKZ1dEcndMY3VMZ1RGZkcyeW1wT0tyNFpfdFdqcjhpemoydXhzX1h0ejJvMkhNQkl5cHhhYXk1MS1iOXdmWnVxcVhvLTc5STlr?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
