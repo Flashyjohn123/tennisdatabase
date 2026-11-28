@@ -4,6 +4,22 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1795827331043-0",
+    "title": "Musetti pulls off double duty, Italy claws into fourth straight Davis Cup final",
+    "summary": "Musetti pulls off double duty, Italy claws into fourth straight Davis Cup final. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-27T22:50:23.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBERi1hRUZYbmtPeG4xaFppRHE2bkVLbVQ2bUhBcVoxbEp6b0RkQm02MTAxMUVKVERhNk16UF9wRDM0dzR3SVNmdkJUeWZITHlUeHBvNjNsVFZyYWlscFFiNEtpZVV3N2pLZU5rLXZxQWZCbzN6ZDFqUTh3?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1795794879472-7",
     "title": "Kumstat, Schwaerzler complete Next Gen ATP Finals field",
     "summary": "Kumstat, Schwaerzler complete Next Gen ATP Finals field. Full real-time coverage direct from ATP Tour.",
@@ -780,22 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-11-13T18:43:21.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNdHNreFU3OHkyNi1mNkdpN2FQQWw1ZkJXREF1cy14cGRLSWRpeG9uX0E4Vk02aTVTREo1eEpabzFpMHdYWUZ4WVN3YlhOdXowUFdqNmdnZFhSM1lqU0wxMlY4dGRQY3YtVy1taXFXc2wxNF85UExBMVFkalJUcUkzV2tn?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1794715571381-3",
-    "title": "Zverev approaching Turin with 'joy' & playing down favourite talk",
-    "summary": "Zverev approaching Turin with 'joy' & playing down favourite talk. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-11-13T20:03:21.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9kbUJLRHYxMzZKbjJuZmdtbFdwcVVVSnlzMVh4OHV5amNoMG9UaThWUUNKREhsOUV4UzRkSmhnRHV2dXNzNFFqdHc4T3N0NWJYNjBrdFROOEo0Z1EzUEoxUVpyQnV4bWozRHBHb3UwbEFHN2NfcWJR?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
