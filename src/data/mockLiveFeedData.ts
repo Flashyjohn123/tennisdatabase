@@ -4,6 +4,22 @@ import { LiveFeedItem } from '../types/tennis';
 
 export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
   {
+    "id": "atp-live-1795877436799-4",
+    "title": "Alcaraz's path back to World No. 1: How the Spaniard can close the gap in 2027",
+    "summary": "Alcaraz's path back to World No. 1: How the Spaniard can close the gap in 2027. Full real-time coverage direct from ATP Tour.",
+    "category": "breaking",
+    "severity": "high",
+    "timestamp": "2026-11-26T05:15:32.000Z",
+    "source": "ATP Tour",
+    "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOSHlBQnlybmFIeTNFYjNjLTRhX1hpVjdKcEg0MEVjbGRrMkdUM3dBcHBYUXROYUNGeTZEN0VIZnZpeVk3c2pNQi1oN19pNTRVMUsxeUQtWk54ZEFvSC12UUxXZG9Xa2ItYjVUOU9kTmVSSFZJekVWRURTb1lSWmt3eTBSSE5Pdw?oc=5",
+    "verified": true,
+    "tags": [
+      "ATP Tour",
+      "Live News",
+      "News Outlet"
+    ]
+  },
+  {
     "id": "atp-live-1795827331043-0",
     "title": "Musetti pulls off double duty, Italy claws into fourth straight Davis Cup final",
     "summary": "Musetti pulls off double duty, Italy claws into fourth straight Davis Cup final. Full real-time coverage direct from ATP Tour.",
@@ -780,22 +796,6 @@ export const MOCK_LIVE_FEED_ITEMS: LiveFeedItem[] = [
     "timestamp": "2026-11-14T20:08:37.000Z",
     "source": "ATP Tour",
     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQNmJYUFhYQTdXeFFpdVNWZURCTFBVTl9pX3dhYzdjUllmUHJjbFYwSmJjaFVYOEI2eEJ5dE5jZDBwZEJobWpKWmN4YmVGeFA5MzdMNFBGS2tVOVBkZFBzUzVkTnFGNmMyY1FzOFZWZ015QTZBVmZtSlNrY3pycWxLcEN3SE1uaENTZzFwZ0VMd0FNQV9iekV5Vw?oc=5",
-    "verified": true,
-    "tags": [
-      "ATP Tour",
-      "Live News",
-      "News Outlet"
-    ]
-  },
-  {
-    "id": "atp-live-1794748482296-3",
-    "title": "Carlos Alcaraz on Turin goals & Juan Carlos Ferrero reunion: 'I will give him a big hug' | ATP Tour | Tennis",
-    "summary": "Carlos Alcaraz on Turin goals & Juan Carlos Ferrero reunion: 'I will give him a big hug' | ATP Tour | Tennis. Full real-time coverage direct from ATP Tour.",
-    "category": "breaking",
-    "severity": "high",
-    "timestamp": "2026-11-13T18:43:21.000Z",
-    "source": "ATP Tour",
-    "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNdHNreFU3OHkyNi1mNkdpN2FQQWw1ZkJXREF1cy14cGRLSWRpeG9uX0E4Vk02aTVTREo1eEpabzFpMHdYWUZ4WVN3YlhOdXowUFdqNmdnZFhSM1lqU0wxMlY4dGRQY3YtVy1taXFXc2wxNF85UExBMVFkalJUcUkzV2tn?oc=5",
     "verified": true,
     "tags": [
       "ATP Tour",
